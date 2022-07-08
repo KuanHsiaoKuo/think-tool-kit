@@ -3,6 +3,7 @@
         - [1. Mindmap](layer1_visual_tools/Mindmap/mindmap.md)
             - [mermaid](layer1_visual_tools/Mindmap/mermaid.md)
         - [2. UML](layer1_visual_tools/UML/uml.md)
+            - [plant-uml](layer1_visual_tools/UML/plant-uml.md)
         - [3. Drafts](layer1_visual_tools/Drafts/drafts.md)
         - [4. Notes](layer1_visual_tools/Notes/notes.md)
     - [Layer2: 思维理念](layer2_thinking_concepts/thinking_concepts.md)

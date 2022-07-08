@@ -11,7 +11,7 @@ theme = "mytheme"
 default-theme = "rust"
 git-repository-url = "git@github.com:KuanHsiaoKuo/Python-Cooker.git"
 git-repository-icon = "fa-rust"
-additional-js = ["assets/mermaid/mermaid.min.js", "assets/mermaid/mermaid-init.js", "assets/smart-anchor.js", "assets/pagetoc/sidebar.js"]
+additional-js = ["assets/mermaid/mermaid-913.min.js", "assets/mermaid/mermaid-init.js", "assets/smart-anchor.js", "assets/pagetoc/sidebar.js"]
 additional-css = ["assets/pagetoc/pagetoc_style.css", "assets/css/mdbook-admonish.css"]
 mathjax-support = true
 

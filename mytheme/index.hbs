@@ -61,7 +61,11 @@
     var path_to_root = "{{ path_to_root }}";
     var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "{{ preferred_dark_theme }}" : "{{ default_theme }}";
 </script>
-
+<!--引入mermaid-->
+<!--<script type="text/javascript" src="{{ path_to_root }}mermaid.min.js">-->
+<!--</script>-->
+<!--<script type="text/javascript" src="{{ path_to_root }}mermaid-init.js">-->
+<!--</script>-->
 <!-- Work around some values being stored in localStorage wrapped in quotes -->
 <script type="text/javascript">
     try {
@@ -209,12 +213,12 @@
                 {{{ content }}}
             </main>
 
-<!--            <script src="https://utteranc.es/client.js"-->
-<!--                    repo="RustMagazine/rust_magazine_2022"-->
-<!--                    issue-term="title"-->
-<!--                    theme="github-light"-->
-<!--                    crossorigin="anonymous"-->
-<!--                    async></script>-->
+            <!--            <script src="https://utteranc.es/client.js"-->
+            <!--                    repo="RustMagazine/rust_magazine_2022"-->
+            <!--                    issue-term="title"-->
+            <!--                    theme="github-light"-->
+            <!--                    crossorigin="anonymous"-->
+            <!--                    async></script>-->
 
             <nav class="nav-wrapper" aria-label="Page navigation">
                 <!-- Mobile navigation buttons -->
