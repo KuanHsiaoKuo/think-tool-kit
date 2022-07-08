@@ -43,6 +43,12 @@ jobs:
           crate: mdbook-admonish
           version: 1.7.0
           use-tool-cache: true # 打开这个，就只会在第一次进行构建
+      - name: rust-cargo-install
+        uses: actions-rs/install@v0.1.2
+        with:
+          crate: mdbook-mermaid
+          version: 0.11.0
+          use-tool-cache: true # 打开这个，就只会在第一次进行构建
       #- name: add mdbook-checklist
       #  run: |
       #    cargo install mdbook-checklist
