@@ -8,3 +8,4 @@
     - [Layer2: 思维理念](layer2_thinking_concepts/thinking_concepts.md)
     - [Layer3: 思维模型](layer3_thinking_models/thinking_models.md)
     - [Layer4: 思维体系](layer4_thinking_system/thinking_system.md)
+    - [相关资源](Resources/resources.md)
