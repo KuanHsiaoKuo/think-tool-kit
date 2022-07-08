@@ -196,8 +196,30 @@
 </div>
 </div><div style="break-before: page; page-break-before: always;"></div><h1 id="mermaid使用示例"><a class="header" href="#mermaid使用示例">mermaid使用示例</a></h1>
 <!--ts-->
+<ul>
+<li><a href="layer1_visual_tools/map_tools/mermaid.html#mermaid%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B">mermaid使用示例</a>
+<ul>
+<li><a href="layer1_visual_tools/map_tools/mermaid.html#%E4%BB%8B%E7%BB%8D">介绍</a></li>
+<li><a href="layer1_visual_tools/map_tools/mermaid.html#%E7%A4%BA%E4%BE%8B">示例</a>
+<ul>
+<li><a href="layer1_visual_tools/map_tools/mermaid.html#%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE">思维导图</a></li>
+<li><a href="layer1_visual_tools/map_tools/mermaid.html#%E6%B5%81%E7%A8%8B%E5%9B%BE">流程图</a></li>
+<li><a href="layer1_visual_tools/map_tools/mermaid.html#%E6%97%B6%E5%BA%8F%E5%9B%BE">时序图</a></li>
+<li><a href="layer1_visual_tools/map_tools/mermaid.html#%E7%94%98%E7%89%B9%E5%9B%BE">甘特图</a></li>
+<li><a href="layer1_visual_tools/map_tools/mermaid.html#%E7%B1%BB%E5%9B%BE">类图</a></li>
+<li><a href="layer1_visual_tools/map_tools/mermaid.html#%E7%8A%B6%E6%80%81%E5%9B%BE">状态图</a></li>
+<li><a href="layer1_visual_tools/map_tools/mermaid.html#%E9%A5%BC%E5%9B%BE">饼图</a></li>
+<li><a href="layer1_visual_tools/map_tools/mermaid.html#gitgraphexperimental-in-v9">gitgraph(experimental in v9)</a></li>
+<li><a href="layer1_visual_tools/map_tools/mermaid.html#%E6%97%A5%E8%AE%B0%E5%9B%BE">日记图</a></li>
+<li><a href="layer1_visual_tools/map_tools/mermaid.html#c4%E6%9E%B6%E6%9E%84%E5%9B%BEexperimental-in-v9">C4架构图(experimental in v9)</a></li>
+</ul>
+</li>
+<li><a href="layer1_visual_tools/map_tools/mermaid.html#%E5%8F%82%E8%80%83%E8%B5%84%E6%BA%90">参考资源</a></li>
+</ul>
+</li>
+</ul>
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: kuanhsiaokuo, at: Fri Jul  8 17:10:31 CST 2022 -->
+<!-- Added by: kuanhsiaokuo, at: Fri Jul  8 23:51:51 CST 2022 -->
 <!--te-->
 <h2 id="介绍"><a class="header" href="#介绍">介绍</a></h2>
 <p><img src="https://mermaid-js.github.io/mermaid/img/header.png" alt="" /></p>
@@ -211,6 +233,17 @@
 </div>
 </div>
 <h2 id="示例"><a class="header" href="#示例">示例</a></h2>
+<h3 id="思维导图"><a class="header" href="#思维导图">思维导图</a></h3>
+<p>默认不支持，虽然Mermaid本身暂未支持思维导图的绘制，但是考虑到Mermaid对流程图的支持，可以用Mermaid绘制极简单的思维导图</p>
+<pre class="mermaid">graph TD
+A(工业用地效率)--&gt;B1(土地利用强度)
+A--&gt;B2(土地经济效益)
+B1--&gt;C1(容积率)
+B1--&gt;C2(建筑系数)
+B1--&gt;C3(亩均固定资本投入)
+B2--&gt;D1(亩均工业产值)
+B2--&gt;D2(亩均税收)
+</pre>
 <h3 id="流程图"><a class="header" href="#流程图">流程图</a></h3>
 <pre class="mermaid">flowchart LR
 
@@ -333,17 +366,29 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
 </pre>
 <h2 id="参考资源"><a class="header" href="#参考资源">参考资源</a></h2>
 <ul>
-<li><a href="https://github.com/mermaid-js/mermaid">mermaid-js/mermaid: Generation of diagram and flowchart from text in a similar manner as markdown</a></li>
-<li><a href="https://mermaid-js.github.io/mermaid/#/">mermaid - Markdownish syntax for generating flowcharts, sequence diagrams, class diagrams, gantt charts and git graphs.</a></li>
-<li><a href="https://mermaid.live/edit#pako:eNpNkE9rwzAMxb-K8WmDtlmSLW1zGKx_YIfBoOutyUG1lcQssYsjrytJvvuclsJ0Eu_3npDUcWEk8pQXtTmLCiyxj12mma-3wztYmbPp9LXf4y_1bPWwM07LxxtfjYStuw0K1Sqjh5u8vgY-NfZsc9hh62piYf6f7c-mZ9s7i3I-4Q3aBpT0e3SjM-NUYYMZT30rwX5nPNOD97mTBMKtVGQsTwuoW5xwcGS-LlrwlKzDu2mjoLTQ3MXagESf6ThdTuPBpWrJTxRGF6ocdWdrL1dEpzYNghHPSkWVO86EaYJWyfE71c8yCZIoWUAUYzKP4SWOpTiGy0URPYeFnD-FEfBhGP4AHgtu4w">Online FlowChart &amp; Diagrams Editor - Mermaid Live Editor</a></li>
-<li>OS Awards 2019 得奖 🏆 : <a href="https://osawards.com/javascript/2019">JavaScript Open Source Awards - GitNation</a></li>
-<li><a href="https://mermaid-js.github.io/mermaid/#/./integrations">mermaid - Markdownish syntax for generating flowcharts, sequence diagrams, class diagrams, gantt charts and git graphs.</a></li>
-<li>gitgraph从v9.0.0开始被支持：<a href="https://github.com/mermaid-js/mermaid/releases">Releases · mermaid-js/mermaid</a>
+<li>
+<p><a href="https://github.com/mermaid-js/mermaid">mermaid-js/mermaid: Generation of diagram and flowchart from text in a similar manner as markdown</a></p>
+</li>
+<li>
+<p><a href="https://mermaid-js.github.io/mermaid/#/">mermaid - Markdownish syntax for generating flowcharts, sequence diagrams, class diagrams, gantt charts and git graphs.</a></p>
+</li>
+<li>
+<p><a href="https://mermaid.live/edit#pako:eNpNkE9rwzAMxb-K8WmDtlmSLW1zGKx_YIfBoOutyUG1lcQssYsjrytJvvuclsJ0Eu_3npDUcWEk8pQXtTmLCiyxj12mma-3wztYmbPp9LXf4y_1bPWwM07LxxtfjYStuw0K1Sqjh5u8vgY-NfZsc9hh62piYf6f7c-mZ9s7i3I-4Q3aBpT0e3SjM-NUYYMZT30rwX5nPNOD97mTBMKtVGQsTwuoW5xwcGS-LlrwlKzDu2mjoLTQ3MXagESf6ThdTuPBpWrJTxRGF6ocdWdrL1dEpzYNghHPSkWVO86EaYJWyfE71c8yCZIoWUAUYzKP4SWOpTiGy0URPYeFnD-FEfBhGP4AHgtu4w">Online FlowChart &amp; Diagrams Editor - Mermaid Live Editor</a></p>
+</li>
+<li>
+<p>OS Awards 2019 得奖 🏆 : <a href="https://osawards.com/javascript/2019">JavaScript Open Source Awards - GitNation</a></p>
+</li>
+<li>
+<p><a href="https://mermaid-js.github.io/mermaid/#/./integrations">mermaid - Markdownish syntax for generating flowcharts, sequence diagrams, class diagrams, gantt charts and git graphs.</a></p>
+</li>
+<li>
+<p>gitgraph从v9.0.0开始被支持：<a href="https://github.com/mermaid-js/mermaid/releases">Releases · mermaid-js/mermaid</a></p>
 <blockquote>
 <p>此处是源码</p>
 </blockquote>
 </li>
-<li>编译好的js文件下载：
+<li>
+<p>编译好的js文件下载：</p>
 <blockquote>
 <p><a href="https://www.jsdelivr.com/package/npm/mermaid?path=dist">mermaid CDN by jsDelivr - A CDN for npm and GitHub</a></p>
 </blockquote>
@@ -361,7 +406,76 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
 <li>注意要多刷新两次才能更新缓存</li>
 </ol>
 </div>
-</div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="草图方法"><a class="header" href="#草图方法">草图方法</a></h1>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="plantuml"><a class="header" href="#plantuml">PlantUML</a></h1>
+<!--ts-->
+<ul>
+<li><a href="layer1_visual_tools/map_tools/plant-uml.html#plantuml">PlantUML</a>
+<ul>
+<li><a href="layer1_visual_tools/map_tools/plant-uml.html#%E7%A4%BA%E4%BE%8B">示例</a>
+<ul>
+<li><a href="layer1_visual_tools/map_tools/plant-uml.html#%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE">思维导图</a>
+<ul>
+<li><a href="layer1_visual_tools/map_tools/plant-uml.html#orgmode-%E8%AF%AD%E6%B3%95">OrgMode 语法</a></li>
+<li><a href="layer1_visual_tools/map_tools/plant-uml.html#markdown%E8%AF%AD%E6%B3%95">Markdown语法</a></li>
+<li><a href="layer1_visual_tools/map_tools/plant-uml.html#%E8%BF%90%E7%AE%97%E7%AC%A6%E5%86%B3%E5%AE%9A%E6%96%B9%E5%90%91">运算符决定方向</a></li>
+<li><a href="layer1_visual_tools/map_tools/plant-uml.html#%E5%A4%9A%E8%A1%8C%E8%A1%A8%E7%A4%BA">多行表示</a></li>
+<li><a href="layer1_visual_tools/map_tools/plant-uml.html#%E5%A4%9A%E6%A0%B9%E8%8A%82%E7%82%B9">多根节点</a></li>
+<li><a href="layer1_visual_tools/map_tools/plant-uml.html#%E6%94%B9%E5%8F%98%E8%8A%82%E7%82%B9%E9%A2%9C%E8%89%B2">改变节点颜色</a></li>
+<li><a href="layer1_visual_tools/map_tools/plant-uml.html#%E7%A7%BB%E9%99%A4%E6%96%B9%E6%A1%86">移除方框</a></li>
+<li><a href="layer1_visual_tools/map_tools/plant-uml.html#%E6%8C%87%E5%AE%9A%E5%B7%A6%E5%8F%B3%E6%96%B9%E5%90%91">指定左右方向</a></li>
+<li><a href="layer1_visual_tools/map_tools/plant-uml.html#%E5%B8%A6%E6%A0%87%E7%AD%BE%E7%9A%84%E5%AE%8C%E6%95%B4%E7%A4%BA%E4%BE%8B">带标签的完整示例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="layer1_visual_tools/map_tools/plant-uml.html#%E5%8F%82%E8%80%83%E8%B5%84%E6%BA%90">参考资源</a></li>
+</ul>
+</li>
+</ul>
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: kuanhsiaokuo, at: Fri Jul  8 23:51:52 CST 2022 -->
+<!--te-->
+<h2 id="示例-1"><a class="header" href="#示例-1">示例</a></h2>
+<h3 id="思维导图-1"><a class="header" href="#思维导图-1">思维导图</a></h3>
+<h4 id="orgmode-语法"><a class="header" href="#orgmode-语法">OrgMode 语法</a></h4>
+<h4 id="markdown语法"><a class="header" href="#markdown语法">Markdown语法</a></h4>
+<h4 id="运算符决定方向"><a class="header" href="#运算符决定方向">运算符决定方向</a></h4>
+<h4 id="多行表示"><a class="header" href="#多行表示">多行表示</a></h4>
+<h4 id="多根节点"><a class="header" href="#多根节点">多根节点</a></h4>
+<h4 id="改变节点颜色"><a class="header" href="#改变节点颜色">改变节点颜色</a></h4>
+<h4 id="移除方框"><a class="header" href="#移除方框">移除方框</a></h4>
+<h4 id="指定左右方向"><a class="header" href="#指定左右方向">指定左右方向</a></h4>
+<h4 id="带标签的完整示例"><a class="header" href="#带标签的完整示例">带标签的完整示例</a></h4>
+<h2 id="参考资源-1"><a class="header" href="#参考资源-1">参考资源</a></h2>
+<ul>
+<li><a href="https://plantuml.com/zh/">开源工具，使用简单的文字描述画UML图。</a>
+<ul>
+<li><a href="https://plantuml.com/zh/mindmap-diagram">MindMap syntax and features</a></li>
+</ul>
+</li>
+<li>在线服务：<a href="https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000">PlantUML Web Server</a></li>
+<li><del>本来选用这个crate, 但是安装太麻烦：</del>
+<ul>
+<li><a href="https://github.com/sytsereitsma/mdbook-plantuml">sytsereitsma/mdbook-plantuml: mdBook preprocessor to render PlantUML diagrams to png images in the book output directory</a></li>
+<li><a href="https://crates.io/crates/mdbook-plantuml">mdbook-plantuml - crates.io: Rust Package Registry</a></li>
+</ul>
+</li>
+<li>选用这个mdbook插件：
+<blockquote>
+<p><a href="https://github.com/hamaluik/mdbook-puml">hamaluik/mdbook-puml: A simple mdbook preprocessor for rendering inline PlantUML code blocks into inline SVG</a></p>
+</blockquote>
+</li>
+</ul>
+<div id="admonition-why-create-mdbook-puml" class="admonition quote">
+<div class="admonition-title">
+<p>why create mdbook-puml</p>
+<p><a class="admonition-anchor-link" href="layer1_visual_tools/map_tools/plant-uml.html#admonition-why-create-mdbook-puml"></a></p>
+</div>
+<div>
+<p>I created this preprocessor because mdbook-plantuml wasn't working for me—specifically, mdbook-plantuml is currently incompatible with mdbook watch and mbbook serve because it triggers a rebuild loop.</p>
+<p>This crate is quite simple and non-customizable at this point as it does all that I need it to for my own purposes. Feel free to fork and/or PR away though, and I'll be happy to include changes.</p>
+</div>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="草图方法"><a class="header" href="#草图方法">草图方法</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="笔记方法"><a class="header" href="#笔记方法">笔记方法</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="思维理念"><a class="header" href="#思维理念">思维理念</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="思维模型"><a class="header" href="#思维模型">思维模型</a></h1>
