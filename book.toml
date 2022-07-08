@@ -28,6 +28,12 @@ level = 0
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
 
+# Enables the `mdbook-plantuml` preprocessor
+#[preprocessor.plantuml]
+#command = "mdbook-plantuml"
+
+[preprocessor.puml]
+
 # Enables the `mdbook-checklist` preprocessor
 [preprocessor.checklist]
 title = "待完善: "
