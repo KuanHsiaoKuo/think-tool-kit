@@ -5,3 +5,6 @@
         - [2. UML](layer1_visual_tools/UML/uml.md)
         - [3. Drafts](layer1_visual_tools/Drafts/drafts.md)
         - [4. Notes](layer1_visual_tools/Notes/notes.md)
+    - [Layer2: 思维理念](layer2_thinking_concepts/thinking_concepts.md)
+    - [Layer3: 思维模型](layer3_thinking_models/thinking_models.md)
+    - [Layer4: 思维体系](layer4_thinking_system/thinking_system.md)
