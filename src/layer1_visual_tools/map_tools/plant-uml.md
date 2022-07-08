@@ -198,7 +198,7 @@ endlegend
     - [mdbook-plantuml - crates.io: Rust Package Registry](https://crates.io/crates/mdbook-plantuml)
 - 选用这个mdbook插件：
   > [hamaluik/mdbook-puml: A simple mdbook preprocessor for rendering inline PlantUML code blocks into inline SVG](https://github.com/hamaluik/mdbook-puml)
-
+    - 由于这个版本很久没更新了，只是基于mdbook 0.4.17构建，所以会出现警告
 ```admonish quote title='why create mdbook-puml'
 I created this preprocessor because mdbook-plantuml wasn't working for me—specifically, mdbook-plantuml is currently incompatible with mdbook watch and mbbook serve because it triggers a rebuild loop.
 
