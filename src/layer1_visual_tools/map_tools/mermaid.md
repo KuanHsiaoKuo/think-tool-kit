@@ -1,10 +1,23 @@
 # mermaid使用示例
 
 <!--ts-->
-
+* [mermaid使用示例](#mermaid使用示例)
+   * [介绍](#介绍)
+   * [示例](#示例)
+      * [思维导图](#思维导图)
+      * [流程图](#流程图)
+      * [时序图](#时序图)
+      * [甘特图](#甘特图)
+      * [类图](#类图)
+      * [状态图](#状态图)
+      * [饼图](#饼图)
+      * [gitgraph(experimental in v9)](#gitgraphexperimental-in-v9)
+      * [日记图](#日记图)
+      * [C4架构图(experimental in v9)](#c4架构图experimental-in-v9)
+   * [参考资源](#参考资源)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: kuanhsiaokuo, at: Fri Jul  8 17:10:31 CST 2022 -->
+<!-- Added by: kuanhsiaokuo, at: Fri Jul  8 23:51:51 CST 2022 -->
 
 <!--te-->
 

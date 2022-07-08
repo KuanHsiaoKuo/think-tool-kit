@@ -1,6 +1,23 @@
 # PlantUML
 
 <!--ts-->
+* [PlantUML](#plantuml)
+   * [示例](#示例)
+      * [思维导图](#思维导图)
+         * [OrgMode 语法](#orgmode-语法)
+         * [Markdown语法](#markdown语法)
+         * [运算符决定方向](#运算符决定方向)
+         * [多行表示](#多行表示)
+         * [多根节点](#多根节点)
+         * [改变节点颜色](#改变节点颜色)
+         * [移除方框](#移除方框)
+         * [指定左右方向](#指定左右方向)
+         * [带标签的完整示例](#带标签的完整示例)
+   * [参考资源](#参考资源)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: kuanhsiaokuo, at: Fri Jul  8 23:51:52 CST 2022 -->
+
 <!--te-->
 
 ## 示例
