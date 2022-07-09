@@ -1,19 +1,20 @@
 # PlantUML
 
 <!--ts-->
+
 * [PlantUML](#plantuml)
-   * [示例](#示例)
-      * [思维导图](#思维导图)
-         * [OrgMode 语法](#orgmode-语法)
-         * [Markdown语法](#markdown语法)
-         * [运算符决定方向](#运算符决定方向)
-         * [多行表示](#多行表示)
-         * [多根节点](#多根节点)
-         * [改变节点颜色](#改变节点颜色)
-         * [移除方框](#移除方框)
-         * [指定左右方向](#指定左右方向)
-         * [带标签的完整示例](#带标签的完整示例)
-   * [参考资源](#参考资源)
+    * [示例](#示例)
+        * [思维导图](#思维导图)
+            * [OrgMode 语法](#orgmode-语法)
+            * [Markdown语法](#markdown语法)
+            * [运算符决定方向](#运算符决定方向)
+            * [多行表示](#多行表示)
+            * [多根节点](#多根节点)
+            * [改变节点颜色](#改变节点颜色)
+            * [移除方框](#移除方框)
+            * [指定左右方向](#指定左右方向)
+            * [带标签的完整示例](#带标签的完整示例)
+    * [参考资源](#参考资源)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 <!-- Added by: kuanhsiaokuo, at: Fri Jul  8 23:51:52 CST 2022 -->
@@ -103,7 +104,9 @@ class cname{
 @endmindmap
 
 ```
+
 #### 多根节点
+
 ```plantuml
 @startmindmap
 * Root 1
@@ -115,7 +118,9 @@ class cname{
 @endmindmap
 
 ```
+
 #### 改变节点颜色
+
 ```plantuml
 @startmindmap
 *[#Orange] Colors
@@ -125,7 +130,9 @@ class cname{
 @endmindmap
 
 ```
+
 #### 移除方框
+
 ```plantuml
 @startmindmap
 *[#Orange] Colors
@@ -137,6 +144,7 @@ class cname{
 ```
 
 #### 指定左右方向
+
 ```plantuml
 @startmindmap
 * count
@@ -156,6 +164,7 @@ left side
 ```
 
 #### 带标签的完整示例
+
 ```plantuml
 @startmindmap
 caption figure 1
@@ -199,6 +208,8 @@ endlegend
 - 选用这个mdbook插件：
   > [hamaluik/mdbook-puml: A simple mdbook preprocessor for rendering inline PlantUML code blocks into inline SVG](https://github.com/hamaluik/mdbook-puml)
     - 由于这个版本很久没更新了，只是基于mdbook 0.4.17构建，所以会出现警告
+    - [mdbook-puml - crates.io: Rust Package Registry](https://crates.io/crates/mdbook-puml)
+
 ```admonish quote title='why create mdbook-puml'
 I created this preprocessor because mdbook-plantuml wasn't working for me—specifically, mdbook-plantuml is currently incompatible with mdbook watch and mbbook serve because it triggers a rebuild loop.
 

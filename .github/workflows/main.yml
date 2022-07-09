@@ -22,7 +22,7 @@ jobs:
       - name: Install mdbook
         run: |
           #mkdir bin
-          #curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.14/mdbook-v0.4.14-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
+          curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.19/mdbook-v0.4.19-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
           #mkdir .cargo
           #cp .cargo/*  /home/runner/.cargo/bin/
           echo "$(pwd)/bin" >> $GITHUB_PATH
@@ -64,6 +64,7 @@ jobs:
       #    git add .cargo
       #    git commit -am'add cargo crate'
       - run: |
+          cp /home/runner/.cargo/bin/* $(pwd)/bin
           mdbook build
 
       - uses: JamesIves/github-pages-deploy-action@4.1.7

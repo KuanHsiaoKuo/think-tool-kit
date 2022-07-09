@@ -1,6 +1,6 @@
 [book]
 authors = ["kuanhsiaokuo"]
-description = "保持批判，有所取舍，方得真我"
+description = "保持批判，有所取舍，方见真我"
 language = "cn"
 multilingual = false
 src = "src"
@@ -33,6 +33,7 @@ command = "mdbook-mermaid"
 #command = "mdbook-plantuml"
 
 [preprocessor.puml]
+command = "mdbook-puml"
 
 # Enables the `mdbook-checklist` preprocessor
 [preprocessor.checklist]
