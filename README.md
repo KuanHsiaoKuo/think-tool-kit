@@ -1,5 +1,5 @@
 # think-tool-kit
-> TTK: 保持批判，有所取舍，方见真我
+> TTK: 保持批判，有所取舍，知行合一, 方见真我
 
 <img src="https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/see_mountain.jpeg" alt="see_mountain"  />
 
