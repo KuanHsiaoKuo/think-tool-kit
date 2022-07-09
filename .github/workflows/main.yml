@@ -27,9 +27,9 @@ jobs:
       #          #cp .cargo/*  /home/runner/.cargo/bin/
       #          echo "$(pwd)/bin" >> $GITHUB_PATH
       # - run: mdbook build && mdbook test # In case of custom book path: mdbook build path/to/mybook && mdbook test path/to/mybook
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Auto update markdown TOC
+      #- uses: stefanzweifel/git-auto-commit-action@v4
+      #  with:
+      #    commit_message: Auto update markdown TOC
       #- name: cargo-install-mdbook-checklist
       #  uses: actions-rs/install@v0.1.2
       #  with:
@@ -62,9 +62,8 @@ jobs:
       #    cp /home/runner/.cargo/bin/* .cargo
       #    git add .cargo
       #    git commit -am'add cargo crate'
-      - run: |
-          echo "$(pwd)/bin" >> $GITHUB_PATH
-          mdbook build
+      - run: echo "$(pwd)/bin" >> $GITHUB_PATH
+      - run: mdbook build
 
       - uses: JamesIves/github-pages-deploy-action@4.1.7
         with:
