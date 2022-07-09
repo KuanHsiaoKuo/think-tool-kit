@@ -62,6 +62,8 @@ jobs:
       #    cp /home/runner/.cargo/bin/* .cargo
       #    git add .cargo
       #    git commit -am'add cargo crate'
+      - run: sudo apt-get update
+      - run: sudo apt-get -y install plantuml
       - run: echo "$(pwd)/bin" >> $GITHUB_PATH
       - run: mdbook build
 
