@@ -64,7 +64,7 @@ jobs:
       #    git commit -am'add cargo crate'
       - run: sudo apt-get update
       - run: sudo apt-get -y install graphviz
-      - run: sh scripts/install_plantuml.sh
+      - run: sudo sh scripts/install_plantuml.sh
       - run: echo "$(pwd)/bin" >> $GITHUB_PATH
       - run: mdbook build
 
