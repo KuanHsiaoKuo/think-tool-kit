@@ -210,7 +210,7 @@ endlegend
 ```plantuml
 @startmindmap
 skinparam monochrome reverse
-skinparam classFontName Helvetica
+skinparam classFontName ttf-wqy-zenhei
 *[#lightblue] Rust模块系统
 **[#FFBBCC] 两种视角
 *** 程序猿

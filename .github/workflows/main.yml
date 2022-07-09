@@ -63,6 +63,7 @@ jobs:
       #    git add .cargo
       #    git commit -am'add cargo crate'
       - run: sudo apt-get update
+      - run: sudo apt-get install ttf-wqy-zenhei
       - run: sudo apt-get -y install graphviz
       - run: sudo sh scripts/install_plantuml.sh
       - run: echo "$(pwd)/bin" >> $GITHUB_PATH
