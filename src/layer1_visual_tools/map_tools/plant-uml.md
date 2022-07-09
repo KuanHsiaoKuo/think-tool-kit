@@ -201,6 +201,8 @@ endlegend
 
 ```plantuml
 @startmindmap
+skinparam monochrome reverse
+skinparam classFontName Helvetica
 *[#lightblue] Rust模块系统
 **[#FFBBCC] 两种视角
 *** 程序猿
@@ -251,6 +253,100 @@ $ cargo help package
 @endmindmap
 ```
 
+## 使用**skinparam**进行样式设置
+
+### 颜色
+
+```plantuml
+@startuml
+colors
+@enduml
+```
+
+### 字体与大小
+
+```admonish tip title='查看系统支持的字体'
+plantuml -language
+```
+
+- skinparam classFontColor red
+- skinparam classFontSize 10
+- skinparam classFontName Aapex
+
+```admonish warning title='考虑可移植性'
+请注意：字体名称高度依赖于操作系统，因此不要过度使用它， 当你考虑到可移植性时。 Helvetica and Courier 应该是全平台可用。
+```
+
+### 文本对齐
+
+- skinparam sequenceMessageAlign center/right/left
+
+```plantuml
+@startuml
+skinparam sequenceMessageAlign center
+Alice -> Bob : Hi
+Alice -> Bob : This is very long
+@enduml
+```
+
+### 手写体
+
+```plantuml
+@startuml
+skinparam backgroundColor #EEEBDC
+skinparam handwritten true
+
+skinparam sequence {
+ArrowColor DeepSkyBlue
+ActorBorderColor DeepSkyBlue
+LifeLineBorderColor blue
+LifeLineBackgroundColor #A9DCDF
+
+ParticipantBorderColor DeepSkyBlue
+ParticipantBackgroundColor DodgerBlue
+ParticipantFontName Impact
+ParticipantFontSize 17
+ParticipantFontColor #A9DCDF
+
+ActorBackgroundColor aqua
+ActorFontColor DeepSkyBlue
+ActorFontSize 17
+ActorFontName Aapex
+}
+
+actor User
+participant "First Class" as A
+participant "Second Class" as B
+participant "Last Class" as C
+
+User -> A: DoWork
+activate A
+
+A -> B: Create Request
+activate B
+
+B -> C: DoWork
+activate C
+C --> B: WorkDone
+destroy C
+
+B --> A: Request Created
+deactivate B
+
+A --> User: Done
+deactivate A
+@enduml
+
+```
+
+### 下面罗列当前版本plantuml可用样式
+
+```plantuml
+@startuml
+help skinparams
+@enduml
+```
+
 ## 参考资源
 
 - [开源工具，使用简单的文字描述画UML图。](https://plantuml.com/zh/)
@@ -268,3 +364,84 @@ I created this preprocessor because mdbook-plantuml wasn't working for me—spec
 
 This crate is quite simple and non-customizable at this point as it does all that I need it to for my own purposes. Feel free to fork and/or PR away though, and I'll be happy to include changes.
 ```
+
+### 小插曲一：给mdbook-puml安装合适的plantuml
+
+1. plantuml是基于graphviz的一个工具， Graphviz 是一个开源的图可视化工具，非常适合绘制结构化的图标和网络。它使用一种叫 DOT 的语言来表示图形。
+
+> [官网](https://graphviz.gitlab.io/download/)可以看到，官方不再提供编译好的各个平台版本，现在都是第三方编译好保存的。这也难怪ubuntu的版本那么低。
+
+2. plantuml的uml图生成需要的graphviz版本较低
+3. plantuml新出的非uml图，比如思维导图，需要较新的plantuml才能支持
+
+4. osx的brew可以安装3.0版本graphviz，plantuml的版本也比较新，支持思维导图渲染
+
+- plantuml版本：1.2022.4, graphviz版本：3.0.0
+
+```shell
+brew install plantuml                                                                                                                            ─╯
+Warning: plantuml 1.2022.4 is already installed and up-to-date.
+To reinstall 1.2022.4, run:
+  brew reinstall plantuml
+
+brew install graphviz                                                                                                                            ─╯
+Warning: graphviz 3.0.0 is already installed and up-to-date.
+To reinstall 3.0.0, run:
+  brew reinstall graphviz
+
+```
+
+5. ubuntu的apt只能安装2.x版本graphviz，这个没关系，但是plantuml是2017年的，不支持思维导图渲染
+
+```
+成功：plantuml test_uml 
+失败： plantuml test_mindmap
+```
+
+> plantuml版本过老：1.2017.15-1
+
+```shell
+sudo apt-get install plantuml
+[work] 0:vim- 1:bash*Z                                                                                                 "ip-172-26-8-185" 13:22 09-Jul-22
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+plantuml is already the newest version (1:1.2017.15-1).
+The following package was automatically installed and is no longer required:
+  linux-aws-5.4-headers-5.4.0-1075
+Use 'sudo apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 123 not upgraded
+```
+
+> 目前apt-get安装的graphviz为2.40.1-2
+
+``` shell
+sudo apt-get install graphviz
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  linux-aws-5.4-headers-5.4.0-1075
+Use 'sudo apt autoremove' to remove it.
+Suggested packages:
+  gsfonts graphviz-doc
+The following NEW packages will be installed:
+  graphviz
+0 upgraded, 1 newly installed, 0 to remove and 123 not upgraded.
+Need to get 0 B/601 kB of archives.
+After this operation, 3076 kB of additional disk space will be used.
+Selecting previously unselected package graphviz.
+(Reading database ... 142532 files and directories currently installed.)
+Preparing to unpack .../graphviz_2.40.1-2_amd64.deb ...
+Unpacking graphviz (2.40.1-2) ...
+Setting up graphviz (2.40.1-2) ...
+Processing triggers for man-db (2.8.3-2) ...
+```
+
+6. 最后找到一个专门下载安装最新版本plantuml的脚本，才成功安装
+
+- [metanorma/plantuml-install: Installation script for PlantUML](https://github.com/metanorma/plantuml-install)
+
+> 我把这个脚本放在.github/workflows里面。
+
+### 小插曲二：plantuml中文字体设置
