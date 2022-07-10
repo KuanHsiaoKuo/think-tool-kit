@@ -1,28 +1,29 @@
 # PlantUML
 
 <!--ts-->
+
 * [PlantUML](#plantuml)
-   * [示例](#示例)
-      * [思维导图](#思维导图)
-         * [OrgMode 语法](#orgmode-语法)
-         * [Markdown语法](#markdown语法)
-         * [运算符决定方向](#运算符决定方向)
-         * [多行表示](#多行表示)
-         * [多根节点](#多根节点)
-         * [改变节点颜色](#改变节点颜色)
-         * [移除方框](#移除方框)
-         * [指定左右方向](#指定左右方向)
-         * [带标签的完整示例](#带标签的完整示例)
-         * [应用：rust的模块系统整理](#应用rust的模块系统整理)
-   * [使用<strong>skinparam</strong>进行样式设置](#使用skinparam进行样式设置)
-      * [颜色](#颜色)
-      * [字体与大小](#字体与大小)
-      * [文本对齐](#文本对齐)
-      * [手写体](#手写体)
-      * [下面罗列当前版本plantuml可用样式](#下面罗列当前版本plantuml可用样式)
-   * [参考资源](#参考资源)
-      * [小插曲一：给mdbook-puml安装合适的plantuml](#小插曲一给mdbook-puml安装合适的plantuml)
-      * [小插曲二：plantuml中文字体设置](#小插曲二plantuml中文字体设置)
+    * [示例](#示例)
+        * [思维导图](#思维导图)
+            * [OrgMode 语法](#orgmode-语法)
+            * [Markdown语法](#markdown语法)
+            * [运算符决定方向](#运算符决定方向)
+            * [多行表示](#多行表示)
+            * [多根节点](#多根节点)
+            * [改变节点颜色](#改变节点颜色)
+            * [移除方框](#移除方框)
+            * [指定左右方向](#指定左右方向)
+            * [带标签的完整示例](#带标签的完整示例)
+            * [应用：rust的模块系统整理](#应用rust的模块系统整理)
+    * [使用<strong>skinparam</strong>进行样式设置](#使用skinparam进行样式设置)
+        * [颜色](#颜色)
+        * [字体与大小](#字体与大小)
+        * [文本对齐](#文本对齐)
+        * [手写体](#手写体)
+        * [下面罗列当前版本plantuml可用样式](#下面罗列当前版本plantuml可用样式)
+    * [参考资源](#参考资源)
+        * [小插曲一：给mdbook-puml安装合适的plantuml](#小插曲一给mdbook-puml安装合适的plantuml)
+        * [小插曲二：plantuml中文字体设置](#小插曲二plantuml中文字体设置)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 <!-- Added by: kuanhsiaokuo, at: Sat Jul  9 22:11:42 CST 2022 -->
@@ -30,6 +31,22 @@
 <!--te-->
 
 ## 示例
+
+### 添加超链接、提示、标签
+
+![plantuml-hyperlink](https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/plantuml-hyperlink.png)
+
+#### 超链接
+
+```plantuml
+@startuml
+[[link{with_bracket}&id=10]]:Some activity\n(with link with brackets)\n""link{with_bracket}&id=10"";
+[["link{with_bracket}"{}]]:Some activity\n(with link with brackets and empy tooltip)\n"""link{with_bracket}"{}"";
+[["link{with_bracket}"{with tooltip}]]:Some activity\n(with link finished by brackets and tooltip)\n"""link{with_bracket}"{with tooltip}"";
+[["link{with_bracket}&id=10"{with tooltip}]]:Some activity\n(with link with brackets and tooltip)\n"""link{with_bracket}&id=10"{with tooltip}"";
+@enduml
+
+```
 
 ### 思维导图
 
@@ -358,6 +375,7 @@ help skinparams
 ## 参考资源
 
 - [开源工具，使用简单的文字描述画UML图。](https://plantuml.com/zh/)
+    - [Using Hyperlinks](https://plantuml.com/zh/link)
     - [MindMap syntax and features](https://plantuml.com/zh/mindmap-diagram)
 - 在线服务：[PlantUML Web Server](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000)
 - ~~本来选用这个crate, 但是安装太麻烦：~~
