@@ -1,30 +1,31 @@
 # PlantUML
 
 <!--ts-->
+
 * [PlantUML](#plantuml)
-   * [示例](#示例)
-      * [添加超链接、提示、标签](#添加超链接提示标签)
-         * [超链接](#超链接)
-      * [思维导图](#思维导图)
-         * [OrgMode 语法](#orgmode-语法)
-         * [Markdown语法](#markdown语法)
-         * [运算符决定方向](#运算符决定方向)
-         * [多行表示](#多行表示)
-         * [多根节点](#多根节点)
-         * [改变节点颜色](#改变节点颜色)
-         * [移除方框](#移除方框)
-         * [指定左右方向](#指定左右方向)
-         * [带标签的完整示例](#带标签的完整示例)
-         * [应用：rust的模块系统整理](#应用rust的模块系统整理)
-   * [使用<strong>skinparam</strong>进行样式设置](#使用skinparam进行样式设置)
-      * [颜色](#颜色)
-      * [字体与大小](#字体与大小)
-      * [文本对齐](#文本对齐)
-      * [手写体](#手写体)
-      * [下面罗列当前版本plantuml可用样式](#下面罗列当前版本plantuml可用样式)
-   * [参考资源](#参考资源)
-      * [小插曲一：给mdbook-puml安装合适的plantuml](#小插曲一给mdbook-puml安装合适的plantuml)
-      * [小插曲二：plantuml中文字体设置](#小插曲二plantuml中文字体设置)
+    * [示例](#示例)
+        * [添加超链接、提示、标签](#添加超链接提示标签)
+            * [超链接](#超链接)
+        * [思维导图](#思维导图)
+            * [OrgMode 语法](#orgmode-语法)
+            * [Markdown语法](#markdown语法)
+            * [运算符决定方向](#运算符决定方向)
+            * [多行表示](#多行表示)
+            * [多根节点](#多根节点)
+            * [改变节点颜色](#改变节点颜色)
+            * [移除方框](#移除方框)
+            * [指定左右方向](#指定左右方向)
+            * [带标签的完整示例](#带标签的完整示例)
+            * [应用：rust的模块系统整理](#应用rust的模块系统整理)
+    * [使用<strong>skinparam</strong>进行样式设置](#使用skinparam进行样式设置)
+        * [颜色](#颜色)
+        * [字体与大小](#字体与大小)
+        * [文本对齐](#文本对齐)
+        * [手写体](#手写体)
+        * [下面罗列当前版本plantuml可用样式](#下面罗列当前版本plantuml可用样式)
+    * [参考资源](#参考资源)
+        * [小插曲一：给mdbook-puml安装合适的plantuml](#小插曲一给mdbook-puml安装合适的plantuml)
+        * [小插曲二：plantuml中文字体设置](#小插曲二plantuml中文字体设置)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 <!-- Added by: kuanhsiaokuo, at: Mon Jul 11 14:31:51 CST 2022 -->
@@ -226,57 +227,7 @@ endlegend
 #### 应用：rust的模块系统整理
 
 ```plantuml
-@startmindmap
-skinparam monochrome reverse
-skinparam classFontName ttf-wqy-zenhei
-*[#lightblue] Rust模块系统
-**[#FFBBCC] 两种视角
-*** 程序猿
-**** 文件结构
-*** rustc：module tree
-****:可执行root
-<code>
-src/main.rs 
--> binary crate(默认与cargo.toml->[package].name同名)
-</code>;
-****:库root
-<code>
-src/lib.rs 
--> lib crate(默认与cargo.toml->[package].name同名)
-</code>;
-****:crate
-<code>编译的最小基本单位</code>;
-**[#FFBBCC] project的五个层级
-*** workspace
-*** package
-*** crates
-*** modules
-*** paths
-**[#FFBBCC] bin文件夹：可以直接使用src/lib.rs
-**[#lightgreen] crates.io保存的什么？
-*** 发布流程
-**** cargo login
-****[#lightgreen]:cargo package
-<code>
-$ cargo help package
-从帮助信息结合substrate源码实验🧪可知：
-1. 从当前目录开始执行路径开始，首先去父文件夹找Cargo.toml, 然后找当前目录的Cargo.toml，找不到就报错
-2. 找到的Cargo.toml如果有workspace配置，就按照workspace里面的subpackage顺序来依次打包
-3. 每次打包的标志为src/main.rs或者src/lib.rs, 且src同级存在Cargo.toml,Cargo.toml里面有[package]
-4. 开始打包为上传到crate.io的格式
-5. 依次打包
-6. 所有依赖必须是在crate.io可以找到的，找不到就报错
-7. 以包含Cargo.toml父文件夹为项目根目录，放在target/package里面
-</code>;
-**** cargo publish
-**** cargo yank
-**** cargo owner
-***[#lightgreen]:crate.io包含代码总结
-<code>
-1. 只包含最小crate内容，也就是src/main.rs或者src/lib.rs + Cargo.toml
-2. rust只能允许一级嵌套，使用workspace分出subpackage
-</code>;
-@endmindmap
+{{#include ../../../materials/plantuml/module_tree.mindmap:1:}}
 ```
 
 ## 使用**skinparam**进行样式设置
@@ -372,6 +323,12 @@ deactivate A
 help skinparams
 @enduml
 ```
+
+### 调整生成图片大小
+
+> scale 900 width/height
+
+- [Restricting the width of diagrams - PlantUML Q&A](https://forum.plantuml.net/6803/restricting-the-width-of-diagrams)
 
 ## 参考资源
 
@@ -471,4 +428,87 @@ Processing triggers for man-db (2.8.3-2) ...
 
 > 我把这个脚本放在.github/workflows里面。
 
-### 小插曲二：plantuml中文字体设置
+### IDEA自带付费plantuml语法插件：PlantUML Studio
+
+- [PlantUML Studio - IntelliJ IDEs Plugin | Marketplace](https://plugins.jetbrains.com/plugin/14821-plantuml-studio)
+
+1. 支持新建plantuml文件
+
+   ![image-20220711170958629](https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/image-20220711170958629.png)
+
+2. 除了默认的指定文件名后缀，还可以新建文件名指定用plantuml studio打开
+
+> 比如还没有mindmap类型，但是新版plantuml已经支持这个语法
+
+![image-20220711172727971](https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/image-20220711172727971.png)
+
+> 注意到，这里可以选择指定文件或者文件名后缀的打开方式
+
+> 进入方式：file -> Associate With File Type
+[File type associations | IntelliJ IDEA](https://www.jetbrains.com/help/idea/creating-and-registering-file-types.html#configure-associations-between-filename-patterns-and-file-types)
+
+3. 还可以用include语法嵌入：
+
+~~~admonish tip title='可以用include语法嵌入'
+```none
+{{#include ../../../materials/plantuml/module_tree.mindmap:1:}}
+```
+
+~~~
+
+### Draw.io可以用插入plantuml/mermaid
+
+- [Blog - Create a mindmap from text with PlantUML](https://www.diagrams.net/blog/plantuml-mindmaps-from-text)
+- 调整图形 -> 插入 -> 高级 -> Mermaid/PlantUML
+
+```admonish warning title='注意版本'
+1. [在线版](https://app.diagrams.net/?client=1)是v20，支持plantUML
+2. 桌面版是v19，还不支持plantUML: [Releases · jgraph/drawio-desktop](https://github.com/jgraph/drawio-desktop/releases)
+```
+
+```plantuml
+@startuml
+@startmindmap
+
+caption Tasks
+title Onboarding and offboarding tasks
+
++[#lightgreen] Onboarding
+++ Prior to first day
++++_ <&star>Contract signed
++++_ Employee handbook
++++_ IT equipment reserved
+++ First day
++++_ <&people>Office tour
++++_ <&people>Team intros
++++ Account setup
+++ First week
++++_ <&people>Shadow team members
++++_ Software training
+++ First month
++++_ Assign projects/tasks
++++_ Set goals
++++_ <&people>Get team feedback
+
++[#orange] Offboarding
+++ <&people>Feedback and review
+++[#999999] <s>Exit interview</s>
+++ Tasks/projects reassigned
++++_ <&people>Handover
+++ Account deactivation/deletion
+++ IT hardware return
+
+header
+Currently under review
+endheader
+
+legend right
+  <&star> priority
+  <&people> meetings
+endlegend
+
+center footer Last updated: May
+
+@endmindmap 
+@enduml
+```
