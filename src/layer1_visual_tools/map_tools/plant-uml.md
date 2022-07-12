@@ -1,32 +1,33 @@
 # PlantUML
 
 <!--ts-->
+
 * [PlantUML](#plantuml)
-   * [示例](#示例)
-      * [添加超链接、提示、标签](#添加超链接提示标签)
-         * [超链接](#超链接)
-      * [思维导图](#思维导图)
-         * [OrgMode 语法](#orgmode-语法)
-         * [Markdown语法](#markdown语法)
-         * [运算符决定方向](#运算符决定方向)
-         * [多行表示](#多行表示)
-         * [多根节点](#多根节点)
-         * [改变节点颜色](#改变节点颜色)
-         * [移除方框](#移除方框)
-         * [指定左右方向](#指定左右方向)
-         * [带标签的完整示例](#带标签的完整示例)
-         * [应用：rust的模块系统整理](#应用rust的模块系统整理)
-   * [使用<strong>skinparam</strong>进行样式设置](#使用skinparam进行样式设置)
-      * [颜色](#颜色)
-      * [字体与大小](#字体与大小)
-      * [文本对齐](#文本对齐)
-      * [手写体](#手写体)
-      * [下面罗列当前版本plantuml可用样式](#下面罗列当前版本plantuml可用样式)
-      * [调整生成图片大小](#调整生成图片大小)
-   * [参考资源](#参考资源)
-      * [小插曲一：给mdbook-puml安装合适的plantuml](#小插曲一给mdbook-puml安装合适的plantuml)
-      * [IDEA自带付费plantuml语法插件：PlantUML Studio](#idea自带付费plantuml语法插件plantuml-studio)
-      * [Draw.io可以用插入plantuml/mermaid](#drawio可以用插入plantumlmermaid)
+    * [示例](#示例)
+        * [添加超链接、提示、标签](#添加超链接提示标签)
+            * [超链接](#超链接)
+        * [思维导图](#思维导图)
+            * [OrgMode 语法](#orgmode-语法)
+            * [Markdown语法](#markdown语法)
+            * [运算符决定方向](#运算符决定方向)
+            * [多行表示](#多行表示)
+            * [多根节点](#多根节点)
+            * [改变节点颜色](#改变节点颜色)
+            * [移除方框](#移除方框)
+            * [指定左右方向](#指定左右方向)
+            * [带标签的完整示例](#带标签的完整示例)
+            * [应用：rust的模块系统整理](#应用rust的模块系统整理)
+    * [使用<strong>skinparam</strong>进行样式设置](#使用skinparam进行样式设置)
+        * [颜色](#颜色)
+        * [字体与大小](#字体与大小)
+        * [文本对齐](#文本对齐)
+        * [手写体](#手写体)
+        * [下面罗列当前版本plantuml可用样式](#下面罗列当前版本plantuml可用样式)
+        * [调整生成图片大小](#调整生成图片大小)
+    * [参考资源](#参考资源)
+        * [小插曲一：给mdbook-puml安装合适的plantuml](#小插曲一给mdbook-puml安装合适的plantuml)
+        * [IDEA自带付费plantuml语法插件：PlantUML Studio](#idea自带付费plantuml语法插件plantuml-studio)
+        * [Draw.io可以用插入plantuml/mermaid](#drawio可以用插入plantumlmermaid)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 <!-- Added by: kuanhsiaokuo, at: Mon Jul 11 18:48:03 CST 2022 -->
@@ -42,13 +43,7 @@
 #### 超链接
 
 ```plantuml
-@startuml
-[[link{with_bracket}&id=10]]:Some activity\n(with link with brackets)\n""link{with_bracket}&id=10"";
-[["link{with_bracket}"{}]]:Some activity\n(with link with brackets and empy tooltip)\n"""link{with_bracket}"{}"";
-[["link{with_bracket}"{with tooltip}]]:Some activity\n(with link finished by brackets and tooltip)\n"""link{with_bracket}"{with tooltip}"";
-[["link{with_bracket}&id=10"{with tooltip}]]:Some activity\n(with link with brackets and tooltip)\n"""link{with_bracket}&id=10"{with tooltip}"";
-@enduml
-
+{{#include ../../../materials/plantuml/plantuml_links.puml:1:}}
 ```
 
 ### 思维导图
@@ -56,173 +51,55 @@
 #### OrgMode 语法
 
 ```plantuml
-@startmindmap
-* Debian
-** Ubuntu
-*** Linux Mint
-*** Kubuntu
-*** Lubuntu
-*** KDE Neon
-** LMDE
-** SolydXK
-** SteamOS
-** Raspbian with a very long name
-*** <s>Raspmbc</s> => OSMC
-*** <s>Raspyfi</s> => Volumio
-@endmindmap
+{{#include ../../../materials/plantuml/orgmod.puml:1:}}
 ```
 
 #### Markdown语法
 
 ```plantuml
-@startmindmap
-* root node
-	* some first level node
-		* second level node
-		* another second level node
-	* another first level node
-@endmindmap
-
+{{#include ../../../materials/plantuml/markdown.puml:1:}}
 ```
 
 #### 运算符决定方向
 
 ```plantuml
-@startmindmap
-+ OS
-++ Ubuntu
-+++ Linux Mint
-+++ Kubuntu
-+++ Lubuntu
-+++ KDE Neon
-++ LMDE
-++ SolydXK
-++ SteamOS
-++ Raspbian
--- Windows 95
--- Windows 98
--- Windows NT
---- Windows 8
---- Windows 10
-@endmindmap
-
+{{#include ../../../materials/plantuml/direction.puml:1:}}
 ```
 
 #### 多行表示
 
 ```plantuml
-@startmindmap
-* Class Templates
-**:Example 1
-<code>
-template <typename T>
-class cname{
-void f1()<U+003B>
-...
-}
-</code>
-;
-**:Example 2
-<code>
-other template <typename T>
-class cname{
-...
-</code>
-;
-@endmindmap
-
+{{#include ../../../materials/plantuml/multiple-lines.puml:1:}}
 ```
 
 #### 多根节点
 
 ```plantuml
-@startmindmap
-* Root 1
-** Foo
-** Bar
-* Root 2
-** Lorem
-** Ipsum
-@endmindmap
-
+{{#include ../../../materials/plantuml/multiple-roots.puml:1:}}
 ```
 
 #### 改变节点颜色
 
 ```plantuml
-@startmindmap
-*[#Orange] Colors
-**[#lightgreen] Green
-**[#FFBBCC] Rose
-**[#lightblue] Blue
-@endmindmap
-
+{{#include ../../../materials/plantuml/node_colors.puml:1:}}
 ```
 
 #### 移除方框
 
 ```plantuml
-@startmindmap
-*[#Orange] Colors
-**[#lightgreen] Green
-**[#FFBBCC] Rose
-**[#lightblue] Blue
-@endmindmap
-
+{{#include ../../../materials/plantuml/no_frames.puml:1:}}
 ```
 
 #### 指定左右方向
 
 ```plantuml
-@startmindmap
-* count
-** 100
-*** 101
-*** 102
-** 200
-
-left side
-
-** A
-*** AA
-*** AB
-** B
-@endmindmap
-
+{{#include ../../../materials/plantuml/left_right_sides.puml:1:}}
 ```
 
 #### 带标签的完整示例
 
 ```plantuml
-@startmindmap
-caption figure 1
-title My super title
-
-* <&flag>Debian
-** <&globe>Ubuntu
-*** Linux Mint
-*** Kubuntu
-*** Lubuntu
-*** KDE Neon
-** <&graph>LMDE
-** <&pulse>SolydXK
-** <&people>SteamOS
-** <&star>Raspbian with a very long name
-*** <s>Raspmbc</s> => OSMC
-*** <s>Raspyfi</s> => Volumio
-
-header
-My super header
-endheader
-
-center footer My super footer
-
-legend right
-  Short
-  legend
-endlegend
-@endmindmap
-
+{{#include ../../../materials/plantuml/labels.puml:1:}}
 ```
 
 #### 应用：rust的模块系统整理
@@ -236,9 +113,7 @@ endlegend
 ### 颜色
 
 ```plantuml
-@startuml
-colors
-@enduml
+{{#include ../../../materials/plantuml/colors.puml:1:}}
 ```
 
 ### 字体与大小
