@@ -224,7 +224,7 @@
 <li><a href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%BA%90">参考资源</a>
 <ul>
 <li><a href="#%E5%B0%8F%E6%8F%92%E6%9B%B2%E4%B8%80%E7%BB%99mdbook-puml%E5%AE%89%E8%A3%85%E5%90%88%E9%80%82%E7%9A%84plantuml">小插曲一：给mdbook-puml安装合适的plantuml</a></li>
-<li><a href="#idea%E8%87%AA%E5%B8%A6%E4%BB%98%E8%B4%B9plantuml%E8%AF%AD%E6%B3%95%E6%8F%92%E4%BB%B6plantuml-studio">IDEA自带付费plantuml语法插件：PlantUML Studio</a></li>
+<li><a href="#idea%E8%87%AA%E5%B8%A6plantuml%E8%AF%AD%E6%B3%95%E6%8F%92%E4%BB%B6plantuml-integration">IDEA自带plantuml语法插件：PlantUML Integration</a></li>
 <li><a href="#drawio%E5%8F%AF%E4%BB%A5%E7%94%A8%E6%8F%92%E5%85%A5plantumlmermaid">Draw.io可以用插入plantuml/mermaid</a></li>
 </ul>
 </li>
@@ -232,7 +232,7 @@
 </li>
 </ul>
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Tue Jul 12 11:05:06 UTC 2022 -->
+<!-- Added by: runner, at: Tue Jul 12 11:15:36 UTC 2022 -->
 <!--te-->
 <h2 id="示例"><a class="header" href="#示例">示例</a></h2>
 <h3 id="添加超链接提示标签"><a class="header" href="#添加超链接提示标签">添加超链接、提示、标签</a></h3>
@@ -635,9 +635,10 @@ Processing triggers for man-db (2.8.3-2) ...
 <blockquote>
 <p>我把这个脚本放在.github/workflows里面。</p>
 </blockquote>
-<h3 id="idea自带付费plantuml语法插件plantuml-studio"><a class="header" href="#idea自带付费plantuml语法插件plantuml-studio">IDEA自带付费plantuml语法插件：PlantUML Studio</a></h3>
+<h3 id="idea自带plantuml语法插件plantuml-integration"><a class="header" href="#idea自带plantuml语法插件plantuml-integration">IDEA自带plantuml语法插件：PlantUML Integration</a></h3>
 <ul>
-<li><a href="https://plugins.jetbrains.com/plugin/14821-plantuml-studio">PlantUML Studio - IntelliJ IDEs Plugin | Marketplace</a></li>
+<li><a href="https://plugins.jetbrains.com/plugin/7017-plantuml-integration/">PlantUML Integration - IntelliJ IDEs Plugin | Marketplace</a></li>
+<li><a href="https://github.com/esteinberg/plantuml4idea">esteinberg/plantuml4idea: Intellij IDEA plugin for PlantUML</a></li>
 </ul>
 <ol>
 <li>
@@ -677,7 +678,7 @@ Processing triggers for man-db (2.8.3-2) ...
 <p><a class="admonition-anchor-link" href="#admonition-可以用include语法嵌入"></a></p>
 </div>
 <div>
-<pre><code class="language-none">@startmindmap
+<p>@startmindmap
 scale 900 width
 skinparam monochrome reverse
 skinparam classFontName ttf-wqy-zenhei
@@ -687,17 +688,17 @@ skinparam classFontName ttf-wqy-zenhei
 **** 文件结构
 *** rustc：module tree
 ****:可执行root
-&lt;code&gt;
-src/main.rs
+<code></p>
+<p>src/main.rs
 -&gt; binary crate(默认与cargo.toml-&gt;[package].name同名)
-&lt;/code&gt;;
+</code>;
 ****:库root
-&lt;code&gt;
-src/lib.rs
+<code></p>
+<p>src/lib.rs
 -&gt; lib crate(默认与cargo.toml-&gt;[package].name同名)
-&lt;/code&gt;;
+</code>;
 ****:crate
-&lt;code&gt;编译的最小基本单位&lt;/code&gt;;
+<code>编译的最小基本单位</code>;
 **[#FFBBCC] project的五个层级
 *** workspace
 *** package
@@ -709,31 +710,50 @@ src/lib.rs
 *** 发布流程
 **** cargo login
 ****[#lightgreen]:cargo package
-&lt;code&gt;
-$ cargo help package
-从帮助信息结合substrate源码实验🧪可知：
-1. 从当前目录开始执行路径开始，首先去父文件夹找Cargo.toml,
-然后找当前目录的Cargo.toml，找不到就报错
-2. 找到的Cargo.toml如果有workspace配置，
-就按照workspace里面的subpackage顺序来依次打包
-3. 每次打包的标志为src/main.rs或者src/lib.rs,
-且src同级存在Cargo.toml,Cargo.toml里面有[package]
-4. 开始打包为上传到crate.io的格式
-5. 依次打包
-6. 所有依赖必须是在crate.io可以找到的，找不到就报错
-7. 以包含Cargo.toml父文件夹为项目根目录，
+<code></p>
+<p>$ cargo help package
+从帮助信息结合substrate源码实验🧪可知：</p>
+<ol>
+<li>
+<p>从当前目录开始执行路径开始，首先去父文件夹找Cargo.toml,
+然后找当前目录的Cargo.toml，找不到就报错</p>
+</li>
+<li>
+<p>找到的Cargo.toml如果有workspace配置，
+就按照workspace里面的subpackage顺序来依次打包</p>
+</li>
+<li>
+<p>每次打包的标志为src/main.rs或者src/lib.rs,
+且src同级存在Cargo.toml,Cargo.toml里面有[package]</p>
+</li>
+<li>
+<p>开始打包为上传到crate.io的格式</p>
+</li>
+<li>
+<p>依次打包</p>
+</li>
+<li>
+<p>所有依赖必须是在crate.io可以找到的，找不到就报错</p>
+</li>
+<li>
+<p>以包含Cargo.toml父文件夹为项目根目录，
 放在target/package里面
-&lt;/code&gt;;
+</code>;
 **** cargo publish
 **** cargo yank
 **** cargo owner
 ***[#lightgreen]:crate.io包含代码总结
-&lt;code&gt;
-1. 只包含最小crate内容，也就是src/main.rs或者src/lib.rs + Cargo.toml
-2. rust只能允许一级嵌套，使用workspace分出subpackage
-&lt;/code&gt;;
-@endmindmap
-</code></pre>
+<code></p>
+</li>
+<li>
+<p>只包含最小crate内容，也就是src/main.rs或者src/lib.rs + Cargo.toml</p>
+</li>
+<li>
+<p>rust只能允许一级嵌套，使用workspace分出subpackage
+</code>;
+@endmindmap</p>
+</li>
+</ol>
 </div>
 </div>
 <h3 id="drawio可以用插入plantumlmermaid"><a class="header" href="#drawio可以用插入plantumlmermaid">Draw.io可以用插入plantuml/mermaid</a></h3>
