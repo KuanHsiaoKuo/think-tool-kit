@@ -42,6 +42,10 @@
 
 #### 超链接
 
+```none
+{{#include ../../../materials/plantuml/plantuml_links.puml:1:}}
+```
+
 ```plantuml
 {{#include ../../../materials/plantuml/plantuml_links.puml:1:}}
 ```
@@ -50,11 +54,19 @@
 
 #### OrgMode 语法
 
+```none
+{{#include ../../../materials/plantuml/orgmod.puml:1:}}
+```
+
 ```plantuml
 {{#include ../../../materials/plantuml/orgmod.puml:1:}}
 ```
 
 #### Markdown语法
+
+```none
+{{#include ../../../materials/plantuml/markdown.puml:1:}}
+```
 
 ```plantuml
 {{#include ../../../materials/plantuml/markdown.puml:1:}}
