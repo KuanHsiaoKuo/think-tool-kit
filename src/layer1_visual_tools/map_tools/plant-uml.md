@@ -113,7 +113,7 @@
 ### 颜色
 
 ```plantuml
-{{#include ../../../materials/plantuml/colors.puml:1:}}
+{{#include ../../../materials/plantuml/all_colors.puml:1:}}
 ```
 
 ### 字体与大小
@@ -322,6 +322,10 @@ Processing triggers for man-db (2.8.3-2) ...
 
 > 进入方式：file -> Associate With File Type
 [File type associations | IntelliJ IDEA](https://www.jetbrains.com/help/idea/creating-and-registering-file-types.html#configure-associations-between-filename-patterns-and-file-types)
+
+```admonish tip title='为plantuml指定默认文件类型'
+其实plantuml可以直接识别puml后缀
+```
 
 3. 还可以用include语法嵌入：
 
