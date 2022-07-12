@@ -360,9 +360,10 @@ Processing triggers for man-db (2.8.3-2) ...
 
 > 我把这个脚本放在.github/workflows里面。
 
-### IDEA自带付费plantuml语法插件：PlantUML Studio
+### IDEA自带plantuml语法插件：PlantUML Integration
 
-- [PlantUML Studio - IntelliJ IDEs Plugin | Marketplace](https://plugins.jetbrains.com/plugin/14821-plantuml-studio)
+- [PlantUML Integration - IntelliJ IDEs Plugin | Marketplace](https://plugins.jetbrains.com/plugin/7017-plantuml-integration/)
+- [esteinberg/plantuml4idea: Intellij IDEA plugin for PlantUML](https://github.com/esteinberg/plantuml4idea)
 
 1. 支持新建plantuml文件
 
@@ -386,9 +387,7 @@ Processing triggers for man-db (2.8.3-2) ...
 3. 还可以用include语法嵌入：
 
 ~~~admonish tip title='可以用include语法嵌入'
-```none
 {{#include ../../../materials/plantuml/module_tree.mindmap:1:}}
-```
 
 ~~~
 
