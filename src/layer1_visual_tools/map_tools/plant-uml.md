@@ -1,36 +1,35 @@
 # PlantUML
 
 <!--ts-->
-
 * [PlantUML](#plantuml)
-    * [示例](#示例)
-        * [添加超链接、提示、标签](#添加超链接提示标签)
-            * [超链接](#超链接)
-        * [思维导图](#思维导图)
-            * [OrgMode 语法](#orgmode-语法)
-            * [Markdown语法](#markdown语法)
-            * [运算符决定方向](#运算符决定方向)
-            * [多行表示](#多行表示)
-            * [多根节点](#多根节点)
-            * [改变节点颜色](#改变节点颜色)
-            * [移除方框](#移除方框)
-            * [指定左右方向](#指定左右方向)
-            * [带标签的完整示例](#带标签的完整示例)
-            * [应用：rust的模块系统整理](#应用rust的模块系统整理)
-    * [使用<strong>skinparam</strong>进行样式设置](#使用skinparam进行样式设置)
-        * [颜色](#颜色)
-        * [字体与大小](#字体与大小)
-        * [文本对齐](#文本对齐)
-        * [手写体](#手写体)
-        * [下面罗列当前版本plantuml可用样式](#下面罗列当前版本plantuml可用样式)
-        * [调整生成图片大小](#调整生成图片大小)
-    * [参考资源](#参考资源)
-        * [小插曲一：给mdbook-puml安装合适的plantuml](#小插曲一给mdbook-puml安装合适的plantuml)
-        * [IDEA自带付费plantuml语法插件：PlantUML Studio](#idea自带付费plantuml语法插件plantuml-studio)
-        * [Draw.io可以用插入plantuml/mermaid](#drawio可以用插入plantumlmermaid)
+   * [示例](#示例)
+      * [添加超链接、提示、标签](#添加超链接提示标签)
+         * [超链接](#超链接)
+      * [思维导图](#思维导图)
+         * [OrgMode 语法](#orgmode-语法)
+         * [Markdown语法](#markdown语法)
+         * [运算符决定方向](#运算符决定方向)
+         * [多行表示](#多行表示)
+         * [多根节点](#多根节点)
+         * [改变节点颜色](#改变节点颜色)
+         * [移除方框](#移除方框)
+         * [指定左右方向](#指定左右方向)
+         * [带标签的完整示例](#带标签的完整示例)
+         * [应用：rust的模块系统整理](#应用rust的模块系统整理)
+   * [使用<strong>skinparam</strong>进行样式设置](#使用skinparam进行样式设置)
+      * [颜色](#颜色)
+      * [字体与大小](#字体与大小)
+      * [文本对齐](#文本对齐)
+      * [手写体](#手写体)
+      * [下面罗列当前版本plantuml可用样式](#下面罗列当前版本plantuml可用样式)
+      * [调整生成图片大小](#调整生成图片大小)
+   * [参考资源](#参考资源)
+      * [小插曲一：给mdbook-puml安装合适的plantuml](#小插曲一给mdbook-puml安装合适的plantuml)
+      * [IDEA自带付费plantuml语法插件：PlantUML Studio](#idea自带付费plantuml语法插件plantuml-studio)
+      * [Draw.io可以用插入plantuml/mermaid](#drawio可以用插入plantumlmermaid)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Tue Jul 12 08:14:19 UTC 2022 -->
+<!-- Added by: runner, at: Tue Jul 12 11:05:06 UTC 2022 -->
 
 <!--te-->
 
