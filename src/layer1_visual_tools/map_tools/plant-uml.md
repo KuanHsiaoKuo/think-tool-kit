@@ -25,11 +25,11 @@
       * [调整生成图片大小](#调整生成图片大小)
    * [参考资源](#参考资源)
       * [小插曲一：给mdbook-puml安装合适的plantuml](#小插曲一给mdbook-puml安装合适的plantuml)
-      * [IDEA自带付费plantuml语法插件：PlantUML Studio](#idea自带付费plantuml语法插件plantuml-studio)
+      * [IDEA自带plantuml语法插件：PlantUML Integration](#idea自带plantuml语法插件plantuml-integration)
       * [Draw.io可以用插入plantuml/mermaid](#drawio可以用插入plantumlmermaid)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Tue Jul 12 11:05:06 UTC 2022 -->
+<!-- Added by: runner, at: Tue Jul 12 11:15:36 UTC 2022 -->
 
 <!--te-->
 
