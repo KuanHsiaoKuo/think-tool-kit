@@ -1,0 +1,2988 @@
+<!DOCTYPE HTML>
+<html lang="cn" class="sidebar-visible no-js rust">
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>kroki合集 - Think Tool Kit 🧰</title>
+
+
+    <!-- Custom HTML head -->
+    
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="保持批判，有所取舍，方见真我">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff"/>
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+    <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" href="../../highlight.css">
+    <link rel="stylesheet" href="../../tomorrow-night.css">
+    <link rel="stylesheet" href="../../ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../assets/pagetoc/pagetoc_style.css">
+        <link rel="stylesheet" href="../../assets/css/mdbook-admonish.css">
+
+        <!-- MathJax -->
+        <script async type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<!-- Provide site root to javascript -->
+<script type="text/javascript">
+    var path_to_root = "../../";
+    var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+</script>
+<!--引入mermaid-->
+<!--<script type="text/javascript" src="../../mermaid.min.js">-->
+<!--</script>-->
+<!--<script type="text/javascript" src="../../mermaid-init.js">-->
+<!--</script>-->
+<!-- Work around some values being stored in localStorage wrapped in quotes -->
+<script type="text/javascript">
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+
+        if (theme.startsWith('"') && theme.endsWith('"')) {
+            localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+        }
+
+        if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+            localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+        }
+    } catch (e) {
+    }
+</script>
+
+<!-- Set the theme before any content is loaded, prevents flash -->
+<script type="text/javascript">
+    var theme;
+    try {
+        theme = localStorage.getItem('mdbook-theme');
+    } catch (e) {
+    }
+    if (theme === null || theme === undefined) {
+        theme = default_theme;
+    }
+    var html = document.querySelector('html');
+    html.classList.remove('no-js')
+    html.classList.remove('rust')
+    html.classList.add(theme);
+    html.classList.add('js');
+</script>
+
+<!-- Hide / unhide sidebar before it is displayed -->
+<script type="text/javascript">
+    var html = document.querySelector('html');
+    var sidebar = 'hidden';
+    if (document.body.clientWidth >= 1080) {
+        try {
+            sidebar = localStorage.getItem('mdbook-sidebar');
+        } catch (e) {
+        }
+        sidebar = sidebar || 'visible';
+    }
+    html.classList.remove('sidebar-visible');
+    html.classList.add("sidebar-" + sidebar);
+</script>
+
+<nav id="sidebar" class="sidebar" aria-label="Table of contents">
+    <div class="sidebar-scrollbox">
+        <ol class="chapter"><li class="chapter-item expanded "><a href="../../../index.html"><strong aria-hidden="true">1.</strong> 总览</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../layer1_visual_tools/visual_tools.html"><strong aria-hidden="true">1.1.</strong> Layer1: 可视化工具</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../layer1_visual_tools/map_tools/map-tools.html"><strong aria-hidden="true">1.1.1.</strong> 1. 二维展开</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../layer1_visual_tools/map_tools/kroki_collection.html" class="active"><strong aria-hidden="true">1.1.1.1.</strong> kroki合集</a></li><li class="chapter-item expanded "><a href="../../layer1_visual_tools/map_tools/mermaid.html"><strong aria-hidden="true">1.1.1.2.</strong> mermaid</a></li><li class="chapter-item expanded "><a href="../../layer1_visual_tools/map_tools/plant-uml.html"><strong aria-hidden="true">1.1.1.3.</strong> plant-uml</a></li></ol></li><li class="chapter-item expanded "><a href="../../layer1_visual_tools/Drafts/drafts.html"><strong aria-hidden="true">1.1.2.</strong> 2. Drafts</a></li><li class="chapter-item expanded "><a href="../../layer1_visual_tools/Notes/notes.html"><strong aria-hidden="true">1.1.3.</strong> 3. Notes</a></li></ol></li><li class="chapter-item expanded "><a href="../../layer2_thinking_concepts/thinking_concepts.html"><strong aria-hidden="true">1.2.</strong> Layer2: 思维理念</a></li><li class="chapter-item expanded "><a href="../../layer3_thinking_models/thinking_models.html"><strong aria-hidden="true">1.3.</strong> Layer3: 思维模型</a></li><li class="chapter-item expanded "><a href="../../layer4_thinking_system/thinking_system.html"><strong aria-hidden="true">1.4.</strong> Layer4: 思维体系</a></li><li class="chapter-item expanded "><a href="../../Resources/resources.html"><strong aria-hidden="true">1.5.</strong> 相关资源</a></li></ol></li><li class="chapter-item expanded "><a href="../../checklist.html">Checklist</a></li></ol>
+    </div>
+    <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+</nav>
+
+<div id="page-wrapper" class="page-wrapper">
+
+    <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+        <div id="menu-bar" class="menu-bar sticky bordered">
+            <div class="left-buttons">
+                <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents"
+                        aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <button id="theme-toggle" class="icon-button" type="button" title="Change theme"
+                        aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                    <i class="fa fa-paint-brush"></i>
+                </button>
+                <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                    <li role="none">
+                        <button role="menuitem" class="theme" id="light">Light</button>
+                    </li>
+                    <li role="none">
+                        <button role="menuitem" class="theme" id="rust">Rust (default)</button>
+                    </li>
+                    <li role="none">
+                        <button role="menuitem" class="theme" id="coal">Coal</button>
+                    </li>
+                    <li role="none">
+                        <button role="menuitem" class="theme" id="navy">Navy</button>
+                    </li>
+                    <li role="none">
+                        <button role="menuitem" class="theme" id="ayu">Ayu</button>
+                    </li>
+                </ul>
+                    <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)"
+                            aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S"
+                            aria-controls="searchbar">
+                        <i class="fa fa-search"></i>
+                    </button>
+            </div>
+
+            <h1 class="menu-title">Think Tool Kit 🧰</h1>
+            <h4 class="menu-bar"> 保持批判，有所取舍，知行合一, 方见真我 -- 练武不练功 到头一场空 -- 《赛博英雄传》 </h4>
+            <div class="right-buttons">
+                    <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                        <i id="print-button" class="fa fa-print"></i>
+                    </a>
+                    <a href="git@github.com:KuanHsiaoKuo/Python-Cooker.git" title="Git repository" aria-label="Git repository">
+                        <i id="git-repository-button" class="fa fa-rust"></i>
+                    </a>
+            </div>
+        </div>
+
+            <div id="search-wrapper" class="hidden">
+                <form id="searchbar-outer" class="searchbar-outer">
+                    <input type="search" name="search" id="searchbar" name="searchbar"
+                           placeholder="Search this book ..." aria-controls="searchresults-outer"
+                           aria-describedby="searchresults-header">
+                </form>
+                <div id="searchresults-outer" class="searchresults-outer hidden">
+                    <div id="searchresults-header" class="searchresults-header"></div>
+                    <ul id="searchresults">
+                    </ul>
+                </div>
+            </div>
+
+        <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+        <script type="text/javascript">
+            document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+            document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+            Array.from(document.querySelectorAll('#sidebar a')).forEach(function (link) {
+                link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+            });
+        </script>
+
+        <div id="content" class="content">
+            <main>
+
+                <!-- Page table of contents -->
+                <div class="sidetoc">
+                    <nav class="pagetoc"></nav>
+                </div>
+                <h1 id="kroki合集"><a class="header" href="#kroki合集">kroki合集</a></h1>
+<!--ts-->
+<ul>
+<li><a href="#kroki%E5%90%88%E9%9B%86">kroki合集</a></li>
+<li><a href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%BA%90">参考资源</a>
+<ul>
+<li><a href="#kroki"><a href="https://kroki.io/#examples" rel="nofollow">Kroki!</a>
+</a></li>
+<li><a href="#kroki-examples"><a href="https://kroki.io/examples.html" rel="nofollow">Kroki! Examples</a>
+</a></li>
+<li><a href="#intellipikchr-idea%E5%86%85%E7%BD%AE%E6%8F%92%E4%BB%B6">IntelliPikchr: IDEA内置插件</a></li>
+<li><a href="#mdbook-kroki-preprocessor-%E6%94%AF%E6%8C%81kroki%E6%B8%B2%E6%9F%93">mdbook-kroki-preprocessor: 支持kroki渲染</a></li>
+<li><a href="#kori%E6%94%AF%E6%8C%81%E8%8C%83%E5%9B%B4">kori支持范围</a>
+<ul>
+<li><a href="#block-diagram">Block Diagram</a></li>
+<li><a href="#sequence-diagram">Sequence diagram</a></li>
+<li><a href="#activity-diagram">Activity diagram</a></li>
+<li><a href="#network-diagram">Network diagram</a></li>
+<li><a href="#packet-diagram">Packet diagram</a></li>
+<li><a href="#rack-diagram">Rack diagram</a></li>
+<li><a href="#object-oriented-graph">Object Oriented Graph</a></li>
+<li><a href="#pikchr">pikchr:</a>
+<ul>
+<li><a href="#commit-graph">Commit Graph</a></li>
+<li><a href="#syntax-diagram">Syntax diagram</a></li>
+<li><a href="#impossible-trident">Impossible trident</a></li>
+</ul>
+</li>
+<li><a href="#entity-relationship-diagram">Entity Relationship Diagram</a></li>
+<li><a href="#excalidraw-hand-draw-like-diagrams">Excalidraw: hand-draw like diagrams</a></li>
+<li><a href="#vege-word-cloud">vege: word cloud</a></li>
+<li><a href="#diverging-stacked-bar-chart">Diverging Stacked Bar Chart</a></li>
+<li><a href="#ditaa-conjugate-prior-relationships">Ditaa: Conjugate prior relationships</a></li>
+<li><a href="#mermaid">Mermaid</a>
+<ul>
+<li><a href="#sequence-diagram-1">Sequence diagram</a></li>
+<li><a href="#gantt">Gantt</a></li>
+</ul>
+</li>
+<li><a href="#nomnoml-uml-diagram">Nomnoml: UML diagram</a></li>
+<li><a href="#plantuml">Plantuml</a>
+<ul>
+<li><a href="#use-case-diagram">use case diagram</a></li>
+<li><a href="#work-breakdown-structure">work breakdown structure</a></li>
+<li><a href="#mind-map">Mind Map</a></li>
+<li><a href="#component-diagram">Component diagram</a></li>
+</ul>
+</li>
+<li><a href="#context-diagram">Context diagram</a>
+<ul>
+<li><a href="#container-diagram">Container diagram</a></li>
+</ul>
+</li>
+<li><a href="#bpmn">BPMN</a></li>
+<li><a href="#bytefield">Bytefield</a></li>
+<li><a href="#wavedrom-digital-timing-diagram">WaveDrom: Digital Timing diagram</a></li>
+<li><a href="#svgbob">Svgbob</a>
+<ul>
+<li><a href="#connected-servers">connected Servers</a></li>
+<li><a href="#ascii-art">Ascii Art</a></li>
+</ul>
+</li>
+<li><a href="#structurizr">Structurizr</a>
+<ul>
+<li><a href="#contaner-diagram">Contaner diagram</a></li>
+</ul>
+</li>
+<li><a href="#umlet">UMlet</a>
+<ul>
+<li><a href="#state-machine">State machine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: runner, at: Fri Jul 15 10:16:47 UTC 2022 -->
+<!--te-->
+<p><img src="https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/image-20220715114804075.png" alt="image-20220715114804075" /></p>
+<h1 id="参考资源"><a class="header" href="#参考资源">参考资源</a></h1>
+<h2 id="kroki"><a class="header" href="#kroki"><a href="https://kroki.io/#examples">Kroki!</a></a></h2>
+<h2 id="kroki-examples"><a class="header" href="#kroki-examples"><a href="https://kroki.io/examples.html">Kroki! Examples</a></a></h2>
+<h2 id="intellipikchr-idea内置插件"><a class="header" href="#intellipikchr-idea内置插件">IntelliPikchr: IDEA内置插件</a></h2>
+<ul>
+<li><a href="https://plugins.jetbrains.com/plugin/17624-intellipikchr">IntelliPikchr - IntelliJ IDEs Plugin | Marketplace</a></li>
+</ul>
+<blockquote>
+<p>Split editor with preview pane for <strong>.pikchr</strong> files, using kroki.io or self-hosted server for rendering</p>
+</blockquote>
+<h2 id="mdbook-kroki-preprocessor-支持kroki渲染"><a class="header" href="#mdbook-kroki-preprocessor-支持kroki渲染">mdbook-kroki-preprocessor: 支持kroki渲染</a></h2>
+<blockquote>
+<p>kroki可以看作多种图表语言的统一接口</p>
+</blockquote>
+<ul>
+<li><a href="https://crates.io/crates/mdbook-kroki-preprocessor">mdbook-kroki-preprocessor - crates.io: Rust Package Registry</a></li>
+</ul>
+<div id="admonition-md语法" class="admonition info">
+<div class="admonition-title">
+<p>md语法</p>
+<p><a class="admonition-anchor-link" href="#admonition-md语法"></a></p>
+</div>
+<div>
+<p>The code block's language has to be kroki-<diagram type>.</p>
+<ul>
+<li>kroki-mermaid</li>
+<li>kroki-plantuml</li>
+</ul>
+</div>
+</div>
+<pre><code class="language-shell">cargo install mdbook-kroki-preprocessor
+</code></pre>
+<h2 id="kori支持范围"><a class="header" href="#kori支持范围">kori支持范围</a></h2>
+<h3 id="block-diagram"><a class="header" href="#block-diagram">Block Diagram</a></h3>
+<blockquote>
+<p>kroki-blockdiag</p>
+</blockquote>
+<pre><code class="language-kroki-blockdiag">blockdiag {
+  blockdiag -&gt; generates -&gt; &quot;block-diagrams&quot;;
+  blockdiag -&gt; is -&gt; &quot;very easy!&quot;;
+
+  blockdiag [color = &quot;greenyellow&quot;];
+  &quot;block-diagrams&quot; [color = &quot;pink&quot;];
+  &quot;very easy!&quot; [color = &quot;orange&quot;];
+}
+</code></pre>
+<h3 id="sequence-diagram"><a class="header" href="#sequence-diagram">Sequence diagram</a></h3>
+<blockquote>
+<p>kroki-seqdiag</p>
+</blockquote>
+<pre><code class="language-kroki-seqdiag">seqdiag {
+  browser  -&gt; webserver [label = &quot;GET /index.html&quot;];
+  browser &lt;-- webserver;
+  browser  -&gt; webserver [label = &quot;POST /blog/comment&quot;];
+  webserver  -&gt; database [label = &quot;INSERT comment&quot;];
+  webserver &lt;-- database;
+  browser &lt;-- webserver;
+}
+</code></pre>
+<h3 id="activity-diagram"><a class="header" href="#activity-diagram">Activity diagram</a></h3>
+<blockquote>
+<p>kroki-actdiag</p>
+</blockquote>
+<pre><code class="language-kroki-actdiag">actdiag {
+  write -&gt; convert -&gt; image
+
+  lane user {
+    label = &quot;User&quot;
+    write [label = &quot;Writing reST&quot;];
+    image [label = &quot;Get diagram IMAGE&quot;];
+  }
+  lane actdiag {
+    convert [label = &quot;Convert reST to Image&quot;];
+  }
+}
+</code></pre>
+<h3 id="network-diagram"><a class="header" href="#network-diagram">Network diagram</a></h3>
+<blockquote>
+<p>kroki-nwdiag</p>
+</blockquote>
+<pre><code class="language-kroki-nwdiag">nwdiag {
+  network dmz {
+    address = &quot;210.x.x.x/24&quot;
+
+    web01 [address = &quot;210.x.x.1&quot;];
+    web02 [address = &quot;210.x.x.2&quot;];
+  }
+  network internal {
+    address = &quot;172.x.x.x/24&quot;;
+
+    web01 [address = &quot;172.x.x.1&quot;];
+    web02 [address = &quot;172.x.x.2&quot;];
+    db01;
+    db02;
+  }
+}
+</code></pre>
+<h3 id="packet-diagram"><a class="header" href="#packet-diagram">Packet diagram</a></h3>
+<blockquote>
+<p>kroki-packetdiag</p>
+</blockquote>
+<pre><code class="language-kroki-packetdiag">packetdiag {
+  colwidth = 32;
+  node_height = 72;
+
+  0-15: Source Port;
+  16-31: Destination Port;
+  32-63: Sequence Number;
+  64-95: Acknowledgment Number;
+  96-99: Data Offset;
+  100-105: Reserved;
+  106: URG [rotate = 270];
+  107: ACK [rotate = 270];
+  108: PSH [rotate = 270];
+  109: RST [rotate = 270];
+  110: SYN [rotate = 270];
+  111: FIN [rotate = 270];
+  112-127: Window;
+  128-143: Checksum;
+  144-159: Urgent Pointer;
+  160-191: (Options and Padding);
+  192-223: data [colheight = 3];
+}
+</code></pre>
+<h3 id="rack-diagram"><a class="header" href="#rack-diagram">Rack diagram</a></h3>
+<blockquote>
+<p>kroki-rackdiag</p>
+</blockquote>
+<pre><code class="language-kroki-rackdiag">rackdiag {
+  16U;
+  1: UPS [2U];
+  3: DB Server;
+  4: Web Server;
+  5: Web Server;
+  6: Web Server;
+  7: Load Balancer;
+  8: L3 Switch;
+}
+</code></pre>
+<h3 id="object-oriented-graph"><a class="header" href="#object-oriented-graph">Object Oriented Graph</a></h3>
+<blockquote>
+<p>kroki-graphviz</p>
+</blockquote>
+<pre><code class="language-kroki-graphviz">digraph &quot;unix&quot; {
+  graph [ fontname = &quot;Helvetica-Oblique&quot;,
+          fontsize = 36,
+          label = &quot;\n\n\n\nObject Oriented Graphs\nStephen North, 3/19/93&quot;,
+          size = &quot;6,6&quot; ];
+  node [ shape = polygon,
+         sides = 4,
+         distortion = &quot;0.0&quot;,
+         orientation = &quot;0.0&quot;,
+         skew = &quot;0.0&quot;,
+         color = white,
+         style = filled,
+         fontname = &quot;Helvetica-Outline&quot; ];
+  &quot;5th Edition&quot; [sides=9, distortion=&quot;0.936354&quot;, orientation=28, skew=&quot;-0.126818&quot;, color=salmon2];
+  &quot;6th Edition&quot; [sides=5, distortion=&quot;0.238792&quot;, orientation=11, skew=&quot;0.995935&quot;, color=deepskyblue];
+  &quot;PWB 1.0&quot; [sides=8, distortion=&quot;0.019636&quot;, orientation=79, skew=&quot;-0.440424&quot;, color=goldenrod2];
+  LSX [sides=9, distortion=&quot;-0.698271&quot;, orientation=22, skew=&quot;-0.195492&quot;, color=burlywood2];
+  &quot;1 BSD&quot; [sides=7, distortion=&quot;0.265084&quot;, orientation=26, skew=&quot;0.403659&quot;, color=gold1];
+  &quot;Mini Unix&quot; [distortion=&quot;0.039386&quot;, orientation=2, skew=&quot;-0.461120&quot;, color=greenyellow];
+  Wollongong [sides=5, distortion=&quot;0.228564&quot;, orientation=63, skew=&quot;-0.062846&quot;, color=darkseagreen];
+  Interdata [distortion=&quot;0.624013&quot;, orientation=56, skew=&quot;0.101396&quot;, color=dodgerblue1];
+  &quot;Unix/TS 3.0&quot; [sides=8, distortion=&quot;0.731383&quot;, orientation=43, skew=&quot;-0.824612&quot;, color=thistle2];
+  &quot;PWB 2.0&quot; [sides=6, distortion=&quot;0.592100&quot;, orientation=34, skew=&quot;-0.719269&quot;, color=darkolivegreen3];
+  &quot;7th Edition&quot; [sides=10, distortion=&quot;0.298417&quot;, orientation=65, skew=&quot;0.310367&quot;, color=chocolate];
+  &quot;8th Edition&quot; [distortion=&quot;-0.997093&quot;, orientation=50, skew=&quot;-0.061117&quot;, color=turquoise3];
+  &quot;32V&quot; [sides=7, distortion=&quot;0.878516&quot;, orientation=19, skew=&quot;0.592905&quot;, color=steelblue3];
+  V7M [sides=10, distortion=&quot;-0.960249&quot;, orientation=32, skew=&quot;0.460424&quot;, color=navy];
+  &quot;Ultrix-11&quot; [sides=10, distortion=&quot;-0.633186&quot;, orientation=10, skew=&quot;0.333125&quot;, color=darkseagreen4];
+  Xenix [sides=8, distortion=&quot;-0.337997&quot;, orientation=52, skew=&quot;-0.760726&quot;, color=coral];
+  &quot;UniPlus+&quot; [sides=7, distortion=&quot;0.788483&quot;, orientation=39, skew=&quot;-0.526284&quot;, color=darkolivegreen3];
+  &quot;9th Edition&quot; [sides=7, distortion=&quot;0.138690&quot;, orientation=55, skew=&quot;0.554049&quot;, color=coral3];
+  &quot;2 BSD&quot; [sides=7, distortion=&quot;-0.010661&quot;, orientation=84, skew=&quot;0.179249&quot;, color=blanchedalmond];
+  &quot;2.8 BSD&quot; [distortion=&quot;-0.239422&quot;, orientation=44, skew=&quot;0.053841&quot;, color=lightskyblue1];
+  &quot;2.9 BSD&quot; [distortion=&quot;-0.843381&quot;, orientation=70, skew=&quot;-0.601395&quot;, color=aquamarine2];
+  &quot;3 BSD&quot; [sides=10, distortion=&quot;0.251820&quot;, orientation=18, skew=&quot;-0.530618&quot;, color=lemonchiffon];
+  &quot;4 BSD&quot; [sides=5, distortion=&quot;-0.772300&quot;, orientation=24, skew=&quot;-0.028475&quot;, color=darkorange1];
+  &quot;4.1 BSD&quot; [distortion=&quot;-0.226170&quot;, orientation=38, skew=&quot;0.504053&quot;, color=lightyellow1];
+  &quot;4.2 BSD&quot; [sides=10, distortion=&quot;-0.807349&quot;, orientation=50, skew=&quot;-0.908842&quot;, color=darkorchid4];
+  &quot;4.3 BSD&quot; [sides=10, distortion=&quot;-0.030619&quot;, orientation=76, skew=&quot;0.985021&quot;, color=lemonchiffon2];
+  &quot;Ultrix-32&quot; [distortion=&quot;-0.644209&quot;, orientation=21, skew=&quot;0.307836&quot;, color=goldenrod3];
+  &quot;PWB 1.2&quot; [sides=7, distortion=&quot;0.640971&quot;, orientation=84, skew=&quot;-0.768455&quot;, color=cyan];
+  &quot;USG 1.0&quot; [distortion=&quot;0.758942&quot;, orientation=42, skew=&quot;0.039886&quot;, color=blue];
+  &quot;CB Unix 1&quot; [sides=9, distortion=&quot;-0.348692&quot;, orientation=42, skew=&quot;0.767058&quot;, color=firebrick];
+  &quot;USG 2.0&quot; [distortion=&quot;0.748625&quot;, orientation=74, skew=&quot;-0.647656&quot;, color=chartreuse4];
+  &quot;CB Unix 2&quot; [sides=10, distortion=&quot;0.851818&quot;, orientation=32, skew=&quot;-0.020120&quot;, color=greenyellow];
+  &quot;CB Unix 3&quot; [sides=10, distortion=&quot;0.992237&quot;, orientation=29, skew=&quot;0.256102&quot;, color=bisque4];
+  &quot;Unix/TS++&quot; [sides=6, distortion=&quot;0.545461&quot;, orientation=16, skew=&quot;0.313589&quot;, color=mistyrose2];
+  &quot;PDP-11 Sys V&quot; [sides=9, distortion=&quot;-0.267769&quot;, orientation=40, skew=&quot;0.271226&quot;, color=cadetblue1];
+  &quot;USG 3.0&quot; [distortion=&quot;-0.848455&quot;, orientation=44, skew=&quot;0.267152&quot;, color=bisque2];
+  &quot;Unix/TS 1.0&quot; [distortion=&quot;0.305594&quot;, orientation=75, skew=&quot;0.070516&quot;, color=orangered];
+  &quot;TS 4.0&quot; [sides=10, distortion=&quot;-0.641701&quot;, orientation=50, skew=&quot;-0.952502&quot;, color=crimson];
+  &quot;System V.0&quot; [sides=9, distortion=&quot;0.021556&quot;, orientation=26, skew=&quot;-0.729938&quot;, color=darkorange1];
+  &quot;System V.2&quot; [sides=6, distortion=&quot;0.985153&quot;, orientation=33, skew=&quot;-0.399752&quot;, color=darkolivegreen4];
+  &quot;System V.3&quot; [sides=7, distortion=&quot;-0.687574&quot;, orientation=58, skew=&quot;-0.180116&quot;, color=lightsteelblue1];
+  &quot;5th Edition&quot; -&gt; &quot;6th Edition&quot;;
+  &quot;5th Edition&quot; -&gt; &quot;PWB 1.0&quot;;
+  &quot;6th Edition&quot; -&gt; LSX;
+  &quot;6th Edition&quot; -&gt; &quot;1 BSD&quot;;
+  &quot;6th Edition&quot; -&gt; &quot;Mini Unix&quot;;
+  &quot;6th Edition&quot; -&gt; Wollongong;
+  &quot;6th Edition&quot; -&gt; Interdata;
+  Interdata -&gt; &quot;Unix/TS 3.0&quot;;
+  Interdata -&gt; &quot;PWB 2.0&quot;;
+  Interdata -&gt; &quot;7th Edition&quot;;
+  &quot;7th Edition&quot; -&gt; &quot;8th Edition&quot;;
+  &quot;7th Edition&quot; -&gt; &quot;32V&quot;;
+  &quot;7th Edition&quot; -&gt; V7M;
+  &quot;7th Edition&quot; -&gt; &quot;Ultrix-11&quot;;
+  &quot;7th Edition&quot; -&gt; Xenix;
+  &quot;7th Edition&quot; -&gt; &quot;UniPlus+&quot;;
+  V7M -&gt; &quot;Ultrix-11&quot;;
+  &quot;8th Edition&quot; -&gt; &quot;9th Edition&quot;;
+  &quot;1 BSD&quot; -&gt; &quot;2 BSD&quot;;
+  &quot;2 BSD&quot; -&gt; &quot;2.8 BSD&quot;;
+  &quot;2.8 BSD&quot; -&gt; &quot;Ultrix-11&quot;;
+  &quot;2.8 BSD&quot; -&gt; &quot;2.9 BSD&quot;;
+  &quot;32V&quot; -&gt; &quot;3 BSD&quot;;
+  &quot;3 BSD&quot; -&gt; &quot;4 BSD&quot;;
+  &quot;4 BSD&quot; -&gt; &quot;4.1 BSD&quot;;
+  &quot;4.1 BSD&quot; -&gt; &quot;4.2 BSD&quot;;
+  &quot;4.1 BSD&quot; -&gt; &quot;2.8 BSD&quot;;
+  &quot;4.1 BSD&quot; -&gt; &quot;8th Edition&quot;;
+  &quot;4.2 BSD&quot; -&gt; &quot;4.3 BSD&quot;;
+  &quot;4.2 BSD&quot; -&gt; &quot;Ultrix-32&quot;;
+  &quot;PWB 1.0&quot; -&gt; &quot;PWB 1.2&quot;;
+  &quot;PWB 1.0&quot; -&gt; &quot;USG 1.0&quot;;
+  &quot;PWB 1.2&quot; -&gt; &quot;PWB 2.0&quot;;
+  &quot;USG 1.0&quot; -&gt; &quot;CB Unix 1&quot;;
+  &quot;USG 1.0&quot; -&gt; &quot;USG 2.0&quot;;
+  &quot;CB Unix 1&quot; -&gt; &quot;CB Unix 2&quot;;
+  &quot;CB Unix 2&quot; -&gt; &quot;CB Unix 3&quot;;
+  &quot;CB Unix 3&quot; -&gt; &quot;Unix/TS++&quot;;
+  &quot;CB Unix 3&quot; -&gt; &quot;PDP-11 Sys V&quot;;
+  &quot;USG 2.0&quot; -&gt; &quot;USG 3.0&quot;;
+  &quot;USG 3.0&quot; -&gt; &quot;Unix/TS 3.0&quot;;
+  &quot;PWB 2.0&quot; -&gt; &quot;Unix/TS 3.0&quot;;
+  &quot;Unix/TS 1.0&quot; -&gt; &quot;Unix/TS 3.0&quot;;
+  &quot;Unix/TS 3.0&quot; -&gt; &quot;TS 4.0&quot;;
+  &quot;Unix/TS++&quot; -&gt; &quot;TS 4.0&quot;;
+  &quot;CB Unix 3&quot; -&gt; &quot;TS 4.0&quot;;
+  &quot;TS 4.0&quot; -&gt; &quot;System V.0&quot;;
+  &quot;System V.0&quot; -&gt; &quot;System V.2&quot;;
+  &quot;System V.2&quot; -&gt; &quot;System V.3&quot;;
+}
+</code></pre>
+<h3 id="pikchr"><a class="header" href="#pikchr">pikchr:</a></h3>
+<blockquote>
+<p>kroki-pikchr</p>
+</blockquote>
+<h4 id="commit-graph"><a class="header" href="#commit-graph">Commit Graph</a></h4>
+<pre><code class="language-kroki-pikchr">scale = 0.8
+fill = white
+linewid *= 0.5
+circle &quot;C0&quot; fit
+circlerad = previous.radius
+arrow
+circle &quot;C1&quot;
+arrow
+circle &quot;C2&quot;
+arrow
+circle &quot;C4&quot;
+arrow
+circle &quot;C6&quot;
+circle &quot;C3&quot; at dist(C2,C4) heading 30 from C2
+arrow
+circle &quot;C5&quot;
+arrow from C2 to C3 chop
+C3P: circle &quot;C3'&quot; at dist(C4,C6) heading 30 from C6
+arrow right from C3P.e
+C5P: circle &quot;C5'&quot;
+arrow from C6 to C3P chop
+
+box height C3.y-C2.y \
+    width (C5P.e.x-C0.w.x)+linewid \
+    with .w at 0.5*linewid west of C0.w \
+    behind C0 \
+    fill 0xc6e2ff thin color gray
+box same width previous.e.x - C2.w.x \
+    with .se at previous.ne \
+    fill 0x9accfc
+&quot;trunk&quot; below at 2nd last box.s
+&quot;feature branch&quot; above at last box.n
+
+circle &quot;C0&quot; at 3.7cm south of C0
+arrow
+circle &quot;C1&quot;
+arrow
+circle &quot;C2&quot;
+arrow
+circle &quot;C4&quot;
+arrow
+circle &quot;C6&quot;
+circle &quot;C3&quot; at dist(C2,C4) heading 30 from C2
+arrow
+circle &quot;C5&quot;
+arrow
+circle &quot;C7&quot;
+arrow from C2 to C3 chop
+arrow from C6 to C7 chop
+
+box height C3.y-C2.y \
+    width (C7.e.x-C0.w.x)+1.5*C1.radius \
+    with .w at 0.5*linewid west of C0.w \
+    behind C0 \
+    fill 0xc6e2ff thin color gray
+box same width previous.e.x - C2.w.x \
+    with .se at previous.ne \
+    fill 0x9accfc
+&quot;trunk&quot; below at 2nd last box.s
+&quot;feature branch&quot; above at last box.n
+</code></pre>
+<h4 id="syntax-diagram"><a class="header" href="#syntax-diagram">Syntax diagram</a></h4>
+<pre><code class="language-kroki-pikchr">$r = 0.2in
+linerad = 0.75*$r
+linewid = 0.25
+
+# Start and end blocks
+#
+box &quot;element&quot; bold fit
+line down 50% from last box.sw
+dot rad 250% color black
+X0: last.e + (0.3,0)
+arrow from last dot to X0
+move right 3.9in
+box wid 5% ht 25% fill black
+X9: last.w - (0.3,0)
+arrow from X9 to last box.w
+
+
+# The main rule that goes straight through from start to finish
+#
+box &quot;object-definition&quot; italic fit at 11/16 way between X0 and X9
+arrow to X9
+arrow from X0 to last box.w
+
+# The LABEL: rule
+#
+arrow right $r from X0 then down 1.25*$r then right $r
+oval &quot; LABEL &quot; fit
+arrow 50%
+oval &quot;\&quot;:\&quot;&quot; fit
+arrow 200%
+box &quot;position&quot; italic fit
+arrow
+line right until even with X9 - ($r,0) \
+  then up until even with X9 then to X9
+arrow from last oval.e right $r*0.5 then up $r*0.8 right $r*0.8
+line up $r*0.45 right $r*0.45 then right
+
+# The VARIABLE = rule
+#
+arrow right $r from X0 then down 2.5*$r then right $r
+oval &quot; VARIABLE &quot; fit
+arrow 70%
+box &quot;assignment-operator&quot; italic fit
+arrow 70%
+box &quot;expr&quot; italic fit
+line right until even with X9 - ($r,0) \
+  then up until even with X9 then to X9
+
+# The PRINT rule
+#
+arrow right $r from X0 then down 3.75*$r then right $r
+oval &quot;\&quot;print\&quot;&quot; fit
+arrow
+box &quot;print-args&quot; italic fit
+line right until even with X9 - ($r,0) \
+  then up until even with X9 then to X9
+</code></pre>
+<h4 id="impossible-trident"><a class="header" href="#impossible-trident">Impossible trident</a></h4>
+<pre><code class="language-kroki-pikchr"># Impossible trident pikchr script
+# https://en.wikipedia.org/wiki/Impossible_trident
+# pikchr script by Kees Nuyt, license Creative Commons BY-NC-SA
+# https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+scale = 1.0
+eh = 0.5cm
+ew = 0.2cm
+ed = 2 * eh
+er = 0.4cm
+lws = 4.0cm
+lwm = lws + er
+lwl = lwm + er
+
+ellipse height eh width ew
+L1: line width lwl from last ellipse.n
+line width lwm from last ellipse.s
+LV: line height eh down
+
+move right er down ed from last ellipse.n
+ellipse height eh width ew
+L3: line width lws right from last ellipse.n to LV.end then down eh right ew
+line width lwm right from last ellipse.s then to LV.start
+
+move right er down ed from last ellipse.n
+ellipse height eh width ew
+line width lwl right from last ellipse.n then to L1.end
+line width lwl right from last ellipse.s then up eh
+</code></pre>
+<h3 id="entity-relationship-diagram"><a class="header" href="#entity-relationship-diagram">Entity Relationship Diagram</a></h3>
+<blockquote>
+<p>kroki-erd</p>
+</blockquote>
+<pre><code class="language-kroki-erd">[Person]
+*name
+height
+weight
++birth_location_id
+
+[Location]
+*id
+city
+state
+country
+
+Person *--1 Location
+</code></pre>
+<h3 id="excalidraw-hand-draw-like-diagrams"><a class="header" href="#excalidraw-hand-draw-like-diagrams">Excalidraw: hand-draw like diagrams</a></h3>
+<blockquote>
+<p>kroki-excalidraw</p>
+</blockquote>
+<pre><code class="language-kroki-excalidraw">{
+  &quot;type&quot;: &quot;excalidraw&quot;,
+  &quot;version&quot;: 2,
+  &quot;source&quot;: &quot;https://excalidraw.com&quot;,
+  &quot;elements&quot;: [
+    {
+      &quot;type&quot;: &quot;rectangle&quot;,
+      &quot;version&quot;: 175,
+      &quot;versionNonce&quot;: 279344008,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;2ZYh24ed28FJ0yE-S3YNY&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 580,
+      &quot;y&quot;: 140,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#15aabf&quot;,
+      &quot;width&quot;: 80,
+      &quot;height&quot;: 19.999999999999996,
+      &quot;seed&quot;: 521916552,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;sharp&quot;,
+      &quot;boundElementIds&quot;: [
+        &quot;Be1y2yzhV3Zd4nwCro__8&quot;
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;rectangle&quot;,
+      &quot;version&quot;: 180,
+      &quot;versionNonce&quot;: 164784376,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;bO0OVt6m7LowYpq22ePCA&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 660,
+      &quot;y&quot;: 140,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#4c6ef5&quot;,
+      &quot;width&quot;: 120,
+      &quot;height&quot;: 19.999999999999996,
+      &quot;seed&quot;: 1303206904,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;sharp&quot;,
+      &quot;boundElementIds&quot;: [
+        &quot;KaCO9-QjUenSyCuuanoTo&quot;
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;rectangle&quot;,
+      &quot;version&quot;: 183,
+      &quot;versionNonce&quot;: 27181704,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;jz0Huq9-s6pNxDw0RqHcR&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 780,
+      &quot;y&quot;: 140,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#fab005&quot;,
+      &quot;width&quot;: 180,
+      &quot;height&quot;: 19.999999999999996,
+      &quot;seed&quot;: 861962120,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;sharp&quot;,
+      &quot;boundElementIds&quot;: [
+        &quot;74ifmqmu0vN0NK0_0FwPm&quot;
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;rectangle&quot;,
+      &quot;version&quot;: 192,
+      &quot;versionNonce&quot;: 2123008504,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;UnmNTmwJtm6moubcGtSgB&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 960,
+      &quot;y&quot;: 140,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#fa5252&quot;,
+      &quot;width&quot;: 80,
+      &quot;height&quot;: 19.999999999999996,
+      &quot;seed&quot;: 277814520,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;sharp&quot;,
+      &quot;boundElementIds&quot;: [
+        &quot;1v60NED2criGG-wo9-oQL&quot;
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;rectangle&quot;,
+      &quot;version&quot;: 202,
+      &quot;versionNonce&quot;: 1823814024,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;of76J4WOJHnHi0L61Vst_&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 1040,
+      &quot;y&quot;: 140,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#be4bdb&quot;,
+      &quot;width&quot;: 180,
+      &quot;height&quot;: 19.999999999999996,
+      &quot;seed&quot;: 1496796808,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;sharp&quot;,
+      &quot;boundElementIds&quot;: [
+        &quot;jjuPzyRneMv3f65lps_6a&quot;
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;rectangle&quot;,
+      &quot;version&quot;: 193,
+      &quot;versionNonce&quot;: 1234602744,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;SlvbjeV-9lXbcrlKib-hj&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 1220,
+      &quot;y&quot;: 140,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#868e96&quot;,
+      &quot;width&quot;: 60,
+      &quot;height&quot;: 19.999999999999996,
+      &quot;seed&quot;: 1938865656,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;sharp&quot;,
+      &quot;boundElementIds&quot;: [
+        &quot;5QQzhw_uqk_rBaW2wMriT&quot;
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;text&quot;,
+      &quot;version&quot;: 81,
+      &quot;versionNonce&quot;: 1188901129,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;vrdt3JfbD2Xwz4K4TWScI&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 840,
+      &quot;y&quot;: -60,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#868e96&quot;,
+      &quot;width&quot;: 190,
+      &quot;height&quot;: 45,
+      &quot;seed&quot;: 1499217288,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;sharp&quot;,
+      &quot;boundElementIds&quot;: [],
+      &quot;fontSize&quot;: 36,
+      &quot;fontFamily&quot;: 1,
+      &quot;text&quot;: &quot;JavaScript&quot;,
+      &quot;baseline&quot;: 32,
+      &quot;textAlign&quot;: &quot;left&quot;,
+      &quot;verticalAlign&quot;: &quot;top&quot;
+    },
+    {
+      &quot;type&quot;: &quot;arrow&quot;,
+      &quot;version&quot;: 343,
+      &quot;versionNonce&quot;: 1369065096,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;Be1y2yzhV3Zd4nwCro__8&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 597.5075333823274,
+      &quot;y&quot;: 299,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#868e96&quot;,
+      &quot;width&quot;: 40,
+      &quot;height&quot;: 139,
+      &quot;seed&quot;: 666255096,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;round&quot;,
+      &quot;boundElementIds&quot;: [],
+      &quot;startBinding&quot;: {
+        &quot;focus&quot;: -0.41953339688473495,
+        &quot;gap&quot;: 1,
+        &quot;elementId&quot;: &quot;UxgtvUBaIPnDWJZ9kUQH8&quot;
+      },
+      &quot;endBinding&quot;: {
+        &quot;focus&quot;: -0.11111111111111113,
+        &quot;gap&quot;: 1,
+        &quot;elementId&quot;: &quot;2ZYh24ed28FJ0yE-S3YNY&quot;
+      },
+      &quot;points&quot;: [
+        [
+          0,
+          0
+        ],
+        [
+          -17.507533382327438,
+          -59
+        ],
+        [
+          22.492466617672562,
+          -139
+        ]
+      ],
+      &quot;lastCommittedPoint&quot;: null,
+      &quot;startArrowhead&quot;: null,
+      &quot;endArrowhead&quot;: &quot;arrow&quot;
+    },
+    {
+      &quot;type&quot;: &quot;text&quot;,
+      &quot;version&quot;: 81,
+      &quot;versionNonce&quot;: 690339976,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;UxgtvUBaIPnDWJZ9kUQH8&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 580,
+      &quot;y&quot;: 300,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#868e96&quot;,
+      &quot;width&quot;: 94,
+      &quot;height&quot;: 45,
+      &quot;seed&quot;: 84626568,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;sharp&quot;,
+      &quot;boundElementIds&quot;: [
+        &quot;Be1y2yzhV3Zd4nwCro__8&quot;
+      ],
+      &quot;fontSize&quot;: 36,
+      &quot;fontFamily&quot;: 1,
+      &quot;text&quot;: &quot;Fetch&quot;,
+      &quot;baseline&quot;: 32,
+      &quot;textAlign&quot;: &quot;left&quot;,
+      &quot;verticalAlign&quot;: &quot;top&quot;
+    },
+    {
+      &quot;type&quot;: &quot;rectangle&quot;,
+      &quot;version&quot;: 60,
+      &quot;versionNonce&quot;: 897215480,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;-Lq0agjWQ31TR_Av5Z4HW&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 520,
+      &quot;y&quot;: -60,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;transparent&quot;,
+      &quot;width&quot;: 820,
+      &quot;height&quot;: 540,
+      &quot;seed&quot;: 495165432,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;sharp&quot;,
+      &quot;boundElementIds&quot;: [
+        &quot;jjuPzyRneMv3f65lps_6a&quot;
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;arrow&quot;,
+      &quot;version&quot;: 537,
+      &quot;versionNonce&quot;: 1626949112,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;KaCO9-QjUenSyCuuanoTo&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 721.0588599991052,
+      &quot;y&quot;: 60.17790458606555,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#868e96&quot;,
+      &quot;width&quot;: 1.0588599991051524,
+      &quot;height&quot;: 79.82209541393445,
+      &quot;seed&quot;: 637565832,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;round&quot;,
+      &quot;boundElementIds&quot;: [],
+      &quot;startBinding&quot;: null,
+      &quot;endBinding&quot;: {
+        &quot;focus&quot;: 0,
+        &quot;gap&quot;: 1,
+        &quot;elementId&quot;: &quot;bO0OVt6m7LowYpq22ePCA&quot;
+      },
+      &quot;points&quot;: [
+        [
+          0,
+          0
+        ],
+        [
+          -1.0588599991051524,
+          39.82209541393445
+        ],
+        [
+          -1.0588599991051524,
+          79.82209541393445
+        ]
+      ],
+      &quot;lastCommittedPoint&quot;: null,
+      &quot;startArrowhead&quot;: null,
+      &quot;endArrowhead&quot;: &quot;arrow&quot;
+    },
+    {
+      &quot;type&quot;: &quot;text&quot;,
+      &quot;version&quot;: 112,
+      &quot;versionNonce&quot;: 358083143,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;4hEOdlcwK6AHyVhjc-MXS&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 660,
+      &quot;y&quot;: 20,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#868e96&quot;,
+      &quot;width&quot;: 103,
+      &quot;height&quot;: 45,
+      &quot;seed&quot;: 352116984,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;sharp&quot;,
+      &quot;boundElementIds&quot;: [],
+      &quot;fontSize&quot;: 36,
+      &quot;fontFamily&quot;: 1,
+      &quot;text&quot;: &quot;Parse&quot;,
+      &quot;baseline&quot;: 32,
+      &quot;textAlign&quot;: &quot;left&quot;,
+      &quot;verticalAlign&quot;: &quot;top&quot;
+    },
+    {
+      &quot;type&quot;: &quot;arrow&quot;,
+      &quot;version&quot;: 534,
+      &quot;versionNonce&quot;: 983577992,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;74ifmqmu0vN0NK0_0FwPm&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 841.6574209245741,
+      &quot;y&quot;: 219,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#868e96&quot;,
+      &quot;width&quot;: 43.15128973100309,
+      &quot;height&quot;: 59.174989629909305,
+      &quot;seed&quot;: 1853344392,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;round&quot;,
+      &quot;boundElementIds&quot;: [],
+      &quot;startBinding&quot;: {
+        &quot;focus&quot;: 0.09211398277003865,
+        &quot;gap&quot;: 1,
+        &quot;elementId&quot;: &quot;K4so-arfr0JX0NJx8vd7T&quot;
+      },
+      &quot;endBinding&quot;: {
+        &quot;focus&quot;: -0.2163077865936296,
+        &quot;gap&quot;: 1,
+        &quot;elementId&quot;: &quot;jz0Huq9-s6pNxDw0RqHcR&quot;
+      },
+      &quot;points&quot;: [
+        [
+          0,
+          0
+        ],
+        [
+          -1.6574209245741258,
+          1
+        ],
+        [
+          41.493868806428964,
+          -58.174989629909305
+        ]
+      ],
+      &quot;lastCommittedPoint&quot;: null,
+      &quot;startArrowhead&quot;: null,
+      &quot;endArrowhead&quot;: &quot;arrow&quot;
+    },
+    {
+      &quot;type&quot;: &quot;text&quot;,
+      &quot;version&quot;: 118,
+      &quot;versionNonce&quot;: 1185705864,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;K4so-arfr0JX0NJx8vd7T&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 640,
+      &quot;y&quot;: 220,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#868e96&quot;,
+      &quot;width&quot;: 366,
+      &quot;height&quot;: 45,
+      &quot;seed&quot;: 765854200,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;sharp&quot;,
+      &quot;boundElementIds&quot;: [
+        &quot;74ifmqmu0vN0NK0_0FwPm&quot;
+      ],
+      &quot;fontSize&quot;: 36,
+      &quot;fontFamily&quot;: 1,
+      &quot;text&quot;: &quot;Compile and Optimize&quot;,
+      &quot;baseline&quot;: 32,
+      &quot;textAlign&quot;: &quot;left&quot;,
+      &quot;verticalAlign&quot;: &quot;top&quot;
+    },
+    {
+      &quot;type&quot;: &quot;arrow&quot;,
+      &quot;version&quot;: 791,
+      &quot;versionNonce&quot;: 1724761848,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;1v60NED2criGG-wo9-oQL&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 960,
+      &quot;y&quot;: 320,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#868e96&quot;,
+      &quot;width&quot;: 80,
+      &quot;height&quot;: 160,
+      &quot;seed&quot;: 1764571528,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;round&quot;,
+      &quot;boundElementIds&quot;: [],
+      &quot;startBinding&quot;: {
+        &quot;focus&quot;: -0.1637630662020906,
+        &quot;gap&quot;: 1,
+        &quot;elementId&quot;: &quot;dviXudWNxiHYQMZfqHWsH&quot;
+      },
+      &quot;endBinding&quot;: {
+        &quot;focus&quot;: 0.07692307692307691,
+        &quot;gap&quot;: 1,
+        &quot;elementId&quot;: &quot;UnmNTmwJtm6moubcGtSgB&quot;
+      },
+      &quot;points&quot;: [
+        [
+          0,
+          0
+        ],
+        [
+          80,
+          -40
+        ],
+        [
+          40,
+          -160
+        ]
+      ],
+      &quot;lastCommittedPoint&quot;: null,
+      &quot;startArrowhead&quot;: null,
+      &quot;endArrowhead&quot;: &quot;arrow&quot;
+    },
+    {
+      &quot;type&quot;: &quot;text&quot;,
+      &quot;version&quot;: 194,
+      &quot;versionNonce&quot;: 473574648,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;dviXudWNxiHYQMZfqHWsH&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 720,
+      &quot;y&quot;: 320,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#868e96&quot;,
+      &quot;width&quot;: 484,
+      &quot;height&quot;: 45,
+      &quot;seed&quot;: 1988297464,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;sharp&quot;,
+      &quot;boundElementIds&quot;: [
+        &quot;1v60NED2criGG-wo9-oQL&quot;
+      ],
+      &quot;fontSize&quot;: 36,
+      &quot;fontFamily&quot;: 1,
+      &quot;text&quot;: &quot;Re-optimize and Deoptimize&quot;,
+      &quot;baseline&quot;: 32,
+      &quot;textAlign&quot;: &quot;left&quot;,
+      &quot;verticalAlign&quot;: &quot;top&quot;
+    },
+    {
+      &quot;type&quot;: &quot;arrow&quot;,
+      &quot;version&quot;: 708,
+      &quot;versionNonce&quot;: 185615496,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;jjuPzyRneMv3f65lps_6a&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 1140,
+      &quot;y&quot;: 80,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#868e96&quot;,
+      &quot;width&quot;: 20,
+      &quot;height&quot;: 60,
+      &quot;seed&quot;: 1767688328,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;round&quot;,
+      &quot;boundElementIds&quot;: [],
+      &quot;startBinding&quot;: {
+        &quot;focus&quot;: -0.3021784319542362,
+        &quot;gap&quot;: 14.800415739789742,
+        &quot;elementId&quot;: &quot;qhkjvI1VmWZdnKvU5QKZK&quot;
+      },
+      &quot;endBinding&quot;: {
+        &quot;focus&quot;: 0.15789473684210528,
+        &quot;gap&quot;: 1,
+        &quot;elementId&quot;: &quot;of76J4WOJHnHi0L61Vst_&quot;
+      },
+      &quot;points&quot;: [
+        [
+          0,
+          0
+        ],
+        [
+          -20,
+          20
+        ],
+        [
+          0,
+          60
+        ]
+      ],
+      &quot;lastCommittedPoint&quot;: null,
+      &quot;startArrowhead&quot;: null,
+      &quot;endArrowhead&quot;: &quot;arrow&quot;
+    },
+    {
+      &quot;type&quot;: &quot;text&quot;,
+      &quot;version&quot;: 213,
+      &quot;versionNonce&quot;: 2105884296,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;qhkjvI1VmWZdnKvU5QKZK&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 1080,
+      &quot;y&quot;: 20.19958426021026,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#868e96&quot;,
+      &quot;width&quot;: 139,
+      &quot;height&quot;: 45,
+      &quot;seed&quot;: 2115494904,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;sharp&quot;,
+      &quot;boundElementIds&quot;: [
+        &quot;jjuPzyRneMv3f65lps_6a&quot;
+      ],
+      &quot;fontSize&quot;: 36,
+      &quot;fontFamily&quot;: 1,
+      &quot;text&quot;: &quot;Execute&quot;,
+      &quot;baseline&quot;: 32,
+      &quot;textAlign&quot;: &quot;left&quot;,
+      &quot;verticalAlign&quot;: &quot;top&quot;
+    },
+    {
+      &quot;type&quot;: &quot;arrow&quot;,
+      &quot;version&quot;: 707,
+      &quot;versionNonce&quot;: 543827960,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;5QQzhw_uqk_rBaW2wMriT&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 1220,
+      &quot;y&quot;: 240,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#868e96&quot;,
+      &quot;width&quot;: 20,
+      &quot;height&quot;: 80,
+      &quot;seed&quot;: 2059564936,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;round&quot;,
+      &quot;boundElementIds&quot;: [],
+      &quot;startBinding&quot;: {
+        &quot;focus&quot;: 0.7391304347826086,
+        &quot;gap&quot;: 2,
+        &quot;elementId&quot;: &quot;C6fyzTg2FHAmrRYfC_THm&quot;
+      },
+      &quot;endBinding&quot;: {
+        &quot;focus&quot;: 0.3333333333333333,
+        &quot;gap&quot;: 1,
+        &quot;elementId&quot;: &quot;SlvbjeV-9lXbcrlKib-hj&quot;
+      },
+      &quot;points&quot;: [
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          -40
+        ],
+        [
+          20,
+          -80
+        ]
+      ],
+      &quot;lastCommittedPoint&quot;: null,
+      &quot;startArrowhead&quot;: null,
+      &quot;endArrowhead&quot;: &quot;arrow&quot;
+    },
+    {
+      &quot;type&quot;: &quot;text&quot;,
+      &quot;version&quot;: 227,
+      &quot;versionNonce&quot;: 2002374136,
+      &quot;isDeleted&quot;: false,
+      &quot;id&quot;: &quot;C6fyzTg2FHAmrRYfC_THm&quot;,
+      &quot;fillStyle&quot;: &quot;hachure&quot;,
+      &quot;strokeWidth&quot;: 1,
+      &quot;strokeStyle&quot;: &quot;solid&quot;,
+      &quot;roughness&quot;: 1,
+      &quot;opacity&quot;: 100,
+      &quot;angle&quot;: 0,
+      &quot;x&quot;: 1160,
+      &quot;y&quot;: 220,
+      &quot;strokeColor&quot;: &quot;#000000&quot;,
+      &quot;backgroundColor&quot;: &quot;#868e96&quot;,
+      &quot;width&quot;: 58,
+      &quot;height&quot;: 45,
+      &quot;seed&quot;: 1651025144,
+      &quot;groupIds&quot;: [],
+      &quot;strokeSharpness&quot;: &quot;sharp&quot;,
+      &quot;boundElementIds&quot;: [
+        &quot;5QQzhw_uqk_rBaW2wMriT&quot;
+      ],
+      &quot;fontSize&quot;: 36,
+      &quot;fontFamily&quot;: 1,
+      &quot;text&quot;: &quot;GC&quot;,
+      &quot;baseline&quot;: 32,
+      &quot;textAlign&quot;: &quot;left&quot;,
+      &quot;verticalAlign&quot;: &quot;top&quot;
+    }
+  ],
+  &quot;appState&quot;: {
+    &quot;viewBackgroundColor&quot;: &quot;#ffffff&quot;,
+    &quot;gridSize&quot;: 20
+  }
+}
+</code></pre>
+<h3 id="vege-word-cloud"><a class="header" href="#vege-word-cloud">vege: word cloud</a></h3>
+<blockquote>
+<p>kroki-vega</p>
+</blockquote>
+<pre><code class="language-kroki-vega">{
+  &quot;$schema&quot;: &quot;https://vega.github.io/schema/vega/v5.json&quot;,
+  &quot;width&quot;: 800,
+  &quot;height&quot;: 400,
+  &quot;padding&quot;: 0,
+
+  &quot;data&quot;: [
+    {
+      &quot;name&quot;: &quot;table&quot;,
+      &quot;values&quot;: [
+        &quot;Declarative visualization grammars can accelerate development, facilitate retargeting across platforms, and allow language-level optimizations. However, existing declarative visualization languages are primarily concerned with visual encoding, and rely on imperative event handlers for interactive behaviors. In response, we introduce a model of declarative interaction design for data visualizations. Adopting methods from reactive programming, we model low-level events as composable data streams from which we form higher-level semantic signals. Signals feed predicates and scale inversions, which allow us to generalize interactive selections at the level of item geometry (pixels) into interactive queries over the data domain. Production rules then use these queries to manipulate the visualization’s appearance. To facilitate reuse and sharing, these constructs can be encapsulated as named interactors: standalone, purely declarative specifications of interaction techniques. We assess our model’s feasibility and expressivity by instantiating it with extensions to the Vega visualization grammar. Through a diverse range of examples, we demonstrate coverage over an established taxonomy of visualization interaction techniques.&quot;,
+        &quot;We present Reactive Vega, a system architecture that provides the first robust and comprehensive treatment of declarative visual and interaction design for data visualization. Starting from a single declarative specification, Reactive Vega constructs a dataflow graph in which input data, scene graph elements, and interaction events are all treated as first-class streaming data sources. To support expressive interactive visualizations that may involve time-varying scalar, relational, or hierarchical data, Reactive Vega’s dataflow graph can dynamically re-write itself at runtime by extending or pruning branches in a data-driven fashion. We discuss both compile- and run-time optimizations applied within Reactive Vega, and share the results of benchmark studies that indicate superior interactive performance to both D3 and the original, non-reactive Vega system.&quot;,
+        &quot;We present Vega-Lite, a high-level grammar that enables rapid specification of interactive data visualizations. Vega-Lite combines a traditional grammar of graphics, providing visual encoding rules and a composition algebra for layered and multi-view displays, with a novel grammar of interaction. Users specify interactive semantics by composing selections. In Vega-Lite, a selection is an abstraction that defines input event processing, points of interest, and a predicate function for inclusion testing. Selections parameterize visual encodings by serving as input data, defining scale extents, or by driving conditional logic. The Vega-Lite compiler automatically synthesizes requisite data flow and event handling logic, which users can override for further customization. In contrast to existing reactive specifications, Vega-Lite selections decompose an interaction design into concise, enumerable semantic units. We evaluate Vega-Lite through a range of examples, demonstrating succinct specification of both customized interaction methods and common techniques such as panning, zooming, and linked selection.&quot;
+      ],
+      &quot;transform&quot;: [
+        {
+          &quot;type&quot;: &quot;countpattern&quot;,
+          &quot;field&quot;: &quot;data&quot;,
+          &quot;case&quot;: &quot;upper&quot;,
+          &quot;pattern&quot;: &quot;[\\w']{3,}&quot;,
+          &quot;stopwords&quot;: &quot;(i|me|my|myself|we|us|our|ours|ourselves|you|your|yours|yourself|yourselves|he|him|his|himself|she|her|hers|herself|it|its|itself|they|them|their|theirs|themselves|what|which|who|whom|whose|this|that|these|those|am|is|are|was|were|be|been|being|have|has|had|having|do|does|did|doing|will|would|should|can|could|ought|i'm|you're|he's|she's|it's|we're|they're|i've|you've|we've|they've|i'd|you'd|he'd|she'd|we'd|they'd|i'll|you'll|he'll|she'll|we'll|they'll|isn't|aren't|wasn't|weren't|hasn't|haven't|hadn't|doesn't|don't|didn't|won't|wouldn't|shan't|shouldn't|can't|cannot|couldn't|mustn't|let's|that's|who's|what's|here's|there's|when's|where's|why's|how's|a|an|the|and|but|if|or|because|as|until|while|of|at|by|for|with|about|against|between|into|through|during|before|after|above|below|to|from|up|upon|down|in|out|on|off|over|under|again|further|then|once|here|there|when|where|why|how|all|any|both|each|few|more|most|other|some|such|no|nor|not|only|own|same|so|than|too|very|say|says|said|shall)&quot;
+        },
+        {
+          &quot;type&quot;: &quot;formula&quot;, &quot;as&quot;: &quot;angle&quot;,
+          &quot;expr&quot;: &quot;[-45, 0, 45][~~(random() * 3)]&quot;
+        },
+        {
+          &quot;type&quot;: &quot;formula&quot;, &quot;as&quot;: &quot;weight&quot;,
+          &quot;expr&quot;: &quot;if(datum.text=='VEGA', 600, 300)&quot;
+        }
+      ]
+    }
+  ],
+
+  &quot;scales&quot;: [
+    {
+      &quot;name&quot;: &quot;color&quot;,
+      &quot;type&quot;: &quot;ordinal&quot;,
+      &quot;domain&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;field&quot;: &quot;text&quot;},
+      &quot;range&quot;: [&quot;#d5a928&quot;, &quot;#652c90&quot;, &quot;#939597&quot;]
+    }
+  ],
+
+  &quot;marks&quot;: [
+    {
+      &quot;type&quot;: &quot;text&quot;,
+      &quot;from&quot;: {&quot;data&quot;: &quot;table&quot;},
+      &quot;encode&quot;: {
+        &quot;enter&quot;: {
+          &quot;text&quot;: {&quot;field&quot;: &quot;text&quot;},
+          &quot;align&quot;: {&quot;value&quot;: &quot;center&quot;},
+          &quot;baseline&quot;: {&quot;value&quot;: &quot;alphabetic&quot;},
+          &quot;fill&quot;: {&quot;scale&quot;: &quot;color&quot;, &quot;field&quot;: &quot;text&quot;}
+        },
+        &quot;update&quot;: {
+          &quot;fillOpacity&quot;: {&quot;value&quot;: 1}
+        },
+        &quot;hover&quot;: {
+          &quot;fillOpacity&quot;: {&quot;value&quot;: 0.5}
+        }
+      },
+      &quot;transform&quot;: [
+        {
+          &quot;type&quot;: &quot;wordcloud&quot;,
+          &quot;size&quot;: [800, 400],
+          &quot;text&quot;: {&quot;field&quot;: &quot;text&quot;},
+          &quot;rotate&quot;: {&quot;field&quot;: &quot;datum.angle&quot;},
+          &quot;font&quot;: &quot;Helvetica Neue, Arial&quot;,
+          &quot;fontSize&quot;: {&quot;field&quot;: &quot;datum.count&quot;},
+          &quot;fontWeight&quot;: {&quot;field&quot;: &quot;datum.weight&quot;},
+          &quot;fontSizeRange&quot;: [12, 56],
+          &quot;padding&quot;: 2
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+<h3 id="diverging-stacked-bar-chart"><a class="header" href="#diverging-stacked-bar-chart">Diverging Stacked Bar Chart</a></h3>
+<blockquote>
+<p>kroki-vegalite</p>
+</blockquote>
+<pre><code class="language-kroki-vegalite">{
+  &quot;$schema&quot;: &quot;https://vega.github.io/schema/vega-lite/v4.json&quot;,
+  &quot;description&quot;: &quot;A diverging stacked bar chart for sentiments towards a set of eight questions, displayed as percentages with neutral responses straddling the 0% mark&quot;,
+  &quot;data&quot;: {
+    &quot;values&quot;: [
+      {&quot;question&quot;: &quot;Question 1&quot;, &quot;type&quot;: &quot;Strongly disagree&quot;, &quot;value&quot;: 24, &quot;percentage&quot;: 0.7},
+      {&quot;question&quot;: &quot;Question 1&quot;, &quot;type&quot;: &quot;Disagree&quot;, &quot;value&quot;: 294, &quot;percentage&quot;: 9.1},
+      {&quot;question&quot;: &quot;Question 1&quot;, &quot;type&quot;: &quot;Neither agree nor disagree&quot;, &quot;value&quot;: 594, &quot;percentage&quot;: 18.5},
+      {&quot;question&quot;: &quot;Question 1&quot;, &quot;type&quot;: &quot;Agree&quot;, &quot;value&quot;: 1927, &quot;percentage&quot;: 59.9},
+      {&quot;question&quot;: &quot;Question 1&quot;, &quot;type&quot;: &quot;Strongly agree&quot;, &quot;value&quot;: 376, &quot;percentage&quot;: 11.7},
+      {&quot;question&quot;: &quot;Question 2&quot;, &quot;type&quot;: &quot;Strongly disagree&quot;, &quot;value&quot;: 2, &quot;percentage&quot;: 18.2},
+      {&quot;question&quot;: &quot;Question 2&quot;, &quot;type&quot;: &quot;Disagree&quot;, &quot;value&quot;: 2, &quot;percentage&quot;: 18.2},
+      {&quot;question&quot;: &quot;Question 2&quot;, &quot;type&quot;: &quot;Neither agree nor disagree&quot;, &quot;value&quot;: 0, &quot;percentage&quot;: 0},
+      {&quot;question&quot;: &quot;Question 2&quot;, &quot;type&quot;: &quot;Agree&quot;, &quot;value&quot;: 7, &quot;percentage&quot;: 63.6},
+      {&quot;question&quot;: &quot;Question 2&quot;, &quot;type&quot;: &quot;Strongly agree&quot;, &quot;value&quot;: 11, &quot;percentage&quot;: 0},
+      {&quot;question&quot;: &quot;Question 3&quot;, &quot;type&quot;: &quot;Strongly disagree&quot;, &quot;value&quot;: 2, &quot;percentage&quot;: 20},
+      {&quot;question&quot;: &quot;Question 3&quot;, &quot;type&quot;: &quot;Disagree&quot;, &quot;value&quot;: 0, &quot;percentage&quot;: 0},
+      {&quot;question&quot;: &quot;Question 3&quot;, &quot;type&quot;: &quot;Neither agree nor disagree&quot;, &quot;value&quot;: 2, &quot;percentage&quot;: 20},
+      {&quot;question&quot;: &quot;Question 3&quot;, &quot;type&quot;: &quot;Agree&quot;, &quot;value&quot;: 4, &quot;percentage&quot;: 40},
+      {&quot;question&quot;: &quot;Question 3&quot;, &quot;type&quot;: &quot;Strongly agree&quot;, &quot;value&quot;: 2, &quot;percentage&quot;: 20},
+      {&quot;question&quot;: &quot;Question 4&quot;, &quot;type&quot;: &quot;Strongly disagree&quot;, &quot;value&quot;: 0, &quot;percentage&quot;: 0},
+      {&quot;question&quot;: &quot;Question 4&quot;, &quot;type&quot;: &quot;Disagree&quot;, &quot;value&quot;: 2, &quot;percentage&quot;: 12.5},
+      {&quot;question&quot;: &quot;Question 4&quot;, &quot;type&quot;: &quot;Neither agree nor disagree&quot;, &quot;value&quot;: 1, &quot;percentage&quot;: 6.3},
+      {&quot;question&quot;: &quot;Question 4&quot;, &quot;type&quot;: &quot;Agree&quot;, &quot;value&quot;: 7, &quot;percentage&quot;: 43.8},
+      {&quot;question&quot;: &quot;Question 4&quot;, &quot;type&quot;: &quot;Strongly agree&quot;, &quot;value&quot;: 6, &quot;percentage&quot;: 37.5},
+      {&quot;question&quot;: &quot;Question 5&quot;, &quot;type&quot;: &quot;Strongly disagree&quot;, &quot;value&quot;: 0, &quot;percentage&quot;: 0},
+      {&quot;question&quot;: &quot;Question 5&quot;, &quot;type&quot;: &quot;Disagree&quot;, &quot;value&quot;: 1, &quot;percentage&quot;: 4.2},
+      {&quot;question&quot;: &quot;Question 5&quot;, &quot;type&quot;: &quot;Neither agree nor disagree&quot;, &quot;value&quot;: 3, &quot;percentage&quot;: 12.5},
+      {&quot;question&quot;: &quot;Question 5&quot;, &quot;type&quot;: &quot;Agree&quot;, &quot;value&quot;: 16, &quot;percentage&quot;: 66.7},
+      {&quot;question&quot;: &quot;Question 5&quot;, &quot;type&quot;: &quot;Strongly agree&quot;, &quot;value&quot;: 4, &quot;percentage&quot;: 16.7},
+      {&quot;question&quot;: &quot;Question 6&quot;, &quot;type&quot;: &quot;Strongly disagree&quot;, &quot;value&quot;: 1, &quot;percentage&quot;: 6.3},
+      {&quot;question&quot;: &quot;Question 6&quot;, &quot;type&quot;: &quot;Disagree&quot;, &quot;value&quot;: 1, &quot;percentage&quot;: 6.3},
+      {&quot;question&quot;: &quot;Question 6&quot;, &quot;type&quot;: &quot;Neither agree nor disagree&quot;, &quot;value&quot;: 2, &quot;percentage&quot;: 12.5},
+      {&quot;question&quot;: &quot;Question 6&quot;, &quot;type&quot;: &quot;Agree&quot;, &quot;value&quot;: 9, &quot;percentage&quot;: 56.3},
+      {&quot;question&quot;: &quot;Question 6&quot;, &quot;type&quot;: &quot;Strongly agree&quot;, &quot;value&quot;: 3, &quot;percentage&quot;: 18.8},
+      {&quot;question&quot;: &quot;Question 7&quot;, &quot;type&quot;: &quot;Strongly disagree&quot;, &quot;value&quot;: 0, &quot;percentage&quot;: 0},
+      {&quot;question&quot;: &quot;Question 7&quot;, &quot;type&quot;: &quot;Disagree&quot;, &quot;value&quot;: 0, &quot;percentage&quot;: 0},
+      {&quot;question&quot;: &quot;Question 7&quot;, &quot;type&quot;: &quot;Neither agree nor disagree&quot;, &quot;value&quot;: 1, &quot;percentage&quot;: 20},
+      {&quot;question&quot;: &quot;Question 7&quot;, &quot;type&quot;: &quot;Agree&quot;, &quot;value&quot;: 4, &quot;percentage&quot;: 80},
+      {&quot;question&quot;: &quot;Question 7&quot;, &quot;type&quot;: &quot;Strongly agree&quot;, &quot;value&quot;: 0, &quot;percentage&quot;: 0},
+      {&quot;question&quot;: &quot;Question 8&quot;, &quot;type&quot;: &quot;Strongly disagree&quot;, &quot;value&quot;: 0, &quot;percentage&quot;: 0},
+      {&quot;question&quot;: &quot;Question 8&quot;, &quot;type&quot;: &quot;Disagree&quot;, &quot;value&quot;: 0, &quot;percentage&quot;: 0},
+      {&quot;question&quot;: &quot;Question 8&quot;, &quot;type&quot;: &quot;Neither agree nor disagree&quot;, &quot;value&quot;: 0, &quot;percentage&quot;: 0},
+      {&quot;question&quot;: &quot;Question 8&quot;, &quot;type&quot;: &quot;Agree&quot;, &quot;value&quot;: 0, &quot;percentage&quot;: 0},
+      {&quot;question&quot;: &quot;Question 8&quot;, &quot;type&quot;: &quot;Strongly agree&quot;, &quot;value&quot;: 2, &quot;percentage&quot;: 100}
+    ]
+  },
+  &quot;transform&quot;: [
+    {
+      &quot;calculate&quot;: &quot;if(datum.type === 'Strongly disagree',-2,0) + if(datum.type==='Disagree',-1,0) + if(datum.type =='Neither agree nor disagree',0,0) + if(datum.type ==='Agree',1,0) + if(datum.type ==='Strongly agree',2,0)&quot;,
+      &quot;as&quot;: &quot;q_order&quot;
+    },
+    {
+      &quot;calculate&quot;: &quot;if(datum.type === 'Disagree' || datum.type === 'Strongly disagree', datum.percentage,0) + if(datum.type === 'Neither agree nor disagree', datum.percentage / 2,0)&quot;,
+      &quot;as&quot;: &quot;signed_percentage&quot;
+    },
+    {&quot;stack&quot;: &quot;percentage&quot;, &quot;as&quot;: [&quot;v1&quot;, &quot;v2&quot;], &quot;groupby&quot;: [&quot;question&quot;]},
+    {
+      &quot;joinaggregate&quot;: [
+        {
+          &quot;field&quot;: &quot;signed_percentage&quot;,
+          &quot;op&quot;: &quot;sum&quot;,
+          &quot;as&quot;: &quot;offset&quot;
+        }
+      ],
+      &quot;groupby&quot;: [&quot;question&quot;]
+    },
+    {&quot;calculate&quot;: &quot;datum.v1 - datum.offset&quot;, &quot;as&quot;: &quot;nx&quot;},
+    {&quot;calculate&quot;: &quot;datum.v2 - datum.offset&quot;, &quot;as&quot;: &quot;nx2&quot;}
+  ],
+  &quot;mark&quot;: &quot;bar&quot;,
+  &quot;encoding&quot;: {
+    &quot;x&quot;: {
+      &quot;field&quot;: &quot;nx&quot;,
+      &quot;type&quot;: &quot;quantitative&quot;,
+      &quot;axis&quot;: {
+        &quot;title&quot;: &quot;Percentage&quot;
+      }
+    },
+    &quot;x2&quot;: {&quot;field&quot;: &quot;nx2&quot;},
+    &quot;y&quot;: {
+      &quot;field&quot;: &quot;question&quot;,
+      &quot;type&quot;: &quot;nominal&quot;,
+      &quot;axis&quot;: {
+        &quot;title&quot;: &quot;Question&quot;,
+        &quot;offset&quot;: 5,
+        &quot;ticks&quot;: false,
+        &quot;minExtent&quot;: 60,
+        &quot;domain&quot;: false
+      }
+    },
+    &quot;color&quot;: {
+      &quot;field&quot;: &quot;type&quot;,
+      &quot;type&quot;: &quot;nominal&quot;,
+      &quot;legend&quot;: {
+        &quot;title&quot;: &quot;Response&quot;
+      },
+      &quot;scale&quot;: {
+        &quot;domain&quot;: [&quot;Strongly disagree&quot;, &quot;Disagree&quot;, &quot;Neither agree nor disagree&quot;, &quot;Agree&quot;, &quot;Strongly agree&quot;],
+        &quot;range&quot;: [&quot;#c30d24&quot;, &quot;#f3a583&quot;, &quot;#cccccc&quot;, &quot;#94c6da&quot;, &quot;#1770ab&quot;],
+        &quot;type&quot;: &quot;ordinal&quot;
+      }
+    }
+  }
+}
+</code></pre>
+<h3 id="ditaa-conjugate-prior-relationships"><a class="header" href="#ditaa-conjugate-prior-relationships">Ditaa: Conjugate prior relationships</a></h3>
+<blockquote>
+<p>支持ascii图像渲染
+kroki-ditaa</p>
+</blockquote>
+<pre><code class="language-kroki-ditaa">                          +-------------+
+                          |             |
+                          | Exponential |
+                          |             |
+                          +-------------+
+                                 |
+                          lambda |
+                                 v
++-------------+           +-------------+           +-------------+
+|             |   tau     |             |   lambda  |             |
+|  Lognormal  |----------&gt;|    Gamma    |&lt;----------| Poisson     |
+|             |           |             |---+       |             |
++-------------+           +-------------+   |       +-------------+
+      |                         ^ ^         | beta
+      |                   tau   | |         |
+      | tau                     | +---------+
+      |                   +-------------+
+      +------------------&gt;|             |
+                          |     Normal  |
+                          |             |----+
+                          +-------------+    |
+                                     ^       | mu
+                                     |       |
+                                     +-------+
+</code></pre>
+<h3 id="mermaid"><a class="header" href="#mermaid">Mermaid</a></h3>
+<blockquote>
+<p>kroki-mermaid</p>
+</blockquote>
+<h4 id="sequence-diagram-1"><a class="header" href="#sequence-diagram-1">Sequence diagram</a></h4>
+<pre><code class="language-kroki-mermaid">sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts prevail...
+    John--&gt;Alice: Great!
+    John-&gt;Bob: How about you?
+    Bob--&gt;John: Jolly good!
+</code></pre>
+<h4 id="gantt"><a class="header" href="#gantt">Gantt</a></h4>
+<pre><code class="language-kroki-mermaid">gantt
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+    section Section
+    A task           :a1, 2014-01-01, 30d
+    Another task     :after a1, 20d
+    section Another
+    Task in sec      :2014-01-12, 12d
+    another task     :24d
+</code></pre>
+<h3 id="nomnoml-uml-diagram"><a class="header" href="#nomnoml-uml-diagram">Nomnoml: UML diagram</a></h3>
+<blockquote>
+<p>kroki-nomnoml</p>
+</blockquote>
+<pre><code class="language-kroki-nomnoml">[Pirate|eyeCount: Int|raid();pillage()|
+  [beard]--[parrot]
+  [beard]-:&gt;[foul mouth]
+]
+
+[&lt;abstract&gt;Marauder]&lt;:--[Pirate]
+[Pirate]- 0..7[mischief]
+[jollyness]-&gt;[Pirate]
+[jollyness]-&gt;[rum]
+[jollyness]-&gt;[singing]
+[Pirate]-&gt; *[rum|tastiness: Int|swig()]
+[Pirate]-&gt;[singing]
+[singing]&lt;-&gt;[rum]
+
+[&lt;start&gt;st]-&gt;[&lt;state&gt;plunder]
+[plunder]-&gt;[&lt;choice&gt;more loot]
+[more loot]-&gt;[st]
+[more loot] no -&gt;[&lt;end&gt;e]
+
+[&lt;actor&gt;Sailor] - [&lt;usecase&gt;shiver me;timbers]
+</code></pre>
+<h3 id="plantuml"><a class="header" href="#plantuml">Plantuml</a></h3>
+<blockquote>
+<p>kroki-plantuml</p>
+</blockquote>
+<h4 id="use-case-diagram"><a class="header" href="#use-case-diagram">use case diagram</a></h4>
+<pre><code class="language-kroki-plantuml">@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam monochrome true
+actor customer
+actor clerk
+rectangle checkout {
+  customer -- (checkout)
+  (checkout) .&gt; (payment) : include
+  (help) .&gt; (checkout) : extends
+  (checkout) -- clerk
+}
+@enduml
+</code></pre>
+<h4 id="work-breakdown-structure"><a class="header" href="#work-breakdown-structure">work breakdown structure</a></h4>
+<pre><code class="language-kroki-plantuml">@startwbs
+skinparam monochrome true
+* Business Process Modelling WBS
+** Launch the project
+*** Complete Stakeholder Research
+*** Initial Implementation Plan
+** Design phase
+*** Model of AsIs Processes Completed
+**** Model of AsIs Processes Completed1
+**** Model of AsIs Processes Completed2
+*** Measure AsIs performance metrics
+*** Identify Quick Wins
+** Complete innovate phase
+@endwbs
+</code></pre>
+<h4 id="mind-map"><a class="header" href="#mind-map">Mind Map</a></h4>
+<pre><code class="language-kroki-plantuml">@startmindmap
+skinparam monochrome true
++ OS
+++ Ubuntu
++++ Linux Mint
++++ Kubuntu
++++ Lubuntu
++++ KDE Neon
+++ LMDE
+++ SolydXK
+++ SteamOS
+++ Raspbian
+-- Windows 95
+-- Windows 98
+-- Windows NT
+--- Windows 8
+--- Windows 10
+@endmindmap
+</code></pre>
+<h4 id="component-diagram"><a class="header" href="#component-diagram">Component diagram</a></h4>
+<pre><code class="language-kroki-plantuml">@startuml
+!include C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Component diagram for Internet Banking System - API Application
+
+Container(spa, &quot;Single Page Application&quot;, &quot;javascript and angular&quot;, &quot;Provides all the internet banking functionality to customers via their web browser.&quot;)
+Container(ma, &quot;Mobile App&quot;, &quot;Xamarin&quot;, &quot;Provides a limited subset ot the internet banking functionality to customers via their mobile mobile device.&quot;)
+ContainerDb(db, &quot;Database&quot;, &quot;Relational Database Schema&quot;, &quot;Stores user registration information, hashed authentication credentials, access logs, etc.&quot;)
+System_Ext(mbs, &quot;Mainframe Banking System&quot;, &quot;Stores all of the core banking information about customers, accounts, transactions, etc.&quot;)
+
+Container_Boundary(api, &quot;API Application&quot;) {
+    Component(sign, &quot;Sign In Controller&quot;, &quot;MVC Rest Controlle&quot;, &quot;Allows users to sign in to the internet banking system&quot;)
+    Component(accounts, &quot;Accounts Summary Controller&quot;, &quot;MVC Rest Controlle&quot;, &quot;Provides customers with a summory of their bank accounts&quot;)
+    Component(security, &quot;Security Component&quot;, &quot;Spring Bean&quot;, &quot;Provides functionality related to singing in, changing passwords, etc.&quot;)
+    Component(mbsfacade, &quot;Mainframe Banking System Facade&quot;, &quot;Spring Bean&quot;, &quot;A facade onto the mainframe banking system.&quot;)
+
+    Rel(sign, security, &quot;Uses&quot;)
+    Rel(accounts, mbsfacade, &quot;Uses&quot;)
+    Rel(security, db, &quot;Read &amp; write to&quot;, &quot;JDBC&quot;)
+    Rel(mbsfacade, mbs, &quot;Uses&quot;, &quot;XML/HTTPS&quot;)
+}
+
+Rel(spa, sign, &quot;Uses&quot;, &quot;JSON/HTTPS&quot;)
+Rel(spa, accounts, &quot;Uses&quot;, &quot;JSON/HTTPS&quot;)
+
+Rel(ma, sign, &quot;Uses&quot;, &quot;JSON/HTTPS&quot;)
+Rel(ma, accounts, &quot;Uses&quot;, &quot;JSON/HTTPS&quot;)
+@enduml
+</code></pre>
+<h3 id="context-diagram"><a class="header" href="#context-diagram">Context diagram</a></h3>
+<pre><code class="language-kroki-plantuml">@startuml
+!include C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+title System Context diagram for Internet Banking System
+
+Person(customer, &quot;Personal Banking Customer&quot;, &quot;A customer of the bank, with personal bank accounts.&quot;)
+System(banking_system, &quot;Internet Banking System&quot;, &quot;Allows customers to view information about their bank accounts, and make payments.&quot;)
+
+System_Ext(mail_system, &quot;E-mail system&quot;, &quot;The internal Microsoft Exchange e-mail system.&quot;)
+System_Ext(mainframe, &quot;Mainframe Banking System&quot;, &quot;Stores all of the core banking information about customers, accounts, transactions, etc.&quot;)
+
+Rel(customer, banking_system, &quot;Uses&quot;)
+Rel_Back(customer, mail_system, &quot;Sends e-mails to&quot;)
+Rel_Neighbor(banking_system, mail_system, &quot;Sends e-mails&quot;, &quot;SMTP&quot;)
+Rel(banking_system, mainframe, &quot;Uses&quot;)
+@enduml
+</code></pre>
+<h4 id="container-diagram"><a class="header" href="#container-diagram">Container diagram</a></h4>
+<pre><code class="language-kroki-plantuml">@startuml
+!include C4_Container.puml
+
+LAYOUT_TOP_DOWN()
+LAYOUT_WITH_LEGEND()
+
+title Container diagram for Internet Banking System
+
+Person(customer, Customer, &quot;A customer of the bank, with personal bank accounts&quot;)
+
+System_Boundary(c1, &quot;Internet Banking&quot;) {
+    Container(web_app, &quot;Web Application&quot;, &quot;Java, Spring MVC&quot;, &quot;Delivers the static content and the Internet banking SPA&quot;)
+    Container(spa, &quot;Single-Page App&quot;, &quot;JavaScript, Angular&quot;, &quot;Provides all the Internet banking functionality to cutomers via their web browser&quot;)
+    Container(mobile_app, &quot;Mobile App&quot;, &quot;C#, Xamarin&quot;, &quot;Provides a limited subset of the Internet banking functionality to customers via their mobile device&quot;)
+    ContainerDb(database, &quot;Database&quot;, &quot;SQL Database&quot;, &quot;Stores user registraion information, hased auth credentials, access logs, etc.&quot;)
+    Container(backend_api, &quot;API Application&quot;, &quot;Java, Docker Container&quot;, &quot;Provides Internet banking functionality via API&quot;)
+}
+
+System_Ext(email_system, &quot;E-Mail System&quot;, &quot;The internal Microsoft Exchange system&quot;)
+System_Ext(banking_system, &quot;Mainframe Banking System&quot;, &quot;Stores all of the core banking information about customers, accounts, transactions, etc.&quot;)
+
+Rel(customer, web_app, &quot;Uses&quot;, &quot;HTTPS&quot;)
+Rel(customer, spa, &quot;Uses&quot;, &quot;HTTPS&quot;)
+Rel(customer, mobile_app, &quot;Uses&quot;)
+
+Rel_Neighbor(web_app, spa, &quot;Delivers&quot;)
+Rel(spa, backend_api, &quot;Uses&quot;, &quot;async, JSON/HTTPS&quot;)
+Rel(mobile_app, backend_api, &quot;Uses&quot;, &quot;async, JSON/HTTPS&quot;)
+Rel_Back_Neighbor(database, backend_api, &quot;Reads from and writes to&quot;, &quot;sync, JDBC&quot;)
+
+Rel_Back(customer, email_system, &quot;Sends e-mails to&quot;)
+Rel_Back(email_system, backend_api, &quot;Sends e-mails using&quot;, &quot;sync, SMTP&quot;)
+Rel_Neighbor(backend_api, banking_system, &quot;Uses&quot;, &quot;sync/async, XML/HTTPS&quot;)
+@enduml
+</code></pre>
+<h3 id="bpmn"><a class="header" href="#bpmn">BPMN</a></h3>
+<blockquote>
+<p>kroki-bpmn</p>
+</blockquote>
+<pre><code class="language-kroki-bpmn">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;semantic:definitions xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:di=&quot;http://www.omg.org/spec/DD/20100524/DI&quot; xmlns:bpmndi=&quot;http://www.omg.org/spec/BPMN/20100524/DI&quot; xmlns:dc=&quot;http://www.omg.org/spec/DD/20100524/DC&quot; xmlns:semantic=&quot;http://www.omg.org/spec/BPMN/20100524/MODEL&quot; id=&quot;_1275940932088&quot; targetNamespace=&quot;http://www.trisotech.com/definitions/_1275940932088&quot; exporter=&quot;Camunda Modeler&quot; exporterVersion=&quot;1.16.0&quot;&gt;
+  &lt;semantic:message id=&quot;_1275940932310&quot; /&gt;
+  &lt;semantic:message id=&quot;_1275940932433&quot; /&gt;
+  &lt;semantic:process id=&quot;_6-1&quot; isExecutable=&quot;false&quot;&gt;
+    &lt;semantic:laneSet id=&quot;ls_6-438&quot;&gt;
+      &lt;semantic:lane id=&quot;_6-650&quot; name=&quot;clerk&quot;&gt;
+        &lt;semantic:flowNodeRef&gt;OrderReceivedEvent&lt;/semantic:flowNodeRef&gt;
+        &lt;semantic:flowNodeRef&gt;_6-652&lt;/semantic:flowNodeRef&gt;
+        &lt;semantic:flowNodeRef&gt;_6-674&lt;/semantic:flowNodeRef&gt;
+        &lt;semantic:flowNodeRef&gt;CalmCustomerTask&lt;/semantic:flowNodeRef&gt;
+      &lt;/semantic:lane&gt;
+      &lt;semantic:lane id=&quot;_6-446&quot; name=&quot;pizza chef&quot;&gt;
+        &lt;semantic:flowNodeRef&gt;_6-463&lt;/semantic:flowNodeRef&gt;
+      &lt;/semantic:lane&gt;
+      &lt;semantic:lane id=&quot;_6-448&quot; name=&quot;delivery boy&quot;&gt;
+        &lt;semantic:flowNodeRef&gt;_6-514&lt;/semantic:flowNodeRef&gt;
+        &lt;semantic:flowNodeRef&gt;_6-565&lt;/semantic:flowNodeRef&gt;
+        &lt;semantic:flowNodeRef&gt;_6-616&lt;/semantic:flowNodeRef&gt;
+      &lt;/semantic:lane&gt;
+    &lt;/semantic:laneSet&gt;
+    &lt;semantic:startEvent id=&quot;OrderReceivedEvent&quot; name=&quot;Order received&quot;&gt;
+      &lt;semantic:outgoing&gt;_6-630&lt;/semantic:outgoing&gt;
+      &lt;semantic:messageEventDefinition messageRef=&quot;_1275940932310&quot; /&gt;
+    &lt;/semantic:startEvent&gt;
+    &lt;semantic:parallelGateway id=&quot;_6-652&quot; name=&quot;&quot;&gt;
+      &lt;semantic:incoming&gt;_6-630&lt;/semantic:incoming&gt;
+      &lt;semantic:outgoing&gt;_6-691&lt;/semantic:outgoing&gt;
+      &lt;semantic:outgoing&gt;_6-693&lt;/semantic:outgoing&gt;
+    &lt;/semantic:parallelGateway&gt;
+    &lt;semantic:intermediateCatchEvent id=&quot;_6-674&quot; name=&quot;„where is my pizza?“&quot;&gt;
+      &lt;semantic:incoming&gt;_6-691&lt;/semantic:incoming&gt;
+      &lt;semantic:incoming&gt;_6-746&lt;/semantic:incoming&gt;
+      &lt;semantic:outgoing&gt;_6-748&lt;/semantic:outgoing&gt;
+      &lt;semantic:messageEventDefinition messageRef=&quot;_1275940932433&quot; /&gt;
+    &lt;/semantic:intermediateCatchEvent&gt;
+    &lt;semantic:task id=&quot;CalmCustomerTask&quot; name=&quot;Calm customer&quot;&gt;
+      &lt;semantic:incoming&gt;_6-748&lt;/semantic:incoming&gt;
+      &lt;semantic:outgoing&gt;_6-746&lt;/semantic:outgoing&gt;
+    &lt;/semantic:task&gt;
+    &lt;semantic:task id=&quot;_6-463&quot; name=&quot;Bake the pizza&quot;&gt;
+      &lt;semantic:incoming&gt;_6-693&lt;/semantic:incoming&gt;
+      &lt;semantic:outgoing&gt;_6-632&lt;/semantic:outgoing&gt;
+    &lt;/semantic:task&gt;
+    &lt;semantic:task id=&quot;_6-514&quot; name=&quot;Deliver the pizza&quot;&gt;
+      &lt;semantic:incoming&gt;_6-632&lt;/semantic:incoming&gt;
+      &lt;semantic:outgoing&gt;_6-634&lt;/semantic:outgoing&gt;
+    &lt;/semantic:task&gt;
+    &lt;semantic:task id=&quot;_6-565&quot; name=&quot;Receive payment&quot;&gt;
+      &lt;semantic:incoming&gt;_6-634&lt;/semantic:incoming&gt;
+      &lt;semantic:outgoing&gt;_6-636&lt;/semantic:outgoing&gt;
+    &lt;/semantic:task&gt;
+    &lt;semantic:endEvent id=&quot;_6-616&quot; name=&quot;&quot;&gt;
+      &lt;semantic:incoming&gt;_6-636&lt;/semantic:incoming&gt;
+      &lt;semantic:terminateEventDefinition /&gt;
+    &lt;/semantic:endEvent&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-630&quot; name=&quot;&quot; sourceRef=&quot;OrderReceivedEvent&quot; targetRef=&quot;_6-652&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-632&quot; name=&quot;&quot; sourceRef=&quot;_6-463&quot; targetRef=&quot;_6-514&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-634&quot; name=&quot;&quot; sourceRef=&quot;_6-514&quot; targetRef=&quot;_6-565&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-636&quot; name=&quot;&quot; sourceRef=&quot;_6-565&quot; targetRef=&quot;_6-616&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-691&quot; name=&quot;&quot; sourceRef=&quot;_6-652&quot; targetRef=&quot;_6-674&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-693&quot; name=&quot;&quot; sourceRef=&quot;_6-652&quot; targetRef=&quot;_6-463&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-746&quot; name=&quot;&quot; sourceRef=&quot;CalmCustomerTask&quot; targetRef=&quot;_6-674&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-748&quot; name=&quot;&quot; sourceRef=&quot;_6-674&quot; targetRef=&quot;CalmCustomerTask&quot; /&gt;
+  &lt;/semantic:process&gt;
+  &lt;semantic:message id=&quot;_1275940932198&quot; /&gt;
+  &lt;semantic:process id=&quot;_6-2&quot; isExecutable=&quot;false&quot;&gt;
+    &lt;semantic:startEvent id=&quot;_6-61&quot; name=&quot;Hungry for pizza&quot;&gt;
+      &lt;semantic:outgoing&gt;_6-125&lt;/semantic:outgoing&gt;
+    &lt;/semantic:startEvent&gt;
+    &lt;semantic:task id=&quot;SelectAPizzaTask&quot; name=&quot;Select a pizza&quot;&gt;
+      &lt;semantic:incoming&gt;_6-125&lt;/semantic:incoming&gt;
+      &lt;semantic:outgoing&gt;_6-178&lt;/semantic:outgoing&gt;
+    &lt;/semantic:task&gt;
+    &lt;semantic:task id=&quot;_6-127&quot; name=&quot;Order a pizza&quot;&gt;
+      &lt;semantic:incoming&gt;_6-178&lt;/semantic:incoming&gt;
+      &lt;semantic:outgoing&gt;_6-420&lt;/semantic:outgoing&gt;
+    &lt;/semantic:task&gt;
+    &lt;semantic:eventBasedGateway id=&quot;_6-180&quot; name=&quot;&quot;&gt;
+      &lt;semantic:incoming&gt;_6-420&lt;/semantic:incoming&gt;
+      &lt;semantic:incoming&gt;_6-430&lt;/semantic:incoming&gt;
+      &lt;semantic:outgoing&gt;_6-422&lt;/semantic:outgoing&gt;
+      &lt;semantic:outgoing&gt;_6-424&lt;/semantic:outgoing&gt;
+    &lt;/semantic:eventBasedGateway&gt;
+    &lt;semantic:intermediateCatchEvent id=&quot;_6-202&quot; name=&quot;pizza received&quot;&gt;
+      &lt;semantic:incoming&gt;_6-422&lt;/semantic:incoming&gt;
+      &lt;semantic:outgoing&gt;_6-428&lt;/semantic:outgoing&gt;
+      &lt;semantic:messageEventDefinition messageRef=&quot;_1275940932198&quot; /&gt;
+    &lt;/semantic:intermediateCatchEvent&gt;
+    &lt;semantic:intermediateCatchEvent id=&quot;_6-219&quot; name=&quot;60 minutes&quot;&gt;
+      &lt;semantic:incoming&gt;_6-424&lt;/semantic:incoming&gt;
+      &lt;semantic:outgoing&gt;_6-426&lt;/semantic:outgoing&gt;
+      &lt;semantic:timerEventDefinition&gt;
+        &lt;semantic:timeDate /&gt;
+      &lt;/semantic:timerEventDefinition&gt;
+    &lt;/semantic:intermediateCatchEvent&gt;
+    &lt;semantic:task id=&quot;_6-236&quot; name=&quot;Ask for the pizza&quot;&gt;
+      &lt;semantic:incoming&gt;_6-426&lt;/semantic:incoming&gt;
+      &lt;semantic:outgoing&gt;_6-430&lt;/semantic:outgoing&gt;
+    &lt;/semantic:task&gt;
+    &lt;semantic:task id=&quot;_6-304&quot; name=&quot;Pay the pizza&quot;&gt;
+      &lt;semantic:incoming&gt;_6-428&lt;/semantic:incoming&gt;
+      &lt;semantic:outgoing&gt;_6-434&lt;/semantic:outgoing&gt;
+    &lt;/semantic:task&gt;
+    &lt;semantic:task id=&quot;_6-355&quot; name=&quot;Eat the pizza&quot;&gt;
+      &lt;semantic:incoming&gt;_6-434&lt;/semantic:incoming&gt;
+      &lt;semantic:outgoing&gt;_6-436&lt;/semantic:outgoing&gt;
+    &lt;/semantic:task&gt;
+    &lt;semantic:endEvent id=&quot;_6-406&quot; name=&quot;Hunger satisfied&quot;&gt;
+      &lt;semantic:incoming&gt;_6-436&lt;/semantic:incoming&gt;
+    &lt;/semantic:endEvent&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-125&quot; name=&quot;&quot; sourceRef=&quot;_6-61&quot; targetRef=&quot;SelectAPizzaTask&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-178&quot; name=&quot;&quot; sourceRef=&quot;SelectAPizzaTask&quot; targetRef=&quot;_6-127&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-420&quot; name=&quot;&quot; sourceRef=&quot;_6-127&quot; targetRef=&quot;_6-180&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-422&quot; name=&quot;&quot; sourceRef=&quot;_6-180&quot; targetRef=&quot;_6-202&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-424&quot; name=&quot;&quot; sourceRef=&quot;_6-180&quot; targetRef=&quot;_6-219&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-426&quot; name=&quot;&quot; sourceRef=&quot;_6-219&quot; targetRef=&quot;_6-236&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-428&quot; name=&quot;&quot; sourceRef=&quot;_6-202&quot; targetRef=&quot;_6-304&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-430&quot; name=&quot;&quot; sourceRef=&quot;_6-236&quot; targetRef=&quot;_6-180&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-434&quot; name=&quot;&quot; sourceRef=&quot;_6-304&quot; targetRef=&quot;_6-355&quot; /&gt;
+    &lt;semantic:sequenceFlow id=&quot;_6-436&quot; name=&quot;&quot; sourceRef=&quot;_6-355&quot; targetRef=&quot;_6-406&quot; /&gt;
+  &lt;/semantic:process&gt;
+  &lt;semantic:collaboration id=&quot;C1275940932557&quot;&gt;
+    &lt;semantic:participant id=&quot;_6-53&quot; name=&quot;Pizza Customer&quot; processRef=&quot;_6-2&quot; /&gt;
+    &lt;semantic:participant id=&quot;_6-438&quot; name=&quot;Pizza vendor&quot; processRef=&quot;_6-1&quot; /&gt;
+    &lt;semantic:messageFlow id=&quot;_6-638&quot; name=&quot;pizza order&quot; sourceRef=&quot;_6-127&quot; targetRef=&quot;OrderReceivedEvent&quot; /&gt;
+    &lt;semantic:messageFlow id=&quot;_6-642&quot; name=&quot;&quot; sourceRef=&quot;_6-236&quot; targetRef=&quot;_6-674&quot; /&gt;
+    &lt;semantic:messageFlow id=&quot;_6-646&quot; name=&quot;receipt&quot; sourceRef=&quot;_6-565&quot; targetRef=&quot;_6-304&quot; /&gt;
+    &lt;semantic:messageFlow id=&quot;_6-648&quot; name=&quot;money&quot; sourceRef=&quot;_6-304&quot; targetRef=&quot;_6-565&quot; /&gt;
+    &lt;semantic:messageFlow id=&quot;_6-640&quot; name=&quot;pizza&quot; sourceRef=&quot;_6-514&quot; targetRef=&quot;_6-202&quot; /&gt;
+    &lt;semantic:messageFlow id=&quot;_6-750&quot; name=&quot;&quot; sourceRef=&quot;CalmCustomerTask&quot; targetRef=&quot;_6-236&quot; /&gt;
+  &lt;/semantic:collaboration&gt;
+  &lt;bpmndi:BPMNDiagram id=&quot;Trisotech.Visio-_6&quot; name=&quot;Untitled Diagram&quot; documentation=&quot;&quot; resolution=&quot;96.00000267028808&quot;&gt;
+    &lt;bpmndi:BPMNPlane bpmnElement=&quot;C1275940932557&quot;&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6-53&quot; bpmnElement=&quot;_6-53&quot; isHorizontal=&quot;true&quot;&gt;
+        &lt;dc:Bounds x=&quot;12&quot; y=&quot;12&quot; width=&quot;1044&quot; height=&quot;294&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6-438&quot; bpmnElement=&quot;_6-438&quot; isHorizontal=&quot;true&quot;&gt;
+        &lt;dc:Bounds x=&quot;12&quot; y=&quot;372&quot; width=&quot;905&quot; height=&quot;337&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-650&quot; bpmnElement=&quot;_6-650&quot; isHorizontal=&quot;true&quot;&gt;
+        &lt;dc:Bounds x=&quot;42&quot; y=&quot;372&quot; width=&quot;875&quot; height=&quot;114&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-446&quot; bpmnElement=&quot;_6-446&quot; isHorizontal=&quot;true&quot;&gt;
+        &lt;dc:Bounds x=&quot;42&quot; y=&quot;486&quot; width=&quot;875&quot; height=&quot;114&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-448&quot; bpmnElement=&quot;_6-448&quot; isHorizontal=&quot;true&quot;&gt;
+        &lt;dc:Bounds x=&quot;42&quot; y=&quot;600&quot; width=&quot;875&quot; height=&quot;109&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6_OrderReceivedEvent&quot; bpmnElement=&quot;OrderReceivedEvent&quot;&gt;
+        &lt;dc:Bounds x=&quot;79&quot; y=&quot;405&quot; width=&quot;30&quot; height=&quot;30&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-652&quot; bpmnElement=&quot;_6-652&quot;&gt;
+        &lt;dc:Bounds x=&quot;140&quot; y=&quot;399&quot; width=&quot;42&quot; height=&quot;42&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-674&quot; bpmnElement=&quot;_6-674&quot;&gt;
+        &lt;dc:Bounds x=&quot;218&quot; y=&quot;404&quot; width=&quot;32&quot; height=&quot;32&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6_CalmCustomerTask&quot; bpmnElement=&quot;CalmCustomerTask&quot;&gt;
+        &lt;dc:Bounds x=&quot;286&quot; y=&quot;386&quot; width=&quot;83&quot; height=&quot;68&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-463&quot; bpmnElement=&quot;_6-463&quot;&gt;
+        &lt;dc:Bounds x=&quot;252&quot; y=&quot;521&quot; width=&quot;83&quot; height=&quot;68&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-514&quot; bpmnElement=&quot;_6-514&quot;&gt;
+        &lt;dc:Bounds x=&quot;464&quot; y=&quot;629&quot; width=&quot;83&quot; height=&quot;68&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-565&quot; bpmnElement=&quot;_6-565&quot;&gt;
+        &lt;dc:Bounds x=&quot;603&quot; y=&quot;629&quot; width=&quot;83&quot; height=&quot;68&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-616&quot; bpmnElement=&quot;_6-616&quot;&gt;
+        &lt;dc:Bounds x=&quot;722&quot; y=&quot;647&quot; width=&quot;32&quot; height=&quot;32&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-61&quot; bpmnElement=&quot;_6-61&quot;&gt;
+        &lt;dc:Bounds x=&quot;66&quot; y=&quot;96&quot; width=&quot;30&quot; height=&quot;30&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-74&quot; bpmnElement=&quot;SelectAPizzaTask&quot;&gt;
+        &lt;dc:Bounds x=&quot;145&quot; y=&quot;77&quot; width=&quot;83&quot; height=&quot;68&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-127&quot; bpmnElement=&quot;_6-127&quot;&gt;
+        &lt;dc:Bounds x=&quot;265&quot; y=&quot;77&quot; width=&quot;83&quot; height=&quot;68&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-180&quot; bpmnElement=&quot;_6-180&quot;&gt;
+        &lt;dc:Bounds x=&quot;378&quot; y=&quot;90&quot; width=&quot;42&quot; height=&quot;42&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-202&quot; bpmnElement=&quot;_6-202&quot;&gt;
+        &lt;dc:Bounds x=&quot;647&quot; y=&quot;95&quot; width=&quot;32&quot; height=&quot;32&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-219&quot; bpmnElement=&quot;_6-219&quot;&gt;
+        &lt;dc:Bounds x=&quot;448&quot; y=&quot;184&quot; width=&quot;32&quot; height=&quot;32&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-236&quot; bpmnElement=&quot;_6-236&quot;&gt;
+        &lt;dc:Bounds x=&quot;517&quot; y=&quot;166&quot; width=&quot;83&quot; height=&quot;68&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-304&quot; bpmnElement=&quot;_6-304&quot;&gt;
+        &lt;dc:Bounds x=&quot;726&quot; y=&quot;77&quot; width=&quot;83&quot; height=&quot;68&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-355&quot; bpmnElement=&quot;_6-355&quot;&gt;
+        &lt;dc:Bounds x=&quot;834&quot; y=&quot;77&quot; width=&quot;83&quot; height=&quot;68&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNShape id=&quot;Trisotech.Visio__6__6-406&quot; bpmnElement=&quot;_6-406&quot;&gt;
+        &lt;dc:Bounds x=&quot;956&quot; y=&quot;95&quot; width=&quot;32&quot; height=&quot;32&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNShape&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-640&quot; bpmnElement=&quot;_6-640&quot;&gt;
+        &lt;di:waypoint x=&quot;506&quot; y=&quot;629&quot; /&gt;
+        &lt;di:waypoint x=&quot;506&quot; y=&quot;384&quot; /&gt;
+        &lt;di:waypoint x=&quot;663&quot; y=&quot;384&quot; /&gt;
+        &lt;di:waypoint x=&quot;663&quot; y=&quot;127&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-630&quot; bpmnElement=&quot;_6-630&quot;&gt;
+        &lt;di:waypoint x=&quot;109&quot; y=&quot;420&quot; /&gt;
+        &lt;di:waypoint x=&quot;140&quot; y=&quot;420&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-691&quot; bpmnElement=&quot;_6-691&quot;&gt;
+        &lt;di:waypoint x=&quot;182&quot; y=&quot;420&quot; /&gt;
+        &lt;di:waypoint x=&quot;200&quot; y=&quot;420&quot; /&gt;
+        &lt;di:waypoint x=&quot;218&quot; y=&quot;420&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-648&quot; bpmnElement=&quot;_6-648&quot;&gt;
+        &lt;di:waypoint x=&quot;754&quot; y=&quot;145&quot; /&gt;
+        &lt;di:waypoint x=&quot;754&quot; y=&quot;408&quot; /&gt;
+        &lt;di:waypoint x=&quot;630&quot; y=&quot;408&quot; /&gt;
+        &lt;di:waypoint x=&quot;631&quot; y=&quot;629&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-422&quot; bpmnElement=&quot;_6-422&quot;&gt;
+        &lt;di:waypoint x=&quot;420&quot; y=&quot;111&quot; /&gt;
+        &lt;di:waypoint x=&quot;438&quot; y=&quot;111&quot; /&gt;
+        &lt;di:waypoint x=&quot;647&quot; y=&quot;111&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-646&quot; bpmnElement=&quot;_6-646&quot; messageVisibleKind=&quot;non_initiating&quot;&gt;
+        &lt;di:waypoint x=&quot;658&quot; y=&quot;629&quot; /&gt;
+        &lt;di:waypoint x=&quot;658&quot; y=&quot;432&quot; /&gt;
+        &lt;di:waypoint x=&quot;782&quot; y=&quot;432&quot; /&gt;
+        &lt;di:waypoint x=&quot;782&quot; y=&quot;145&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-428&quot; bpmnElement=&quot;_6-428&quot;&gt;
+        &lt;di:waypoint x=&quot;679&quot; y=&quot;111&quot; /&gt;
+        &lt;di:waypoint x=&quot;726&quot; y=&quot;111&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-748&quot; bpmnElement=&quot;_6-748&quot;&gt;
+        &lt;di:waypoint x=&quot;250&quot; y=&quot;420&quot; /&gt;
+        &lt;di:waypoint x=&quot;268&quot; y=&quot;420&quot; /&gt;
+        &lt;di:waypoint x=&quot;286&quot; y=&quot;420&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-420&quot; bpmnElement=&quot;_6-420&quot;&gt;
+        &lt;di:waypoint x=&quot;348&quot; y=&quot;111&quot; /&gt;
+        &lt;di:waypoint x=&quot;366&quot; y=&quot;111&quot; /&gt;
+        &lt;di:waypoint x=&quot;378&quot; y=&quot;111&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-636&quot; bpmnElement=&quot;_6-636&quot;&gt;
+        &lt;di:waypoint x=&quot;686&quot; y=&quot;663&quot; /&gt;
+        &lt;di:waypoint x=&quot;704&quot; y=&quot;663&quot; /&gt;
+        &lt;di:waypoint x=&quot;722&quot; y=&quot;663&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-750&quot; bpmnElement=&quot;_6-750&quot;&gt;
+        &lt;di:waypoint x=&quot;328&quot; y=&quot;386&quot; /&gt;
+        &lt;di:waypoint x=&quot;328&quot; y=&quot;348&quot; /&gt;
+        &lt;di:waypoint x=&quot;572&quot; y=&quot;348&quot; /&gt;
+        &lt;di:waypoint x=&quot;572&quot; y=&quot;234&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-436&quot; bpmnElement=&quot;_6-436&quot;&gt;
+        &lt;di:waypoint x=&quot;918&quot; y=&quot;111&quot; /&gt;
+        &lt;di:waypoint x=&quot;936&quot; y=&quot;111&quot; /&gt;
+        &lt;di:waypoint x=&quot;956&quot; y=&quot;111&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-632&quot; bpmnElement=&quot;_6-632&quot;&gt;
+        &lt;di:waypoint x=&quot;335&quot; y=&quot;555&quot; /&gt;
+        &lt;di:waypoint x=&quot;353&quot; y=&quot;555&quot; /&gt;
+        &lt;di:waypoint x=&quot;353&quot; y=&quot;663&quot; /&gt;
+        &lt;di:waypoint x=&quot;464&quot; y=&quot;663&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-634&quot; bpmnElement=&quot;_6-634&quot;&gt;
+        &lt;di:waypoint x=&quot;548&quot; y=&quot;663&quot; /&gt;
+        &lt;di:waypoint x=&quot;603&quot; y=&quot;663&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-125&quot; bpmnElement=&quot;_6-125&quot;&gt;
+        &lt;di:waypoint x=&quot;96&quot; y=&quot;111&quot; /&gt;
+        &lt;di:waypoint x=&quot;114&quot; y=&quot;111&quot; /&gt;
+        &lt;di:waypoint x=&quot;145&quot; y=&quot;111&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-430&quot; bpmnElement=&quot;_6-430&quot;&gt;
+        &lt;di:waypoint x=&quot;600&quot; y=&quot;200&quot; /&gt;
+        &lt;di:waypoint x=&quot;618&quot; y=&quot;200&quot; /&gt;
+        &lt;di:waypoint x=&quot;618&quot; y=&quot;252&quot; /&gt;
+        &lt;di:waypoint x=&quot;576&quot; y=&quot;252&quot; /&gt;
+        &lt;di:waypoint x=&quot;549&quot; y=&quot;252&quot; /&gt;
+        &lt;di:waypoint x=&quot;360&quot; y=&quot;252&quot; /&gt;
+        &lt;di:waypoint x=&quot;360&quot; y=&quot;111&quot; /&gt;
+        &lt;di:waypoint x=&quot;378&quot; y=&quot;111&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-642&quot; bpmnElement=&quot;_6-642&quot;&gt;
+        &lt;di:waypoint x=&quot;545&quot; y=&quot;234&quot; /&gt;
+        &lt;di:waypoint x=&quot;545&quot; y=&quot;324&quot; /&gt;
+        &lt;di:waypoint x=&quot;234&quot; y=&quot;324&quot; /&gt;
+        &lt;di:waypoint x=&quot;234&quot; y=&quot;404&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-424&quot; bpmnElement=&quot;_6-424&quot;&gt;
+        &lt;di:waypoint x=&quot;399&quot; y=&quot;132&quot; /&gt;
+        &lt;di:waypoint x=&quot;399&quot; y=&quot;200&quot; /&gt;
+        &lt;di:waypoint x=&quot;448&quot; y=&quot;200&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-638&quot; bpmnElement=&quot;_6-638&quot;&gt;
+        &lt;di:waypoint x=&quot;306&quot; y=&quot;145&quot; /&gt;
+        &lt;di:waypoint x=&quot;306&quot; y=&quot;252&quot; /&gt;
+        &lt;di:waypoint x=&quot;94&quot; y=&quot;252&quot; /&gt;
+        &lt;di:waypoint x=&quot;94&quot; y=&quot;405&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-426&quot; bpmnElement=&quot;_6-426&quot;&gt;
+        &lt;di:waypoint x=&quot;480&quot; y=&quot;200&quot; /&gt;
+        &lt;di:waypoint x=&quot;498&quot; y=&quot;200&quot; /&gt;
+        &lt;di:waypoint x=&quot;517&quot; y=&quot;200&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-693&quot; bpmnElement=&quot;_6-693&quot;&gt;
+        &lt;di:waypoint x=&quot;161&quot; y=&quot;441&quot; /&gt;
+        &lt;di:waypoint x=&quot;161&quot; y=&quot;556&quot; /&gt;
+        &lt;di:waypoint x=&quot;252&quot; y=&quot;555&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-178&quot; bpmnElement=&quot;_6-178&quot;&gt;
+        &lt;di:waypoint x=&quot;228&quot; y=&quot;111&quot; /&gt;
+        &lt;di:waypoint x=&quot;265&quot; y=&quot;111&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-746&quot; bpmnElement=&quot;_6-746&quot;&gt;
+        &lt;di:waypoint x=&quot;370&quot; y=&quot;420&quot; /&gt;
+        &lt;di:waypoint x=&quot;386&quot; y=&quot;420&quot; /&gt;
+        &lt;di:waypoint x=&quot;386&quot; y=&quot;474&quot; /&gt;
+        &lt;di:waypoint x=&quot;191&quot; y=&quot;474&quot; /&gt;
+        &lt;di:waypoint x=&quot;191&quot; y=&quot;420&quot; /&gt;
+        &lt;di:waypoint x=&quot;218&quot; y=&quot;420&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+      &lt;bpmndi:BPMNEdge id=&quot;Trisotech.Visio__6__6-434&quot; bpmnElement=&quot;_6-434&quot;&gt;
+        &lt;di:waypoint x=&quot;810&quot; y=&quot;111&quot; /&gt;
+        &lt;di:waypoint x=&quot;834&quot; y=&quot;111&quot; /&gt;
+        &lt;bpmndi:BPMNLabel /&gt;
+      &lt;/bpmndi:BPMNEdge&gt;
+    &lt;/bpmndi:BPMNPlane&gt;
+  &lt;/bpmndi:BPMNDiagram&gt;
+&lt;/semantic:definitions&gt;
+</code></pre>
+<h3 id="bytefield"><a class="header" href="#bytefield">Bytefield</a></h3>
+<blockquote>
+<p>kroki-bytefield</p>
+</blockquote>
+<pre><code class="language-kroki-bytefield">(defattrs :bg-green {:fill &quot;#a0ffa0&quot;})
+(defattrs :bg-yellow {:fill &quot;#ffffa0&quot;})
+(defattrs :bg-pink {:fill &quot;#ffb0a0&quot;})
+(defattrs :bg-cyan {:fill &quot;#a0fafa&quot;})
+(defattrs :bg-purple {:fill &quot;#e4b5f7&quot;})
+
+(defn draw-group-label-header
+  &quot;Creates a small borderless box used to draw the textual label headers
+  used below the byte labels for remotedb message diagrams.
+  Arguments are the number of colums to span and the text of the
+  label.&quot;
+  [span label]
+  (draw-box (text label [:math {:font-size 12}]) {:span    span
+                                                  :borders #{}
+                                                  :height  14}))
+
+(defn draw-remotedb-header
+  &quot;Generates the byte and field labels and standard header fields of a
+  request or response message for the remotedb database server with
+  the specified kind and args values.&quot;
+  [kind args]
+  (draw-column-headers)
+  (draw-group-label-header 5 &quot;start&quot;)
+  (draw-group-label-header 5 &quot;TxID&quot;)
+  (draw-group-label-header 3 &quot;type&quot;)
+  (draw-group-label-header 2 &quot;args&quot;)
+  (draw-group-label-header 1 &quot;tags&quot;)
+  (next-row 18)
+
+  (draw-box 0x11 :bg-green)
+  (draw-box 0x872349ae [{:span 4} :bg-green])
+  (draw-box 0x11 :bg-yellow)
+  (draw-box (text &quot;TxID&quot; :math) [{:span 4} :bg-yellow])
+  (draw-box 0x10 :bg-pink)
+  (draw-box (hex-text kind 4 :bold) [{:span 2} :bg-pink])
+  (draw-box 0x0f :bg-cyan)
+  (draw-box (hex-text args 2 :bold) :bg-cyan)
+  (draw-box 0x14 :bg-purple)
+
+  (draw-box (text &quot;0000000c&quot; :hex [[:plain {:font-weight &quot;light&quot; :font-size 16}] &quot; (12)&quot;])
+            [{:span 4} :bg-purple])
+  (draw-box (hex-text 6 2 :bold) [:box-first :bg-purple])
+  (doseq [val [6 6 3 6 6 6 6 3]]
+    (draw-box (hex-text val 2 :bold) [:box-related :bg-purple]))
+  (doseq [val [0 0]]
+    (draw-box val [:box-related :bg-purple]))
+  (draw-box 0 [:box-last :bg-purple]))
+
+(draw-remotedb-header 0x4702 9)
+
+(draw-box 0x11)
+(draw-box 0x2104 {:span 4})
+(draw-box 0x11)
+(draw-box 0 {:span 4})
+(draw-box 0x11)
+(draw-box (text &quot;length&quot; [:math] [:sub 1]) {:span 4})
+(draw-box 0x14)
+
+(draw-box (text &quot;length&quot; [:math] [:sub 1]) {:span 4})
+(draw-gap &quot;Cue and loop point bytes&quot;)
+
+(draw-box nil :box-below)
+(draw-box 0x11)
+(draw-box 0x36 {:span 4})
+(draw-box 0x11)
+(draw-box (text &quot;num&quot; [:math] [:sub &quot;hot&quot;]) {:span 4})
+(draw-box 0x11)
+(draw-box (text &quot;num&quot; [:math] [:sub &quot;cue&quot;]) {:span 4})
+
+(draw-box 0x11)
+(draw-box (text &quot;length&quot; [:math] [:sub 2]) {:span 4})
+(draw-box 0x14)
+(draw-box (text &quot;length&quot; [:math] [:sub 2]) {:span 4})
+(draw-gap &quot;Unknown bytes&quot; {:min-label-columns 6})
+(draw-bottom)
+</code></pre>
+<h3 id="wavedrom-digital-timing-diagram"><a class="header" href="#wavedrom-digital-timing-diagram">WaveDrom: Digital Timing diagram</a></h3>
+<blockquote>
+<p>kroki-wavedrom</p>
+</blockquote>
+<pre><code class="language-kroki-wavedrom">{ signal: [
+  { name: &quot;clk&quot;,         wave: &quot;p.....|...&quot; },
+  { name: &quot;Data&quot;,        wave: &quot;x.345x|=.x&quot;, data: [&quot;head&quot;, &quot;body&quot;, &quot;tail&quot;, &quot;data&quot;] },
+  { name: &quot;Request&quot;,     wave: &quot;0.1..0|1.0&quot; },
+  {},
+  { name: &quot;Acknowledge&quot;, wave: &quot;1.....|01.&quot; }
+]}
+</code></pre>
+<h3 id="svgbob"><a class="header" href="#svgbob">Svgbob</a></h3>
+<blockquote>
+<p>kroki-svgbob</p>
+</blockquote>
+<h4 id="connected-servers"><a class="header" href="#connected-servers">connected Servers</a></h4>
+<pre><code class="language-kroki-svgbob">                  .-,(  ),-.
+   ___  _      .-(          )-.
+  [___]|=| --&gt;(                )      __________
+  /::/ |_|     '-(          ).-' ---&gt;[_...__...°]
+                  '-.( ).-'
+                          \      ____   __
+                           '---&gt;|    | |==|
+                                |____| |  |
+                                /::::/ |__|
+</code></pre>
+<h4 id="ascii-art"><a class="header" href="#ascii-art">Ascii Art</a></h4>
+<pre><code class="language-kroki-svgbob">  _____
+ /  O__]
+/  ___]
+\   \
+ |   |
+ |   |
+ /   /
+ \   \
+ /   /
+</code></pre>
+<h3 id="structurizr"><a class="header" href="#structurizr">Structurizr</a></h3>
+<blockquote>
+<p>kroki-structurizr</p>
+</blockquote>
+<h4 id="contaner-diagram"><a class="header" href="#contaner-diagram">Contaner diagram</a></h4>
+<pre><code class="language-kroki-structurizr">workspace &quot;Big Bank plc&quot; &quot;This is an example workspace to illustrate the key features of Structurizr, via the DSL, based around a fictional online banking system.&quot; {
+
+    model {
+        customer = person &quot;Personal Banking Customer&quot; &quot;A customer of the bank, with personal bank accounts.&quot; &quot;Customer&quot;
+
+        enterprise &quot;Big Bank plc&quot; {
+            supportStaff = person &quot;Customer Service Staff&quot; &quot;Customer service staff within the bank.&quot; &quot;Bank Staff&quot;
+            backoffice = person &quot;Back Office Staff&quot; &quot;Administration and support staff within the bank.&quot; &quot;Bank Staff&quot;
+
+            mainframe = softwaresystem &quot;Mainframe Banking System&quot; &quot;Stores all of the core banking information about customers, accounts, transactions, etc.&quot; &quot;Existing System&quot;
+            email = softwaresystem &quot;E-mail System&quot; &quot;The internal Microsoft Exchange e-mail system.&quot; &quot;Existing System&quot;
+            atm = softwaresystem &quot;ATM&quot; &quot;Allows customers to withdraw cash.&quot; &quot;Existing System&quot;
+
+            internetBankingSystem = softwaresystem &quot;Internet Banking System&quot; &quot;Allows customers to view information about their bank accounts, and make payments.&quot; {
+                singlePageApplication = container &quot;Single-Page Application&quot; &quot;Provides all of the Internet banking functionality to customers via their web browser.&quot; &quot;JavaScript and Angular&quot; &quot;Web Browser&quot;
+                mobileApp = container &quot;Mobile App&quot; &quot;Provides a limited subset of the Internet banking functionality to customers via their mobile device.&quot; &quot;Xamarin&quot; &quot;Mobile App&quot;
+                webApplication = container &quot;Web Application&quot; &quot;Delivers the static content and the Internet banking single page application.&quot; &quot;Java and Spring MVC&quot;
+                apiApplication = container &quot;API Application&quot; &quot;Provides Internet banking functionality via a JSON/HTTPS API.&quot; &quot;Java and Spring MVC&quot; {
+                    signinController = component &quot;Sign In Controller&quot; &quot;Allows users to sign in to the Internet Banking System.&quot; &quot;Spring MVC Rest Controller&quot;
+                    accountsSummaryController = component &quot;Accounts Summary Controller&quot; &quot;Provides customers with a summary of their bank accounts.&quot; &quot;Spring MVC Rest Controller&quot;
+                    resetPasswordController = component &quot;Reset Password Controller&quot; &quot;Allows users to reset their passwords with a single use URL.&quot; &quot;Spring MVC Rest Controller&quot;
+                    securityComponent = component &quot;Security Component&quot; &quot;Provides functionality related to signing in, changing passwords, etc.&quot; &quot;Spring Bean&quot;
+                    mainframeBankingSystemFacade = component &quot;Mainframe Banking System Facade&quot; &quot;A facade onto the mainframe banking system.&quot; &quot;Spring Bean&quot;
+                    emailComponent = component &quot;E-mail Component&quot; &quot;Sends e-mails to users.&quot; &quot;Spring Bean&quot;
+                }
+                database = container &quot;Database&quot; &quot;Stores user registration information, hashed authentication credentials, access logs, etc.&quot; &quot;Oracle Database Schema&quot; &quot;Database&quot;
+            }
+        }
+
+        # relationships between people and software systems
+        customer -&gt; internetBankingSystem &quot;Views account balances, and makes payments using&quot;
+        internetBankingSystem -&gt; mainframe &quot;Gets account information from, and makes payments using&quot;
+        internetBankingSystem -&gt; email &quot;Sends e-mail using&quot;
+        email -&gt; customer &quot;Sends e-mails to&quot;
+        customer -&gt; supportStaff &quot;Asks questions to&quot; &quot;Telephone&quot;
+        supportStaff -&gt; mainframe &quot;Uses&quot;
+        customer -&gt; atm &quot;Withdraws cash using&quot;
+        atm -&gt; mainframe &quot;Uses&quot;
+        backoffice -&gt; mainframe &quot;Uses&quot;
+
+        # relationships to/from containers
+        customer -&gt; webApplication &quot;Visits bigbank.com/ib using&quot; &quot;HTTPS&quot;
+        customer -&gt; singlePageApplication &quot;Views account balances, and makes payments using&quot;
+        customer -&gt; mobileApp &quot;Views account balances, and makes payments using&quot;
+        webApplication -&gt; singlePageApplication &quot;Delivers to the customer's web browser&quot;
+
+        # relationships to/from components
+        singlePageApplication -&gt; signinController &quot;Makes API calls to&quot; &quot;JSON/HTTPS&quot;
+        singlePageApplication -&gt; accountsSummaryController &quot;Makes API calls to&quot; &quot;JSON/HTTPS&quot;
+        singlePageApplication -&gt; resetPasswordController &quot;Makes API calls to&quot; &quot;JSON/HTTPS&quot;
+        mobileApp -&gt; signinController &quot;Makes API calls to&quot; &quot;JSON/HTTPS&quot;
+        mobileApp -&gt; accountsSummaryController &quot;Makes API calls to&quot; &quot;JSON/HTTPS&quot;
+        mobileApp -&gt; resetPasswordController &quot;Makes API calls to&quot; &quot;JSON/HTTPS&quot;
+        signinController -&gt; securityComponent &quot;Uses&quot;
+        accountsSummaryController -&gt; mainframeBankingSystemFacade &quot;Uses&quot;
+        resetPasswordController -&gt; securityComponent &quot;Uses&quot;
+        resetPasswordController -&gt; emailComponent &quot;Uses&quot;
+        securityComponent -&gt; database &quot;Reads from and writes to&quot; &quot;JDBC&quot;
+        mainframeBankingSystemFacade -&gt; mainframe &quot;Makes API calls to&quot; &quot;XML/HTTPS&quot;
+        emailComponent -&gt; email &quot;Sends e-mail using&quot;
+
+        deploymentEnvironment &quot;Development&quot; {
+            deploymentNode &quot;Developer Laptop&quot; &quot;&quot; &quot;Microsoft Windows 10 or Apple macOS&quot; {
+                deploymentNode &quot;Web Browser&quot; &quot;&quot; &quot;Chrome, Firefox, Safari, or Edge&quot; {
+                    developerSinglePageApplicationInstance = containerInstance singlePageApplication
+                }
+                deploymentNode &quot;Docker Container - Web Server&quot; &quot;&quot; &quot;Docker&quot; {
+                    deploymentNode &quot;Apache Tomcat&quot; &quot;&quot; &quot;Apache Tomcat 8.x&quot; {
+                        developerWebApplicationInstance = containerInstance webApplication
+                        developerApiApplicationInstance = containerInstance apiApplication
+                    }
+                }
+                deploymentNode &quot;Docker Container - Database Server&quot; &quot;&quot; &quot;Docker&quot; {
+                    deploymentNode &quot;Database Server&quot; &quot;&quot; &quot;Oracle 12c&quot; {
+                        developerDatabaseInstance = containerInstance database
+                    }
+                }
+            }
+            deploymentNode &quot;Big Bank plc&quot; &quot;&quot; &quot;Big Bank plc data center&quot; &quot;&quot; {
+                deploymentNode &quot;bigbank-dev001&quot; &quot;&quot; &quot;&quot; &quot;&quot; {
+                    softwareSystemInstance mainframe
+                }
+            }
+
+        }
+
+        deploymentEnvironment &quot;Live&quot; {
+            deploymentNode &quot;Customer's mobile device&quot; &quot;&quot; &quot;Apple iOS or Android&quot; {
+                liveMobileAppInstance = containerInstance mobileApp
+            }
+            deploymentNode &quot;Customer's computer&quot; &quot;&quot; &quot;Microsoft Windows or Apple macOS&quot; {
+                deploymentNode &quot;Web Browser&quot; &quot;&quot; &quot;Chrome, Firefox, Safari, or Edge&quot; {
+                    liveSinglePageApplicationInstance = containerInstance singlePageApplication
+                }
+            }
+
+            deploymentNode &quot;Big Bank plc&quot; &quot;&quot; &quot;Big Bank plc data center&quot; {
+                deploymentNode &quot;bigbank-web***&quot; &quot;&quot; &quot;Ubuntu 16.04 LTS&quot; &quot;&quot; 4 {
+                    deploymentNode &quot;Apache Tomcat&quot; &quot;&quot; &quot;Apache Tomcat 8.x&quot; {
+                        liveWebApplicationInstance = containerInstance webApplication
+                    }
+                }
+                deploymentNode &quot;bigbank-api***&quot; &quot;&quot; &quot;Ubuntu 16.04 LTS&quot; &quot;&quot; 8 {
+                    deploymentNode &quot;Apache Tomcat&quot; &quot;&quot; &quot;Apache Tomcat 8.x&quot; {
+                        liveApiApplicationInstance = containerInstance apiApplication
+                    }
+                }
+
+                deploymentNode &quot;bigbank-db01&quot; &quot;&quot; &quot;Ubuntu 16.04 LTS&quot; {
+                    primaryDatabaseServer = deploymentNode &quot;Oracle - Primary&quot; &quot;&quot; &quot;Oracle 12c&quot; {
+                        livePrimaryDatabaseInstance = containerInstance database
+                    }
+                }
+                deploymentNode &quot;bigbank-db02&quot; &quot;&quot; &quot;Ubuntu 16.04 LTS&quot; &quot;Failover&quot; {
+                    secondaryDatabaseServer = deploymentNode &quot;Oracle - Secondary&quot; &quot;&quot; &quot;Oracle 12c&quot; &quot;Failover&quot; {
+                        liveSecondaryDatabaseInstance = containerInstance database &quot;Failover&quot;
+                    }
+                }
+                deploymentNode &quot;bigbank-prod001&quot; &quot;&quot; &quot;&quot; &quot;&quot; {
+                    softwareSystemInstance mainframe
+                }
+            }
+
+            primaryDatabaseServer -&gt; secondaryDatabaseServer &quot;Replicates data to&quot;
+        }
+    }
+
+    views {
+        systemlandscape &quot;SystemLandscape&quot; {
+            include *
+            autoLayout
+        }
+
+        systemcontext internetBankingSystem &quot;SystemContext&quot; {
+            include *
+            animation {
+                internetBankingSystem
+                customer
+                mainframe
+                email
+            }
+            autoLayout
+        }
+
+        container internetBankingSystem &quot;Containers&quot; {
+            include *
+            animation {
+                customer mainframe email
+                webApplication
+                singlePageApplication
+                mobileApp
+                apiApplication
+                database
+            }
+            autoLayout
+        }
+
+        component apiApplication &quot;Components&quot; {
+            include *
+            animation {
+                singlePageApplication mobileApp database email mainframe
+                signinController securityComponent
+                accountsSummaryController mainframeBankingSystemFacade
+                resetPasswordController emailComponent
+            }
+            autoLayout
+        }
+
+        dynamic apiApplication &quot;SignIn&quot; &quot;Summarises how the sign in feature works in the single-page application.&quot; {
+            singlePageApplication -&gt; signinController &quot;Submits credentials to&quot;
+            signinController -&gt; securityComponent &quot;Validates credentials using&quot;
+            securityComponent -&gt; database &quot;select * from users where username = ?&quot;
+            database -&gt; securityComponent &quot;Returns user data to&quot;
+            securityComponent -&gt; signinController &quot;Returns true if the hashed password matches&quot;
+            signinController -&gt; singlePageApplication &quot;Sends back an authentication token to&quot;
+            autoLayout
+        }
+
+        deployment internetBankingSystem &quot;Development&quot; &quot;DevelopmentDeployment&quot; {
+            include *
+            animation {
+                developerSinglePageApplicationInstance
+                developerWebApplicationInstance developerApiApplicationInstance
+                developerDatabaseInstance
+            }
+            autoLayout
+        }
+
+        deployment internetBankingSystem &quot;Live&quot; &quot;LiveDeployment&quot; {
+            include *
+            animation {
+                liveSinglePageApplicationInstance
+                liveMobileAppInstance
+                liveWebApplicationInstance liveApiApplicationInstance
+                livePrimaryDatabaseInstance
+                liveSecondaryDatabaseInstance
+            }
+            autoLayout
+        }
+
+        styles {
+            element &quot;Person&quot; {
+                color #ffffff
+                fontSize 22
+                shape Person
+            }
+            element &quot;Customer&quot; {
+                background #08427b
+            }
+            element &quot;Bank Staff&quot; {
+                background #999999
+            }
+            element &quot;Software System&quot; {
+                background #1168bd
+                color #ffffff
+            }
+            element &quot;Existing System&quot; {
+                background #999999
+                color #ffffff
+            }
+            element &quot;Container&quot; {
+                background #438dd5
+                color #ffffff
+            }
+            element &quot;Web Browser&quot; {
+                shape WebBrowser
+            }
+            element &quot;Mobile App&quot; {
+                shape MobileDeviceLandscape
+            }
+            element &quot;Database&quot; {
+                shape Cylinder
+            }
+            element &quot;Component&quot; {
+                background #85bbf0
+                color #000000
+            }
+            element &quot;Failover&quot; {
+                opacity 25
+            }
+        }
+    }
+}
+</code></pre>
+<h3 id="umlet"><a class="header" href="#umlet">UMlet</a></h3>
+<blockquote>
+<p>kroki-umlet</p>
+</blockquote>
+<h4 id="state-machine"><a class="header" href="#state-machine">State machine</a></h4>
+<pre><code class="language-kroki-umlet">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;umlet_diagram&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.base.Relation&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;739&lt;/x&gt;
+            &lt;y&gt;16&lt;/y&gt;
+            &lt;w&gt;232&lt;/w&gt;
+            &lt;h&gt;264&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;lt=&amp;lt;-
+when(spidersensor=&quot;rotate&quot;)
+/block spider
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;161;244;161;34;71;34;71;74&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.custom.FinalState&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;890&lt;/x&gt;
+            &lt;y&gt;260&lt;/y&gt;
+            &lt;w&gt;20&lt;/w&gt;
+            &lt;h&gt;20&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;&lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;transparentSelection=false&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.base.Relation&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;750&lt;/x&gt;
+            &lt;y&gt;170&lt;/y&gt;
+            &lt;w&gt;160&lt;/w&gt;
+            &lt;h&gt;137&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;lt=&amp;lt;-
+after (10s)
+/ block spider
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;140;100;66;100;66;20&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.custom.State&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;340&lt;/x&gt;
+            &lt;y&gt;420&lt;/y&gt;
+            &lt;w&gt;100&lt;/w&gt;
+            &lt;h&gt;40&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;wait&lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;transparentSelection=false&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.custom.HistoryState&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;230&lt;/x&gt;
+            &lt;y&gt;440&lt;/y&gt;
+            &lt;w&gt;20&lt;/w&gt;
+            &lt;h&gt;20&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;&lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;transparentSelection=false&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.base.Relation&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;230&lt;/x&gt;
+            &lt;y&gt;416&lt;/y&gt;
+            &lt;w&gt;130&lt;/w&gt;
+            &lt;h&gt;54&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;lt=&amp;lt;-
+restart
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;20;34;110;34&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.base.Relation&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;270&lt;/x&gt;
+            &lt;y&gt;396&lt;/y&gt;
+            &lt;w&gt;90&lt;/w&gt;
+            &lt;h&gt;54&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;lt=&amp;lt;-
+pause
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;70;34;20;34&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.custom.FinalState&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;90&lt;/x&gt;
+            &lt;y&gt;400&lt;/y&gt;
+            &lt;w&gt;20&lt;/w&gt;
+            &lt;h&gt;20&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;&lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;transparentSelection=false&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.base.Relation&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;46&lt;/x&gt;
+            &lt;y&gt;256&lt;/y&gt;
+            &lt;w&gt;114&lt;/w&gt;
+            &lt;h&gt;164&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;lt=&amp;lt;-
+after (10s)
+/timeout
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;54;144;54;34;94;34&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.base.Relation&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;230&lt;/x&gt;
+            &lt;y&gt;110&lt;/y&gt;
+            &lt;w&gt;190&lt;/w&gt;
+            &lt;h&gt;170&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;lt=&amp;lt;-
+timeout
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;20;150;110;150;110;20;170;20&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.custom.State&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;700&lt;/x&gt;
+            &lt;y&gt;90&lt;/y&gt;
+            &lt;w&gt;180&lt;/w&gt;
+            &lt;h&gt;100&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;accept
+boarding pass
+--
+entry/ release card
+do/release spider
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;transparentSelection=true&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.base.Relation&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;540&lt;/x&gt;
+            &lt;y&gt;140&lt;/y&gt;
+            &lt;w&gt;205&lt;/w&gt;
+            &lt;h&gt;100&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;lt=&amp;lt;-
+[passenger booked]
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;160;20;120;80;20;80&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.base.Relation&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;450&lt;/x&gt;
+            &lt;y&gt;210&lt;/y&gt;
+            &lt;w&gt;239&lt;/w&gt;
+            &lt;h&gt;190&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;lt=&amp;lt;-
+[passenger not booked]
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;219;170;99;170;99;20&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.custom.State&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;670&lt;/x&gt;
+            &lt;y&gt;350&lt;/y&gt;
+            &lt;w&gt;120&lt;/w&gt;
+            &lt;h&gt;50&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;reject
+boarding pass
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;transparentSelection=false&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.base.Relation&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;480&lt;/x&gt;
+            &lt;y&gt;130&lt;/y&gt;
+            &lt;w&gt;142&lt;/w&gt;
+            &lt;h&gt;100&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;lt=&amp;lt;-
+result of search
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;71;80;71;20&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.base.Relation&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;270&lt;/x&gt;
+            &lt;y&gt;70&lt;/y&gt;
+            &lt;w&gt;150&lt;/w&gt;
+            &lt;h&gt;40&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;lt=&amp;lt;-&lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;130;20;20;20&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.custom.ThreeWayRelation&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;540&lt;/x&gt;
+            &lt;y&gt;210&lt;/y&gt;
+            &lt;w&gt;20&lt;/w&gt;
+            &lt;h&gt;20&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;&lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;transparentSelection=false&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.custom.State&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;140&lt;/x&gt;
+            &lt;y&gt;60&lt;/y&gt;
+            &lt;w&gt;150&lt;/w&gt;
+            &lt;h&gt;420&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;read boarding pass
+--
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;transparentSelection=true&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.custom.State&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;400&lt;/x&gt;
+            &lt;y&gt;60&lt;/y&gt;
+            &lt;w&gt;180&lt;/w&gt;
+            &lt;h&gt;90&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;check passenger
+--
+entry/start search
+do/blink lamp
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;transparentSelection=true&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.custom.FinalState&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;170&lt;/x&gt;
+            &lt;y&gt;410&lt;/y&gt;
+            &lt;w&gt;20&lt;/w&gt;
+            &lt;h&gt;20&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;&lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;transparentSelection=false&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.custom.State&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;150&lt;/x&gt;
+            &lt;y&gt;240&lt;/y&gt;
+            &lt;w&gt;100&lt;/w&gt;
+            &lt;h&gt;40&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;read
+passenger ID
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;transparentSelection=false&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.custom.State&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;150&lt;/x&gt;
+            &lt;y&gt;330&lt;/y&gt;
+            &lt;w&gt;100&lt;/w&gt;
+            &lt;h&gt;40&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;identify
+passenger
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;transparentSelection=false&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.base.Relation&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;160&lt;/x&gt;
+            &lt;y&gt;260&lt;/y&gt;
+            &lt;w&gt;40&lt;/w&gt;
+            &lt;h&gt;90&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;lt=&amp;lt;-&lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;20;70;20;20&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.base.Relation&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;160&lt;/x&gt;
+            &lt;y&gt;100&lt;/y&gt;
+            &lt;w&gt;40&lt;/w&gt;
+            &lt;h&gt;70&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;lt=&amp;lt;-&lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;20;50;20;20&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.base.Relation&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;160&lt;/x&gt;
+            &lt;y&gt;350&lt;/y&gt;
+            &lt;w&gt;40&lt;/w&gt;
+            &lt;h&gt;80&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;lt=&amp;lt;-&lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;20;60;20;20&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.base.Relation&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;140&lt;/x&gt;
+            &lt;y&gt;170&lt;/y&gt;
+            &lt;w&gt;78&lt;/w&gt;
+            &lt;h&gt;90&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;lt=&amp;lt;-
+[valid]
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;39;70;39;20&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.custom.State&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;150&lt;/x&gt;
+            &lt;y&gt;150&lt;/y&gt;
+            &lt;w&gt;100&lt;/w&gt;
+            &lt;h&gt;40&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;check
+validity
+        &lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;transparentSelection=false&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+    &lt;element&gt;
+        &lt;type&gt;com.umlet.element.custom.InitialState&lt;/type&gt;
+        &lt;coordinates&gt;
+            &lt;x&gt;170&lt;/x&gt;
+            &lt;y&gt;100&lt;/y&gt;
+            &lt;w&gt;20&lt;/w&gt;
+            &lt;h&gt;20&lt;/h&gt;
+        &lt;/coordinates&gt;
+        &lt;panel_attributes&gt;&lt;/panel_attributes&gt;
+        &lt;additional_attributes&gt;transparentSelection=false&lt;/additional_attributes&gt;
+    &lt;/element&gt;
+&lt;/umlet_diagram&gt;
+</code></pre>
+
+            </main>
+
+            <!--            <script src="https://utteranc.es/client.js"-->
+            <!--                    repo="RustMagazine/rust_magazine_2022"-->
+            <!--                    issue-term="title"-->
+            <!--                    theme="github-light"-->
+            <!--                    crossorigin="anonymous"-->
+            <!--                    async></script>-->
+
+            <nav class="nav-wrapper" aria-label="Page navigation">
+                <!-- Mobile navigation buttons -->
+                    <a rel="prev" href="../../layer1_visual_tools/map_tools/map-tools.html" class="mobile-nav-chapters previous"
+                       title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../layer1_visual_tools/map_tools/mermaid.html" class="mobile-nav-chapters next"
+                       title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
+                <div style="clear: both"></div>
+            </nav>
+        </div>
+    </div>
+
+    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            <a rel="prev" href="../../layer1_visual_tools/map_tools/map-tools.html" class="nav-chapters previous" title="Previous chapter"
+               aria-label="Previous chapter" aria-keyshortcuts="Left">
+                <i class="fa fa-angle-left"></i>
+            </a>
+
+            <a rel="next" href="../../layer1_visual_tools/map_tools/mermaid.html" class="nav-chapters next" title="Next chapter"
+               aria-label="Next chapter" aria-keyshortcuts="Right">
+                <i class="fa fa-angle-right"></i>
+            </a>
+    </nav>
+
+</div>
+
+
+
+
+    <script type="text/javascript">
+        window.playground_copyable = true;
+    </script>
+
+    <script src="../../ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../editor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JS scripts -->
+    <script type="text/javascript" src="../../assets/mermaid/mermaid-913.min.js"></script>
+    <script type="text/javascript" src="../../assets/mermaid/mermaid-init.js"></script>
+    <script type="text/javascript" src="../../assets/smart-anchor.js"></script>
+    <script type="text/javascript" src="../../assets/pagetoc/sidebar.js"></script>
+
+</body>
+</html>
