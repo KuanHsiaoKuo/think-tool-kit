@@ -35,6 +35,8 @@ command = "mdbook-mermaid"
 [preprocessor.puml]
 command = "mdbook-puml"
 
+[preprocessor.kroki-preprocessor]
+
 # Enables the `mdbook-checklist` preprocessor
 [preprocessor.checklist]
 title = "待完善: "

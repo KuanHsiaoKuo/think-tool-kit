@@ -1,6 +1,7 @@
 - [总览](../README.md)
     - [Layer1: 可视化工具](layer1_visual_tools/visual_tools.md)
         - [1. 二维展开](layer1_visual_tools/map_tools/map-tools.md)
+            - [kroki合集](layer1_visual_tools/map_tools/kroki_collection.md)
             - [mermaid](layer1_visual_tools/map_tools/mermaid.md)
             - [plant-uml](layer1_visual_tools/map_tools/plant-uml.md)
         - [2. Drafts](layer1_visual_tools/Drafts/drafts.md)
