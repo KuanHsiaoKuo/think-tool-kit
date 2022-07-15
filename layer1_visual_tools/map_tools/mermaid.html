@@ -208,7 +208,7 @@
 </li>
 </ul>
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Fri Jul 15 10:16:47 UTC 2022 -->
+<!-- Added by: runner, at: Fri Jul 15 11:53:09 UTC 2022 -->
 <!--te-->
 <h2 id="介绍"><a class="header" href="#介绍">介绍</a></h2>
 <p><img src="https://mermaid-js.github.io/mermaid/img/header.png" alt="" /></p>
@@ -224,7 +224,8 @@
 <h2 id="示例"><a class="header" href="#示例">示例</a></h2>
 <h3 id="思维导图"><a class="header" href="#思维导图">思维导图</a></h3>
 <p>默认不支持，虽然Mermaid本身暂未支持思维导图的绘制，但是考虑到Mermaid对流程图的支持，可以用Mermaid绘制极简单的思维导图</p>
-<pre class="mermaid">graph TD
+<pre class="mermaid">
+graph TD
 A(工业用地效率)--&gt;B1(土地利用强度)
 A--&gt;B2(土地经济效益)
 B1--&gt;C1(容积率)
@@ -232,17 +233,19 @@ B1--&gt;C2(建筑系数)
 B1--&gt;C3(亩均固定资本投入)
 B2--&gt;D1(亩均工业产值)
 B2--&gt;D2(亩均税收)
-</pre>
+`</pre>
 <h3 id="流程图"><a class="header" href="#流程图">流程图</a></h3>
-<pre class="mermaid">flowchart LR
+<pre class="mermaid">
+flowchart LR
 
 A[Hard] --&gt;|Text| B(Round)
 B --&gt; C{Decision}
 C --&gt;|One| D[Result 1]
 C --&gt;|Two| E[Result 2]
-</pre>
+`</pre>
 <h3 id="时序图"><a class="header" href="#时序图">时序图</a></h3>
-<pre class="mermaid">sequenceDiagram
+<pre class="mermaid">
+sequenceDiagram
 Alice-&gt;&gt;John: Hello John, how are you?
 loop Healthcheck
     John-&gt;&gt;John: Fight against hypochondria
@@ -251,9 +254,10 @@ Note right of John: Rational thoughts!
 John--&gt;&gt;Alice: Great!
 John-&gt;&gt;Bob: How about you?
 Bob--&gt;&gt;John: Jolly good!
-</pre>
+`</pre>
 <h3 id="甘特图"><a class="header" href="#甘特图">甘特图</a></h3>
-<pre class="mermaid">gantt
+<pre class="mermaid">
+gantt
     section Section
     Completed :done,    des1, 2014-01-06,2014-01-08
     Active        :active,  des2, 2014-01-07, 3d
@@ -261,9 +265,10 @@ Bob--&gt;&gt;John: Jolly good!
     Parallel 2   :         des4, after des1, 1d
     Parallel 3   :         des5, after des3, 1d
     Parallel 4   :         des6, after des4, 1d
-</pre>
+`</pre>
 <h3 id="类图"><a class="header" href="#类图">类图</a></h3>
-<pre class="mermaid">classDiagram
+<pre class="mermaid">
+classDiagram
 Class01 &lt;|-- AveryLongClass : Cool
 &lt;&lt;Interface&gt;&gt; Class01
 Class09 --&gt; C2 : Where am i?
@@ -279,24 +284,27 @@ class Class10 {
   int id
   size()
 }
-</pre>
+`</pre>
 <h3 id="状态图"><a class="header" href="#状态图">状态图</a></h3>
-<pre class="mermaid">stateDiagram-v2
+<pre class="mermaid">
+stateDiagram-v2
 [*] --&gt; Still
 Still --&gt; [*]
 Still --&gt; Moving
 Moving --&gt; Still
 Moving --&gt; Crash
 Crash --&gt; [*]
-</pre>
+`</pre>
 <h3 id="饼图"><a class="header" href="#饼图">饼图</a></h3>
-<pre class="mermaid">pie
+<pre class="mermaid">
+pie
 &quot;Dogs&quot; : 386
 &quot;Cats&quot; : 85.9
 &quot;Rats&quot; : 15
-</pre>
+`</pre>
 <h3 id="gitgraphexperimental-in-v9"><a class="header" href="#gitgraphexperimental-in-v9">gitgraph(experimental in v9)</a></h3>
-<pre class="mermaid">  gitGraph
+<pre class="mermaid">
+  gitGraph
     commit
     commit
     branch develop
@@ -307,9 +315,10 @@ Crash --&gt; [*]
     merge develop
     commit
     commit
-</pre>
+`</pre>
 <h3 id="日记图"><a class="header" href="#日记图">日记图</a></h3>
-<pre class="mermaid">  journey
+<pre class="mermaid">
+  journey
     title My working day
     section Go to work
       Make tea: 5: Me
@@ -318,9 +327,10 @@ Crash --&gt; [*]
     section Go home
       Go downstairs: 5: Me
       Sit down: 3: Me
-</pre>
+`</pre>
 <h3 id="c4架构图experimental-in-v9"><a class="header" href="#c4架构图experimental-in-v9">C4架构图(experimental in v9)</a></h3>
-<pre class="mermaid">C4Context
+<pre class="mermaid">
+C4Context
 title System Context diagram for Internet Banking System
 
 Person(customerA, &quot;Banking Customer A&quot;, &quot;A customer of the bank, with personal bank accounts.&quot;)
@@ -352,7 +362,7 @@ BiRel(customerA, SystemAA, &quot;Uses&quot;)
 BiRel(SystemAA, SystemE, &quot;Uses&quot;)
 Rel(SystemAA, SystemC, &quot;Sends e-mails&quot;, &quot;SMTP&quot;)
 Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
-</pre>
+`</pre>
 <h2 id="参考资源"><a class="header" href="#参考资源">参考资源</a></h2>
 <ul>
 <li>
