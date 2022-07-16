@@ -26,9 +26,7 @@ jobs:
           commit_message: Auto update markdown TOC
       - name: Install Mdbook Preprocessors
         run: |
-          mkdir bin
-          export MDBOOK_PREPROCESSORS_VERSION='0.4.20'
-          curl -sSL https://github.com/KuanHsiaoKuo/mdbook_preprocessors/archive/refs/tags/v$MDBOOK_RREPROCESSORS_VERSION.tar.gz | tar -xz --directory=bin
+          sh scripts/download_mdbook_proprecessors
           echo "bin/mdbook_preprocessors-$MDBOOK_PREPROCESSORS_VERSION/bin" >> $GITHUB_PATH
       #      - name: Install mdbook
       #        run: |
