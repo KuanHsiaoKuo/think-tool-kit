@@ -27,9 +27,9 @@ jobs:
       - name: Install Mdbook Preprocessors
         run: |
           mkdir bin
-          echo "0.4.20" >> $MDBOOK_PREPROCESSORS_VERSION
-          curl -sSL https://github.com/KuanHsiaoKuo/mdbook_preprocessors/archive/refs/tags/v$(MDBOOK_RREPROCESSORS_VERSION).tar.gz | tar -xz --directory=bin
-          echo "bin/mdbook_preprocessors-$(MDBOOK_PREPROCESSORS_VERSION)/bin" >> $GITHUB_PATH
+          export MDBOOK_PREPROCESSORS_VERSION='0.4.20'
+          curl -sSL https://github.com/KuanHsiaoKuo/mdbook_preprocessors/archive/refs/tags/v$MDBOOK_RREPROCESSORS_VERSION.tar.gz | tar -xz --directory=bin
+          echo "bin/mdbook_preprocessors-$MDBOOK_PREPROCESSORS_VERSION/bin" >> $GITHUB_PATH
       #      - name: Install mdbook
       #        run: |
       #          #mkdir bin
