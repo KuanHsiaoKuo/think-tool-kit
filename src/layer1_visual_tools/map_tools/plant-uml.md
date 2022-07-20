@@ -36,7 +36,7 @@
 
 ## plantuml & Graphviz
 
-```plantuml
+```kroki-plantuml
 @startuml
 
 start
@@ -59,6 +59,16 @@ stop
 ### 添加超链接、提示、标签
 
 ![plantuml-hyperlink](https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/plantuml-hyperlink.png)
+
+~~~admonish warn title='注意mindmap只能在节点标题使用链接'
+````
+```kroki-plantuml
+@startmindmap
+* Build a local blockchain [[#build-a-local-blockchain jump]]
+@endmindmap
+```
+````
+~~~
 
 #### 超链接
 
