@@ -83,6 +83,9 @@ cargo install mdbook-kroki-preprocessor
 ## kori支持范围
 
 ### Block Diagram
+- [blockdiag - simple diagram images generator — blockdiag 1.0 documentation](http://blockdiag.com/en/index.html)
+
+#### blockdiag
 
 > kroki-blockdiag
 
@@ -97,7 +100,7 @@ blockdiag {
 }
 ```
 
-### Sequence diagram
+#### Sequence diagram
 
 > kroki-seqdiag
 
@@ -112,7 +115,7 @@ seqdiag {
 }
 ```
 
-### Activity diagram
+#### Activity diagram
 
 > kroki-actdiag
 
@@ -131,7 +134,7 @@ actdiag {
 }
 ```
 
-### Network diagram
+#### Network diagram
 
 > kroki-nwdiag
 
@@ -155,6 +158,7 @@ nwdiag {
 ```
 
 ### Packet diagram
+- [Package Diagram Tutorial | Lucidchart](https://www.lucidchart.com/pages/uml-package-diagram/#discovery__top)
 
 > kroki-packetdiag
 
