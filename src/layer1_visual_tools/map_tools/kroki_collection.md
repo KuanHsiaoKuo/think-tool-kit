@@ -9,9 +9,10 @@
    * [mdbook-kroki-preprocessor: 支持kroki渲染](#mdbook-kroki-preprocessor-支持kroki渲染)
    * [kori支持范围](#kori支持范围)
       * [Block Diagram](#block-diagram)
-      * [Sequence diagram](#sequence-diagram)
-      * [Activity diagram](#activity-diagram)
-      * [Network diagram](#network-diagram)
+         * [blockdiag](#blockdiag)
+         * [Sequence diagram](#sequence-diagram)
+         * [Activity diagram](#activity-diagram)
+         * [Network diagram](#network-diagram)
       * [Packet diagram](#packet-diagram)
       * [Rack diagram](#rack-diagram)
       * [Object Oriented Graph](#object-oriented-graph)
@@ -47,7 +48,7 @@
          * [State machine](#state-machine)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Wed Jul 20 10:25:57 UTC 2022 -->
+<!-- Added by: runner, at: Fri Jul 22 15:59:56 UTC 2022 -->
 
 <!--te-->
 ![image-20220715114804075](https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/image-20220715114804075.png)
