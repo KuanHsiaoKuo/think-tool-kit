@@ -117,7 +117,8 @@ seqdiag {
 ```
 
 #### Activity diagram
-
+- [actdiag - simple activity-diagram image generator — blockdiag 1.0 documentation](http://blockdiag.com/en/actdiag/index.html)
+- [Demo - interactive shell for actdiag — blockdiag 1.0 documentation](http://blockdiag.com/en/actdiag/demo.html#diagram-source)
 > kroki-actdiag
 
 ```kroki-actdiag
