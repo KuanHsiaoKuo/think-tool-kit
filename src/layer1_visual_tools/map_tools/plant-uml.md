@@ -1,33 +1,34 @@
 # PlantUML
 
 <!--ts-->
+
 * [PlantUML](#plantuml)
-   * [plantuml &amp; Graphviz](#plantuml--graphviz)
-   * [示例](#示例)
-      * [添加超链接、提示、标签](#添加超链接提示标签)
-         * [超链接](#超链接)
-      * [思维导图](#思维导图)
-         * [OrgMode 语法](#orgmode-语法)
-         * [Markdown语法](#markdown语法)
-         * [运算符决定方向](#运算符决定方向)
-         * [多行表示](#多行表示)
-         * [多根节点](#多根节点)
-         * [改变节点颜色](#改变节点颜色)
-         * [移除方框](#移除方框)
-         * [指定左右方向](#指定左右方向)
-         * [带标签的完整示例](#带标签的完整示例)
-         * [应用：rust的模块系统整理](#应用rust的模块系统整理)
-   * [使用<strong>skinparam</strong>进行样式设置](#使用skinparam进行样式设置)
-      * [颜色](#颜色)
-      * [字体与大小](#字体与大小)
-      * [文本对齐](#文本对齐)
-      * [手写体](#手写体)
-      * [下面罗列当前版本plantuml可用样式](#下面罗列当前版本plantuml可用样式)
-      * [调整生成图片大小](#调整生成图片大小)
-   * [参考资源](#参考资源)
-      * [小插曲一：给mdbook-puml安装合适的plantuml](#小插曲一给mdbook-puml安装合适的plantuml)
-      * [IDEA自带plantuml语法插件：PlantUML Integration](#idea自带plantuml语法插件plantuml-integration)
-      * [Draw.io可以用插入plantuml/mermaid](#drawio可以用插入plantumlmermaid)
+    * [plantuml &amp; Graphviz](#plantuml--graphviz)
+    * [示例](#示例)
+        * [添加超链接、提示、标签](#添加超链接提示标签)
+            * [超链接](#超链接)
+        * [思维导图](#思维导图)
+            * [OrgMode 语法](#orgmode-语法)
+            * [Markdown语法](#markdown语法)
+            * [运算符决定方向](#运算符决定方向)
+            * [多行表示](#多行表示)
+            * [多根节点](#多根节点)
+            * [改变节点颜色](#改变节点颜色)
+            * [移除方框](#移除方框)
+            * [指定左右方向](#指定左右方向)
+            * [带标签的完整示例](#带标签的完整示例)
+            * [应用：rust的模块系统整理](#应用rust的模块系统整理)
+    * [使用<strong>skinparam</strong>进行样式设置](#使用skinparam进行样式设置)
+        * [颜色](#颜色)
+        * [字体与大小](#字体与大小)
+        * [文本对齐](#文本对齐)
+        * [手写体](#手写体)
+        * [下面罗列当前版本plantuml可用样式](#下面罗列当前版本plantuml可用样式)
+        * [调整生成图片大小](#调整生成图片大小)
+    * [参考资源](#参考资源)
+        * [小插曲一：给mdbook-puml安装合适的plantuml](#小插曲一给mdbook-puml安装合适的plantuml)
+        * [IDEA自带plantuml语法插件：PlantUML Integration](#idea自带plantuml语法插件plantuml-integration)
+        * [Draw.io可以用插入plantuml/mermaid](#drawio可以用插入plantumlmermaid)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 <!-- Added by: runner, at: Fri Jul 22 16:16:23 UTC 2022 -->
@@ -292,6 +293,45 @@ help skinparams
 
 - [Restricting the width of diagrams - PlantUML Q&A](https://forum.plantuml.net/6803/restricting-the-width-of-diagrams)
 
+## 语法概览
+
+- [General and common command to handle graphic layout in diagrams.](https://plantuml.com/en/commons)
+
+## 语法全览
+
+- [Ascii Math syntax for complex formulas](https://plantuml.com/en/ascii-math)
+- [Archimate Support](https://plantuml.com/en/archimate-diagram)
+- [Activity Diagram syntax and features](https://plantuml.com/en/activity-diagram-legacy)
+- [Class Diagram syntax and features](https://plantuml.com/en/class-diagram)
+- [Component Diagram syntax and features](https://plantuml.com/en/component-diagram)
+- [Use creole syntax to style your texts](https://plantuml.com/en/creole)
+- [Deployment Diagram syntax and features](https://plantuml.com/en/deployment-diagram)
+- [Draw GUI mockup with Salt](https://plantuml.com/en/salt)
+- [Define graphical sprites](https://plantuml.com/en/sprite)
+- [Customize your diagrams with themes](https://plantuml.com/en/theme)
+- [Gantt Diagram syntax and features](https://plantuml.com/en/gantt-diagram)
+- [Timing Diagram syntax and features](https://plantuml.com/en/timing-diagram)
+- [Use of Openiconic](https://plantuml.com/en/openiconic)
+- [nwdiag](https://plantuml.com/en/nwdiag)
+- [State Diagram syntax and features](https://plantuml.com/en/state-diagram)
+- [PlantUML Standard Library](https://plantuml.com/en/stdlib)
+
+## 高级使用
+
+- [Language specification pages](https://plantuml.com/en/sitemap-language-specification)
+
+### 标题、页脚与分页
+
+- [architecture - How to make multiple diagram in single page - Stack Overflow](https://stackoverflow.com/questions/54587800/how-to-make-multiple-diagram-in-single-page)
+
+```plantuml
+{{#include ../../../materials/plantuml/header_footer_page.puml:1:}}
+```
+
+### 高级语法：Preprocessing
+
+[Use the preprocessor](https://plantuml.com/en/preprocessing)
+
 ## 参考资源
 
 - [开源工具，使用简单的文字描述画UML图。](https://plantuml.com/zh/)
@@ -395,11 +435,11 @@ Processing triggers for man-db (2.8.3-2) ...
 - [PlantUML Integration - IntelliJ IDEs Plugin | Marketplace](https://plugins.jetbrains.com/plugin/7017-plantuml-integration/)
 - [esteinberg/plantuml4idea: Intellij IDEA plugin for PlantUML](https://github.com/esteinberg/plantuml4idea)
 
-1. 支持新建plantuml文件
+#### 支持新建plantuml文件
 
-   ![image-20220711170958629](https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/image-20220711170958629.png)
+![image-20220711170958629](https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/image-20220711170958629.png)
 
-2. 除了默认的指定文件名后缀，还可以新建文件名指定用plantuml studio打开
+#### 除了默认的指定文件名后缀，还可以新建文件名指定用plantuml studio打开
 
 > 比如还没有mindmap类型，但是新版plantuml已经支持这个语法
 
@@ -414,12 +454,56 @@ Processing triggers for man-db (2.8.3-2) ...
 其实plantuml可以直接识别puml后缀
 ```
 
-3. 还可以用include语法嵌入：
+#### 还可以用mdbook的include语法嵌入：
 
 ~~~admonish tip title='可以用include语法嵌入'
 {{#include ../../../materials/plantuml/module_tree.mindmap:1:}}
 
 ~~~
+
+#### 关于设置plantuml_limit_size
+
+```admonish info title='方法一：修改vmoption'
+1. Open the option ‘Help->Edit custom VM option’
+2. add ‘-DPLANTUML_LIMIT_SIZE=8192’ on the last line 
+3. It can be work after restart idea.
+[how to set PLANTUML_LIMIT_SIZE when running intellij idea plugin - PlantUML Q&A](https://forum.plantuml.net/10465/how-plantuml_limit_size-when-running-intellij-idea-plugin)
+```
+
+```admonish info title='方法二：preference
+1. Open Preferences/Languages & Frameworks/PlantUML
+2. Change the target option
+[Where to define plantuml limit size environment variable when using PlantUML integration plugin with IntelliJ? - PlantUML Q&A](https://forum.plantuml.net/11078/plantuml-environment-variable-plantuml-integration-intellij)
+```
+
+#### 关于scale缩放语法失效
+
+![CleanShot 2022-07-23 at 11.53.28@2x](https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/CleanShot%202022-07-23%20at%2011.53.28%402x.png)
+
+#### 关于高级语法：导入文件、定义变量
+
+```admonish tip title='这里还有许多plantuml的高级语法'
+- [Advanced Use — Ashley's PlantUML Doc 0.2.01 documentation](https://plantuml-documentation.readthedocs.io/en/latest/advanced-use/)
+```
+
+```admonish info title='语法说明'
+
+1. !define, !undef
+
+2. including files
+- can .zip a file and include it
+- You can use system environment variable or constant definition when using include
+
+> !include %windir%/test1.txt
+> !define PLANTUML_HOME /home/foo
+> !include PLANTUML_HOME/test1.txt
+
+3. include URL
+
+4. constants
+
+5. date and time
+```
 
 ### Draw.io可以用插入plantuml/mermaid
 

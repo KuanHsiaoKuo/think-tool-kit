@@ -1,0 +1,12 @@
+@startuml
+
+header SayHello
+footer Page %page% of %lastpage%
+
+Bob -> Alice : hello
+
+newpage last page
+
+Bob -> Mark : Hi
+
+@enduml
