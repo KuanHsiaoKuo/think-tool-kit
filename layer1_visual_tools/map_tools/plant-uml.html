@@ -222,10 +222,27 @@
 <li><a href="#%E8%B0%83%E6%95%B4%E7%94%9F%E6%88%90%E5%9B%BE%E7%89%87%E5%A4%A7%E5%B0%8F">调整生成图片大小</a></li>
 </ul>
 </li>
+<li><a href="#%E8%AF%AD%E6%B3%95%E6%A6%82%E8%A7%88">语法概览</a></li>
+<li><a href="#%E8%AF%AD%E6%B3%95%E5%85%A8%E8%A7%88">语法全览</a></li>
+<li><a href="#%E9%AB%98%E7%BA%A7%E4%BD%BF%E7%94%A8">高级使用</a>
+<ul>
+<li><a href="#%E6%A0%87%E9%A2%98%E9%A1%B5%E8%84%9A%E4%B8%8E%E5%88%86%E9%A1%B5">标题、页脚与分页</a></li>
+<li><a href="#%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95preprocessing">高级语法：Preprocessing</a></li>
+</ul>
+</li>
 <li><a href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%BA%90">参考资源</a>
 <ul>
 <li><a href="#%E5%B0%8F%E6%8F%92%E6%9B%B2%E4%B8%80%E7%BB%99mdbook-puml%E5%AE%89%E8%A3%85%E5%90%88%E9%80%82%E7%9A%84plantuml">小插曲一：给mdbook-puml安装合适的plantuml</a></li>
-<li><a href="#idea%E8%87%AA%E5%B8%A6plantuml%E8%AF%AD%E6%B3%95%E6%8F%92%E4%BB%B6plantuml-integration">IDEA自带plantuml语法插件：PlantUML Integration</a></li>
+<li><a href="#idea%E8%87%AA%E5%B8%A6plantuml%E8%AF%AD%E6%B3%95%E6%8F%92%E4%BB%B6plantuml-integration">IDEA自带plantuml语法插件：PlantUML Integration</a>
+<ul>
+<li><a href="#%E6%94%AF%E6%8C%81%E6%96%B0%E5%BB%BAplantuml%E6%96%87%E4%BB%B6">支持新建plantuml文件</a></li>
+<li><a href="#%E9%99%A4%E4%BA%86%E9%BB%98%E8%AE%A4%E7%9A%84%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%90%8D%E5%90%8E%E7%BC%80%E8%BF%98%E5%8F%AF%E4%BB%A5%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%90%8D%E6%8C%87%E5%AE%9A%E7%94%A8plantuml-studio%E6%89%93%E5%BC%80">除了默认的指定文件名后缀，还可以新建文件名指定用plantuml studio打开</a></li>
+<li><a href="#%E8%BF%98%E5%8F%AF%E4%BB%A5%E7%94%A8mdbook%E7%9A%84include%E8%AF%AD%E6%B3%95%E5%B5%8C%E5%85%A5">还可以用mdbook的include语法嵌入：</a></li>
+<li><a href="#%E5%85%B3%E4%BA%8E%E8%AE%BE%E7%BD%AEplantuml_limit_size">关于设置plantuml_limit_size</a></li>
+<li><a href="#%E5%85%B3%E4%BA%8Escale%E7%BC%A9%E6%94%BE%E8%AF%AD%E6%B3%95%E5%A4%B1%E6%95%88">关于scale缩放语法失效</a></li>
+<li><a href="#%E5%85%B3%E4%BA%8E%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95%E5%AF%BC%E5%85%A5%E6%96%87%E4%BB%B6%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F">关于高级语法：导入文件、定义变量</a></li>
+</ul>
+</li>
 <li><a href="#drawio%E5%8F%AF%E4%BB%A5%E7%94%A8%E6%8F%92%E5%85%A5plantumlmermaid">Draw.io可以用插入plantuml/mermaid</a></li>
 </ul>
 </li>
@@ -233,7 +250,7 @@
 </li>
 </ul>
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Fri Jul 22 16:16:23 UTC 2022 -->
+<!-- Added by: runner, at: Sat Jul 23 04:56:34 UTC 2022 -->
 <!--te-->
 <h2 id="plantuml--graphviz"><a class="header" href="#plantuml--graphviz">plantuml &amp; Graphviz</a></h2>
 <pre><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="215px" preserveAspectRatio="none" style="width:240px;height:215px;background:#FFFFFF;" version="1.1" viewBox="0 0 240 215" width="240px" zoomAndPan="magnify"><defs/><g><ellipse cx="109" cy="20" fill="#222222" rx="10" ry="10" style="stroke:#222222;stroke-width:1.0;"/><polygon fill="#F1F1F1" points="67,50,151,50,163,62,151,74,67,74,55,62,67,50" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="84" x="67" y="66.4">Graphviz 已安装?</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="16" x="39" y="59.8">yes</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="12" x="163" y="59.8">no</text><rect fill="#F1F1F1" height="48.8002" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="68" x="11" y="84"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="48" x="21" y="106.0001">处理所有</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="48" x="21" y="120.4002">绘制任务</text><rect fill="#F1F1F1" height="48.8002" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="113" x="116.5" y="84"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="36" x="126.5" y="106.0001">仅处理</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="36" x="126.5" y="120.4002">时序图</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="12" x="165.5" y="120.4002">和</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="24" x="180.5" y="120.4002">活动</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="12" x="207.5" y="120.4002">图</text><polygon fill="#F1F1F1" points="109,138.8002,121,150.8002,109,162.8002,97,150.8002,109,138.8002" style="stroke:#181818;stroke-width:0.5;"/><ellipse cx="109" cy="193.8002" rx="11" ry="11" style="stroke:#222222;stroke-width:1.0;fill:none;"/><ellipse cx="109" cy="193.8002" fill="#222222" rx="6" ry="6" style="stroke:#111111;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="55" x2="45" y1="62" y2="62"/><line style="stroke:#181818;stroke-width:1.0;" x1="45" x2="45" y1="62" y2="84"/><polygon fill="#181818" points="41,74,45,84,49,74,45,78" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="163" x2="173" y1="62" y2="62"/><line style="stroke:#181818;stroke-width:1.0;" x1="173" x2="173" y1="62" y2="84"/><polygon fill="#181818" points="169,74,173,84,177,74,173,78" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="45" x2="45" y1="132.8002" y2="150.8002"/><line style="stroke:#181818;stroke-width:1.0;" x1="45" x2="97" y1="150.8002" y2="150.8002"/><polygon fill="#181818" points="87,146.8002,97,150.8002,87,154.8002,91,150.8002" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="173" x2="173" y1="132.8002" y2="150.8002"/><line style="stroke:#181818;stroke-width:1.0;" x1="173" x2="121" y1="150.8002" y2="150.8002"/><polygon fill="#181818" points="131,146.8002,121,150.8002,131,154.8002,127,150.8002" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="109" x2="109" y1="30" y2="50"/><polygon fill="#181818" points="105,40,109,50,113,40,109,44" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="109" x2="109" y1="162.8002" y2="182.8002"/><polygon fill="#181818" points="105,172.8002,109,182.8002,113,172.8002,109,176.8002" style="stroke:#181818;stroke-width:1.0;"/><!--MD5=[f20786bc78fc9fdc318e4497c8c0dec4]
@@ -551,6 +568,40 @@ Alice -&gt; Bob : This is very long
 <ul>
 <li><a href="https://forum.plantuml.net/6803/restricting-the-width-of-diagrams">Restricting the width of diagrams - PlantUML Q&amp;A</a></li>
 </ul>
+<h2 id="语法概览"><a class="header" href="#语法概览">语法概览</a></h2>
+<ul>
+<li><a href="https://plantuml.com/en/commons">General and common command to handle graphic layout in diagrams.</a></li>
+</ul>
+<h2 id="语法全览"><a class="header" href="#语法全览">语法全览</a></h2>
+<ul>
+<li><a href="https://plantuml.com/en/ascii-math">Ascii Math syntax for complex formulas</a></li>
+<li><a href="https://plantuml.com/en/archimate-diagram">Archimate Support</a></li>
+<li><a href="https://plantuml.com/en/activity-diagram-legacy">Activity Diagram syntax and features</a></li>
+<li><a href="https://plantuml.com/en/class-diagram">Class Diagram syntax and features</a></li>
+<li><a href="https://plantuml.com/en/component-diagram">Component Diagram syntax and features</a></li>
+<li><a href="https://plantuml.com/en/creole">Use creole syntax to style your texts</a></li>
+<li><a href="https://plantuml.com/en/deployment-diagram">Deployment Diagram syntax and features</a></li>
+<li><a href="https://plantuml.com/en/salt">Draw GUI mockup with Salt</a></li>
+<li><a href="https://plantuml.com/en/sprite">Define graphical sprites</a></li>
+<li><a href="https://plantuml.com/en/theme">Customize your diagrams with themes</a></li>
+<li><a href="https://plantuml.com/en/gantt-diagram">Gantt Diagram syntax and features</a></li>
+<li><a href="https://plantuml.com/en/timing-diagram">Timing Diagram syntax and features</a></li>
+<li><a href="https://plantuml.com/en/openiconic">Use of Openiconic</a></li>
+<li><a href="https://plantuml.com/en/nwdiag">nwdiag</a></li>
+<li><a href="https://plantuml.com/en/state-diagram">State Diagram syntax and features</a></li>
+<li><a href="https://plantuml.com/en/stdlib">PlantUML Standard Library</a></li>
+</ul>
+<h2 id="高级使用"><a class="header" href="#高级使用">高级使用</a></h2>
+<ul>
+<li><a href="https://plantuml.com/en/sitemap-language-specification">Language specification pages</a></li>
+</ul>
+<h3 id="标题页脚与分页"><a class="header" href="#标题页脚与分页">标题、页脚与分页</a></h3>
+<ul>
+<li><a href="https://stackoverflow.com/questions/54587800/how-to-make-multiple-diagram-in-single-page">architecture - How to make multiple diagram in single page - Stack Overflow</a></li>
+</ul>
+<figure><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="150px" preserveAspectRatio="none" style="width:172px;height:150px;background:#FFFFFF;" version="1.1" viewBox="0 0 172 150" width="172px" zoomAndPan="magnify"><defs/><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="26" x2="26" y1="48.9375" y2="99.0703"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="80" x2="80" y1="48.9375" y2="99.0703"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="136" x2="136" y1="48.9375" y2="99.0703"/><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="42" x="5" y="17.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="12" y="37.6357">Bob</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="42" x="5" y="98.0703"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="12" y="118.0654">Bob</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="46" x="57" y="17.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="64" y="37.6357">Alice</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="46" x="57" y="98.0703"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="64" y="118.0654">Alice</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="47" x="113" y="17.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="33" x="120" y="37.6357">Mark</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="47" x="113" y="98.0703"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="33" x="120" y="118.0654">Mark</text><polygon fill="#181818" points="68,76.0703,78,80.0703,68,84.0703,72,80.0703" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="26" x2="74" y1="80.0703" y2="80.0703"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="33" y="75.0044">hello</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="0" x2="165" y1="88.0703" y2="88.0703"/><rect height="11.6406" style="stroke:#00000000;stroke-width:1.0;fill:none;" width="43" x="121" y="5"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="43" x="121" y="14.2822">SayHello</text><rect height="11.6406" style="stroke:#00000000;stroke-width:1.0;fill:none;" width="56" x="54" y="130.3672"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="56" x="54" y="139.6494">Page 1 of 2</text></g></svg></figure>
+<h3 id="高级语法preprocessing"><a class="header" href="#高级语法preprocessing">高级语法：Preprocessing</a></h3>
+<p><a href="https://plantuml.com/en/preprocessing">Use the preprocessor</a></p>
 <h2 id="参考资源"><a class="header" href="#参考资源">参考资源</a></h2>
 <ul>
 <li>
@@ -680,15 +731,9 @@ Processing triggers for man-db (2.8.3-2) ...
 <li><a href="https://plugins.jetbrains.com/plugin/7017-plantuml-integration/">PlantUML Integration - IntelliJ IDEs Plugin | Marketplace</a></li>
 <li><a href="https://github.com/esteinberg/plantuml4idea">esteinberg/plantuml4idea: Intellij IDEA plugin for PlantUML</a></li>
 </ul>
-<ol>
-<li>
-<p>支持新建plantuml文件</p>
+<h4 id="支持新建plantuml文件"><a class="header" href="#支持新建plantuml文件">支持新建plantuml文件</a></h4>
 <p><img src="https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/image-20220711170958629.png" alt="image-20220711170958629" /></p>
-</li>
-<li>
-<p>除了默认的指定文件名后缀，还可以新建文件名指定用plantuml studio打开</p>
-</li>
-</ol>
+<h4 id="除了默认的指定文件名后缀还可以新建文件名指定用plantuml-studio打开"><a class="header" href="#除了默认的指定文件名后缀还可以新建文件名指定用plantuml-studio打开">除了默认的指定文件名后缀，还可以新建文件名指定用plantuml studio打开</a></h4>
 <blockquote>
 <p>比如还没有mindmap类型，但是新版plantuml已经支持这个语法</p>
 </blockquote>
@@ -709,9 +754,7 @@ Processing triggers for man-db (2.8.3-2) ...
 <p>其实plantuml可以直接识别puml后缀</p>
 </div>
 </div>
-<ol start="3">
-<li>还可以用include语法嵌入：</li>
-</ol>
+<h4 id="还可以用mdbook的include语法嵌入"><a class="header" href="#还可以用mdbook的include语法嵌入">还可以用mdbook的include语法嵌入：</a></h4>
 <div id="admonition-可以用include语法嵌入" class="admonition tip">
 <div class="admonition-title">
 <p>可以用include语法嵌入</p>
@@ -792,6 +835,87 @@ skinparam classFontName ttf-wqy-zenhei
 <p>rust只能允许一级嵌套，使用workspace分出subpackage
 </code>;
 @endmindmap</p>
+</li>
+</ol>
+</div>
+</div>
+<h4 id="关于设置plantuml_limit_size"><a class="header" href="#关于设置plantuml_limit_size">关于设置plantuml_limit_size</a></h4>
+<div id="admonition-方法一修改vmoption" class="admonition info">
+<div class="admonition-title">
+<p>方法一：修改vmoption</p>
+<p><a class="admonition-anchor-link" href="#admonition-方法一修改vmoption"></a></p>
+</div>
+<div>
+<ol>
+<li>Open the option ‘Help-&gt;Edit custom VM option’</li>
+<li>add ‘-DPLANTUML_LIMIT_SIZE=8192’ on the last line </li>
+<li>It can be work after restart idea.
+<a href="https://forum.plantuml.net/10465/how-plantuml_limit_size-when-running-intellij-idea-plugin">how to set PLANTUML_LIMIT_SIZE when running intellij idea plugin - PlantUML Q&amp;A</a></li>
+</ol>
+</div>
+</div>
+<div id="admonition-error-rendering-admonishment" class="admonition bug">
+<div class="admonition-title">
+<p>Error rendering admonishment</p>
+<p><a class="admonition-anchor-link" href="#admonition-error-rendering-admonishment"></a></p>
+</div>
+<div>
+<p>Failed with: TOML parsing error: expected an equals, found a newline at line 1 column 6</p>
+<p>Original markdown input:</p>
+<pre><code>```admonish info title='方法二：preference
+1. Open Preferences/Languages &amp; Frameworks/PlantUML
+2. Change the target option
+[Where to define plantuml limit size environment variable when using PlantUML integration plugin with IntelliJ? - PlantUML Q&amp;A](https://forum.plantuml.net/11078/plantuml-environment-variable-plantuml-integration-intellij)
+```
+</code></pre>
+</div>
+</div>
+<h4 id="关于scale缩放语法失效"><a class="header" href="#关于scale缩放语法失效">关于scale缩放语法失效</a></h4>
+<p><img src="https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/CleanShot%202022-07-23%20at%2011.53.28%402x.png" alt="CleanShot 2022-07-23 at 11.53.28@2x" /></p>
+<h4 id="关于高级语法导入文件定义变量"><a class="header" href="#关于高级语法导入文件定义变量">关于高级语法：导入文件、定义变量</a></h4>
+<div id="admonition-这里还有许多plantuml的高级语法" class="admonition tip">
+<div class="admonition-title">
+<p>这里还有许多plantuml的高级语法</p>
+<p><a class="admonition-anchor-link" href="#admonition-这里还有许多plantuml的高级语法"></a></p>
+</div>
+<div>
+<ul>
+<li><a href="https://plantuml-documentation.readthedocs.io/en/latest/advanced-use/">Advanced Use — Ashley’s PlantUML Doc 0.2.01 documentation</a></li>
+</ul>
+</div>
+</div>
+<div id="admonition-语法说明" class="admonition info">
+<div class="admonition-title">
+<p>语法说明</p>
+<p><a class="admonition-anchor-link" href="#admonition-语法说明"></a></p>
+</div>
+<div>
+<ol>
+<li>
+<p>!define, !undef</p>
+</li>
+<li>
+<p>including files</p>
+</li>
+</ol>
+<ul>
+<li>can .zip a file and include it</li>
+<li>You can use system environment variable or constant definition when using include</li>
+</ul>
+<blockquote>
+<p>!include %windir%/test1.txt
+!define PLANTUML_HOME /home/foo
+!include PLANTUML_HOME/test1.txt</p>
+</blockquote>
+<ol start="3">
+<li>
+<p>include URL</p>
+</li>
+<li>
+<p>constants</p>
+</li>
+<li>
+<p>date and time</p>
 </li>
 </ol>
 </div>
