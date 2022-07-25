@@ -1,54 +1,55 @@
 # kroki合集
 
 <!--ts-->
+
 * [kroki合集](#kroki合集)
 * [两种用法](#两种用法)
-   * [kroki-&lt;target_format&gt;](#kroki-target_format)
-   * [引入用法](#引入用法)
+    * [kroki-&lt;target_format&gt;](#kroki-target_format)
+    * [引入用法](#引入用法)
 * [参考资源](#参考资源)
-   * [<a href="https://kroki.io/#examples" rel="nofollow">Kroki!</a>](#kroki)
-   * [<a href="https://kroki.io/examples.html" rel="nofollow">Kroki! Examples</a>](#kroki-examples)
-   * [IntelliPikchr: IDEA内置插件](#intellipikchr-idea内置插件)
-   * [mdbook-kroki-preprocessor: 支持kroki渲染](#mdbook-kroki-preprocessor-支持kroki渲染)
-   * [kori支持范围](#kori支持范围)
-      * [Block Diagram](#block-diagram)
-         * [blockdiag](#blockdiag)
-         * [Sequence diagram](#sequence-diagram)
-         * [Activity diagram](#activity-diagram)
-         * [Network diagram](#network-diagram)
-      * [Packet diagram](#packet-diagram)
-      * [Rack diagram](#rack-diagram)
-      * [Object Oriented Graph](#object-oriented-graph)
-      * [pikchr:](#pikchr)
-         * [Commit Graph](#commit-graph)
-         * [Syntax diagram](#syntax-diagram)
-         * [Impossible trident](#impossible-trident)
-      * [Entity Relationship Diagram](#entity-relationship-diagram)
-      * [Excalidraw: hand-draw like diagrams](#excalidraw-hand-draw-like-diagrams)
-      * [vege: word cloud](#vege-word-cloud)
-      * [Diverging Stacked Bar Chart](#diverging-stacked-bar-chart)
-      * [Ditaa: Conjugate prior relationships](#ditaa-conjugate-prior-relationships)
-      * [Mermaid](#mermaid)
-         * [Sequence diagram](#sequence-diagram-1)
-         * [Gantt](#gantt)
-      * [Nomnoml: UML diagram](#nomnoml-uml-diagram)
-      * [Plantuml](#plantuml)
-         * [use case diagram](#use-case-diagram)
-         * [work breakdown structure](#work-breakdown-structure)
-         * [Mind Map](#mind-map)
-         * [引入文件不支持!include](#引入文件不支持include)
-            * [Component diagram](#component-diagram)
-            * [Context diagram](#context-diagram)
-            * [Container diagram](#container-diagram)
-      * [BPMN](#bpmn)
-      * [Bytefield](#bytefield)
-      * [WaveDrom: Digital Timing diagram](#wavedrom-digital-timing-diagram)
-      * [Svgbob](#svgbob)
-         * [connected Servers](#connected-servers)
-      * [Structurizr](#structurizr)
-         * [Contaner diagram](#contaner-diagram)
-      * [UMlet](#umlet)
-         * [State machine](#state-machine)
+    * [<a href="https://kroki.io/#examples" rel="nofollow">Kroki!</a>](#kroki)
+    * [<a href="https://kroki.io/examples.html" rel="nofollow">Kroki! Examples</a>](#kroki-examples)
+    * [IntelliPikchr: IDEA内置插件](#intellipikchr-idea内置插件)
+    * [mdbook-kroki-preprocessor: 支持kroki渲染](#mdbook-kroki-preprocessor-支持kroki渲染)
+    * [kori支持范围](#kori支持范围)
+        * [Block Diagram](#block-diagram)
+            * [blockdiag](#blockdiag)
+            * [Sequence diagram](#sequence-diagram)
+            * [Activity diagram](#activity-diagram)
+            * [Network diagram](#network-diagram)
+        * [Packet diagram](#packet-diagram)
+        * [Rack diagram](#rack-diagram)
+        * [Object Oriented Graph](#object-oriented-graph)
+        * [pikchr:](#pikchr)
+            * [Commit Graph](#commit-graph)
+            * [Syntax diagram](#syntax-diagram)
+            * [Impossible trident](#impossible-trident)
+        * [Entity Relationship Diagram](#entity-relationship-diagram)
+        * [Excalidraw: hand-draw like diagrams](#excalidraw-hand-draw-like-diagrams)
+        * [vege: word cloud](#vege-word-cloud)
+        * [Diverging Stacked Bar Chart](#diverging-stacked-bar-chart)
+        * [Ditaa: Conjugate prior relationships](#ditaa-conjugate-prior-relationships)
+        * [Mermaid](#mermaid)
+            * [Sequence diagram](#sequence-diagram-1)
+            * [Gantt](#gantt)
+        * [Nomnoml: UML diagram](#nomnoml-uml-diagram)
+        * [Plantuml](#plantuml)
+            * [use case diagram](#use-case-diagram)
+            * [work breakdown structure](#work-breakdown-structure)
+            * [Mind Map](#mind-map)
+            * [引入文件不支持!include](#引入文件不支持include)
+                * [Component diagram](#component-diagram)
+                * [Context diagram](#context-diagram)
+                * [Container diagram](#container-diagram)
+        * [BPMN](#bpmn)
+        * [Bytefield](#bytefield)
+        * [WaveDrom: Digital Timing diagram](#wavedrom-digital-timing-diagram)
+        * [Svgbob](#svgbob)
+            * [connected Servers](#connected-servers)
+        * [Structurizr](#structurizr)
+            * [Contaner diagram](#contaner-diagram)
+        * [UMlet](#umlet)
+            * [State machine](#state-machine)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 <!-- Added by: runner, at: Sun Jul 24 16:53:49 UTC 2022 -->
@@ -65,6 +66,15 @@
 ```shell
 
 \!\[title\]\(kroki-<target_format>\:file_relativepath)
+```
+
+# 使用注意
+
+## 样式冲突
+
+```admonist warn title='kroki-svgbob和其他格式一起会冲突'
+kroki-svgbob会引入text样式，font-size固定为14px。
+就导致其他格式渲染图像出现文字重叠问题
 ```
 
 # 参考资源
