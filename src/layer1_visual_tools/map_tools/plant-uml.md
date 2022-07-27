@@ -329,6 +329,10 @@ help skinparams
 ## 高级使用
 
 - [Language specification pages](https://plantuml.com/en/sitemap-language-specification)
+- [高级用法页](https://plantuml.com/zh/sitemap-advanced-usage)
+  - [Integration of Ditaa](https://plantuml.com/zh/ditaa)
+  - [Integration of Dot diagrams](https://plantuml.com/zh/dot)
+  - [Draft with handwritten diagram](https://plantuml.com/zh/handwritten)
 
 ### 标题、页脚与分页
 
