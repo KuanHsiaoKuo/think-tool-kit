@@ -1,0 +1,58 @@
+@startuml
+skinparam backgroundColor #EEEBDC
+skinparam handwritten true
+scale 850 width
+box "本地转化" #LightBlue
+participant plantuml[
+    =plantuml思维导图
+]
+participant parser[
+    =文本解析器
+    ----
+    python脚本
+    ----
+    将plantuml文本转为json
+]
+end box
+box "本地查看" #DodgerBlue
+participant vega_json[
+    =vega配置文件
+]
+participant local_html[
+    =本地html
+    ----
+    包含vega嵌入式所需js
+]
+participant local_mdbook[
+    =本地mdbook server
+]
+end box
+participant online_mdbook[
+    =在线mdbook
+    ----
+    托管于github
+]
+plantuml -> plantuml ++: 确认节点关系、属性
+note right
+1. 方便看出节点层次感，包含关系
+2. 添加节点的相关属性：
+链接、注释、颜色等
+end note
+plantuml -> parser --++ #gold : 传入
+parser -> parser --++ #gold: 转为vega要求的json格式
+parser -> vega_json --++ #gold: 将json文件存放
+note left
+mdbook项目src内,
+这样才能被放在book文件目录内
+end note
+vega_json -> local_html --++ #gold: 相对路径导入
+note left: 方便本地查看效果
+local_html -> local_html --++ #lightgreen: 在src目录执行anywhere
+note left
+npm install -g anywhere
+anywhere可以在指定路径启动网站服务
+end note
+local_html -> local_html --++ #lightgreen: 本地打开html
+local_html -> local_mdbook --++ #lightgreen: 本地mdbook serve查看
+local_mdbook -> online_mdbook: git上传，自动编译
+@enduml
