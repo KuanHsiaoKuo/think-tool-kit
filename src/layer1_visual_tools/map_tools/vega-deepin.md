@@ -1,6 +1,14 @@
 # VEGA深度使用
 
 <!--ts-->
+* [VEGA深度使用](#vega深度使用)
+   * [缘起](#缘起)
+   * [基础使用方法（基于kroki-vega）](#基础使用方法基于kroki-vega)
+   * [参考资源](#参考资源)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: runner, at: Sat Jul 30 03:11:45 UTC 2022 -->
+
 <!--te-->
 
 ## 缘起
