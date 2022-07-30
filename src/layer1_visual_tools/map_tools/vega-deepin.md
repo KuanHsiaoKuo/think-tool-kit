@@ -1,10 +1,11 @@
 # VEGA深度使用
 
 <!--ts-->
+
 * [VEGA深度使用](#vega深度使用)
-   * [缘起](#缘起)
-   * [基础使用方法（基于kroki-vega）](#基础使用方法基于kroki-vega)
-   * [参考资源](#参考资源)
+    * [缘起](#缘起)
+    * [基础使用方法（基于kroki-vega）](#基础使用方法基于kroki-vega)
+    * [参考资源](#参考资源)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 <!-- Added by: runner, at: Sat Jul 30 14:49:23 UTC 2022 -->
@@ -36,6 +37,13 @@ vega在github上面的口号就深得我心，直接定位可视化语法。
 ## 参考资源
 
 - [vega/vega: A visualization grammar.](https://github.com/vega/vega)
+
+- 编辑器源码：[vega/editor: Editor/IDE for Vega and Vega-Lite](https://github.com/vega/editor)
+
+```shell
+yarn 
+yarn start
+```
 
 - [A Visualization Grammar | Vega](https://vega.github.io/vega/)
 
