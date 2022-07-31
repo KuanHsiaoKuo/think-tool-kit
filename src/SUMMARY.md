@@ -11,6 +11,8 @@
                 - [packed bubble chart local](layer1_visual_tools/map_tools/vega-packed-bubble-chart-embed-local.html)
                 - [sun burst local](layer1_visual_tools/map_tools/vega-sun-burst-embed-local.html)
                 - [word cloud local](layer1_visual_tools/map_tools/vega-word-cloud-embed-local.html)
+                - [vega view组件使用](layer1_visual_tools/map_tools/vega-view.html)
+                - [plantuml mindmap转化效果](layer1_visual_tools/map_tools/vega-puml-test.html)
             - [mermaid](layer1_visual_tools/map_tools/mermaid.md)
             - [plantuml](layer1_visual_tools/map_tools/plantuml-deepin.md)
         - [2. Drafts](layer1_visual_tools/Drafts/drafts.md)
