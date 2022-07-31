@@ -4,10 +4,11 @@
 * [VEGA深度使用](#vega深度使用)
    * [缘起](#缘起)
    * [基础使用方法（基于kroki-vega）](#基础使用方法基于kroki-vega)
+   * [编写好的py脚本](#编写好的py脚本)
    * [参考资源](#参考资源)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Sat Jul 30 15:05:53 UTC 2022 -->
+<!-- Added by: runner, at: Sun Jul 31 08:38:37 UTC 2022 -->
 
 <!--te-->
 
