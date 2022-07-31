@@ -33,6 +33,12 @@ vega在github上面的口号就深得我心，直接定位可视化语法。
 {{#include ../../../materials/plantuml/vega-steps.puml:1:}}
 ```
 
+## 编写好的py脚本
+
+```python
+{{#include ../../../scripts/puml_mindmap_json.py:1:}}
+```
+
 ## 参考资源
 
 - [vega/vega: A visualization grammar.](https://github.com/vega/vega)

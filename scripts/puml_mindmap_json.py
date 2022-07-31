@@ -30,7 +30,6 @@ def converter(puml_path: str):
                 stars, name, color, links = extract_stars_name_links_color(line)
                 levels[stars] = (line, title_index)
                 parent = levels.get(stars[:-1])
-                # print(f'当前节点{line}\nid为{index}\n父节点为{parent[0]}\nid为[parent[1]]\n\n' if parent else '是根节点')
                 node = {
                     "id": title_index,
                     "name": name,
@@ -62,9 +61,6 @@ def converter(puml_path: str):
                     node['note'] = note
                 json_results.append(node)
                 title_index += 1
-            # print(line, name)
-        # print(levels)
-        # print(json_results)
     with open('test.json', 'w') as f:
         f.write(json.dumps(json_results))
 
@@ -124,13 +120,12 @@ def extract_notes(text=''):
     #     '''
     # 同时匹配换行符
     # (?:pattern) 来解决方括号不适用的场景
-    # [(45条消息) 正则匹配所有字符（包括换行）_尐东东的博客-CSDN博客_正则匹配所有字符](https://blog.csdn.net/u011158908/article/details/105666329)
+    # [正则匹配所有字符（包括换行）_尐东东的博客-CSDN博客_正则匹配所有字符](https://blog.csdn.net/u011158908/article/details/105666329)
     notes = re.findall('\<code\>((?:.|\n)*?)\</code\>', text)
     return notes
 
 
 def extract_links(text=''):
-    # text = '[[https://docs.substrate.io/tutorials/get-started/trusted-network/ Add trusted nodes]][[#总览 返回]]'
     links = re.findall('\[\[(.*?)\]\]', text)
     link_dict = {}
     for link in links:
@@ -147,5 +142,3 @@ if __name__ == "__main__":
         if not puml_path.endswith('.puml'):
             print("请传入puml文件...")
     converter(puml_path)
-    # extract_links()
-    # extract_notes()
