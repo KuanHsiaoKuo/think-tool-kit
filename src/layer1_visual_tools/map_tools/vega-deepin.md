@@ -1,11 +1,12 @@
 # VEGA深度使用
 
 <!--ts-->
+
 * [VEGA深度使用](#vega深度使用)
-   * [缘起](#缘起)
-   * [基础使用方法（基于kroki-vega）](#基础使用方法基于kroki-vega)
-   * [编写好的py脚本](#编写好的py脚本)
-   * [参考资源](#参考资源)
+    * [缘起](#缘起)
+    * [基础使用方法（基于kroki-vega）](#基础使用方法基于kroki-vega)
+    * [编写好的py脚本](#编写好的py脚本)
+    * [参考资源](#参考资源)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 <!-- Added by: runner, at: Sun Jul 31 08:44:11 UTC 2022 -->
@@ -37,7 +38,67 @@ vega在github上面的口号就深得我心，直接定位可视化语法。
 ## 编写好的py脚本
 
 ```python
-{{#include ../../../scripts/puml_mindmap_json.py:1:}}
+{{  # include ../../../scripts/puml_mindmap_json.py:1:}}
+```
+
+## 两种格式：svg和canvas
+
+- svg本质上是xml数据，它渲染的可视化图片会分成很多节点DOM。好处在于节点操作更顺畅，坏处在于更加占资源
+- canvas只有一个DOM，正好与svg相反。
+- 二者互补，节点多优先选canvas
+
+## 两种渲染方式
+
+~~~admonish tip title='embed'
+```html
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+<div id="vis"/>
+</code>
+<script>
+    vegaEmbed(
+        '#vis',
+        'vega/tree.vg.json'
+    );
+</script>
+</body>
+```
+~~~
+
+~~~admonish tip title='embed'
+```html
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+</head>
+<body>
+<div id="view"></div>
+<script type="text/javascript">
+    var view;
+
+    fetch('vega/circle_packing.vg.json')
+        .then(res => res.json())
+        .then(spec => render(spec))
+        .catch(err => console.error(err));
+
+    function render(spec) {
+        view = new vega.View(vega.parse(spec), {
+            renderer:  'svg',  // renderer (canvas or svg)
+            container: '#view',   // parent DOM container
+            hover:     true       // enable hover processing
+        });
+        return view.runAsync();
+    }
+</script>
+</body>
+```
+~~~
+
+```admonish warn title='优先选embed'
+view组件方式不支持hover等特性，放弃
 ```
 
 ## 参考资源
