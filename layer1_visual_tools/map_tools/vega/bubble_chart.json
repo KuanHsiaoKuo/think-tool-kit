@@ -1,0 +1,66 @@
+[
+  {
+    "category": "A",
+    "amount": 0.28
+  },
+  {
+    "category": "B",
+    "amount": 0.55
+  },
+  {
+    "category": "C",
+    "amount": 0.43
+  },
+  {
+    "category": "D",
+    "amount": 0.91
+  },
+  {
+    "category": "E",
+    "amount": 0.81
+  },
+  {
+    "category": "F",
+    "amount": 0.53
+  },
+  {
+    "category": "G",
+    "amount": 0.19
+  },
+  {
+    "category": "H",
+    "amount": 0.87
+  },
+  {
+    "category": "I",
+    "amount": 0.28
+  },
+  {
+    "category": "J",
+    "amount": 0.55
+  },
+  {
+    "category": "K",
+    "amount": 0.43
+  },
+  {
+    "category": "L",
+    "amount": 0.91
+  },
+  {
+    "category": "M",
+    "amount": 0.81
+  },
+  {
+    "category": "N",
+    "amount": 0.53
+  },
+  {
+    "category": "O",
+    "amount": 0.19
+  },
+  {
+    "category": "P",
+    "amount": 0.87
+  }
+]
