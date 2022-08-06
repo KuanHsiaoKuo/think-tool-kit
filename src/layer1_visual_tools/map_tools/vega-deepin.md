@@ -39,7 +39,7 @@ vega在github上面的口号就深得我心，直接定位可视化语法。
 ## 编写好的py脚本
 
 ```python
-{{  # include ../../../scripts/puml_mindmap_json.py:1:}}
+{{#include ../../../scripts/puml_mindmap_json.py:1:}}
 ```
 
 ## 两种格式：svg和canvas
