@@ -1,0 +1,24 @@
+@startmindmap
+*:vega配置说明
+<code>
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json", // 版本
+  "width": ..., // 视图宽度
+  "height": ..., // 视图高度
+  "autosize": ..., // 视图自动大小设置
+  "signals": ..., // 动态变量,可触发交互更新
+  "data": ..., // 数据
+  "scales": ..., // 转换数据为图表对应的X,Y轴
+  "axes": ..., // 坐标轴配置
+  "legends": ..., // 图例
+  "marks": ... // 图形标记,形状,语法核心,用于描述图形,例如矩形,弧形
+  // 更多配置项请参考官方文档
+}
+</code>;
+**:signals
+<code>
+</code>;
+**:data
+<code>
+</code>;
+@endmindmap
