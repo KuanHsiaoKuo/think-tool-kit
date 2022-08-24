@@ -20,5 +20,8 @@
         - [3. Notes](layer1_visual_tools/Notes/notes.md)
     - [Layer2: 思维理念](layer2_thinking_concepts/thinking_concepts.md)
     - [Layer3: 思维模型](layer3_thinking_models/thinking_models.md)
+        - [5W2H](layer3_thinking_models/wh_models/wh_models.md)
+          - [2W1H阅读源码模型](layer3_thinking_models/wh_models/source_code_2w1h.md)
     - [Layer4: 思维体系](layer4_thinking_system/thinking_system.md)
+    - [Layer5: 巅峰练习](layer5_peek_practice/peek_practice.md)
     - [相关资源](Resources/resources.md)

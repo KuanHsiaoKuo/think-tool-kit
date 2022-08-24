@@ -1,0 +1,31 @@
+@startuml
+skinparam backgroundColor #EEEBDC
+skinparam handwritten true
+scale 850 width
+participant What [
+    =What: 有什么
+    ----
+    语法关键字
+    ----
+    代码元素
+]
+participant What_is[
+    =What is: 是什么
+    ----
+    语法知识
+    ----
+    从何引入
+]
+participant How[
+    =如何运行
+    ----
+    代码逻辑
+    ----
+    业务逻辑
+]
+loop
+What -> What: 识别语法关键字/引入元素
+What -> What_is: 是什么（属于单纯理解知识点）
+What_is -> How: 这些语法元素如何组织
+end
+@enduml
