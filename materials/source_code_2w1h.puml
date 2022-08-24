@@ -26,6 +26,8 @@ participant How[
 loop
 What -> What: 识别语法关键字/引入元素
 What -> What_is: 是什么（属于单纯理解知识点）
+What_is -> What_is: 搜索语法点
+What_is -> What_is: 搜索文档，Rust还有完善的rustdoc
 What_is -> How: 这些语法元素如何组织
 end
 @enduml
