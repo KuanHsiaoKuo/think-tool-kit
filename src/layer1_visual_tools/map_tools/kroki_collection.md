@@ -34,7 +34,6 @@
             * [Context diagram](#context-diagram)
             * [Container diagram](#container-diagram)
    * [绘制类](#绘制类)
-      * [<del>Packet diagram</del>: 可被plantuml替代](#packet-diagram-可被plantuml替代)
       * [Rack diagram](#rack-diagram)
       * [Object Oriented Graph](#object-oriented-graph)
       * [Entity Relationship Diagram](#entity-relationship-diagram)
@@ -65,7 +64,7 @@
          * [State machine](#state-machine)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Sun Aug  7 11:23:45 UTC 2022 -->
+<!-- Added by: runner, at: Wed Aug 24 06:03:46 UTC 2022 -->
 
 <!--te-->
 ![image-20220715114804075](https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/image-20220715114804075.png)
