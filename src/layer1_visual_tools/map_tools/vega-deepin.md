@@ -1,16 +1,10 @@
 # VEGA深度使用
 
 <!--ts-->
-* [VEGA深度使用](#vega深度使用)
-   * [缘起](#缘起)
-   * [基础使用方法（基于kroki-vega）](#基础使用方法基于kroki-vega)
-   * [编写好的py脚本](#编写好的py脚本)
-   * [两种格式：svg和canvas](#两种格式svg和canvas)
-   * [两种渲染方式](#两种渲染方式)
-   * [参考资源](#参考资源)
+
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Mon Aug 29 07:54:31 UTC 2022 -->
+<!-- Added by: runner, at: Mon Dec  5 02:59:20 UTC 2022 -->
 
 <!--te-->
 
