@@ -14,7 +14,7 @@
     },
     {
       "name": "layout",
-      "value": "tidy",
+      "value": "cluster",
       "bind": {
         "input": "radio",
         "options": [
