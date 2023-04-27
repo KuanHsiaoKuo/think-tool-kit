@@ -2,6 +2,16 @@
 
 <!--ts-->
 
+<<<<<<< HEAD
+=======
+* [VEGA深度使用](#vega深度使用)
+    * [缘起](#缘起)
+    * [基础使用方法（基于kroki-vega）](#基础使用方法基于kroki-vega)
+    * [编写好的py脚本](#编写好的py脚本)
+    * [两种格式：svg和canvas](#两种格式svg和canvas)
+    * [两种渲染方式](#两种渲染方式)
+    * [参考资源](#参考资源)
+>>>>>>> 6a357e6 (添加rust知识框架)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 <!-- Added by: runner, at: Mon Dec  5 02:59:20 UTC 2022 -->
@@ -32,9 +42,11 @@ vega在github上面的口号就深得我心，直接定位可视化语法。
 
 ## 编写好的py脚本
 
+~~~admonish tip title='puml_mindmap_json'
 ```python
-{{  # include ../../../scripts/puml_mindmap_json.py:1:}}
+{{#include ../../../scripts/puml_mindmap_json.py:1:}}
 ```
+~~~
 
 ## 两种格式：svg和canvas
 
@@ -141,6 +153,7 @@ yarn start
 - [List of Figures | Making Data Visual](https://makingdatavisual.github.io/figurelist.html#related)
 - [local marginnote](marginnote3app://note/C95A594C-4FC8-4C3E-AAFE-05AF760FEFD1)
     - [Chapter 5: Single Views](marginnote3app://note/BFF3AEAC-D3B8-49A6-A36C-AFDF62E4D85C)
+
 ```admonish tip title='这本书最大的特点是根据数据特点提供对应的图表类型'
 - Four Views of the Same Data: Scatterplot, Clustered Barchart, Clustered Barchart, Stacked Barchart
 - Question: How Is a Value Distributed?: Categorical Histogram , Quantitative Histogram , Smoothed Histogram , Box Plot, Categorical Density Plot, Continuous Density Plot

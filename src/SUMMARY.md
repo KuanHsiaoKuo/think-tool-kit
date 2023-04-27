@@ -14,6 +14,7 @@
                 - [vega view组件使用](layer1_visual_tools/map_tools/vega-view.html)
                 - [plantuml mindmap转化效果](layer1_visual_tools/map_tools/vega-puml-test.html)
                 - [vega force directed layout](layer1_visual_tools/map_tools/vega-force-directed-embed-local.html)
+                - [精选](layer1_visual_tools/collections/collections.md)
             - [mermaid](layer1_visual_tools/map_tools/mermaid.md)
             - [plantuml](layer1_visual_tools/map_tools/plantuml-deepin.md)
         - [2. Drafts](layer1_visual_tools/Drafts/drafts.md)

@@ -61,7 +61,8 @@ def converter(puml_path: str):
                     node['note'] = note
                 json_results.append(node)
                 title_index += 1
-    with open('test.json', 'w') as f:
+    result_path = puml_path.replace('.puml', '.json')
+    with open(result_path, 'w') as f:
         f.write(json.dumps(json_results))
 
 
