@@ -2,19 +2,9 @@
 
 <!--ts-->
 
-<<<<<<< HEAD
-=======
-* [VEGA深度使用](#vega深度使用)
-    * [缘起](#缘起)
-    * [基础使用方法（基于kroki-vega）](#基础使用方法基于kroki-vega)
-    * [编写好的py脚本](#编写好的py脚本)
-    * [两种格式：svg和canvas](#两种格式svg和canvas)
-    * [两种渲染方式](#两种渲染方式)
-    * [参考资源](#参考资源)
->>>>>>> 6a357e6 (添加rust知识框架)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Mon Dec  5 02:59:20 UTC 2022 -->
+<!-- Added by: runner, at: Thu Apr 27 10:29:05 UTC 2023 -->
 
 <!--te-->
 
