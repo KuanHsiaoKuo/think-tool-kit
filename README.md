@@ -20,3 +20,11 @@ http-server -c-1
 1. 执行scripts/puml_midmap_json.py获取data.json
 2. 在data.vg.json中使用data.json
 3. 在data.html中使用data.vg.json
+4. 如果相对路径有变化，需要多往上走一级来验证，比如:
+
+```shell
+../../../../../layer1_visual_tools/map_tools/vega/collections/data_json/rust.json
+```
+
+- 向上走到src那个目录
+- 然后一步步定位到文件

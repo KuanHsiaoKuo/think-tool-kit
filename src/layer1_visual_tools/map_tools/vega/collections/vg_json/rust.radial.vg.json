@@ -78,7 +78,7 @@
   "data": [
     {
       "name": "tree",
-      "url": "../../data_json/rust.json",
+      "url": "../../../../../layer1_visual_tools/map_tools/vega/collections/data_json/rust.json",
       "transform": [
         {
           "type": "stratify",
