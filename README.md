@@ -8,13 +8,6 @@
 
 在多方面整理自己掌握的内容时，一再感受到思维工具的重要性，而这才是核心本质所在，因而起了这本书。
 
-## 关于快速本地实时查看vega网页
-
-```shell
-npm install -g http-server
-http-server -c-1
-```
-
 ## 关于puml->data.json->html的转换
 
 1. 执行scripts/puml_midmap_json.py获取data.json
@@ -28,3 +21,12 @@ http-server -c-1
 
 - 向上走到src那个目录
 - 然后一步步定位到文件
+
+## 关于快速本地实时查看vega网页
+
+> 为了和mdbook的路径一致，在src目录下执行
+
+```shell
+npm install -g http-server
+http-server -c-1
+```
