@@ -15,767 +15,2266 @@
   },
   {
     "id": 4,
+    "name": " rust\u5982\u4f55\u4fdd\u8bc1\u5185\u5b58\u5b89\u5168\n",
+    "parent": 3
+  },
+  {
+    "id": 5,
+    "name": " Rust\u4eceHaskell\u7684\u7c7b\u578b\u7cfb\u7edf\u501f\u9274\n",
+    "parent": 3
+  },
+  {
+    "id": 6,
+    "name": " Rust\u72ec\u6709\u7279\u6027\n",
+    "parent": 3
+  },
+  {
+    "id": 7,
     "name": " \u96f6\u6210\u672c\u62bd\u8c61\n",
     "parent": 2
   },
   {
-    "id": 5,
+    "id": 8,
     "name": " \u5b9e\u7528\u6027\n",
     "parent": 2
   },
   {
-    "id": 6,
+    "id": 9,
     "name": " \u8fd0\u884c\u6d41\u7a0b\n",
     "parent": 1
   },
   {
-    "id": 7,
+    "id": 10,
     "name": " \u5185\u5b58\u7ba1\u7406\n",
     "parent": 1
   },
   {
-    "id": 8,
-    "name": " safe\n",
-    "parent": 7
-  },
-  {
-    "id": 9,
-    "name": " \u5185\u5b58\u5e03\u5c40\n",
-    "parent": 8
-  },
-  {
-    "id": 10,
-    "name": " \u5185\u5b58\u5bf9\u9f50\n",
-    "parent": 9
-  },
-  {
     "id": 11,
-    "name": " \u5b57\u8282\u5bf9\u9f50\n",
-    "parent": 9
+    "name": " safe\n",
+    "parent": 10
   },
   {
     "id": 12,
-    "name": " \u5806\u6808\n",
-    "parent": 8
+    "name": " \u5185\u5b58\u5e03\u5c40\n",
+    "parent": 11
   },
   {
     "id": 13,
-    "name": " \u6808\n",
+    "name": " \u5185\u5b58\u5bf9\u9f50\n",
     "parent": 12
   },
   {
     "id": 14,
-    "name": " \u9ed8\u8ba4\u653e\u5728\u6808\u4e0a\n",
-    "parent": 13
-  },
-  {
-    "id": 15,
-    "name": " \u5806\n",
+    "name": " \u5b57\u8282\u5bf9\u9f50\n",
     "parent": 12
   },
   {
+    "id": 15,
+    "name": " \u5806\u6808\n",
+    "parent": 11
+  },
+  {
     "id": 16,
-    "name": " \u5806\u6570\u636e\u7ed3\u6784\n",
+    "name": " \u6808\n",
     "parent": 15
   },
   {
     "id": 17,
-    "name": " \u5806\u5185\u5b58\n",
-    "parent": 15
+    "name": " \u9ed8\u8ba4\u653e\u5728\u6808\u4e0a\n",
+    "parent": 16
   },
   {
     "id": 18,
-    "name": " \u5806\u5206\u914d\n",
+    "name": " \u5806\n",
     "parent": 15
   },
   {
     "id": 19,
-    "name": " \u94fe\u8868\n",
+    "name": " \u5806\u6570\u636e\u7ed3\u6784\n",
     "parent": 18
   },
   {
     "id": 20,
-    "name": " \u4f4d\u56fe\n",
+    "name": " \u5806\u5185\u5b58\n",
     "parent": 18
   },
   {
     "id": 21,
-    "name": " \u5206\u914d\u4e0e\u91ca\u653e\n",
-    "parent": 8
+    "name": " \u5806\u5206\u914d\n",
+    "parent": 18
   },
   {
     "id": 22,
-    "name": " \u5185\u5b58\u5206\u914d\u5668\n",
+    "name": " \u94fe\u8868\n",
     "parent": 21
   },
   {
     "id": 23,
-    "name": " \u7cfb\u7edf\u5206\u914d\u5668\n",
-    "parent": 22
+    "name": " \u4f4d\u56fe\n",
+    "parent": 21
   },
   {
     "id": 24,
-    "name": " \u81ea\u5b9a\u4e49\u5206\u914d\u5668\n",
-    "parent": 22
+    "name": " \u5206\u914d\u4e0e\u91ca\u653e\n",
+    "parent": 11
   },
   {
     "id": 25,
-    "name": " jemalloc\n",
+    "name": " \u5185\u5b58\u5206\u914d\u5668\n",
     "parent": 24
   },
   {
     "id": 26,
-    "name": " tcmalloc\n",
-    "parent": 24
+    "name": " \u7cfb\u7edf\u5206\u914d\u5668\n",
+    "parent": 25
   },
   {
     "id": 27,
-    "name": " \u6240\u6709\u6743\n",
-    "parent": 8
+    "name": " \u81ea\u5b9a\u4e49\u5206\u914d\u5668\n",
+    "parent": 25
   },
   {
     "id": 28,
-    "name": " \u5355\u4e00\u6240\u6709\u6743\n",
+    "name": " jemalloc\n",
     "parent": 27
   },
   {
     "id": 29,
-    "name": " Copy/Move\n",
-    "parent": 28
+    "name": " tcmalloc\n",
+    "parent": 27
   },
   {
     "id": 30,
-    "name": " \u501f\u7528\n",
-    "parent": 28
+    "name": " \u6240\u6709\u6743\n",
+    "parent": 11
   },
   {
     "id": 31,
-    "name": " \u501f\u7528\u89c4\u5219\n",
+    "name": " \u5355\u4e00\u6240\u6709\u6743\n",
     "parent": 30
   },
   {
     "id": 32,
-    "name": " \u4e09\u6761\u89c4\u5219\n",
+    "name": " Copy/Move\n",
     "parent": 31
   },
   {
     "id": 33,
-    "name": " \u89c4\u5219\u7f3a\u9677\n",
+    "name": " \u501f\u7528\n",
     "parent": 31
   },
   {
     "id": 34,
-    "name": " MIR\n",
-    "parent": 31
+    "name": " \u501f\u7528\u89c4\u5219\n",
+    "parent": 33
   },
   {
     "id": 35,
-    "name": " NLL(\u975e\u8bcd\u6cd5\u4f5c\u7528\u57df)\n",
-    "parent": 31
+    "name": " \u4e09\u6761\u89c4\u5219\n",
+    "parent": 34
   },
   {
     "id": 36,
-    "name": " \u501f\u7528\u68c0\u67e5\n",
-    "parent": 30
+    "name": " \u89c4\u5219\u7f3a\u9677\n",
+    "parent": 34
   },
   {
     "id": 37,
-    "name": " \u89e3\u5f15\u7528\u83b7\u5f97\u6240\u6709\u6743\n",
-    "parent": 30
+    "name": " MIR\n",
+    "parent": 34
   },
   {
     "id": 38,
-    "name": " \u751f\u547d\u5468\u671f\n",
-    "parent": 28
+    "name": " NLL(\u975e\u8bcd\u6cd5\u4f5c\u7528\u57df)\n",
+    "parent": 34
   },
   {
     "id": 39,
-    "name": " \u751f\u547d\u5468\u671f\u53c2\u6570\n",
-    "parent": 38
+    "name": " \u501f\u7528\u68c0\u67e5\n",
+    "parent": 33
   },
   {
     "id": 40,
-    "name": " \u51fd\u6570\u7b7e\u540d\n",
-    "parent": 39
+    "name": " \u89e3\u5f15\u7528\u83b7\u5f97\u6240\u6709\u6743\n",
+    "parent": 33
   },
   {
     "id": 41,
-    "name": " \u65b9\u6cd5\u7b7e\u540d\n",
-    "parent": 39
+    "name": " \u751f\u547d\u5468\u671f\n",
+    "parent": 31
   },
   {
     "id": 42,
-    "name": " \u7ed3\u6784\u4f53/\u679a\u4e3e\u4f53\n",
-    "parent": 39
+    "name": " \u751f\u547d\u5468\u671f\u53c2\u6570\n",
+    "parent": 41
   },
   {
     "id": 43,
-    "name": " \u9759\u6001\n",
-    "parent": 39
+    "name": " \u51fd\u6570\u7b7e\u540d\n",
+    "parent": 42
   },
   {
     "id": 44,
-    "name": " \u751f\u547d\u5468\u671f\u7701\u7565\n",
-    "parent": 38
+    "name": " \u65b9\u6cd5\u7b7e\u540d\n",
+    "parent": 42
   },
   {
     "id": 45,
-    "name": " trait\u5bf9\u8c61\u751f\u547d\u5468\u671f\n",
-    "parent": 38
+    "name": " \u7ed3\u6784\u4f53/\u679a\u4e3e\u4f53\n",
+    "parent": 42
   },
   {
     "id": 46,
-    "name": " \u6cdb\u578b\u751f\u547d\u5468\u671f\n",
-    "parent": 38
+    "name": " \u9759\u6001\n",
+    "parent": 42
   },
   {
     "id": 47,
-    "name": " \u6240\u6709\u6743\u89c4\u5219\n",
-    "parent": 28
+    "name": " \u751f\u547d\u5468\u671f\u7701\u7565\n",
+    "parent": 41
   },
   {
     "id": 48,
-    "name": " \u5171\u4eab\u6240\u6709\u6743(Rc<T>\u548cWeak<T>)\n",
-    "parent": 27
+    "name": " trait\u5bf9\u8c61\u751f\u547d\u5468\u671f\n",
+    "parent": 41
   },
   {
     "id": 49,
-    "name": " unsafe\n",
-    "parent": 7
+    "name": " \u6cdb\u578b\u751f\u547d\u5468\u671f\n",
+    "parent": 41
   },
   {
     "id": 50,
-    "name": " \u7c7b\u578b\n",
-    "parent": 1
+    "name": " \u6240\u6709\u6743\u89c4\u5219\n",
+    "parent": 31
   },
   {
     "id": 51,
-    "name": " \u7c7b\u578b\u7cfb\u7edf\n",
-    "parent": 50
+    "name": " \u5171\u4eab\u6240\u6709\u6743(Rc<T>\u548cWeak<T>)\n",
+    "parent": 30
   },
   {
     "id": 52,
-    "name": " \u7279\u70b9\n",
-    "parent": 51
+    "name": " unsafe\n",
+    "parent": 10
   },
   {
     "id": 53,
-    "name": " \u7c7b\u578b\u5b89\u5168\n",
+    "name": " \u88f8\u6307\u9488\n",
     "parent": 52
   },
   {
     "id": 54,
-    "name": " \u7c7b\u578b\u63a8\u5bfc\n",
+    "name": " \u578b\u53d8\n",
     "parent": 52
   },
   {
     "id": 55,
-    "name": " \u7c7b\u578b\u8f6c\u6362\n",
+    "name": " Drop\u68c0\u67e5\n",
     "parent": 52
   },
   {
     "id": 56,
-    "name": " From/Into Series\n",
-    "parent": 55
+    "name": " FFI\n",
+    "parent": 52
   },
   {
     "id": 57,
-    "name": " TryFrom/TryInto\n",
-    "parent": 56
+    "name": " WebAssembly\n",
+    "parent": 52
   },
   {
     "id": 58,
-    "name": " FromStr/TryFromStr\n",
-    "parent": 56
+    "name": " \u7c7b\u578b\n",
+    "parent": 1
   },
   {
     "id": 59,
-    "name": " as Series\n",
-    "parent": 55
+    "name": " \u7c7b\u578b\u7cfb\u7edf\n",
+    "parent": 58
   },
   {
     "id": 60,
-    "name": " AsRef/AsMut\n",
+    "name": " \u7279\u70b9\n",
     "parent": 59
   },
   {
     "id": 61,
-    "name": " Borrow/BorrowMut\n",
-    "parent": 55
+    "name": " \u7c7b\u578b\u5b89\u5168\n",
+    "parent": 60
   },
   {
     "id": 62,
-    "name": " Deref\n",
-    "parent": 55
+    "name": " \u610f\u4e49\u660e\u786e\n",
+    "parent": 61
   },
   {
     "id": 63,
-    "name": " \u7c7b\u578b\u522b\u540d\n",
-    "parent": 52
+    "name": " \u884c\u4e3a\u7ea6\u675f\n",
+    "parent": 61
   },
   {
     "id": 64,
-    "name": " \u7c7b\u578b\u6807\u8bb0\n",
-    "parent": 52
+    "name": " \u7c7b\u578b\u63a8\u5bfc\n",
+    "parent": 60
   },
   {
     "id": 65,
-    "name": " \u7c7b\u578b\u5927\u5c0f\n",
-    "parent": 52
+    "name": " \u7c7b\u578b\u8f6c\u6362\n",
+    "parent": 60
   },
   {
     "id": 66,
-    "name": " \u591a\u6001\n",
-    "parent": 51
+    "name": " \u5e38\u7528\u8f6c\u6362\n",
+    "parent": 65
   },
   {
     "id": 67,
-    "name": " generic\n",
+    "name": " From/Into Series\n",
     "parent": 66
   },
   {
     "id": 68,
-    "name": " trait bound\n",
-    "parent": 66
+    "name": " TryFrom/TryInto\n",
+    "parent": 67
   },
   {
     "id": 69,
-    "name": " trait object\n",
-    "parent": 66
+    "name": " FromStr/TryFromStr\n",
+    "parent": 67
   },
   {
     "id": 70,
-    "name": " \u6570\u636e\u7ed3\u6784(\u6570\u636e\u7c7b\u578b)\n",
-    "parent": 50
+    "name": " as Series\n",
+    "parent": 66
   },
   {
     "id": 71,
-    "name": " \u57fa\u672c\u6570\u636e\u7c7b\u578b\n",
+    "name": " AsRef/AsMut\n",
     "parent": 70
   },
   {
     "id": 72,
-    "name": " \u5e03\u5c14\n",
-    "parent": 71
+    "name": " Borrow/BorrowMut\n",
+    "parent": 66
   },
   {
     "id": 73,
-    "name": " \u6574\u6570\n",
-    "parent": 71
+    "name": " Deref\n",
+    "parent": 66
   },
   {
     "id": 74,
-    "name": " \u6d6e\u70b9\n",
-    "parent": 71
+    "name": " Deref\u89e3\u5f15\u7528\n",
+    "parent": 65
   },
   {
     "id": 75,
-    "name": " \u5b57\u7b26\n",
-    "parent": 71
+    "name": " \u89e3\u5f15\u7528\u5f3a\u5236\u591a\u6001\n",
+    "parent": 74
   },
   {
     "id": 76,
-    "name": " \u5b57\u7b26\u4e32\n",
-    "parent": 71
+    "name": " \u81ea\u52a8\u89e3\u5f15\u7528\n",
+    "parent": 74
   },
   {
     "id": 77,
-    "name": " \u590d\u5408\u6570\u636e\u7c7b\u578b\n",
-    "parent": 70
+    "name": " \u65b9\u4fbf\u5f00\u53d1\u8005\u4f7f\u7528\u667a\u80fd\u6307\u9488\n",
+    "parent": 76
   },
   {
     "id": 78,
-    "name": " \u5143\u7ec4\n",
-    "parent": 77
+    "name": " \u5f00\u53d1\u8005\u53ef\u4ee5\u5b9a\u4e49\u884c\u4e3a\n",
+    "parent": 76
   },
   {
     "id": 79,
-    "name": " \u7ed3\u6784\u4f53\n",
-    "parent": 77
+    "name": " Deref/DerefMut\n",
+    "parent": 78
   },
   {
     "id": 80,
-    "name": " \u679a\u4e3e\n",
-    "parent": 77
+    "name": " \u5185\u90e8\u5b9e\u73b0\n",
+    "parent": 79
   },
   {
     "id": 81,
-    "name": " \u8054\u5408\u4f53\n",
-    "parent": 77
+    "name": " \u5e94\u7528\u573a\u666f\n",
+    "parent": 79
   },
   {
     "id": 82,
-    "name": " \u6307\u9488\n",
-    "parent": 70
+    "name": " \u624b\u52a8\u89e3\u5f15\u7528\n",
+    "parent": 76
   },
   {
     "id": 83,
-    "name": " \u6307\u9488\u3001\u5f15\u7528\u3001\u501f\u7528\n",
+    "name": " Rc<T>\n",
     "parent": 82
   },
   {
     "id": 84,
-    "name": " \u88f8\u6307\u9488\n",
+    "name": " match\n",
     "parent": 82
   },
   {
     "id": 85,
-    "name": " \u667a\u80fd\u6307\u9488\n",
-    "parent": 82
+    "name": " match x.deref()\n",
+    "parent": 84
   },
   {
     "id": 86,
-    "name": " Reference(&T or\n&mut T)\n",
-    "parent": 85
+    "name": " match x.as_ref()\n",
+    "parent": 84
   },
   {
     "id": 87,
-    "name": " Box<T>\n",
-    "parent": 85
+    "name": " match x.borrow()\n",
+    "parent": 84
   },
   {
     "id": 88,
-    "name": " LocalBox<T>\n",
-    "parent": 85
+    "name": " match &*x\n",
+    "parent": 84
   },
   {
     "id": 89,
-    "name": " Rc<T>\n",
-    "parent": 85
+    "name": " match &x[..]\n",
+    "parent": 84
   },
   {
     "id": 90,
-    "name": " Arc<T>\n",
-    "parent": 85
+    "name": " as \u64cd\u4f5c\u7b26\n",
+    "parent": 74
   },
   {
     "id": 91,
-    "name": " Cell<T>\n",
-    "parent": 85
+    "name": " \u5e38\u7528\u573a\u666f\n",
+    "parent": 90
   },
   {
     "id": 92,
-    "name": " RefCell<T>\n",
-    "parent": 85
+    "name": " \u65e0\u6b67\u4e49\u5b8c\u5168\u9650\u5b9a\u8bed\u6cd5\n",
+    "parent": 91
   },
   {
     "id": 93,
-    "name": " Mutex<T>\n",
-    "parent": 85
+    "name": " \u7236\u5b50\u7c7b\u578b\u76f8\u4e92\u8f6c\u5316\n",
+    "parent": 91
   },
   {
     "id": 94,
-    "name": " RwLock<T>\n",
-    "parent": 85
+    "name": " From/Into\n",
+    "parent": 74
   },
   {
     "id": 95,
-    "name": " Atomic<T>\n",
-    "parent": 85
+    "name": " TryFrom/TryInto\n",
+    "parent": 74
   },
   {
     "id": 96,
-    "name": " Pin<T>\n",
-    "parent": 85
+    "name": " AsRef/AsMut\n",
+    "parent": 74
   },
   {
     "id": 97,
-    "name": " ManuallyDrop<T>\n",
-    "parent": 85
+    "name": " FromStr/TryFromStr\n",
+    "parent": 74
   },
   {
     "id": 98,
-    "name": " NonNull<T>\n",
-    "parent": 85
+    "name": " \u7c7b\u578b\u522b\u540d\n",
+    "parent": 60
   },
   {
     "id": 99,
-    "name": " PhantomData<T>\n",
-    "parent": 85
+    "name": " \u7c7b\u578b\u6807\u8bb0\n",
+    "parent": 60
   },
   {
     "id": 100,
-    "name": " UnsafeCell<T>\n",
-    "parent": 85
+    "name": " \u7c7b\u578b\u5927\u5c0f\n",
+    "parent": 60
   },
   {
     "id": 101,
-    "name": " Unique<T>\n",
-    "parent": 85
+    "name": " \u591a\u6001\n",
+    "parent": 59
   },
   {
     "id": 102,
-    "name": " Weak<T>\n",
-    "parent": 85
+    "name": " generic\n",
+    "parent": 101
   },
   {
     "id": 103,
-    "name": " \u96c6\u5408\u5bb9\u5668\n",
-    "parent": 70
+    "name": " trait bound\n",
+    "parent": 101
   },
   {
     "id": 104,
-    "name": " \u7ebf\u6027\u5e8f\u5217\n",
-    "parent": 103
+    "name": " trait object\n",
+    "parent": 101
   },
   {
     "id": 105,
-    "name": " \u6620\u5c04\u8868\n",
-    "parent": 103
+    "name": " \u6838\u5fc3\n",
+    "parent": 59
   },
   {
     "id": 106,
-    "name": " \u96c6\u5408\n",
-    "parent": 103
+    "name": " generic\n",
+    "parent": 105
   },
   {
     "id": 107,
-    "name": " \u5806\n",
-    "parent": 103
+    "name": " \u7f16\u8bd1\u671f\u81ea\u52a8\u5b9e\u73b0\u4ee3\u7801\n",
+    "parent": 106
   },
   {
     "id": 108,
-    "name": " \u9519\u8bef\u5904\u7406\n",
-    "parent": 70
+    "name": " trait\n",
+    "parent": 105
   },
   {
     "id": 109,
-    "name": " \u63a7\u5236\u6d41\n",
-    "parent": 1
+    "name": " \u96f6\u6210\u672c\u62bd\u8c61\u57fa\u77f3\n",
+    "parent": 108
   },
   {
     "id": 110,
-    "name": " \u7ed1\u5b9a\n",
+    "name": " \u552f\u4e00\u63a5\u53e3\u62bd\u8c61\u65b9\u5f0f\n",
     "parent": 109
   },
   {
     "id": 111,
-    "name": " let\u53d8\u91cf\n",
-    "parent": 110
+    "name": " \u52a8\u9759\u7686\u5b9c\n",
+    "parent": 109
   },
   {
     "id": 112,
-    "name": " const\u5e38\u91cf\n",
-    "parent": 110
+    "name": " \u6807\u7b7e\ud83c\udff7\ufe0f\n",
+    "parent": 109
   },
   {
     "id": 113,
-    "name": " \u8fd0\u7b97\u7b26\u4e0e\u8868\u8fbe\u5f0f\n",
-    "parent": 109
+    "name": " \u5b9e\u73b0\u6240\u6709\u62bd\u8c61\\n\u8fd0\u884c\u65f6\u96f6\u5f00\u9500\n",
+    "parent": 108
   },
   {
     "id": 114,
-    "name": " \u6761\u4ef6\u4e0e\u5faa\u73af\n",
-    "parent": 109
+    "name": " \u63a5\u53e3\u62bd\u8c61\n",
+    "parent": 113
   },
   {
     "id": 115,
-    "name": " \u5339\u914d\n",
-    "parent": 109
+    "name": " OOP\u62bd\u8c61\n",
+    "parent": 113
   },
   {
     "id": 116,
-    "name": " \u6a21\u5757\u5316\n",
-    "parent": 1
+    "name": " FP\u62bd\u8c61\n",
+    "parent": 113
   },
   {
     "id": 117,
-    "name": " \u51fd\u6570\n",
-    "parent": 116
+    "name": " \u6cdb\u578b\u62bd\u8c61\n",
+    "parent": 113
   },
   {
     "id": 118,
-    "name": " \u95ed\u5305\n",
-    "parent": 117
+    "name": " \u884c\u4e3a\u7ea6\u675f\n",
+    "parent": 108
   },
   {
     "id": 119,
-    "name": " crate\n",
-    "parent": 116
+    "name": " \u63a5\u53e3\u7ea6\u675f\n",
+    "parent": 118
   },
   {
     "id": 120,
-    "name": " workspace\n",
-    "parent": 116
+    "name": " \u6700\u57fa\u7840\u7528\u6cd5\n",
+    "parent": 119
   },
   {
     "id": 121,
-    "name": " \u9ad8\u7ea7\u8bdd\u9898\n",
-    "parent": 1
+    "name": " \u5b9e\u73b0\u4e0e\u91cd\u8f7d\n",
+    "parent": 119
   },
   {
     "id": 122,
-    "name": " \u5b8f\u7f16\u7a0b\n",
+    "name": " \u5173\u8054\u7c7b\u578b\n",
     "parent": 121
   },
   {
     "id": 123,
-    "name": " \u7f16\u7a0b\u8303\u5f0f\n",
+    "name": " trait\u4e00\u81f4\u6027\n",
     "parent": 121
   },
   {
     "id": 124,
-    "name": " \u9762\u5411\u5bf9\u8c61\n",
-    "parent": 123
+    "name": " trait\u7ee7\u627f\n",
+    "parent": 121
   },
   {
     "id": 125,
-    "name": " \u51fd\u6570\u5f0f\n",
-    "parent": 123
+    "name": " \u6cdb\u578b\u7ea6\u675f\n",
+    "parent": 118
   },
   {
     "id": 126,
-    "name": " \u54cd\u5e94\u5f0f\n",
-    "parent": 123
+    "name": " \u53c8\u53ebtrait\u9650\u5b9a\n",
+    "parent": 125
   },
   {
     "id": 127,
-    "name": " \u6cdb\u578b\u7f16\u7a0b\n",
-    "parent": 123
+    "name": " \u65b9\u6cd5\u96c6\u5408\n",
+    "parent": 125
   },
   {
     "id": 128,
-    "name": " \u5143\u7f16\u7a0b\n",
-    "parent": 123
+    "name": " \u7ec4\u5408\u4f18\u4e8e\u7ee7\u627f\u7684\u4f53\u73b0\n",
+    "parent": 125
   },
   {
     "id": 129,
-    "name": " \u8bbe\u8ba1\u6a21\u5f0f\n",
-    "parent": 121
+    "name": " \u5355\u6001\u5316\u9759\u6001\u5206\u53d1\n",
+    "parent": 125
   },
   {
     "id": 130,
-    "name": " \u59d4\u6258\u548c\u88c5\u9970\u5668\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " where\u5b50\u53e5\u91cd\u6784\n",
+    "parent": 125
   },
   {
     "id": 131,
-    "name": " \u5de5\u5382\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " \u62bd\u8c61\u7c7b\u578b\n",
+    "parent": 118
   },
   {
     "id": 132,
-    "name": " \u5355\u4f8b\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " trait object\n",
+    "parent": 131
   },
   {
     "id": 133,
-    "name": " \u9002\u914d\u5668\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " \u52a8\u6001\u5206\u53d1\n",
+    "parent": 132
   },
   {
     "id": 134,
-    "name": " \u6865\u63a5\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " \u7ec4\u6210\n",
+    "parent": 132
   },
   {
     "id": 135,
-    "name": " \u7ec4\u5408\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " data\u6307\u9488\n",
+    "parent": 134
   },
   {
     "id": 136,
-    "name": " \u88c5\u9970\u5668\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " vtable\u6307\u9488\n",
+    "parent": 134
   },
   {
     "id": 137,
-    "name": " \u5916\u89c2\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " \u6790\u6784\u51fd\u6570\n",
+    "parent": 136
   },
   {
     "id": 138,
-    "name": " \u4eab\u5143\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " \u5927\u5c0f\n",
+    "parent": 136
   },
   {
     "id": 139,
-    "name": " \u4ee3\u7406\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " \u5bf9\u9f50\n",
+    "parent": 136
   },
   {
     "id": 140,
-    "name": " \u8d23\u4efb\u94fe\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " \u65b9\u6cd5\n",
+    "parent": 136
   },
   {
     "id": 141,
-    "name": " \u547d\u4ee4\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " \u5bf9\u8c61\u5b89\u5168\n",
+    "parent": 134
   },
   {
     "id": 142,
-    "name": " \u8fed\u4ee3\u5668\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " \u7c7b\u578b\u53c2\u6570self\n",
+    "parent": 141
   },
   {
     "id": 143,
-    "name": " \u4e2d\u4ecb\u8005\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " \u4f7f\u7528\u89c4\u5219\n",
+    "parent": 141
   },
   {
     "id": 144,
-    "name": " \u5907\u5fd8\u5f55\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " \u4e09\u70b9\u8981\u6c42\n",
+    "parent": 141
   },
   {
     "id": 145,
-    "name": " \u89c2\u5bdf\u8005\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " impl trait\n",
+    "parent": 131
   },
   {
     "id": 146,
-    "name": " \u72b6\u6001\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " \u9759\u6001\u5206\u53d1\n",
+    "parent": 145
   },
   {
     "id": 147,
-    "name": " \u7b56\u7565\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " \u62c6\u7bb1\u62bd\u8c61\u7c7b\u578b\n",
+    "parent": 145
   },
   {
     "id": 148,
-    "name": " \u6a21\u677f\u65b9\u6cd5\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " \u4f7f\u7528\u573a\u666f\n",
+    "parent": 145
   },
   {
     "id": 149,
-    "name": " \u8bbf\u95ee\u8005\u6a21\u5f0f\n",
-    "parent": 129
+    "name": " \u4f5c\u4e3a\u51fd\u6570\u53c2\u6570\n",
+    "parent": 148
   },
   {
     "id": 150,
-    "name": " \u4ee3\u7801\u7ec4\u7ec7\n",
-    "parent": 121
+    "name": " \u4f5c\u4e3a\u51fd\u6570\u8fd4\u56de\u503c\n",
+    "parent": 148
   },
   {
     "id": 151,
-    "name": " \u5f02\u5e38\u5904\u7406\n",
-    "parent": 121
+    "name": " \u4f5c\u4e3a\u7ed3\u6784\u4f53\u5b57\u6bb5\n",
+    "parent": 148
   },
   {
     "id": 152,
-    "name": " \u5e76\u53d1\u5f02\u6b65\n",
-    "parent": 121
+    "name": " \u4f5c\u4e3a\u679a\u4e3e\u4f53\u6210\u5458\n",
+    "parent": 148
   },
   {
     "id": 153,
-    "name": " \u6df7\u5408\u7f16\u7a0b\n",
-    "parent": 121
+    "name": " \u6807\u7b7etrait\n",
+    "parent": 118
   },
   {
     "id": 154,
-    "name": " \u7f51\u7edc\u5f00\u53d1\n",
-    "parent": 121
+    "name": " \u6570\u636e\u7ed3\u6784(\u6570\u636e\u7c7b\u578b)\n",
+    "parent": 58
   },
   {
     "id": 155,
-    "name": " \u7f51\u7edc\u534f\u8bae\n",
+    "name": " \u57fa\u672c\u6570\u636e\u7c7b\u578b\n",
     "parent": 154
   },
   {
     "id": 156,
-    "name": " \u7f51\u7edc\u6a21\u578b\n",
+    "name": " \u5e03\u5c14\n",
+    "parent": 155
+  },
+  {
+    "id": 157,
+    "name": " \u6570\u5b57\n",
+    "parent": 155
+  },
+  {
+    "id": 158,
+    "name": " \u7c7b\u578b\u524d\u540e\u7f00\n",
+    "parent": 157
+  },
+  {
+    "id": 159,
+    "name": " \u5b57\u9762\u91cf\n",
+    "parent": 157
+  },
+  {
+    "id": 160,
+    "name": " \u6574\u6570\u5b57\u9762\u91cf\n",
+    "parent": 159
+  },
+  {
+    "id": 161,
+    "name": " \u5341\u8fdb\u5236\n",
+    "parent": 160
+  },
+  {
+    "id": 162,
+    "name": " \u4e8c\u8fdb\u5236\n",
+    "parent": 160
+  },
+  {
+    "id": 163,
+    "name": " \u516b\u8fdb\u5236\n",
+    "parent": 160
+  },
+  {
+    "id": 164,
+    "name": " \u5341\u516d\u8fdb\u5236\n",
+    "parent": 160
+  },
+  {
+    "id": 165,
+    "name": " \u6d6e\u70b9\u6570\u5b57\u9762\u91cf\n",
+    "parent": 159
+  },
+  {
+    "id": 166,
+    "name": " \u5341\u8fdb\u5236\n",
+    "parent": 165
+  },
+  {
+    "id": 167,
+    "name": " \u79d1\u5b66\u8ba1\u6570\u6cd5\n",
+    "parent": 165
+  },
+  {
+    "id": 168,
+    "name": " \u5341\u516d\u8fdb\u5236\n",
+    "parent": 165
+  },
+  {
+    "id": 169,
+    "name": " \u516b\u8fdb\u5236\n",
+    "parent": 165
+  },
+  {
+    "id": 170,
+    "name": " \u4e8c\u8fdb\u5236\n",
+    "parent": 165
+  },
+  {
+    "id": 171,
+    "name": " \u5b57\u8282\u5b57\u9762\u91cf\n",
+    "parent": 159
+  },
+  {
+    "id": 172,
+    "name": " \u6574\u6570\n",
+    "parent": 157
+  },
+  {
+    "id": 173,
+    "name": " \u56fa\u5b9a\u5927\u5c0f\n",
+    "parent": 172
+  },
+  {
+    "id": 174,
+    "name": " \u7b26\u53f7\u6574\u6570\n",
+    "parent": 173
+  },
+  {
+    "id": 175,
+    "name": " i8\n",
+    "parent": 174
+  },
+  {
+    "id": 176,
+    "name": " i16\n",
+    "parent": 174
+  },
+  {
+    "id": 177,
+    "name": " i32\n",
+    "parent": 174
+  },
+  {
+    "id": 178,
+    "name": " i64\n",
+    "parent": 174
+  },
+  {
+    "id": 179,
+    "name": " i128\n",
+    "parent": 174
+  },
+  {
+    "id": 180,
+    "name": " \u65e0\u7b26\u53f7\n",
+    "parent": 173
+  },
+  {
+    "id": 181,
+    "name": " u8\n",
+    "parent": 180
+  },
+  {
+    "id": 182,
+    "name": " u16\n",
+    "parent": 180
+  },
+  {
+    "id": 183,
+    "name": " u32\n",
+    "parent": 180
+  },
+  {
+    "id": 184,
+    "name": " u64\n",
+    "parent": 180
+  },
+  {
+    "id": 185,
+    "name": " u128\n",
+    "parent": 180
+  },
+  {
+    "id": 186,
+    "name": " \u52a8\u6001\u5927\u5c0f\n",
+    "parent": 172
+  },
+  {
+    "id": 187,
+    "name": " isize\n",
+    "parent": 186
+  },
+  {
+    "id": 188,
+    "name": " usize\n",
+    "parent": 186
+  },
+  {
+    "id": 189,
+    "name": " \u6d6e\u70b9\n",
+    "parent": 157
+  },
+  {
+    "id": 190,
+    "name": " f32\n",
+    "parent": 189
+  },
+  {
+    "id": 191,
+    "name": " f64\n",
+    "parent": 189
+  },
+  {
+    "id": 192,
+    "name": " \u5b57\u7b26\n",
+    "parent": 155
+  },
+  {
+    "id": 193,
+    "name": " \u5b57\u7b26\u4e32\n",
+    "parent": 155
+  },
+  {
+    "id": 194,
+    "name": " \u7279\u70b9\n",
+    "parent": 193
+  },
+  {
+    "id": 195,
+    "name": " \u672c\u8d28\u662f\u5207\u7247\n",
+    "parent": 194
+  },
+  {
+    "id": 196,
+    "name": " \u901a\u5e38\u662f\u4e0d\u53ef\u53d8\u501f\u7528\n",
+    "parent": 194
+  },
+  {
+    "id": 197,
+    "name": " \u5206\u7c7b\n",
+    "parent": 193
+  },
+  {
+    "id": 198,
+    "name": " str: \u56fa\u5b9a\u957f\u5ea6\n",
+    "parent": 197
+  },
+  {
+    "id": 199,
+    "name": " String\uff1a\u53ef\u589e\u957f\u957f\u5ea6\n",
+    "parent": 197
+  },
+  {
+    "id": 200,
+    "name": " \u7ec4\u6210\n",
+    "parent": 193
+  },
+  {
+    "id": 201,
+    "name": " \u6307\u9488\n",
+    "parent": 200
+  },
+  {
+    "id": 202,
+    "name": " \u957f\u5ea6\n",
+    "parent": 200
+  },
+  {
+    "id": 203,
+    "name": " \u65b9\u6cd5\n",
+    "parent": 193
+  },
+  {
+    "id": 204,
+    "name": " as\n",
+    "parent": 203
+  },
+  {
+    "id": 205,
+    "name": " as_bytes\n",
+    "parent": 204
+  },
+  {
+    "id": 206,
+    "name": " as_bytes_mut\n",
+    "parent": 204
+  },
+  {
+    "id": 207,
+    "name": " as_ptr\n",
+    "parent": 204
+  },
+  {
+    "id": 208,
+    "name": " as_mut_ptr\n",
+    "parent": 204
+  },
+  {
+    "id": 209,
+    "name": " as_str\n",
+    "parent": 204
+  },
+  {
+    "id": 210,
+    "name": " as_mut_str\n",
+    "parent": 204
+  },
+  {
+    "id": 211,
+    "name": " as_os_str\n",
+    "parent": 204
+  },
+  {
+    "id": 212,
+    "name": " as_os_str_lossy\n",
+    "parent": 204
+  },
+  {
+    "id": 213,
+    "name": " as_c_str\n",
+    "parent": 204
+  },
+  {
+    "id": 214,
+    "name": " as_mut_c_str\n",
+    "parent": 204
+  },
+  {
+    "id": 215,
+    "name": " len\n",
+    "parent": 203
+  },
+  {
+    "id": 216,
+    "name": " is\n",
+    "parent": 203
+  },
+  {
+    "id": 217,
+    "name": " is_empty\n",
+    "parent": 216
+  },
+  {
+    "id": 218,
+    "name": " is_char_boundary\n",
+    "parent": 216
+  },
+  {
+    "id": 219,
+    "name": " chars\n",
+    "parent": 203
+  },
+  {
+    "id": 220,
+    "name": " char_indices\n",
+    "parent": 203
+  },
+  {
+    "id": 221,
+    "name": " bytes\n",
+    "parent": 203
+  },
+  {
+    "id": 222,
+    "name": " split\n",
+    "parent": 203
+  },
+  {
+    "id": 223,
+    "name": " split_terminator\n",
+    "parent": 222
+  },
+  {
+    "id": 224,
+    "name": " splitn\n",
+    "parent": 222
+  },
+  {
+    "id": 225,
+    "name": " rsplit\n",
+    "parent": 222
+  },
+  {
+    "id": 226,
+    "name": " rsplitn\n",
+    "parent": 222
+  },
+  {
+    "id": 227,
+    "name": " split_whitespace\n",
+    "parent": 222
+  },
+  {
+    "id": 228,
+    "name": " split_at\n",
+    "parent": 222
+  },
+  {
+    "id": 229,
+    "name": " split_at_mut\n",
+    "parent": 222
+  },
+  {
+    "id": 230,
+    "name": " split_off\n",
+    "parent": 222
+  },
+  {
+    "id": 231,
+    "name": " split_to\n",
+    "parent": 222
+  },
+  {
+    "id": 232,
+    "name": " split_to_mut\n",
+    "parent": 222
+  },
+  {
+    "id": 233,
+    "name": " lines\n",
+    "parent": 203
+  },
+  {
+    "id": 234,
+    "name": " lines_any\n",
+    "parent": 203
+  },
+  {
+    "id": 235,
+    "name": " match\n",
+    "parent": 203
+  },
+  {
+    "id": 236,
+    "name": " match_indices\n",
+    "parent": 235
+  },
+  {
+    "id": 237,
+    "name": " rmatch_indices\n",
+    "parent": 235
+  },
+  {
+    "id": 238,
+    "name": " match_indices_any\n",
+    "parent": 235
+  },
+  {
+    "id": 239,
+    "name": " rmatch_indices_any\n",
+    "parent": 235
+  },
+  {
+    "id": 240,
+    "name": " contain\n",
+    "parent": 203
+  },
+  {
+    "id": 241,
+    "name": " contains\n",
+    "parent": 240
+  },
+  {
+    "id": 242,
+    "name": " contains_char\n",
+    "parent": 240
+  },
+  {
+    "id": 243,
+    "name": " starts_with\n",
+    "parent": 240
+  },
+  {
+    "id": 244,
+    "name": " ends_with\n",
+    "parent": 240
+  },
+  {
+    "id": 245,
+    "name": " find\n",
+    "parent": 203
+  },
+  {
+    "id": 246,
+    "name": " find\n",
+    "parent": 245
+  },
+  {
+    "id": 247,
+    "name": " rfind\n",
+    "parent": 245
+  },
+  {
+    "id": 248,
+    "name": " find_str\n",
+    "parent": 245
+  },
+  {
+    "id": 249,
+    "name": " slice\n",
+    "parent": 203
+  },
+  {
+    "id": 250,
+    "name": " slice\n",
+    "parent": 249
+  },
+  {
+    "id": 251,
+    "name": " slice_mut\n",
+    "parent": 249
+  },
+  {
+    "id": 252,
+    "name": " slice_unchecked\n",
+    "parent": 249
+  },
+  {
+    "id": 253,
+    "name": " slice_unchecked_mut\n",
+    "parent": 249
+  },
+  {
+    "id": 254,
+    "name": " get\n",
+    "parent": 203
+  },
+  {
+    "id": 255,
+    "name": " get\n",
+    "parent": 254
+  },
+  {
+    "id": 256,
+    "name": " get_mut\n",
+    "parent": 254
+  },
+  {
+    "id": 257,
+    "name": " get_unchecked\n",
+    "parent": 254
+  },
+  {
+    "id": 258,
+    "name": " get_unchecked_mut\n",
+    "parent": 254
+  },
+  {
+    "id": 259,
+    "name": " \u6307\u9488\n",
+    "parent": 155
+  },
+  {
+    "id": 260,
+    "name": " \u6307\u9488\u3001\u5f15\u7528\u3001\u501f\u7528\n",
+    "parent": 259
+  },
+  {
+    "id": 261,
+    "name": " \u5206\u7c7b\n",
+    "parent": 259
+  },
+  {
+    "id": 262,
+    "name": " \u5f15\u7528\uff08\u975e\u7a7a\u6307\u9488\uff09\n",
+    "parent": 261
+  },
+  {
+    "id": 263,
+    "name": " \u88f8\u6307\u9488(\u539f\u751f\u6307\u9488)\n",
+    "parent": 261
+  },
+  {
+    "id": 264,
+    "name": " \u51fd\u6570\u6307\u9488\n",
+    "parent": 261
+  },
+  {
+    "id": 265,
+    "name": " \u667a\u80fd\u6307\u9488\n",
+    "parent": 261
+  },
+  {
+    "id": 266,
+    "name": " Reference(&T or\n&mut T)\n",
+    "parent": 265
+  },
+  {
+    "id": 267,
+    "name": " Box<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 268,
+    "name": " LocalBox<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 269,
+    "name": " Rc<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 270,
+    "name": " Arc<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 271,
+    "name": " Cell<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 272,
+    "name": " RefCell<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 273,
+    "name": " Mutex<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 274,
+    "name": " RwLock<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 275,
+    "name": " Atomic<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 276,
+    "name": " Pin<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 277,
+    "name": " ManuallyDrop<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 278,
+    "name": " NonNull<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 279,
+    "name": " PhantomData<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 280,
+    "name": " UnsafeCell<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 281,
+    "name": " Unique<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 282,
+    "name": " Weak<T>\n",
+    "parent": 265
+  },
+  {
+    "id": 283,
+    "name": " never\n",
+    "parent": 155
+  },
+  {
+    "id": 284,
+    "name": " \u96c6\u5408\u5bb9\u5668\n",
     "parent": 154
+  },
+  {
+    "id": 285,
+    "name": " \u7ebf\u6027\u5e8f\u5217\n",
+    "parent": 284
+  },
+  {
+    "id": 286,
+    "name": " \u6570\u7ec4\n",
+    "parent": 285
+  },
+  {
+    "id": 287,
+    "name": " \u5207\u7247\n",
+    "parent": 285
+  },
+  {
+    "id": 288,
+    "name": " \u672c\u8d28\u4e0a\u662f\u4e00\u4e2a\u6307\u9488\n",
+    "parent": 287
+  },
+  {
+    "id": 289,
+    "name": " \u662f\u5bf9\u6570\u7ec4\u7684\u5f15\u7528\n",
+    "parent": 287
+  },
+  {
+    "id": 290,
+    "name": " \u5411\u91cf\n",
+    "parent": 285
+  },
+  {
+    "id": 291,
+    "name": " \u94fe\u8868\n",
+    "parent": 285
+  },
+  {
+    "id": 292,
+    "name": " \u961f\u5217\n",
+    "parent": 285
+  },
+  {
+    "id": 293,
+    "name": " \u6620\u5c04\u8868\n",
+    "parent": 284
+  },
+  {
+    "id": 294,
+    "name": " \u54c8\u5e0c\u8868\n",
+    "parent": 293
+  },
+  {
+    "id": 295,
+    "name": " \u6811\n",
+    "parent": 293
+  },
+  {
+    "id": 296,
+    "name": " \u96c6\u5408\n",
+    "parent": 284
+  },
+  {
+    "id": 297,
+    "name": " HashSet\n",
+    "parent": 296
+  },
+  {
+    "id": 298,
+    "name": " BTreeSet\n",
+    "parent": 296
+  },
+  {
+    "id": 299,
+    "name": " \u5806\n",
+    "parent": 284
+  },
+  {
+    "id": 300,
+    "name": " BinaryHeap\n",
+    "parent": 299
+  },
+  {
+    "id": 301,
+    "name": " \u590d\u5408\u6570\u636e\u7c7b\u578b\n",
+    "parent": 154
+  },
+  {
+    "id": 302,
+    "name": " \u5143\u7ec4\n",
+    "parent": 301
+  },
+  {
+    "id": 303,
+    "name": " \u7ed3\u6784\u4f53\n",
+    "parent": 301
+  },
+  {
+    "id": 304,
+    "name": " \u679a\u4e3e\n",
+    "parent": 301
+  },
+  {
+    "id": 305,
+    "name": " \u8054\u5408\u4f53\n",
+    "parent": 301
+  },
+  {
+    "id": 306,
+    "name": " \u9519\u8bef\u5904\u7406\n",
+    "parent": 154
+  },
+  {
+    "id": 307,
+    "name": " \u5206\u5c42\u5904\u7406\n",
+    "parent": 306
+  },
+  {
+    "id": 308,
+    "name": " Option<T>\n",
+    "parent": 307
+  },
+  {
+    "id": 309,
+    "name": " Some(T)\n",
+    "parent": 308
+  },
+  {
+    "id": 310,
+    "name": " None\n",
+    "parent": 308
+  },
+  {
+    "id": 311,
+    "name": " \u9ad8\u6548\u5904\u7406\n",
+    "parent": 308
+  },
+  {
+    "id": 312,
+    "name": " map\n",
+    "parent": 311
+  },
+  {
+    "id": 313,
+    "name": " and_then\n",
+    "parent": 311
+  },
+  {
+    "id": 314,
+    "name": " unwrap\n",
+    "parent": 311
+  },
+  {
+    "id": 315,
+    "name": " expect\n",
+    "parent": 311
+  },
+  {
+    "id": 316,
+    "name": " ...\n",
+    "parent": 311
+  },
+  {
+    "id": 317,
+    "name": " Result<T, E>\n",
+    "parent": 307
+  },
+  {
+    "id": 318,
+    "name": " Ok(T)\n",
+    "parent": 317
+  },
+  {
+    "id": 319,
+    "name": " Err(E)\n",
+    "parent": 317
+  },
+  {
+    "id": 320,
+    "name": " ?\u8fd0\u7b97\u7b26\n",
+    "parent": 317
+  },
+  {
+    "id": 321,
+    "name": " Panic\n",
+    "parent": 307
+  },
+  {
+    "id": 322,
+    "name": " catch_wind\n",
+    "parent": 321
+  },
+  {
+    "id": 323,
+    "name": " set_hook\n",
+    "parent": 321
+  },
+  {
+    "id": 324,
+    "name": " Abort\n",
+    "parent": 307
+  },
+  {
+    "id": 325,
+    "name": " \u63a7\u5236\u6d41\n",
+    "parent": 1
+  },
+  {
+    "id": 326,
+    "name": " \u7ed1\u5b9a\n",
+    "parent": 325
+  },
+  {
+    "id": 327,
+    "name": " let\u53d8\u91cf\n",
+    "parent": 326
+  },
+  {
+    "id": 328,
+    "name": " const\u5e38\u91cf\n",
+    "parent": 326
+  },
+  {
+    "id": 329,
+    "name": " \u8fd0\u7b97\u7b26\u4e0e\u8868\u8fbe\u5f0f\n",
+    "parent": 325
+  },
+  {
+    "id": 330,
+    "name": " \u6761\u4ef6\u4e0e\u5faa\u73af\n",
+    "parent": 325
+  },
+  {
+    "id": 331,
+    "name": " \u6a21\u5f0f\u5339\u914d\n",
+    "parent": 325
+  },
+  {
+    "id": 332,
+    "name": " match\u8868\u8fbe\u5f0f\n",
+    "parent": 331
+  },
+  {
+    "id": 333,
+    "name": " \u6240\u6709\u5206\u652f\u5fc5\u987b\u8fd4\u56de\u540c\u4e00\u4e2a\u7c7b\u578b\n",
+    "parent": 332
+  },
+  {
+    "id": 334,
+    "name": " \u6240\u6709\u5206\u652f\u5fc5\u987b\u7a77\u5c3d\u6240\u6709\u53ef\u80fd\n",
+    "parent": 332
+  },
+  {
+    "id": 335,
+    "name": " \u6240\u6709\u5206\u652f\u5fc5\u987b\u662f\u4e0d\u53ef\u53d8\u7684\n",
+    "parent": 332
+  },
+  {
+    "id": 336,
+    "name": " \u4e00\u822c\u4f1a\u7528\"_\"\u6765\u5339\u914d\u5269\u4f59\u7684\u60c5\u51b5\n",
+    "parent": 332
+  },
+  {
+    "id": 337,
+    "name": " \u5339\u914d\u6a21\u5f0f\n",
+    "parent": 332
+  },
+  {
+    "id": 338,
+    "name": " \u5355\u503c\uff1a\u5339\u914d\u5355\u4e2a\u503c\n",
+    "parent": 337
+  },
+  {
+    "id": 339,
+    "name": " \u8303\u56f4\uff1a1..3\n",
+    "parent": 337
+  },
+  {
+    "id": 340,
+    "name": " \u591a\u503c: |5|7|13\n",
+    "parent": 337
+  },
+  {
+    "id": 341,
+    "name": " \u901a\u914d\u7b26: _\n",
+    "parent": 337
+  },
+  {
+    "id": 342,
+    "name": " \u7ed1\u5b9a: x\n@ 1..3\\nx\u53ef\u4ee5\u5728\u53f3\u4fa7\u4f7f\u7528\n",
+    "parent": 337
+  },
+  {
+    "id": 343,
+    "name": " if let\u8868\u8fbe\u5f0f\n",
+    "parent": 331
+  },
+  {
+    "id": 344,
+    "name": " while let\u8868\u8fbe\u5f0f\n",
+    "parent": 331
+  },
+  {
+    "id": 345,
+    "name": " \u6a21\u5757\u5316\n",
+    "parent": 1
+  },
+  {
+    "id": 346,
+    "name": " \u51fd\u6570\n",
+    "parent": 345
+  },
+  {
+    "id": 347,
+    "name": " \u51fd\u6570\u7b7e\u540d\n",
+    "parent": 346
+  },
+  {
+    "id": 348,
+    "name": " \u4f20\u5165\u7c7b\u578b\n",
+    "parent": 347
+  },
+  {
+    "id": 349,
+    "name": " \u8fd4\u56de\u7c7b\u578b\n",
+    "parent": 347
+  },
+  {
+    "id": 350,
+    "name": " \u51fd\u6570\u4f53\n",
+    "parent": 346
+  },
+  {
+    "id": 351,
+    "name": " \u82b1\u62ec\u53f7\n",
+    "parent": 350
+  },
+  {
+    "id": 352,
+    "name": " \u5757\u8868\u8fbe\u5f0f\n",
+    "parent": 350
+  },
+  {
+    "id": 353,
+    "name": " return\u63d0\u524d\u8fd4\u56de\n",
+    "parent": 350
+  },
+  {
+    "id": 354,
+    "name": " \u6700\u540e\u4e00\u884c\u4e0d\u52a0\u5206\u53f7\u53ef\u8fd4\u56de\n",
+    "parent": 350
+  },
+  {
+    "id": 355,
+    "name": " CTFE\n",
+    "parent": 346
+  },
+  {
+    "id": 356,
+    "name": " \u7c7b\u4f3cpython\u7684\u5c5e\u6027\u65b9\u6cd5\n",
+    "parent": 355
+  },
+  {
+    "id": 357,
+    "name": " miri\n",
+    "parent": 355
+  },
+  {
+    "id": 358,
+    "name": " const fn\n",
+    "parent": 355
+  },
+  {
+    "id": 359,
+    "name": " const trait\nfn\n",
+    "parent": 355
+  },
+  {
+    "id": 360,
+    "name": " const generics\n",
+    "parent": 355
+  },
+  {
+    "id": 361,
+    "name": " \u51fd\u6570\u6307\u9488\n",
+    "parent": 346
+  },
+  {
+    "id": 362,
+    "name": " \u51fd\u6570\u91cd\u8f7d\n",
+    "parent": 346
+  },
+  {
+    "id": 363,
+    "name": " \u51fd\u6570\u5f0f\u7f16\u7a0b\n",
+    "parent": 346
+  },
+  {
+    "id": 364,
+    "name": " \u9ad8\u9636\u51fd\u6570\n",
+    "parent": 363
+  },
+  {
+    "id": 365,
+    "name": " \u95ed\u5305\n",
+    "parent": 346
+  },
+  {
+    "id": 366,
+    "name": " \u95ed\u5305\u7279\u6027\n",
+    "parent": 365
+  },
+  {
+    "id": 367,
+    "name": " \u51fd\u6570\u8c03\u7528\n",
+    "parent": 366
+  },
+  {
+    "id": 368,
+    "name": " \u6355\u83b7\u4e0a\u4e0b\u6587\u73af\u5883\u7684\u81ea\u7531\u53d8\u91cf\n",
+    "parent": 366
+  },
+  {
+    "id": 369,
+    "name": " \u590d\u5236\n",
+    "parent": 368
+  },
+  {
+    "id": 370,
+    "name": " \u53ef\u53d8\n",
+    "parent": 368
+  },
+  {
+    "id": 371,
+    "name": " \u79fb\u52a8\n",
+    "parent": 368
+  },
+  {
+    "id": 372,
+    "name": " \u81ea\u52a8\u63a8\u65ad\u8f93\u5165\u548c\u8fd4\u56de\u7684\u7c7b\u578b\n",
+    "parent": 366
+  },
+  {
+    "id": 373,
+    "name": " \u8fd4\u56de\u95ed\u5305\u9700\u8981move\n",
+    "parent": 366
+  },
+  {
+    "id": 374,
+    "name": " \u9ed8\u8ba4\u6309\u5f15\u7528\u6355\u83b7\u53d8\u91cf\n",
+    "parent": 373
+  },
+  {
+    "id": 375,
+    "name": " \u6574\u4e2a\u51fd\u6570\u8c03\u7528\u5b8c\u6bd5\u540e\\n\u51fd\u6570\u5185\u7684\u672c\u5730\u53d8\u91cf\u4f1a\u88ab\u9500\u6bc1\n",
+    "parent": 373
+  },
+  {
+    "id": 376,
+    "name": " \u4f7f\u7528move\u6765\u8f6c\u79fb\u6240\u6709\u6743\u5230\u95ed\u5305\u5185\uff0c\\n\u5426\u5219\u51fa\u73b0\u60ac\u5782\u6307\u9488\n",
+    "parent": 373
+  },
+  {
+    "id": 377,
+    "name": " \u95ed\u5305\u793a\u4f8b\n",
+    "parent": 365
+  },
+  {
+    "id": 378,
+    "name": " \u95ed\u5305\u4f5c\u4e3a\u8fd4\u56de\u503c\n",
+    "parent": 377
+  },
+  {
+    "id": 380,
+    "name": "\u94fe\u63a51: \u9759\u6001\u5206\u53d1",
+    "link": "https://github.com/KuanHsiaoKuo/rust_lab/blob/ce6ea9db1fda392045518b400af5db5cbc9a9f62/rust_programming_dao/src/ch02_language_essentials/function.rs#L219",
+    "parent": 379,
+    "note": "\u6765\u81ea  \u9759\u6001\u5206\u53d1\n\u7684\u94fe\u63a5"
+  },
+  {
+    "id": 379,
+    "name": "  \u9759\u6001\u5206\u53d1\n",
+    "parent": 378
+  },
+  {
+    "id": 382,
+    "name": "\u94fe\u63a51: \u52a8\u6001\u5206\u53d1",
+    "link": "https://github.com/KuanHsiaoKuo/rust_lab/blob/ce6ea9db1fda392045518b400af5db5cbc9a9f62/rust_programming_dao/src/ch02_language_essentials/function.rs#L187",
+    "parent": 381,
+    "note": "\u6765\u81ea  \u52a8\u6001\u5206\u53d1\n\u7684\u94fe\u63a5"
+  },
+  {
+    "id": 381,
+    "name": "  \u52a8\u6001\u5206\u53d1\n",
+    "parent": 378
+  },
+  {
+    "id": 383,
+    "name": " \u95ed\u5305\u5b9e\u73b0\n",
+    "parent": 365
+  },
+  {
+    "id": 384,
+    "name": " \u533f\u540d\u7ed3\u6784\u4f53\n",
+    "parent": 383
+  },
+  {
+    "id": 385,
+    "name": " \u4e0d\u5360\u7528\u5806\u5185\u5b58\uff0c\u62e5\u6709\u66f4\u9ad8\u6027\u80fd\n",
+    "parent": 384
+  },
+  {
+    "id": 386,
+    "name": " \u65e0\u6cd5\u5b9e\u73b0trait\n",
+    "parent": 384
+  },
+  {
+    "id": 387,
+    "name": " \u4f7f\u7528\u5185\u8054\u6280\u672f\u4f18\u5316\n",
+    "parent": 384
+  },
+  {
+    "id": 388,
+    "name": " trait\\n\u6839\u636e\u73af\u5883\u53d8\u91cf\u7c7b\u578b\u51b3\u5b9a\n",
+    "parent": 383
+  },
+  {
+    "id": 389,
+    "name": " Fn\n",
+    "parent": 388
+  },
+  {
+    "id": 390,
+    "name": " \u672a\u6355\u83b7\u81ea\u52a8\u5b9e\u73b0\n",
+    "parent": 389
+  },
+  {
+    "id": 391,
+    "name": " \u590d\u5236\u6355\u83b7\u81ea\u52a8\u5b9e\u73b0\n",
+    "parent": 389
+  },
+  {
+    "id": 392,
+    "name": " FnMut\n",
+    "parent": 388
+  },
+  {
+    "id": 393,
+    "name": " \u4fee\u6539\u6355\u83b7\u81ea\u52a8\u5b9e\u73b0\n",
+    "parent": 392
+  },
+  {
+    "id": 394,
+    "name": " FnOnce\n",
+    "parent": 388
+  },
+  {
+    "id": 395,
+    "name": " \u79fb\u52a8\u6355\u83b7\u81ea\u52a8\u5b9e\u73b0\n",
+    "parent": 394
+  },
+  {
+    "id": 396,
+    "name": " \u4f7f\u7528\u65b9\u5f0f\n",
+    "parent": 383
+  },
+  {
+    "id": 397,
+    "name": " \u4f5c\u4e3a\u51fd\u6570\u53c2\u6570\n",
+    "parent": 396
+  },
+  {
+    "id": 398,
+    "name": " trait bound\n",
+    "parent": 397
+  },
+  {
+    "id": 399,
+    "name": " trait object\n",
+    "parent": 397
+  },
+  {
+    "id": 400,
+    "name": " \u4f5c\u4e3a\u51fd\u6570\u8fd4\u56de\u503c\n",
+    "parent": 396
+  },
+  {
+    "id": 401,
+    "name": " impl FnOnce\n",
+    "parent": 400
+  },
+  {
+    "id": 402,
+    "name": " impl FnMut\n",
+    "parent": 400
+  },
+  {
+    "id": 403,
+    "name": " impl Fn\n",
+    "parent": 400
+  },
+  {
+    "id": 404,
+    "name": " impl FnBox\n",
+    "parent": 400
+  },
+  {
+    "id": 405,
+    "name": " \u5305\u7ba1\u7406\n",
+    "parent": 345
+  },
+  {
+    "id": 406,
+    "name": " mod\n",
+    "parent": 405
+  },
+  {
+    "id": 407,
+    "name": " crate\n",
+    "parent": 405
+  },
+  {
+    "id": 408,
+    "name": " package\n",
+    "parent": 405
+  },
+  {
+    "id": 409,
+    "name": " workspace\n",
+    "parent": 405
+  },
+  {
+    "id": 410,
+    "name": " extern\n",
+    "parent": 405
+  },
+  {
+    "id": 411,
+    "name": " use\n",
+    "parent": 405
+  },
+  {
+    "id": 412,
+    "name": " pub\n",
+    "parent": 405
+  },
+  {
+    "id": 413,
+    "name": " \u9ad8\u7ea7\u8bdd\u9898\n",
+    "parent": 1
+  },
+  {
+    "id": 414,
+    "name": " \u5143\u7f16\u7a0b\n",
+    "parent": 413
+  },
+  {
+    "id": 415,
+    "name": " \u53cd\u5c04\n",
+    "parent": 414
+  },
+  {
+    "id": 416,
+    "name": " Any\n",
+    "parent": 415
+  },
+  {
+    "id": 417,
+    "name": " is\n",
+    "parent": 415
+  },
+  {
+    "id": 418,
+    "name": " \u5b8f\n",
+    "parent": 414
+  },
+  {
+    "id": 419,
+    "name": " \u7f16\u8bd1\u8fc7\u7a0b\n",
+    "parent": 418
+  },
+  {
+    "id": 420,
+    "name": " \u5206\u7c7b\n",
+    "parent": 418
+  },
+  {
+    "id": 421,
+    "name": " \u58f0\u660e\u5b8f\n",
+    "parent": 420
+  },
+  {
+    "id": 422,
+    "name": " \u8fc7\u7a0b\u5b8f\n",
+    "parent": 420
+  },
+  {
+    "id": 423,
+    "name": " \u7f16\u7a0b\u8303\u5f0f\n",
+    "parent": 413
+  },
+  {
+    "id": 424,
+    "name": " \u9762\u5411\u5bf9\u8c61\n",
+    "parent": 423
+  },
+  {
+    "id": 425,
+    "name": " \u51fd\u6570\u5f0f\n",
+    "parent": 423
+  },
+  {
+    "id": 426,
+    "name": " \u54cd\u5e94\u5f0f\n",
+    "parent": 423
+  },
+  {
+    "id": 427,
+    "name": " \u6cdb\u578b\u7f16\u7a0b\n",
+    "parent": 423
+  },
+  {
+    "id": 428,
+    "name": " \u8bbe\u8ba1\u6a21\u5f0f\n",
+    "parent": 413
+  },
+  {
+    "id": 429,
+    "name": " \u59d4\u6258\u548c\u88c5\u9970\u5668\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 430,
+    "name": " \u5de5\u5382\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 431,
+    "name": " \u5355\u4f8b\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 432,
+    "name": " \u9002\u914d\u5668\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 433,
+    "name": " \u6865\u63a5\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 434,
+    "name": " \u7ec4\u5408\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 435,
+    "name": " \u88c5\u9970\u5668\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 436,
+    "name": " \u5916\u89c2\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 437,
+    "name": " \u4eab\u5143\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 438,
+    "name": " \u4ee3\u7406\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 439,
+    "name": " \u8d23\u4efb\u94fe\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 440,
+    "name": " \u547d\u4ee4\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 441,
+    "name": " \u8fed\u4ee3\u5668\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 442,
+    "name": " \u4e2d\u4ecb\u8005\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 443,
+    "name": " \u5907\u5fd8\u5f55\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 444,
+    "name": " \u89c2\u5bdf\u8005\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 445,
+    "name": " \u72b6\u6001\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 446,
+    "name": " \u7b56\u7565\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 447,
+    "name": " \u6a21\u677f\u65b9\u6cd5\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 448,
+    "name": " \u8bbf\u95ee\u8005\u6a21\u5f0f\n",
+    "parent": 428
+  },
+  {
+    "id": 449,
+    "name": " \u4ee3\u7801\u7ec4\u7ec7\n",
+    "parent": 413
+  },
+  {
+    "id": 450,
+    "name": " \u5f02\u5e38\u5904\u7406\n",
+    "parent": 413
+  },
+  {
+    "id": 451,
+    "name": " \u5e76\u53d1\u5f02\u6b65\n",
+    "parent": 413
+  },
+  {
+    "id": 452,
+    "name": " \u6df7\u5408\u7f16\u7a0b\n",
+    "parent": 413
+  },
+  {
+    "id": 453,
+    "name": " \u7f51\u7edc\u5f00\u53d1\n",
+    "parent": 413
+  },
+  {
+    "id": 454,
+    "name": " \u7f51\u7edc\u534f\u8bae\n",
+    "parent": 453
+  },
+  {
+    "id": 455,
+    "name": " \u7f51\u7edc\u6a21\u578b\n",
+    "parent": 453
   }
 ]
