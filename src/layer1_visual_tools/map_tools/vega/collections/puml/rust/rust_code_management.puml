@@ -1,0 +1,10 @@
+@startmindmap
+*** 包管理
+**** mod
+**** crate
+**** package
+**** workspace
+**** extern
+**** use
+**** pub
+@endmindmap
