@@ -4,6 +4,7 @@
 import sys
 import re
 import json
+import os
 
 
 def converter(puml_path: str):
@@ -140,6 +141,12 @@ if __name__ == "__main__":
         print("请传入puml文件路径...")
     else:
         puml_path = sys.argv[1]
-        if not puml_path.endswith('.puml'):
+        puml_paths = []
+        if os.path.isdir(puml_path):
+            puml_paths = [f"{puml_path}/{item}" for item in os.listdir(puml_path) if item.endswith('.puml')]
+        elif not puml_path.endswith('.puml'):
             print("请传入puml文件...")
-    converter(puml_path)
+        else:
+            puml_paths.append(puml_path)
+        for puml_path in puml_paths:
+            converter(puml_path)
