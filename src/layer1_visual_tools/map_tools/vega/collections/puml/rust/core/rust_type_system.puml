@@ -1,4 +1,5 @@
 @startmindmap
+
 * 类型系统
 ** 特点
 *** 类型安全
@@ -42,12 +43,26 @@
 *** 类型标记
 *** 类型大小
 ** 多态
-*** generic
-*** trait bound
+*** 基础
+**** generic
+**** trait bound
+*** 特化
+**** 直接实现
+**** 派生实现
+**** 特别实现
 *** trait object
 ** 核心
 *** generic
 **** 编译期自动实现代码
+**** 中间件原则：泛型优先于trait object
+**** 泛型优化
+***** 模板
+***** Monomorphization
+***** lazy static
+***** macro_rules!
+**** 动态分发
+***** vtable
+***** 抽象基石
 *** trait
 **** 零成本抽象基石
 ***** 唯一接口抽象方式
