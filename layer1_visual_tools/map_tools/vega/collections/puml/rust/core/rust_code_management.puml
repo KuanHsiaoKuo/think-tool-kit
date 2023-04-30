@@ -1,0 +1,35 @@
+@startmindmap
+* Rust 代码组织管理
+** 包管理
+*** 包(package)
+**** 一个可编译成库（library）或可执行文件（binary）的 crate 集合
+**** 每个包都必须有一个 Cargo.toml 文件，里面包含生成 crate 所需的元数据和依赖关系信息
+*** 包管理工作空间 (workspace)
+**** 一个包含多个 crate 的目录，其中每个 crate 可以是：库 (`library crate`) 或二进制文件 (`binary crate`)
+**** 每个工作空间都必须有一个顶层 Cargo.toml 文件, 包含描述 workspace 及其所有 crate 需要的元数据和依赖关系信息
+**** 这个顶层的 Cargo.toml 文件可以通过 Cargo 命令来管理所有包含在工作空间内的 crate
+** 模块 (module)
+*** 模块是一种组织代码的方式，一个模块包含了一组相关的代码项（函数、结构体、枚举、常量、类型等等）
+*** 模块可以嵌套，在此过程中还可以建立访问限制规则
+*** 可以使用模块来构建模块树，其中模块可以有多个子模块，而这些子模块也可以拥有子模块
+** 访问控制 (visibility)
+*** Rust 中定义了通过 pub 和 crate 关键字来实现的访问控制机制
+*** pub 关键词用于指定一个 item 的公共性，crate 关键词用于指定限制了哪些代码可以访问一个 item
+*** 注意，私有 (private) 模块及其成员只能被同一模块内部的代码访问
+** use 语句 (use)
+*** use 声明允许将 path 引入作用域，使得在程序代码中可以使用较短的路径来引用 item
+*** use 声明可以创建别名，将 item 引入新的命名空间，或 use * 语法将 item 引入作用域/路径下的所有项
+** 路径 (path)
+*** Rust 中的每个 item 都有一个 path， path 是用来定位 item 位置的一些名称，其形式可以是绝对路径或相对路径
+*** 其中路径分为模块路径和与模块路径等效的文件系统路径
+*** :: 运算符被用于从根模块（root module）开始的绝对路径，而 self 和 super 则分别用于指示当前模块和父模块
+** crate 和 lib.rs/main.rs 文件
+*** 正常情况下，crate 是一种单独的编译单元，它包含了所有的 RUST 文件 (.rs 扩展) 和一个 main.rs 或 lib.rs 文件
+*** 在包中，一个主要库（library） crate 会在 Cargo.toml 中被声明并提供 lib.rs（如果没有指定 src/lib.rs 的话）。主要库基本上类似于库的入口点
+*** 另外，有时存在需要用于生成可执行文件的主 crate。这个 crate 需要默认声明一个 main.rs 文件
+** extern 模块
+*** 使用 extern 模块来导入一些来自 crate 外部的元素/符号表
+** 引用 (path resolver)
+*** Rust 编译器会搜索一些路径来查找 item
+*** 在寻找过程中，路径解析器会考虑多个 Rust 作用域 (Rust's scoping rules)、作用域内的变量、命名空间，以及其他可用出口
+@endmindmap
