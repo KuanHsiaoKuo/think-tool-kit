@@ -1,0 +1,37 @@
+@startuml
+title 使用Rust将火币接口改造成一个分布式gRPC服务
+
+actor User
+
+==服务注册==
+
+participant "Consul" as c
+
+User -> c: 注册服务
+
+==容错处理==
+
+participant "Load Balancer" as lb
+participant "Circuit Breaker" as cb
+
+c -> lb: 查询可用服务
+lb -> cb: 检查服务健康状况
+
+==服务发现==
+
+lb -> "gRPC Server: 轮询请求"
+
+==gRPC通信==
+
+participant "gRPC Client" as gc
+participant "gRPC Server" as gs
+
+'note over User, gc, gs: gRPC进行客户端与服务端通信
+
+User -> gc: 请求接口
+gc -> lb: 负载均衡选择服务
+lb -> gs: 转发请求
+gs -> gc: 响应结果
+gc -> User: 返回结果
+
+@enduml

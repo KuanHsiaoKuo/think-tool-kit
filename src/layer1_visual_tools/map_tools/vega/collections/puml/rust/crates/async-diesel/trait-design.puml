@@ -1,0 +1,33 @@
+@startuml
+'请用plantuml的uml语法绘制一下这个crate的trait设计
+interface SimpleAsyncConnection {
+    + async fn batch_execute(query: &str) -> QueryResult<()>
+}
+
+interface AsyncConnection {
+    + async fn establish(database_url: &str) -> ConnectionResult<Self>
+    + async fn execute(query: &str) -> QueryResult<usize>
+    + async fn query<T>(source: T) -> QueryResult<Cursor<Self::Backend>>
+    + async fn load<T, U>(source: &mut T) -> QueryResult<Vec<U>>
+    + async fn execute_returning_count<T>(source: &mut T) -> QueryResult<usize>
+}
+
+interface RunQueryDsl {
+}
+
+interface UpdateAndFetchResults {
+}
+
+class AsyncMysqlConnection {
+}
+class AsyncPgConnection {
+}
+
+SimpleAsyncConnection <|-- AsyncConnection
+AsyncConnection <|-- AsyncMysqlConnection: mysql
+AsyncConnection <|-- AsyncPgConnection: postgres
+
+RunQueryDsl -- AsyncConnection
+UpdateAndFetchResults -- AsyncConnection
+
+@enduml

@@ -1,0 +1,31 @@
+@startuml
+'请用puml的泳道图语法将这个crate如何把diesel改造成异步的流程绘制出来
+!define AWSPUML https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0
+
+actor Developer
+
+participant "Diesel" as Diesel
+participant "AsyncConnection\nTrait" as AsyncConnection
+participant "AsyncMysqlConnection\nAsyncPgConnection" as AsyncConnections
+participant "RunQueryDsl" as RunQueryDsl
+participant "TransactionBuilder" as TransactionBuilder
+participant "DataBase\nDriver" as DBDriver
+
+'Developer uses diesel_async crate
+Developer -> AsyncConnection : Create async connection
+AsyncConnection -> AsyncConnections : establish
+
+'Developer builds an async query
+Developer -> RunQueryDsl : Compose async query
+
+'Execute async query
+Developer -> AsyncConnections : execute
+
+'Execute async transaction
+Developer -> TransactionBuilder : Compose async transaction
+TransactionBuilder -> AsyncConnections : execute multiple queries
+
+'Interact with database
+AsyncConnections -> DBDriver : Async query execution
+
+@enduml
