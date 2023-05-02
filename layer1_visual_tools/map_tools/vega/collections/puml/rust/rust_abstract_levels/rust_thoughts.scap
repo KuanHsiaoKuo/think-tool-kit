@@ -1,0 +1,4179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScappleDocument Version="1.2" ID="473A7228-4116-4163-A8CE-05B824883F6E">
+  <Notes>
+    <Note ID="0" FontSize="84.0" Position="14987.0,2362.0" Width="352.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <Border Weight="1">0.7221019268035889 0.8462898135185242 0.9162383675575256</Border>
+        <Fill>0.7860000729560852 0.9203996658325195 0.9961000084877014</Fill>
+      </Appearance>
+      <String>高级抽象</String>
+      <ConnectedNoteIDs>15-16, 144, 589</ConnectedNoteIDs>
+    </Note>
+    <Note ID="1" FontSize="84.0" Position="15663.3,6401.0" Width="195.2">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <Fill>0.0 0.369 0.843</Fill>
+      </Appearance>
+      <String>内存管理</String>
+      <ConnectedNoteIDs>45, 282, 306, 375, 605</ConnectedNoteIDs>
+      <PointsToNoteIDs>282</PointsToNoteIDs>
+    </Note>
+    <Note ID="15" FontSize="60.0" Position="17519.0,3481.3" Width="136.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>泛型</String>
+      <ConnectedNoteIDs>0, 16, 180-182, 188</ConnectedNoteIDs>
+    </Note>
+    <Note ID="16" FontSize="68.0" Position="16960.9,4063.6" Width="176.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>特征(trait)</String>
+      <ConnectedNoteIDs>0, 15, 17, 42-43, 190-191, 269</ConnectedNoteIDs>
+    </Note>
+    <Note ID="17" FontSize="32.0" Position="16850.3,3774.1" Width="80.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>多态</String>
+      <ConnectedNoteIDs>16</ConnectedNoteIDs>
+    </Note>
+    <Note ID="28" FontSize="12.0" Position="1541.7,5052.0" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>元编程</String>
+      <ConnectedNoteIDs>38</ConnectedNoteIDs>
+    </Note>
+    <Note ID="32" FontSize="12.0" Position="15580.6,95.8" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <Border Weight="1" Style="Jagged"/>
+      </Appearance>
+      <String>调试</String>
+      <ConnectedNoteIDs>33, 572</ConnectedNoteIDs>
+    </Note>
+    <Note ID="33" FontSize="12.0" Position="15572.0,20.0" Width="31.2">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>rr</String>
+      <ConnectedNoteIDs>32</ConnectedNoteIDs>
+    </Note>
+    <Note ID="34" FontSize="12.0" Position="2240.0,4691.3" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>应用</String>
+      <ConnectedNoteIDs>35-37</ConnectedNoteIDs>
+    </Note>
+    <Note ID="35" FontSize="12.0" Position="1994.9,4494.0" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>网络编程</String>
+      <ConnectedNoteIDs>34</ConnectedNoteIDs>
+    </Note>
+    <Note ID="36" FontSize="12.0" Position="2090.9,4504.0" Width="76.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>数据库连接</String>
+      <ConnectedNoteIDs>34</ConnectedNoteIDs>
+    </Note>
+    <Note ID="37" FontSize="12.0" Position="2257.9,4519.0" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>区块链</String>
+      <ConnectedNoteIDs>34</ConnectedNoteIDs>
+    </Note>
+    <Note ID="38" FontSize="12.0" Position="1416.8,5054.0" Width="28.7">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>宏</String>
+      <ConnectedNoteIDs>28, 39-41</ConnectedNoteIDs>
+    </Note>
+    <Note ID="39" FontSize="12.0" Position="1310.8,5023.0" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>过程宏</String>
+      <ConnectedNoteIDs>38</ConnectedNoteIDs>
+    </Note>
+    <Note ID="40" FontSize="12.0" Position="1334.8,5066.0" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>派生宏</String>
+      <ConnectedNoteIDs>38</ConnectedNoteIDs>
+    </Note>
+    <Note ID="41" FontSize="12.0" Position="1309.8,5111.0" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>调试宏</String>
+      <ConnectedNoteIDs>38</ConnectedNoteIDs>
+    </Note>
+    <Note ID="42" FontSize="22.0" Position="16624.2,3871.5" Width="126.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>语言一致性</String>
+      <ConnectedNoteIDs>16</ConnectedNoteIDs>
+    </Note>
+    <Note ID="43" FontSize="53.0" Position="13483.0,3226.0" Width="281.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>零成本抽象</String>
+      <ConnectedNoteIDs>16, 46, 186</ConnectedNoteIDs>
+    </Note>
+    <Note ID="45" FontSize="48.0" Position="13840.1,5056.1" Width="221.7">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>内存安全</String>
+      <ConnectedNoteIDs>1, 46</ConnectedNoteIDs>
+    </Note>
+    <Note ID="46" FontSize="47.0" Position="11721.4,5177.4" Width="204.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>设计哲学</String>
+      <ConnectedNoteIDs>43, 45, 47, 57</ConnectedNoteIDs>
+    </Note>
+    <Note ID="47" FontSize="12.0" Position="11539.8,4827.4" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>实用性</String>
+      <ConnectedNoteIDs>46, 48-50</ConnectedNoteIDs>
+    </Note>
+    <Note ID="48" FontSize="12.0" Position="11515.8,4748.4" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>实践性</String>
+      <ConnectedNoteIDs>47</ConnectedNoteIDs>
+    </Note>
+    <Note ID="49" FontSize="12.0" Position="11601.8,4777.4" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>有益性</String>
+      <ConnectedNoteIDs>47</ConnectedNoteIDs>
+    </Note>
+    <Note ID="50" FontSize="12.0" Position="11396.3,4852.9" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>稳定性</String>
+      <ConnectedNoteIDs>47</ConnectedNoteIDs>
+    </Note>
+    <Note ID="51" FontSize="84.0" Position="6989.2,2262.6" Width="352.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <Fill>0.7854521871 0.9188541174 0.9948875308</Fill>
+      </Appearance>
+      <String>执行流程</String>
+      <ConnectedNoteIDs>588</ConnectedNoteIDs>
+    </Note>
+    <Note ID="57" FontSize="12.0" Position="12111.7,4951.9" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>发行</String>
+      <ConnectedNoteIDs>46, 58-60</ConnectedNoteIDs>
+    </Note>
+    <Note ID="58" FontSize="12.0" Position="12047.3,4850.8" Width="49.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>stable</String>
+      <ConnectedNoteIDs>57</ConnectedNoteIDs>
+    </Note>
+    <Note ID="59" FontSize="12.0" Position="12159.5,4882.9" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>beta</String>
+      <ConnectedNoteIDs>57</ConnectedNoteIDs>
+    </Note>
+    <Note ID="60" FontSize="12.0" Position="12204.4,4918.4" Width="51.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>nightly</String>
+      <ConnectedNoteIDs>57</ConnectedNoteIDs>
+    </Note>
+    <Note ID="63" FontSize="102.0" Position="8264.4,1462.2" Width="424.0">
+      <Appearance>
+        <Alignment>Center</Alignment>
+        <Fill>0.7854521871 0.9188541174 0.9948875308</Fill>
+      </Appearance>
+      <String>基本构成</String>
+      <ConnectedNoteIDs>64, 70, 78, 83, 91, 588</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Bold="Yes">0,4</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="64" FontSize="26.0" Position="7725.1,1200.8" Width="120.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>语言规范</String>
+      <ConnectedNoteIDs>63, 65-66</ConnectedNoteIDs>
+    </Note>
+    <Note ID="65" FontSize="12.0" Position="7836.7,1051.4" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>语言参考</String>
+      <ConnectedNoteIDs>64, 67-69</ConnectedNoteIDs>
+    </Note>
+    <Note ID="66" FontSize="12.0" Position="7609.1,1140.8" Width="65.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>RFC文档</String>
+      <ConnectedNoteIDs>64</ConnectedNoteIDs>
+    </Note>
+    <Note ID="67" FontSize="12.0" Position="7909.1,972.3" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>用法描述</String>
+      <ConnectedNoteIDs>65</ConnectedNoteIDs>
+    </Note>
+    <Note ID="68" FontSize="12.0" Position="7995.1,1058.3" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>内存描述</String>
+      <ConnectedNoteIDs>65</ConnectedNoteIDs>
+    </Note>
+    <Note ID="69" FontSize="12.0" Position="7980.1,1166.3" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>基本原理和参考</String>
+      <ConnectedNoteIDs>65</ConnectedNoteIDs>
+    </Note>
+    <Note ID="70" FontSize="30.0" Position="8186.7,1090.9" Width="106.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>编译器</String>
+      <ConnectedNoteIDs>63, 71</ConnectedNoteIDs>
+    </Note>
+    <Note ID="71" FontSize="12.0" Position="8128.8,882.3" Width="43.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>rustc</String>
+      <ConnectedNoteIDs>70, 72-77</ConnectedNoteIDs>
+    </Note>
+    <Note ID="72" FontSize="12.0" Position="7970.2,893.5" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>跨平台</String>
+      <ConnectedNoteIDs>71</ConnectedNoteIDs>
+    </Note>
+    <Note ID="73" FontSize="12.0" Position="8053.7,816.0" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>交叉编译</String>
+      <ConnectedNoteIDs>71</ConnectedNoteIDs>
+    </Note>
+    <Note ID="74" FontSize="12.0" Position="8158.8,788.2" Width="47.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>LLVM</String>
+      <ConnectedNoteIDs>71</ConnectedNoteIDs>
+    </Note>
+    <Note ID="75" FontSize="12.0" Position="8235.3,813.3" Width="85.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>rust语言开发</String>
+      <ConnectedNoteIDs>71</ConnectedNoteIDs>
+    </Note>
+    <Note ID="76" FontSize="12.0" Position="8279.3,874.8" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>源码分析检查</String>
+      <ConnectedNoteIDs>71</ConnectedNoteIDs>
+    </Note>
+    <Note ID="77" FontSize="12.0" Position="8256.1,964.9" Width="112.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>输出详尽错误信息</String>
+      <ConnectedNoteIDs>71</ConnectedNoteIDs>
+    </Note>
+    <Note ID="78" FontSize="30.0" Position="8819.1,1211.2" Width="106.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <Border Weight="1">0.9024708867073059 0.8555303812026978 0.6288679242134094</Border>
+        <Fill>0.9811998009681702 0.9303999543190002 0.6851004362106323</Fill>
+      </Appearance>
+      <String>核心库</String>
+      <ConnectedNoteIDs>63, 79-82</ConnectedNoteIDs>
+    </Note>
+    <Note ID="79" FontSize="12.0" Position="8675.1,1114.3" Width="61.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>基础trait</String>
+      <ConnectedNoteIDs>78</ConnectedNoteIDs>
+    </Note>
+    <Note ID="80" FontSize="12.0" Position="8779.6,1075.4" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>基本原始类型</String>
+      <ConnectedNoteIDs>78</ConnectedNoteIDs>
+    </Note>
+    <Note ID="81" FontSize="12.0" Position="8904.5,1056.6" Width="112.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>常用功能数据类型</String>
+      <ConnectedNoteIDs>78</ConnectedNoteIDs>
+    </Note>
+    <Note ID="82" FontSize="12.0" Position="9031.3,1092.4" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>常用宏</String>
+      <ConnectedNoteIDs>78</ConnectedNoteIDs>
+    </Note>
+    <Note ID="83" FontSize="31.0" Position="8900.4,1321.1" Width="109.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <Border Weight="1">0.9024708867073059 0.8555303812026978 0.6288679242134094</Border>
+        <Fill>0.9811998009681702 0.9303999543190002 0.6851004362106323</Fill>
+      </Appearance>
+      <String>标准库</String>
+      <ConnectedNoteIDs>63, 84-85, 88-90</ConnectedNoteIDs>
+    </Note>
+    <Note ID="84" FontSize="12.0" Position="9021.4,1214.1" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>迭代器</String>
+      <ConnectedNoteIDs>83</ConnectedNoteIDs>
+    </Note>
+    <Note ID="85" FontSize="12.0" Position="9080.4,1293.1" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>异常处理</String>
+      <ConnectedNoteIDs>83, 86-87</ConnectedNoteIDs>
+    </Note>
+    <Note ID="86" FontSize="12.0" Position="9160.4,1240.1" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Option</String>
+      <ConnectedNoteIDs>85</ConnectedNoteIDs>
+    </Note>
+    <Note ID="87" FontSize="12.0" Position="9209.4,1345.1" Width="51.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Result</String>
+      <ConnectedNoteIDs>85</ConnectedNoteIDs>
+    </Note>
+    <Note ID="88" FontSize="12.0" Position="9064.4,1419.1" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>底层操作接口</String>
+      <ConnectedNoteIDs>83</ConnectedNoteIDs>
+    </Note>
+    <Note ID="89" FontSize="12.0" Position="8996.4,1501.1" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>平台抽象</String>
+      <ConnectedNoteIDs>83</ConnectedNoteIDs>
+    </Note>
+    <Note ID="90" FontSize="12.0" Position="8813.4,1478.1" Width="117.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>并发、I/O和运行时</String>
+      <ConnectedNoteIDs>83</ConnectedNoteIDs>
+    </Note>
+    <Note ID="91" FontSize="12.0" Position="8731.0,1748.7" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>包管理器</String>
+      <ConnectedNoteIDs>63, 92-93</ConnectedNoteIDs>
+    </Note>
+    <Note ID="92" FontSize="12.0" Position="8912.2,1781.3" Width="43.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>crate</String>
+      <ConnectedNoteIDs>91, 94-95</ConnectedNoteIDs>
+    </Note>
+    <Note ID="93" FontSize="12.0" Position="8690.9,1892.6" Width="47.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>cargo</String>
+      <ConnectedNoteIDs>91</ConnectedNoteIDs>
+    </Note>
+    <Note ID="94" FontSize="12.0" Position="9046.2,1736.3" Width="62.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>crates.io</String>
+      <ConnectedNoteIDs>92</ConnectedNoteIDs>
+    </Note>
+    <Note ID="95" FontSize="12.0" Position="9064.2,1796.3" Width="55.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>docs.rs</String>
+      <ConnectedNoteIDs>92</ConnectedNoteIDs>
+    </Note>
+    <Note ID="96" FontSize="78.0" Position="9857.9,1776.6" Width="328.0">
+      <Appearance>
+        <Alignment>Center</Alignment>
+        <Fill>0.7854521871 0.9188541174 0.9948875308</Fill>
+      </Appearance>
+      <String>基础语法</String>
+      <ConnectedNoteIDs>97-101, 108, 588</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Underline="Yes">0,4</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="97" FontSize="12.0" Position="10037.9,1548.6" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>语句与表达式</String>
+      <ConnectedNoteIDs>96</ConnectedNoteIDs>
+    </Note>
+    <Note ID="98" FontSize="12.0" Position="10411.9,1790.6" Width="76.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>变量与绑定</String>
+      <ConnectedNoteIDs>96</ConnectedNoteIDs>
+    </Note>
+    <Note ID="99" FontSize="12.0" Position="10158.4,2139.8" Width="76.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>函数与闭包</String>
+      <ConnectedNoteIDs>96</ConnectedNoteIDs>
+    </Note>
+    <Note ID="100" FontSize="12.0" Position="10437.1,1965.7" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>流程控制</String>
+      <ConnectedNoteIDs>96</ConnectedNoteIDs>
+    </Note>
+    <Note ID="101" FontSize="12.0" Position="9980.2,2175.8" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>注释</String>
+      <ConnectedNoteIDs>96</ConnectedNoteIDs>
+    </Note>
+    <Note ID="103" FontSize="85.0" Position="12967.0,1350.0" Width="423.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <Fill>0.7854521871 0.9188541174 0.9948875308</Fill>
+      </Appearance>
+      <String>数据类型
+(基础认识)</String>
+      <ConnectedNoteIDs>104-106, 589</ConnectedNoteIDs>
+    </Note>
+    <Note ID="104" FontSize="31.0" Position="12287.1,561.9" Width="202.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <Border Weight="2" Style="Jagged"/>
+        <Fill>0.0 0.557 0.682</Fill>
+      </Appearance>
+      <String>基础数据类型</String>
+      <ConnectedNoteIDs>103, 110-117, 122</ConnectedNoteIDs>
+    </Note>
+    <Note ID="105" FontSize="31.0" Position="13866.5,780.6" Width="202.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <Border Weight="2" Style="Jagged"/>
+        <Fill>0.329 0.847 0.996</Fill>
+      </Appearance>
+      <String>复合数据类型</String>
+      <ConnectedNoteIDs>103, 123-126</ConnectedNoteIDs>
+    </Note>
+    <Note ID="106" FontSize="31.0" Position="13873.0,1850.7" Width="202.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <Border Weight="2" Style="Jagged"/>
+        <Fill>0.329 0.847 0.996</Fill>
+      </Appearance>
+      <String>常用数据结构</String>
+      <ConnectedNoteIDs>103, 127-130</ConnectedNoteIDs>
+    </Note>
+    <Note ID="108" FontSize="12.0" Position="9694.7,1672.4" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>错误处理</String>
+      <ConnectedNoteIDs>96</ConnectedNoteIDs>
+    </Note>
+    <Note ID="110" FontSize="12.0" Position="12096.0,563.4" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>布尔类型</String>
+      <ConnectedNoteIDs>104</ConnectedNoteIDs>
+    </Note>
+    <Note ID="111" FontSize="12.0" Position="12119.1,476.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>数字类型</String>
+      <ConnectedNoteIDs>104</ConnectedNoteIDs>
+    </Note>
+    <Note ID="112" FontSize="12.0" Position="12308.1,418.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>字符类型</String>
+      <ConnectedNoteIDs>104</ConnectedNoteIDs>
+    </Note>
+    <Note ID="113" FontSize="12.0" Position="12472.1,431.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>数组类型</String>
+      <ConnectedNoteIDs>104</ConnectedNoteIDs>
+    </Note>
+    <Note ID="114" FontSize="12.0" Position="12584.1,519.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>范围类型</String>
+      <ConnectedNoteIDs>104</ConnectedNoteIDs>
+    </Note>
+    <Note ID="115" FontSize="12.0" Position="12600.1,651.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>切片类型</String>
+      <ConnectedNoteIDs>104</ConnectedNoteIDs>
+    </Note>
+    <Note ID="116" FontSize="12.0" Position="12383.8,422.7" Width="76.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>字符串类型</String>
+      <ConnectedNoteIDs>104</ConnectedNoteIDs>
+    </Note>
+    <Note ID="117" FontSize="12.0" Position="12032.7,809.8" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>指针类型</String>
+      <ConnectedNoteIDs>104, 118-121</ConnectedNoteIDs>
+    </Note>
+    <Note ID="118" FontSize="12.0" Position="11911.1,842.7" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>引用</String>
+      <ConnectedNoteIDs>117</ConnectedNoteIDs>
+    </Note>
+    <Note ID="119" FontSize="12.0" Position="11978.1,920.7" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>原生指针</String>
+      <ConnectedNoteIDs>117</ConnectedNoteIDs>
+    </Note>
+    <Note ID="120" FontSize="12.0" Position="12105.1,943.7" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>函数指针</String>
+      <ConnectedNoteIDs>117</ConnectedNoteIDs>
+    </Note>
+    <Note ID="121" FontSize="12.0" Position="12201.1,857.7" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>智能指针</String>
+      <ConnectedNoteIDs>117</ConnectedNoteIDs>
+    </Note>
+    <Note ID="122" FontSize="12.0" Position="12361.5,875.0" Width="71.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>never类型</String>
+      <ConnectedNoteIDs>104</ConnectedNoteIDs>
+    </Note>
+    <Note ID="123" FontSize="12.0" Position="13884.5,642.6" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>元组</String>
+      <ConnectedNoteIDs>105</ConnectedNoteIDs>
+    </Note>
+    <Note ID="124" FontSize="12.0" Position="14142.7,730.9" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>枚举体</String>
+      <ConnectedNoteIDs>105</ConnectedNoteIDs>
+    </Note>
+    <Note ID="125" FontSize="12.0" Position="13980.5,662.6" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>结构体</String>
+      <ConnectedNoteIDs>105</ConnectedNoteIDs>
+    </Note>
+    <Note ID="126" FontSize="12.0" Position="14142.5,872.6" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>联合体</String>
+      <ConnectedNoteIDs>105</ConnectedNoteIDs>
+    </Note>
+    <Note ID="127" FontSize="12.0" Position="14162.0,1544.8" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>线性序列</String>
+      <ConnectedNoteIDs>106, 131-133</ConnectedNoteIDs>
+    </Note>
+    <Note ID="128" FontSize="12.0" Position="14355.5,1925.9" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>映射表</String>
+      <ConnectedNoteIDs>106, 134-135</ConnectedNoteIDs>
+    </Note>
+    <Note ID="129" FontSize="12.0" Position="14063.0,2044.7" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>集合</String>
+      <ConnectedNoteIDs>106, 136-137</ConnectedNoteIDs>
+    </Note>
+    <Note ID="130" FontSize="12.0" Position="13842.0,2068.7" Width="28.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>堆</String>
+      <ConnectedNoteIDs>106, 138</ConnectedNoteIDs>
+    </Note>
+    <Note ID="131" FontSize="12.0" Position="14334.4,1458.5" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>向量</String>
+      <ConnectedNoteIDs>127</ConnectedNoteIDs>
+    </Note>
+    <Note ID="132" FontSize="12.0" Position="14325.6,1540.1" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>双端队列</String>
+      <ConnectedNoteIDs>127</ConnectedNoteIDs>
+    </Note>
+    <Note ID="133" FontSize="12.0" Position="14311.6,1643.1" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>链表</String>
+      <ConnectedNoteIDs>127</ConnectedNoteIDs>
+    </Note>
+    <Note ID="134" FontSize="12.0" Position="14392.7,1847.0" Width="68.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>HashMap</String>
+      <ConnectedNoteIDs>128</ConnectedNoteIDs>
+    </Note>
+    <Note ID="135" FontSize="12.0" Position="14429.7,2019.0" Width="72.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>BTreeMap</String>
+      <ConnectedNoteIDs>128</ConnectedNoteIDs>
+    </Note>
+    <Note ID="136" FontSize="12.0" Position="14198.7,2034.0" Width="63.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>HashSet</String>
+      <ConnectedNoteIDs>129</ConnectedNoteIDs>
+    </Note>
+    <Note ID="137" FontSize="12.0" Position="14046.7,2133.0" Width="67.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>BTreeSet</String>
+      <ConnectedNoteIDs>129</ConnectedNoteIDs>
+    </Note>
+    <Note ID="138" FontSize="12.0" Position="13741.7,2122.0" Width="79.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>BinaryHeap</String>
+      <ConnectedNoteIDs>130</ConnectedNoteIDs>
+    </Note>
+    <Note ID="141" FontSize="12.0" Position="16011.4,526.7" Width="40.6">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>用意</String>
+      <ConnectedNoteIDs>142-143, 151</ConnectedNoteIDs>
+    </Note>
+    <Note ID="142" FontSize="12.0" Position="16087.9,428.2" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>降低心智负担</String>
+      <ConnectedNoteIDs>141</ConnectedNoteIDs>
+    </Note>
+    <Note ID="143" FontSize="12.0" Position="15876.5,434.3" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>本质决定行为
+本性取决于行为</String>
+      <ConnectedNoteIDs>141</ConnectedNoteIDs>
+    </Note>
+    <Note ID="144" FontSize="72.0" Position="15971.5,776.9" Width="304.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>基本认识</String>
+      <ConnectedNoteIDs>0, 148-151, 153, 157, 165, 572</ConnectedNoteIDs>
+    </Note>
+    <Note ID="148" FontSize="12.0" Position="15620.8,1052.9" Width="152.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>粒度区分：&#13;
+	占用不同内存&#13;
+	更安全有效利用内存</String>
+      <ConnectedNoteIDs>144</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="marginnote3app://note/42AC4E37-991F-4B37-BCDC-989648ED48C0">0,5</FormatRange>
+        <FormatRange Link="marginnote3app://note/42AC4E37-991F-4B37-BCDC-989648ED48C0">5,2</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="149" FontSize="12.0" Position="15514.4,767.4" Width="320.9">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>不同类型如何计算&#13;
+	编程语言的目的就是存储和处理信息&#13;
+	虚拟世界中的各种事件&#13;
+	不同编程语言之间的区别就在于如何存储和处理信息</String>
+      <ConnectedNoteIDs>144</ConnectedNoteIDs>
+    </Note>
+    <Note ID="150" FontSize="12.0" Position="15781.2,611.8" Width="148.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>类型系统关注类型的行为</String>
+      <ConnectedNoteIDs>144</ConnectedNoteIDs>
+    </Note>
+    <Note ID="151" FontSize="12.0" Position="16072.9,606.5" Width="76.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>作用与优势</String>
+      <ConnectedNoteIDs>141, 144, 152</ConnectedNoteIDs>
+    </Note>
+    <Note ID="152" FontSize="12.0" Position="16211.0,385.1" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>排错&#13;
+抽象&#13;
+文档&#13;
+优化效率&#13;
+类型安全&#13;
+	避免类型间的无效计算&#13;
+	保证内存安全&#13;
+	避免语义上的逻辑错误</String>
+      <ConnectedNoteIDs>151</ConnectedNoteIDs>
+    </Note>
+    <Note ID="153" FontSize="12.0" Position="16500.2,574.5" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>分类</String>
+      <ConnectedNoteIDs>144, 155-156</ConnectedNoteIDs>
+    </Note>
+    <Note ID="155" FontSize="12.0" Position="16720.7,525.4" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>类型检查时机&#13;
+	静态类型&#13;
+		编译期&#13;
+	动态类型&#13;
+		运行期</String>
+      <ConnectedNoteIDs>153</ConnectedNoteIDs>
+    </Note>
+    <Note ID="156" FontSize="12.0" Position="16675.0,680.0" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>是否隐式转换&#13;
+	弱类型&#13;
+	强类型</String>
+      <ConnectedNoteIDs>153</ConnectedNoteIDs>
+    </Note>
+    <Note ID="157" FontSize="12.0" Position="16490.0,754.6" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>多态</String>
+      <ConnectedNoteIDs>144, 158, 162</ConnectedNoteIDs>
+    </Note>
+    <Note ID="158" FontSize="12.0" Position="16660.0,772.6" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>三种形式</String>
+      <ConnectedNoteIDs>157, 159-161</ConnectedNoteIDs>
+    </Note>
+    <Note ID="159" FontSize="12.0" Position="16788.3,777.4" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>泛型：参数化多态 (Parametric polymorphism )</String>
+      <ConnectedNoteIDs>158</ConnectedNoteIDs>
+    </Note>
+    <Note ID="160" FontSize="12.0" Position="16803.5,859.1" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>trait: Ad-hoc多态 (Ad-hoc polymorphism )&#13;
+&#13;
+  类似于Haskell中的Typeclass&#13;
+ Ad-hoc多态也叫特定多态</String>
+      <ConnectedNoteIDs>158</ConnectedNoteIDs>
+    </Note>
+    <Note ID="161" FontSize="12.0" Position="16616.7,933.4" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>子类型多态 (Subtype polymorphism )</String>
+      <ConnectedNoteIDs>158</ConnectedNoteIDs>
+    </Note>
+    <Note ID="162" FontSize="12.0" Position="16463.0,892.6" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>两种发生时间</String>
+      <ConnectedNoteIDs>157, 163-164</ConnectedNoteIDs>
+    </Note>
+    <Note ID="163" FontSize="12.0" Position="16368.0,916.6" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>静多态</String>
+      <ConnectedNoteIDs>162</ConnectedNoteIDs>
+    </Note>
+    <Note ID="164" FontSize="12.0" Position="16444.0,982.6" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>动多态</String>
+      <ConnectedNoteIDs>162</ConnectedNoteIDs>
+    </Note>
+    <Note ID="165" FontSize="31.0" Position="16426.0,1128.2" Width="140.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>类型考虑</String>
+      <ConnectedNoteIDs>144, 166-167, 175-176</ConnectedNoteIDs>
+    </Note>
+    <Note ID="166" FontSize="12.0" Position="16655.6,1092.4" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>类型安全：Rust 为什么说是类型安全</String>
+      <ConnectedNoteIDs>165</ConnectedNoteIDs>
+    </Note>
+    <Note ID="167" FontSize="12.0" Position="16900.0,1215.1" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>类型大小</String>
+      <ConnectedNoteIDs>165, 168-169, 172-173</ConnectedNoteIDs>
+    </Note>
+    <Note ID="168" FontSize="12.0" Position="17091.0,1193.1" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>与内存分配关系</String>
+      <ConnectedNoteIDs>167</ConnectedNoteIDs>
+    </Note>
+    <Note ID="169" FontSize="12.0" Position="17026.0,1342.1" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>是否确定</String>
+      <ConnectedNoteIDs>167, 170-171</ConnectedNoteIDs>
+    </Note>
+    <Note ID="170" FontSize="12.0" Position="17195.0,1296.1" Width="144.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>可确定大小(Sized Type)</String>
+      <ConnectedNoteIDs>169</ConnectedNoteIDs>
+    </Note>
+    <Note ID="171" FontSize="12.0" Position="17174.0,1403.1" Width="182.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>动态大小(Dynamic Sized Type)</String>
+      <ConnectedNoteIDs>169</ConnectedNoteIDs>
+    </Note>
+    <Note ID="172" FontSize="12.0" Position="16951.0,1400.1" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>零大小</String>
+      <ConnectedNoteIDs>167</ConnectedNoteIDs>
+    </Note>
+    <Note ID="173" FontSize="12.0" Position="16813.0,1313.1" Width="143.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>无大小，源自never类型</String>
+      <ConnectedNoteIDs>167</ConnectedNoteIDs>
+    </Note>
+    <Note ID="175" FontSize="12.0" Position="16271.4,1325.7" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>类型推导</String>
+      <ConnectedNoteIDs>165, 177-179</ConnectedNoteIDs>
+    </Note>
+    <Note ID="176" FontSize="51.0" Position="16543.4,1798.7" Width="220.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.592 0.894 1.0</TextColor>
+      </Appearance>
+      <String>类型转换</String>
+      <ConnectedNoteIDs>165, 249-251, 260, 264, 266-267</ConnectedNoteIDs>
+    </Note>
+    <Note ID="177" FontSize="12.0" Position="16158.4,1383.7" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>类型标注</String>
+      <ConnectedNoteIDs>175</ConnectedNoteIDs>
+    </Note>
+    <Note ID="178" FontSize="12.0" Position="16254.4,1432.7" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>类型推断</String>
+      <ConnectedNoteIDs>175</ConnectedNoteIDs>
+    </Note>
+    <Note ID="179" FontSize="12.0" Position="16387.4,1447.7" Width="99.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Turbofish：::&lt;&gt;</String>
+      <ConnectedNoteIDs>175</ConnectedNoteIDs>
+    </Note>
+    <Note ID="180" FontSize="12.0" Position="17501.0,3251.6" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>泛型函数</String>
+      <ConnectedNoteIDs>15</ConnectedNoteIDs>
+    </Note>
+    <Note ID="181" FontSize="12.0" Position="17702.0,3359.6" Width="76.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>泛型结构体</String>
+      <ConnectedNoteIDs>15</ConnectedNoteIDs>
+    </Note>
+    <Note ID="182" FontSize="12.0" Position="17958.5,3736.2" Width="76.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>编译期多态</String>
+      <ConnectedNoteIDs>15, 183, 185</ConnectedNoteIDs>
+    </Note>
+    <Note ID="183" FontSize="12.0" Position="18129.5,3719.2" Width="76.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>编译后单态
+(静态分发)</String>
+      <ConnectedNoteIDs>182</ConnectedNoteIDs>
+    </Note>
+    <Note ID="185" FontSize="12.0" Position="18105.0,3509.9" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>单态化静态分发</String>
+      <ConnectedNoteIDs>182, 186-187</ConnectedNoteIDs>
+    </Note>
+    <Note ID="186" FontSize="12.0" Position="18372.7,3130.0" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>优点：零开销</String>
+      <ConnectedNoteIDs>43, 185</ConnectedNoteIDs>
+    </Note>
+    <Note ID="187" FontSize="12.0" Position="18225.0,3599.9" Width="136.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>缺点：二进制文件暴涨</String>
+      <ConnectedNoteIDs>185</ConnectedNoteIDs>
+    </Note>
+    <Note ID="188" FontSize="12.0" Position="17603.0,3735.6" Width="124.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>泛型返回值自动推导</String>
+      <ConnectedNoteIDs>15</ConnectedNoteIDs>
+    </Note>
+    <Note ID="190" FontSize="12.0" Position="17392.9,4095.6" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>抽象行为</String>
+      <ConnectedNoteIDs>16, 192-195</ConnectedNoteIDs>
+    </Note>
+    <Note ID="191" FontSize="12.0" Position="17034.6,4455.3" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>约束行为</String>
+      <ConnectedNoteIDs>16, 192, 206-208</ConnectedNoteIDs>
+    </Note>
+    <Note ID="192" FontSize="21.0" Position="18107.1,4425.2" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>接口抽象</String>
+      <ConnectedNoteIDs>190-191, 210-212</ConnectedNoteIDs>
+      <PointsToNoteIDs>191</PointsToNoteIDs>
+    </Note>
+    <Note ID="193" FontSize="12.0" Position="17865.0,4525.8" Width="67.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>OOP抽象</String>
+      <ConnectedNoteIDs>190, 207</ConnectedNoteIDs>
+      <PointsToNoteIDs>207</PointsToNoteIDs>
+    </Note>
+    <Note ID="194" FontSize="12.0" Position="17853.0,4233.7" Width="56.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>FP抽象</String>
+      <ConnectedNoteIDs>190</ConnectedNoteIDs>
+    </Note>
+    <Note ID="195" FontSize="12.0" Position="17403.8,4284.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>泛型抽象</String>
+      <ConnectedNoteIDs>190, 206</ConnectedNoteIDs>
+      <PointsToNoteIDs>206</PointsToNoteIDs>
+    </Note>
+    <Note ID="206" FontSize="12.0" Position="17202.6,4384.8" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>泛型约束</String>
+      <ConnectedNoteIDs>191, 195, 214-215</ConnectedNoteIDs>
+      <PointsToNoteIDs>195</PointsToNoteIDs>
+    </Note>
+    <Note ID="207" FontSize="12.0" Position="16993.5,4758.1" Width="65.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>抽象类型</String>
+      <ConnectedNoteIDs>191, 193, 221-222</ConnectedNoteIDs>
+      <PointsToNoteIDs>193</PointsToNoteIDs>
+    </Note>
+    <Note ID="208" FontSize="12.0" Position="16410.2,4426.5" Width="61.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>标签trait</String>
+      <ConnectedNoteIDs>191, 245-248</ConnectedNoteIDs>
+    </Note>
+    <Note ID="210" FontSize="12.0" Position="18281.5,4352.9" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Trait最基础的用法&#13;
+	trait作为接口抽象的形象表示&#13;
+		属于一种函数重载</String>
+      <ConnectedNoteIDs>192</ConnectedNoteIDs>
+    </Note>
+    <Note ID="211" FontSize="12.0" Position="18472.6,4453.1" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>trait一致性&#13;
+	为不同类型实现操作符重载</String>
+      <ConnectedNoteIDs>192</ConnectedNoteIDs>
+    </Note>
+    <Note ID="212" FontSize="12.0" Position="18380.0,4581.2" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>trait继承</String>
+      <ConnectedNoteIDs>192</ConnectedNoteIDs>
+    </Note>
+    <Note ID="214" FontSize="12.0" Position="17121.9,4285.6" Width="109.2">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>为何需要trait约束</String>
+      <ConnectedNoteIDs>206</ConnectedNoteIDs>
+    </Note>
+    <Note ID="215" FontSize="12.0" Position="17224.9,4560.6" Width="61.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>trait限定</String>
+      <ConnectedNoteIDs>206, 216, 218</ConnectedNoteIDs>
+    </Note>
+    <Note ID="216" FontSize="12.0" Position="17407.9,4574.6" Width="148.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>对泛型函数签名添加限定</String>
+      <ConnectedNoteIDs>215, 217</ConnectedNoteIDs>
+    </Note>
+    <Note ID="217" FontSize="12.0" Position="17513.9,4491.6" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>类似鸭子类型</String>
+      <ConnectedNoteIDs>216</ConnectedNoteIDs>
+    </Note>
+    <Note ID="218" FontSize="12.0" Position="17150.9,4638.6" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>理解</String>
+      <ConnectedNoteIDs>215, 220</ConnectedNoteIDs>
+    </Note>
+    <Note ID="220" FontSize="12.0" Position="17270.5,4747.3" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>结构化类型&#13;
+	鸭子类型&#13;
+	trait限定&#13;
+一种方法集合&#13;
+组合优于继承的体现&#13;
+总体来说&#13;
+单态化静态分发&#13;
+where重构</String>
+      <ConnectedNoteIDs>218</ConnectedNoteIDs>
+    </Note>
+    <Note ID="221" FontSize="12.0" Position="16403.9,4610.6" Width="473.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>特点：
+ • 抽象类型属于类型系统的一种,也叫作存在类型 (Existential Type )。
+ • 相对于具体类型而言,抽象类型无法直接实例化,它的每个实例都是具体类型的实例。
+ • 对于抽象类型而言,编译器可能无法确定其确切的功能和所占的空间大小
+</String>
+      <ConnectedNoteIDs>207</ConnectedNoteIDs>
+    </Note>
+    <Note ID="222" FontSize="12.0" Position="16818.9,4818.6" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>解决方案</String>
+      <ConnectedNoteIDs>207, 223-224</ConnectedNoteIDs>
+    </Note>
+    <Note ID="223" FontSize="12.0" Position="16300.6,4740.2" Width="272.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>trait对象(dyn trait)：动态分发，装箱抽象类型
+ • 在泛型中使用trait限定,可以将任意类型的范围根据类型的行为限定到更精确可控的范围内。
+ • 从这个角度出发,也可以将共同拥有相同行为的类型集合抽象为一个类型,这就是trait对象(trait Object) 。
+ • “对象”这个词来自面向对象编程语言,因为trait对象是对具有相同行为的一组具体类型的抽象,等价于面向对象中一个封装了行为的对象, 所以称其为trait对象。
+(2018 edition以后，需要添加dyn关键字)</String>
+      <ConnectedNoteIDs>222, 225, 228, 233, 240</ConnectedNoteIDs>
+    </Note>
+    <Note ID="224" FontSize="12.0" Position="16769.4,4900.5" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>impl trait：静态分发，拆箱抽象类型</String>
+      <ConnectedNoteIDs>222, 244</ConnectedNoteIDs>
+    </Note>
+    <Note ID="225" FontSize="12.0" Position="16151.1,4830.2" Width="90.9">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>trait对象写法</String>
+      <ConnectedNoteIDs>223, 226-227</ConnectedNoteIDs>
+    </Note>
+    <Note ID="226" FontSize="12.0" Position="15862.2,4820.3" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>fn dynamic_dispatch(t: &amp;Bar) {
+    t.baz()
+}</String>
+      <ConnectedNoteIDs>225, 232</ConnectedNoteIDs>
+    </Note>
+    <Note ID="227" FontSize="12.0" Position="15890.7,4923.4" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>参数类型声明：&amp;Bar, Bar是一个trait</String>
+      <ConnectedNoteIDs>225</ConnectedNoteIDs>
+    </Note>
+    <Note ID="228" FontSize="12.0" Position="16106.6,4577.9" Width="112.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>本身也是一种类型</String>
+      <ConnectedNoteIDs>223, 229-231</ConnectedNoteIDs>
+    </Note>
+    <Note ID="229" FontSize="12.0" Position="15866.9,4505.6" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>类型大小在编译期无法确定</String>
+      <ConnectedNoteIDs>228</ConnectedNoteIDs>
+    </Note>
+    <Note ID="230" FontSize="12.0" Position="15852.6,4592.6" Width="134.5">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>使用指针制造trait对象</String>
+      <ConnectedNoteIDs>228</ConnectedNoteIDs>
+    </Note>
+    <Note ID="231" FontSize="12.0" Position="15851.6,4658.6" Width="155.4">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>使用Box&lt;T&gt;制造trait对象</String>
+      <ConnectedNoteIDs>228</ConnectedNoteIDs>
+    </Note>
+    <Note ID="232" FontSize="12.0" Position="15633.3,4861.3" Width="148.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>等价结构体：
+pub struct TraitObject {
+    pub data: *mut (),
+    pub vtable: *mut ()
+}</String>
+      <ConnectedNoteIDs>226</ConnectedNoteIDs>
+    </Note>
+    <Note ID="233" FontSize="12.0" Position="15936.2,5030.3" Width="40.7">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>组成</String>
+      <ConnectedNoteIDs>223, 234-235</ConnectedNoteIDs>
+    </Note>
+    <Note ID="234" FontSize="12.0" Position="15786.2,5072.3" Width="64.9">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>data指针</String>
+      <ConnectedNoteIDs>233</ConnectedNoteIDs>
+    </Note>
+    <Note ID="235" FontSize="12.0" Position="15931.2,5139.3" Width="132.3">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>vtable指针：指向虚表</String>
+      <ConnectedNoteIDs>233, 236-239</ConnectedNoteIDs>
+    </Note>
+    <Note ID="236" FontSize="12.0" Position="15799.8,5210.2" Width="65.6">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>析构函数</String>
+      <ConnectedNoteIDs>235</ConnectedNoteIDs>
+    </Note>
+    <Note ID="237" FontSize="12.0" Position="15932.8,5235.2" Width="44.9">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>大小</String>
+      <ConnectedNoteIDs>235</ConnectedNoteIDs>
+    </Note>
+    <Note ID="238" FontSize="12.0" Position="16048.8,5247.2" Width="45.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>对齐</String>
+      <ConnectedNoteIDs>235</ConnectedNoteIDs>
+    </Note>
+    <Note ID="239" FontSize="12.0" Position="16140.8,5214.2" Width="43.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>方法</String>
+      <ConnectedNoteIDs>235</ConnectedNoteIDs>
+    </Note>
+    <Note ID="240" FontSize="12.0" Position="16359.4,5032.5" Width="65.3">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>对象安全</String>
+      <ConnectedNoteIDs>223, 241-243</ConnectedNoteIDs>
+    </Note>
+    <Note ID="241" FontSize="12.0" Position="16263.4,5113.5" Width="85.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>类型参赛Self</String>
+      <ConnectedNoteIDs>240</ConnectedNoteIDs>
+    </Note>
+    <Note ID="242" FontSize="12.0" Position="16400.4,5132.5" Width="113.8">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>trait对象使用规则</String>
+      <ConnectedNoteIDs>240</ConnectedNoteIDs>
+    </Note>
+    <Note ID="243" FontSize="12.0" Position="16593.4,5134.5" Width="106.3">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>对象安全三要求</String>
+      <ConnectedNoteIDs>240</ConnectedNoteIDs>
+    </Note>
+    <Note ID="244" FontSize="12.0" Position="16661.4,5008.8" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>使用场景：
+目前impl Trait只可以在输入的参数和返回值这两个位置使用 ,在不远的将来,还会拓展到其他位置,比如let定义、关联类型等</String>
+      <ConnectedNoteIDs>224</ConnectedNoteIDs>
+    </Note>
+    <Note ID="245" FontSize="12.0" Position="16296.0,4374.3" Width="72.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Sized trait</String>
+      <ConnectedNoteIDs>208</ConnectedNoteIDs>
+    </Note>
+    <Note ID="246" FontSize="12.0" Position="16252.0,4460.3" Width="88.1">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Unsized trait</String>
+      <ConnectedNoteIDs>208</ConnectedNoteIDs>
+    </Note>
+    <Note ID="247" FontSize="12.0" Position="16343.0,4541.3" Width="73.5">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Copy trait</String>
+      <ConnectedNoteIDs>208</ConnectedNoteIDs>
+    </Note>
+    <Note ID="248" FontSize="12.0" Position="16471.1,4536.7" Width="100.8">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Send/Sync trait</String>
+      <ConnectedNoteIDs>208</ConnectedNoteIDs>
+    </Note>
+    <Note ID="249" FontSize="12.0" Position="15975.4,1760.7" Width="176.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>隐式转换：编译器/解释器完成</String>
+      <ConnectedNoteIDs>176</ConnectedNoteIDs>
+    </Note>
+    <Note ID="250" FontSize="12.0" Position="16019.4,1860.7" Width="136.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>显式转换：开发者指定</String>
+      <ConnectedNoteIDs>176</ConnectedNoteIDs>
+    </Note>
+    <Note ID="251" FontSize="12.0" Position="16255.4,2082.7" Width="82.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Deref解引用</String>
+      <ConnectedNoteIDs>176, 252, 257</ConnectedNoteIDs>
+    </Note>
+    <Note ID="252" FontSize="12.0" Position="16133.4,2188.7" Width="149.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>自动解引用：
+&amp;表示引用，*表示解引用</String>
+      <ConnectedNoteIDs>251, 253-254, 256</ConnectedNoteIDs>
+    </Note>
+    <Note ID="253" FontSize="12.0" Position="15869.4,2212.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>自动解引用的目的&#13;
+	Box&lt;T&gt;&#13;
+	Rc&lt;T&gt;&#13;
+	String类型&#13;
+	方便开发者使用智能指针</String>
+      <ConnectedNoteIDs>252</ConnectedNoteIDs>
+    </Note>
+    <Note ID="254" FontSize="12.0" Position="15904.4,2343.7" Width="127.1">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>开发者可以定义行为</String>
+      <ConnectedNoteIDs>252</ConnectedNoteIDs>
+    </Note>
+    <Note ID="256" FontSize="12.0" Position="16262.4,2286.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Deref trait&#13;
+	强制隐形转换&#13;
+	Deref/DerefMut trait内部实现&#13;
+		Deref 返回不可变引用&#13;
+		DerefMut返回可变引用&#13;
+	应用场景&#13;
+		主要为了简化编程&#13;
+	自定义解引用操作</String>
+      <ConnectedNoteIDs>252</ConnectedNoteIDs>
+    </Note>
+    <Note ID="257" FontSize="12.0" Position="16551.4,2183.7" Width="76.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>手动解引用</String>
+      <ConnectedNoteIDs>251, 258-259</ConnectedNoteIDs>
+    </Note>
+    <Note ID="258" FontSize="12.0" Position="16537.4,2332.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Rc&lt;T&gt;手动解引用</String>
+      <ConnectedNoteIDs>257</ConnectedNoteIDs>
+    </Note>
+    <Note ID="259" FontSize="12.0" Position="16782.4,2226.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>match手动解引用&#13;
+	match x.deref()&#13;
+	match x.as_ref()&#13;
+	match x.borrow()&#13;
+	match&amp;*x&#13;
+	match&amp;x[..]</String>
+      <ConnectedNoteIDs>257</ConnectedNoteIDs>
+    </Note>
+    <Note ID="260" FontSize="12.0" Position="16899.4,2057.7" Width="65.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>as操作符</String>
+      <ConnectedNoteIDs>176, 261-263</ConnectedNoteIDs>
+    </Note>
+    <Note ID="261" FontSize="12.0" Position="17016.4,2180.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>As操作符常用场景&#13;
+	as关键字不支持重载</String>
+      <ConnectedNoteIDs>260</ConnectedNoteIDs>
+    </Note>
+    <Note ID="262" FontSize="12.0" Position="17137.4,2066.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>无歧义完全限定语法&#13;
+	又叫:通 用 函 数 调 用 语 法</String>
+      <ConnectedNoteIDs>260</ConnectedNoteIDs>
+    </Note>
+    <Note ID="263" FontSize="12.0" Position="17170.4,1986.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>类型和子类型相互转换</String>
+      <ConnectedNoteIDs>260</ConnectedNoteIDs>
+    </Note>
+    <Note ID="264" FontSize="12.0" Position="16971.4,1833.7" Width="68.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>From/Into</String>
+      <ConnectedNoteIDs>176, 265</ConnectedNoteIDs>
+    </Note>
+    <Note ID="265" FontSize="12.0" Position="17177.4,1826.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>From和Into的关系&#13;
+	所以,一般情况下,只需要实现From即可,除非From不容易实现,才需要考虑实现Into。</String>
+      <ConnectedNoteIDs>264</ConnectedNoteIDs>
+    </Note>
+    <Note ID="266" FontSize="12.0" Position="16841.4,1696.7" Width="107.4">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>TryFrom/TryInto</String>
+      <ConnectedNoteIDs>176</ConnectedNoteIDs>
+    </Note>
+    <Note ID="267" FontSize="12.0" Position="16694.1,1645.9" Width="88.2">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>AsRef/AsMut</String>
+      <ConnectedNoteIDs>176</ConnectedNoteIDs>
+    </Note>
+    <Note ID="269" FontSize="12.0" Position="16614.4,4210.5" Width="109.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>trait系统不足之处</String>
+      <ConnectedNoteIDs>16, 270-272</ConnectedNoteIDs>
+    </Note>
+    <Note ID="270" FontSize="12.0" Position="16413.8,4122.2" Width="118.3">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String> 孤儿规则的局限性</String>
+      <ConnectedNoteIDs>269, 275-276</ConnectedNoteIDs>
+    </Note>
+    <Note ID="271" FontSize="12.0" Position="16402.6,4192.4" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>代码复用率不高</String>
+      <ConnectedNoteIDs>269, 277-278</ConnectedNoteIDs>
+    </Note>
+    <Note ID="272" FontSize="12.0" Position="16597.9,4316.0" Width="136.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>抽象表达能力有待改进</String>
+      <ConnectedNoteIDs>269, 279-280</ConnectedNoteIDs>
+    </Note>
+    <Note ID="275" FontSize="12.0" Position="16174.8,4019.8" Width="172.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>考虑是否会影响下游的使用者</String>
+      <ConnectedNoteIDs>270</ConnectedNoteIDs>
+    </Note>
+    <Note ID="276" FontSize="12.0" Position="16161.9,4098.3" Width="136.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>本地类型变成远程类型</String>
+      <ConnectedNoteIDs>270</ConnectedNoteIDs>
+    </Note>
+    <Note ID="277" FontSize="12.0" Position="16262.3,4156.8" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>重叠类型</String>
+      <ConnectedNoteIDs>271</ConnectedNoteIDs>
+    </Note>
+    <Note ID="278" FontSize="12.0" Position="16266.2,4229.7" Width="63.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>impl特化</String>
+      <ConnectedNoteIDs>271</ConnectedNoteIDs>
+    </Note>
+    <Note ID="279" FontSize="12.0" Position="16801.4,4265.5" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>迭代器应用缺陷</String>
+      <ConnectedNoteIDs>272</ConnectedNoteIDs>
+    </Note>
+    <Note ID="280" FontSize="12.0" Position="16790.9,4373.5" Width="112.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>使用GAT解决缺陷</String>
+      <ConnectedNoteIDs>272</ConnectedNoteIDs>
+    </Note>
+    <Note ID="282" FontSize="72.0" Position="16817.0,10042.1" Width="819.3">
+      <Appearance>
+        <Alignment>Center</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+        <Fill>0.329 0.847 0.996</Fill>
+      </Appearance>
+      <String>所有权系统
+(律者,所以定分止争也。)</String>
+      <ConnectedNoteIDs>1, 430, 440, 457, 462</ConnectedNoteIDs>
+    </Note>
+    <Note ID="283" FontSize="12.0" Position="19899.8,5523.3" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>分类</String>
+      <ConnectedNoteIDs>284-285, 306</ConnectedNoteIDs>
+    </Note>
+    <Note ID="284" FontSize="12.0" Position="19829.8,5415.3" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>手动管理</String>
+      <ConnectedNoteIDs>283, 286, 289, 291</ConnectedNoteIDs>
+    </Note>
+    <Note ID="285" FontSize="12.0" Position="20016.8,5499.4" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>自动管理</String>
+      <ConnectedNoteIDs>283, 294, 299, 303</ConnectedNoteIDs>
+    </Note>
+    <Note ID="286" FontSize="12.0" Position="19699.3,5444.1" Width="46.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>c语言</String>
+      <ConnectedNoteIDs>284, 287-288</ConnectedNoteIDs>
+    </Note>
+    <Note ID="287" FontSize="12.0" Position="19653.3,5407.1" Width="51.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>malloc</String>
+      <ConnectedNoteIDs>286</ConnectedNoteIDs>
+    </Note>
+    <Note ID="288" FontSize="12.0" Position="19738.3,5412.1" Width="37.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>free</String>
+      <ConnectedNoteIDs>286</ConnectedNoteIDs>
+    </Note>
+    <Note ID="289" FontSize="12.0" Position="19782.6,5295.6" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>优点</String>
+      <ConnectedNoteIDs>284, 290</ConnectedNoteIDs>
+    </Note>
+    <Note ID="290" FontSize="12.0" Position="19760.6,5220.6" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>性能</String>
+      <ConnectedNoteIDs>289</ConnectedNoteIDs>
+    </Note>
+    <Note ID="291" FontSize="12.0" Position="19839.6,5321.6" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>缺点</String>
+      <ConnectedNoteIDs>284, 292-293</ConnectedNoteIDs>
+    </Note>
+    <Note ID="292" FontSize="12.0" Position="19876.6,5273.6" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>内存泄漏</String>
+      <ConnectedNoteIDs>291</ConnectedNoteIDs>
+    </Note>
+    <Note ID="293" FontSize="12.0" Position="19947.6,5316.6" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>悬垂指针</String>
+      <ConnectedNoteIDs>291</ConnectedNoteIDs>
+    </Note>
+    <Note ID="294" FontSize="12.0" Position="20016.3,5387.6" Width="34.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>GC</String>
+      <ConnectedNoteIDs>285, 295-298</ConnectedNoteIDs>
+    </Note>
+    <Note ID="295" FontSize="12.0" Position="20047.3,5260.1" Width="42.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Java</String>
+      <ConnectedNoteIDs>294</ConnectedNoteIDs>
+    </Note>
+    <Note ID="296" FontSize="12.0" Position="20112.3,5252.6" Width="32.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>C#</String>
+      <ConnectedNoteIDs>294</ConnectedNoteIDs>
+    </Note>
+    <Note ID="297" FontSize="12.0" Position="20144.6,5297.6" Width="45.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Ruby</String>
+      <ConnectedNoteIDs>294</ConnectedNoteIDs>
+    </Note>
+    <Note ID="298" FontSize="12.0" Position="20168.0,5327.1" Width="54.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Python</String>
+      <ConnectedNoteIDs>294</ConnectedNoteIDs>
+    </Note>
+    <Note ID="299" FontSize="12.0" Position="20156.0,5401.7" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>优点</String>
+      <ConnectedNoteIDs>285, 300-302</ConnectedNoteIDs>
+    </Note>
+    <Note ID="300" FontSize="12.0" Position="20253.0,5347.7" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>自动接管</String>
+      <ConnectedNoteIDs>299</ConnectedNoteIDs>
+    </Note>
+    <Note ID="301" FontSize="12.0" Position="20255.0,5408.7" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>提升代码抽象度</String>
+      <ConnectedNoteIDs>299</ConnectedNoteIDs>
+    </Note>
+    <Note ID="302" FontSize="12.0" Position="20249.0,5487.7" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>提升代码可靠性</String>
+      <ConnectedNoteIDs>299</ConnectedNoteIDs>
+    </Note>
+    <Note ID="303" FontSize="12.0" Position="20194.9,5559.5" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>缺点</String>
+      <ConnectedNoteIDs>285, 304</ConnectedNoteIDs>
+    </Note>
+    <Note ID="304" FontSize="12.0" Position="20312.9,5564.5" Width="72.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>“世界暂停”</String>
+      <ConnectedNoteIDs>303</ConnectedNoteIDs>
+    </Note>
+    <Note ID="305" FontSize="12.0" Position="19519.0,5341.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>使用现状</String>
+      <ConnectedNoteIDs>306</ConnectedNoteIDs>
+    </Note>
+    <Note ID="306" FontSize="72.0" Position="19424.0,5497.9" Width="304.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+        <Fill>0.329 0.847 0.996</Fill>
+      </Appearance>
+      <String>基本认识</String>
+      <ConnectedNoteIDs>1, 283, 305, 308, 407</ConnectedNoteIDs>
+    </Note>
+    <Note ID="308" FontSize="52.0" Position="20687.7,5879.3" Width="432.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+        <Fill>0.761 0.714 0.141</Fill>
+      </Appearance>
+      <String>虚拟内存管理技术</String>
+      <ConnectedNoteIDs>306, 309, 364</ConnectedNoteIDs>
+    </Note>
+    <Note ID="309" FontSize="12.0" Position="20991.4,6078.6" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>虚拟内存地址</String>
+      <ConnectedNoteIDs>308, 310, 313</ConnectedNoteIDs>
+    </Note>
+    <Note ID="310" FontSize="12.0" Position="21198.4,6067.6" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>好处</String>
+      <ConnectedNoteIDs>309, 311-312</ConnectedNoteIDs>
+    </Note>
+    <Note ID="311" FontSize="12.0" Position="21366.4,6044.6" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>保护操作系统</String>
+      <ConnectedNoteIDs>310</ConnectedNoteIDs>
+    </Note>
+    <Note ID="312" FontSize="12.0" Position="21363.4,6134.6" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>比物理内存更大</String>
+      <ConnectedNoteIDs>310</ConnectedNoteIDs>
+    </Note>
+    <Note ID="313" FontSize="12.0" Position="21197.0,6177.7" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>组成</String>
+      <ConnectedNoteIDs>309, 314-315</ConnectedNoteIDs>
+    </Note>
+    <Note ID="314" FontSize="12.0" Position="21359.4,6201.6" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>用户空间</String>
+      <ConnectedNoteIDs>313, 316-317</ConnectedNoteIDs>
+    </Note>
+    <Note ID="315" FontSize="12.0" Position="21292.4,6284.6" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>内核空间</String>
+      <ConnectedNoteIDs>313</ConnectedNoteIDs>
+    </Note>
+    <Note ID="316" FontSize="12.0" Position="21488.5,6388.5" Width="28.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>堆</String>
+      <ConnectedNoteIDs>314, 335, 338, 349, 352</ConnectedNoteIDs>
+    </Note>
+    <Note ID="317" FontSize="12.0" Position="21746.7,6044.5" Width="28.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>栈</String>
+      <ConnectedNoteIDs>314, 318, 321, 338, 363</ConnectedNoteIDs>
+    </Note>
+    <Note ID="318" FontSize="12.0" Position="21859.5,5985.6" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>使用方式</String>
+      <ConnectedNoteIDs>317, 319-320</ConnectedNoteIDs>
+    </Note>
+    <Note ID="319" FontSize="12.0" Position="21981.5,5952.6" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>栈顶入栈</String>
+      <ConnectedNoteIDs>318</ConnectedNoteIDs>
+    </Note>
+    <Note ID="320" FontSize="12.0" Position="22006.5,6008.6" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>栈底出栈</String>
+      <ConnectedNoteIDs>318</ConnectedNoteIDs>
+    </Note>
+    <Note ID="321" FontSize="12.0" Position="21898.5,6084.6" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>栈内存</String>
+      <ConnectedNoteIDs>317, 322-325</ConnectedNoteIDs>
+    </Note>
+    <Note ID="322" FontSize="12.0" Position="22166.2,6034.3" Width="172.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>保存函数调用所要维护的信息</String>
+      <ConnectedNoteIDs>321</ConnectedNoteIDs>
+    </Note>
+    <Note ID="323" FontSize="12.0" Position="22175.0,6096.6" Width="125.8">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>栈指针寄存器(ESP)</String>
+      <ConnectedNoteIDs>321</ConnectedNoteIDs>
+    </Note>
+    <Note ID="324" FontSize="12.0" Position="22145.5,6147.9" Width="89.9">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>帧指针(EBP)</String>
+      <ConnectedNoteIDs>321</ConnectedNoteIDs>
+    </Note>
+    <Note ID="325" FontSize="12.0" Position="22110.4,6267.6" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>栈帧</String>
+      <ConnectedNoteIDs>321, 330-332</ConnectedNoteIDs>
+    </Note>
+    <Note ID="326" FontSize="12.0" Position="22381.9,6237.8" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>函数参数</String>
+      <ConnectedNoteIDs>330</ConnectedNoteIDs>
+    </Note>
+    <Note ID="327" FontSize="12.0" Position="22368.9,6305.8" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>函数底返回地址</String>
+      <ConnectedNoteIDs>330</ConnectedNoteIDs>
+    </Note>
+    <Note ID="328" FontSize="12.0" Position="22328.9,6359.8" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>临时变量</String>
+      <ConnectedNoteIDs>330</ConnectedNoteIDs>
+    </Note>
+    <Note ID="329" FontSize="12.0" Position="22262.9,6401.8" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>保存底上下文</String>
+      <ConnectedNoteIDs>330</ConnectedNoteIDs>
+    </Note>
+    <Note ID="330" FontSize="12.0" Position="22233.9,6288.9" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>包含</String>
+      <ConnectedNoteIDs>325-329</ConnectedNoteIDs>
+    </Note>
+    <Note ID="331" FontSize="12.0" Position="22144.9,6381.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>分配方式</String>
+      <ConnectedNoteIDs>325</ConnectedNoteIDs>
+    </Note>
+    <Note ID="332" FontSize="12.0" Position="22045.9,6385.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>代码示例</String>
+      <ConnectedNoteIDs>325</ConnectedNoteIDs>
+    </Note>
+    <Note ID="335" FontSize="12.0" Position="21618.1,6627.0" Width="76.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>完全二叉树</String>
+      <ConnectedNoteIDs>316, 336-337</ConnectedNoteIDs>
+    </Note>
+    <Note ID="336" FontSize="12.0" Position="21736.1,6639.0" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>大顶堆</String>
+      <ConnectedNoteIDs>335</ConnectedNoteIDs>
+    </Note>
+    <Note ID="337" FontSize="12.0" Position="21713.1,6706.0" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>小顶堆</String>
+      <ConnectedNoteIDs>335</ConnectedNoteIDs>
+    </Note>
+    <Note ID="338" FontSize="12.0" Position="21893.7,6564.1" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>对比</String>
+      <ConnectedNoteIDs>316-317, 339-340</ConnectedNoteIDs>
+      <PointsToNoteIDs>316-317</PointsToNoteIDs>
+    </Note>
+    <Note ID="339" FontSize="12.0" Position="22008.2,6532.1" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>函数调用</String>
+      <ConnectedNoteIDs>338, 341-342</ConnectedNoteIDs>
+    </Note>
+    <Note ID="340" FontSize="12.0" Position="21972.2,6632.1" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>类型</String>
+      <ConnectedNoteIDs>338, 343-344</ConnectedNoteIDs>
+    </Note>
+    <Note ID="341" FontSize="12.0" Position="22121.2,6484.1" Width="124.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>栈内存：函数内调用</String>
+      <ConnectedNoteIDs>339</ConnectedNoteIDs>
+    </Note>
+    <Note ID="342" FontSize="12.0" Position="22114.2,6562.1" Width="124.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>堆内存：跨函数调用</String>
+      <ConnectedNoteIDs>339</ConnectedNoteIDs>
+    </Note>
+    <Note ID="343" FontSize="12.0" Position="22058.2,6625.1" Width="112.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>栈内存：大小明确</String>
+      <ConnectedNoteIDs>340</ConnectedNoteIDs>
+    </Note>
+    <Note ID="344" FontSize="12.0" Position="22038.2,6678.1" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>堆内存</String>
+      <ConnectedNoteIDs>340, 345-347</ConnectedNoteIDs>
+    </Note>
+    <Note ID="345" FontSize="12.0" Position="22117.2,6669.1" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>动态大小</String>
+      <ConnectedNoteIDs>344</ConnectedNoteIDs>
+    </Note>
+    <Note ID="346" FontSize="12.0" Position="22129.2,6713.1" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>使用指针</String>
+      <ConnectedNoteIDs>344</ConnectedNoteIDs>
+    </Note>
+    <Note ID="347" FontSize="12.0" Position="22089.2,6758.1" Width="76.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>有安全隐患</String>
+      <ConnectedNoteIDs>344</ConnectedNoteIDs>
+    </Note>
+    <Note ID="349" FontSize="12.0" Position="21455.1,6586.9" Width="76.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>堆分配算法</String>
+      <ConnectedNoteIDs>316, 350-351</ConnectedNoteIDs>
+    </Note>
+    <Note ID="350" FontSize="12.0" Position="21383.1,6694.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>空闲链表</String>
+      <ConnectedNoteIDs>349</ConnectedNoteIDs>
+    </Note>
+    <Note ID="351" FontSize="12.0" Position="21515.1,6701.9" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>位图</String>
+      <ConnectedNoteIDs>349</ConnectedNoteIDs>
+    </Note>
+    <Note ID="352" FontSize="12.0" Position="21321.1,6466.9" Width="101.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Rust内存分配器</String>
+      <ConnectedNoteIDs>316, 353-354, 356</ConnectedNoteIDs>
+    </Note>
+    <Note ID="353" FontSize="12.0" Position="21154.1,6545.8" Width="86.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>alloc_system</String>
+      <ConnectedNoteIDs>352</ConnectedNoteIDs>
+    </Note>
+    <Note ID="354" FontSize="12.0" Position="21230.3,6677.2" Width="92.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>alloc_jemalloc</String>
+      <ConnectedNoteIDs>352, 355</ConnectedNoteIDs>
+    </Note>
+    <Note ID="355" FontSize="12.0" Position="21127.3,6664.2" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>优点</String>
+      <ConnectedNoteIDs>354</ConnectedNoteIDs>
+    </Note>
+    <Note ID="356" FontSize="12.0" Position="21237.1,6753.9" Width="172.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>业界流行的内存分配解决方案</String>
+      <ConnectedNoteIDs>352, 357-358</ConnectedNoteIDs>
+    </Note>
+    <Note ID="357" FontSize="12.0" Position="20972.9,6819.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>整块批发内存：不需要频繁申请内存</String>
+      <ConnectedNoteIDs>356</ConnectedNoteIDs>
+    </Note>
+    <Note ID="358" FontSize="12.0" Position="21353.1,6840.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>层级架构</String>
+      <ConnectedNoteIDs>356, 359-362</ConnectedNoteIDs>
+    </Note>
+    <Note ID="359" FontSize="12.0" Position="21166.1,6923.9" Width="82.5">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>线程缓存tcache</String>
+      <ConnectedNoteIDs>358</ConnectedNoteIDs>
+    </Note>
+    <Note ID="360" FontSize="12.0" Position="21332.1,6930.9" Width="61.5">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>分配区arena</String>
+      <ConnectedNoteIDs>358</ConnectedNoteIDs>
+    </Note>
+    <Note ID="361" FontSize="12.0" Position="21481.1,6940.9" Width="41.5">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>系统内存</String>
+      <ConnectedNoteIDs>358</ConnectedNoteIDs>
+    </Note>
+    <Note ID="362" FontSize="12.0" Position="21567.1,6903.9" Width="173.5">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>不同大小内存块对应不同的分配区</String>
+      <ConnectedNoteIDs>358</ConnectedNoteIDs>
+    </Note>
+    <Note ID="363" FontSize="12.0" Position="21667.1,5933.9" Width="173.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Rust基础类型默认存放在栈上</String>
+      <ConnectedNoteIDs>317</ConnectedNoteIDs>
+    </Note>
+    <Note ID="364" FontSize="12.0" Position="20738.1,6133.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>内存布局</String>
+      <ConnectedNoteIDs>308, 365, 370</ConnectedNoteIDs>
+    </Note>
+    <Note ID="365" FontSize="12.0" Position="20433.6,6181.6" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>内存对齐：排列方式影响CPU访问内存效率</String>
+      <ConnectedNoteIDs>364, 371, 374</ConnectedNoteIDs>
+    </Note>
+    <Note ID="366" FontSize="12.0" Position="20911.2,6399.3" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>字长</String>
+      <ConnectedNoteIDs>368-370</ConnectedNoteIDs>
+    </Note>
+    <Note ID="368" FontSize="12.0" Position="20798.2,6433.3" Width="67.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>32位CPU</String>
+      <ConnectedNoteIDs>366</ConnectedNoteIDs>
+    </Note>
+    <Note ID="369" FontSize="12.0" Position="20918.2,6489.3" Width="67.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>64位CPU</String>
+      <ConnectedNoteIDs>366</ConnectedNoteIDs>
+    </Note>
+    <Note ID="370" FontSize="12.0" Position="20792.1,6217.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>字节对齐</String>
+      <ConnectedNoteIDs>364, 366, 374</ConnectedNoteIDs>
+    </Note>
+    <Note ID="371" FontSize="12.0" Position="20379.1,6313.9" Width="115.8">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>内存对齐规则说明</String>
+      <ConnectedNoteIDs>365, 372-373, 406</ConnectedNoteIDs>
+    </Note>
+    <Note ID="372" FontSize="12.0" Position="20303.9,6414.3" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>结构体内存对齐</String>
+      <ConnectedNoteIDs>371</ConnectedNoteIDs>
+    </Note>
+    <Note ID="373" FontSize="12.0" Position="20456.7,6393.9" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>联合体内存对齐</String>
+      <ConnectedNoteIDs>371</ConnectedNoteIDs>
+    </Note>
+    <Note ID="374" FontSize="12.0" Position="20591.8,6335.7" Width="136.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>内存对齐就是字节对齐</String>
+      <ConnectedNoteIDs>365, 370</ConnectedNoteIDs>
+      <PointsToNoteIDs>365, 370</PointsToNoteIDs>
+    </Note>
+    <Note ID="375" FontSize="72.0" Position="20939.1,9282.0" Width="453.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+        <Fill>0.329 0.847 0.996</Fill>
+      </Appearance>
+      <String>Rust资源管理</String>
+      <ConnectedNoteIDs>1, 376-377, 389</ConnectedNoteIDs>
+    </Note>
+    <Note ID="376" FontSize="12.0" Position="21142.4,9050.3" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Rust 可以静态地在编译时确定何时需要释放内存, 而不需要在运行时去确定</String>
+      <ConnectedNoteIDs>375</ConnectedNoteIDs>
+    </Note>
+    <Note ID="377" FontSize="12.0" Position="21593.9,9146.0" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>变量初始化检查</String>
+      <ConnectedNoteIDs>375, 378, 383</ConnectedNoteIDs>
+    </Note>
+    <Note ID="378" FontSize="12.0" Position="21780.9,9098.0" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>变量分类</String>
+      <ConnectedNoteIDs>377, 381-382</ConnectedNoteIDs>
+    </Note>
+    <Note ID="379" FontSize="12.0" Position="22041.9,9051.5" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>常量</String>
+      <ConnectedNoteIDs>381</ConnectedNoteIDs>
+    </Note>
+    <Note ID="380" FontSize="12.0" Position="22071.9,9141.5" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>静态变量</String>
+      <ConnectedNoteIDs>381</ConnectedNoteIDs>
+    </Note>
+    <Note ID="381" FontSize="12.0" Position="21939.9,9102.0" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>全局变量</String>
+      <ConnectedNoteIDs>378-380</ConnectedNoteIDs>
+    </Note>
+    <Note ID="382" FontSize="12.0" Position="21919.9,9207.0" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>局部变量</String>
+      <ConnectedNoteIDs>378</ConnectedNoteIDs>
+    </Note>
+    <Note ID="383" FontSize="12.0" Position="21706.9,9278.0" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>检查时机</String>
+      <ConnectedNoteIDs>377, 384-388</ConnectedNoteIDs>
+    </Note>
+    <Note ID="384" FontSize="12.0" Position="21885.1,9239.6" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>变量声明</String>
+      <ConnectedNoteIDs>383</ConnectedNoteIDs>
+    </Note>
+    <Note ID="385" FontSize="12.0" Position="21908.9,9294.8" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>分支流程</String>
+      <ConnectedNoteIDs>383</ConnectedNoteIDs>
+    </Note>
+    <Note ID="386" FontSize="12.0" Position="21895.9,9353.1" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>循环</String>
+      <ConnectedNoteIDs>383</ConnectedNoteIDs>
+    </Note>
+    <Note ID="387" FontSize="12.0" Position="21820.0,9389.1" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>空数组或向量</String>
+      <ConnectedNoteIDs>383</ConnectedNoteIDs>
+    </Note>
+    <Note ID="388" FontSize="12.0" Position="21734.3,9424.0" Width="76.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>转移所有权</String>
+      <ConnectedNoteIDs>383</ConnectedNoteIDs>
+    </Note>
+    <Note ID="389" FontSize="12.0" Position="21042.1,9703.4" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>智能指针</String>
+      <ConnectedNoteIDs>375, 390-391</ConnectedNoteIDs>
+    </Note>
+    <Note ID="390" FontSize="12.0" Position="21189.7,9757.9" Width="196.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>对指针的一层封装：提供额外功能</String>
+      <ConnectedNoteIDs>389</ConnectedNoteIDs>
+    </Note>
+    <Note ID="391" FontSize="12.0" Position="21028.2,9841.5" Width="172.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>在常规结构体基础上添加特性</String>
+      <ConnectedNoteIDs>389, 392-393</ConnectedNoteIDs>
+    </Note>
+    <Note ID="392" FontSize="12.0" Position="20924.7,9929.9" Width="142.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Deref：提供解引用能力</String>
+      <ConnectedNoteIDs>391</ConnectedNoteIDs>
+    </Note>
+    <Note ID="393" FontSize="12.0" Position="21157.7,9937.9" Width="199.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Drop：自动析构能力，确定性析构</String>
+      <ConnectedNoteIDs>391, 394-398, 405</ConnectedNoteIDs>
+    </Note>
+    <Note ID="394" FontSize="12.0" Position="21039.0,10032.2" Width="138.9">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>类似GC，又不同于GC</String>
+      <ConnectedNoteIDs>393</ConnectedNoteIDs>
+    </Note>
+    <Note ID="395" FontSize="12.0" Position="21061.6,10200.8" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Drop内部实现&#13;
+	语言项：#[lang = "drop"]</String>
+      <ConnectedNoteIDs>393</ConnectedNoteIDs>
+    </Note>
+    <Note ID="396" FontSize="12.0" Position="21273.7,10183.9" Width="119.6">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>为结构体实现Drop</String>
+      <ConnectedNoteIDs>393</ConnectedNoteIDs>
+    </Note>
+    <Note ID="397" FontSize="12.0" Position="21480.8,10070.6" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>RAII又叫作用域界定堆资源管理&#13;
+	与python的上下文管理器异曲同工</String>
+      <ConnectedNoteIDs>393</ConnectedNoteIDs>
+    </Note>
+    <Note ID="398" FontSize="12.0" Position="21565.8,9994.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>使用 Valgrind 来检测内存泄漏</String>
+      <ConnectedNoteIDs>393</ConnectedNoteIDs>
+    </Note>
+    <Note ID="399" FontSize="12.0" Position="21495.7,10219.9" Width="70.1">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>析构时机</String>
+      <ConnectedNoteIDs>400-401, 405</ConnectedNoteIDs>
+    </Note>
+    <Note ID="400" FontSize="12.0" Position="21616.0,10185.9" Width="20.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>编译期</String>
+      <ConnectedNoteIDs>399</ConnectedNoteIDs>
+    </Note>
+    <Note ID="401" FontSize="12.0" Position="21616.7,10300.9" Width="90.5">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>发生值的移动</String>
+      <ConnectedNoteIDs>399, 403</ConnectedNoteIDs>
+    </Note>
+    <Note ID="402" FontSize="12.0" Position="21726.0,10261.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>实现Copy的类型没有析构函数</String>
+    </Note>
+    <Note ID="403" FontSize="12.0" Position="21720.5,10338.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>变量遮蔽不会导致生命周期提前结束</String>
+      <ConnectedNoteIDs>401</ConnectedNoteIDs>
+    </Note>
+    <Note ID="404" FontSize="12.0" Position="21390.0,10302.8" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>主动析构</String>
+      <ConnectedNoteIDs>405</ConnectedNoteIDs>
+    </Note>
+    <Note ID="405" FontSize="12.0" Position="21421.7,10152.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>drop-flag</String>
+      <ConnectedNoteIDs>393, 399, 404</ConnectedNoteIDs>
+    </Note>
+    <Note ID="406" FontSize="12.0" Position="20387.9,6460.3" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>枚举体内存对齐</String>
+      <ConnectedNoteIDs>371</ConnectedNoteIDs>
+    </Note>
+    <Note ID="407" FontSize="12.0" Position="19598.3,6749.8" Width="124.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>内存安全与内存泄漏</String>
+      <ConnectedNoteIDs>306, 408-409, 417</ConnectedNoteIDs>
+    </Note>
+    <Note ID="408" FontSize="12.0" Position="19681.2,6604.6" Width="214.6">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>RAII的设计目标：&#13;
+替代GC，全局回收变成局部主动回收</String>
+      <ConnectedNoteIDs>407</ConnectedNoteIDs>
+    </Note>
+    <Note ID="409" FontSize="12.0" Position="19864.8,6868.0" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>内存安全</String>
+      <ConnectedNoteIDs>407, 410, 418, 424</ConnectedNoteIDs>
+    </Note>
+    <Note ID="410" FontSize="12.0" Position="19817.8,7010.0" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>代表性内存问题</String>
+      <ConnectedNoteIDs>409, 412-416</ConnectedNoteIDs>
+    </Note>
+    <Note ID="412" FontSize="12.0" Position="20026.9,6901.5" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>使用未定义内存&#13;
+	初始化之后才能使用</String>
+      <ConnectedNoteIDs>410</ConnectedNoteIDs>
+    </Note>
+    <Note ID="413" FontSize="12.0" Position="20036.4,7017.8" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String> 空指针&#13;
+	使用Option类型代替</String>
+      <ConnectedNoteIDs>410</ConnectedNoteIDs>
+    </Note>
+    <Note ID="414" FontSize="12.0" Position="19995.8,7099.6" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String> 悬垂指针&#13;
+	使用生命周期解决</String>
+      <ConnectedNoteIDs>410</ConnectedNoteIDs>
+    </Note>
+    <Note ID="415" FontSize="12.0" Position="19881.5,7205.2" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String> 缓冲区溢出&#13;
+	编译期就能检查越界问题</String>
+      <ConnectedNoteIDs>410</ConnectedNoteIDs>
+    </Note>
+    <Note ID="416" FontSize="12.0" Position="19637.8,7182.5" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>非法释放未分配的指针或已经释放过的指针&#13;
+	所有权机制严格保证析构函数只调用一次</String>
+      <ConnectedNoteIDs>410</ConnectedNoteIDs>
+    </Note>
+    <Note ID="417" FontSize="12.0" Position="19417.5,6719.4" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>内存泄漏</String>
+      <ConnectedNoteIDs>407, 419-420, 424</ConnectedNoteIDs>
+    </Note>
+    <Note ID="418" FontSize="12.0" Position="20114.4,6838.9" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>含义</String>
+      <ConnectedNoteIDs>409</ConnectedNoteIDs>
+    </Note>
+    <Note ID="419" FontSize="12.0" Position="19262.5,6742.4" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>含义</String>
+      <ConnectedNoteIDs>417</ConnectedNoteIDs>
+    </Note>
+    <Note ID="420" FontSize="12.0" Position="19243.5,6849.4" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>情况</String>
+      <ConnectedNoteIDs>417, 421-423</ConnectedNoteIDs>
+    </Note>
+    <Note ID="421" FontSize="12.0" Position="19026.5,6810.3" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>线程崩溃,析构函数无法调用</String>
+      <ConnectedNoteIDs>420</ConnectedNoteIDs>
+    </Note>
+    <Note ID="422" FontSize="12.0" Position="19016.2,6887.1" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String> 使用引用计数时造成了循环引用</String>
+      <ConnectedNoteIDs>420</ConnectedNoteIDs>
+    </Note>
+    <Note ID="423" FontSize="12.0" Position="19011.2,6979.3" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>调用Rust标准库中的forget函数主动泄漏</String>
+      <ConnectedNoteIDs>420, 426</ConnectedNoteIDs>
+      <PointsToNoteIDs>426</PointsToNoteIDs>
+    </Note>
+    <Note ID="424" FontSize="12.0" Position="19520.6,6981.6" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>对比</String>
+      <ConnectedNoteIDs>409, 417, 425-426</ConnectedNoteIDs>
+      <PointsToNoteIDs>409, 417</PointsToNoteIDs>
+    </Note>
+    <Note ID="425" FontSize="12.0" Position="19386.5,7159.5" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>内存泄漏没那么严重&#13;
+	相比于内存安全问题</String>
+      <ConnectedNoteIDs>424</ConnectedNoteIDs>
+    </Note>
+    <Note ID="426" FontSize="12.0" Position="19238.5,7075.4" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>主动泄漏的场景</String>
+      <ConnectedNoteIDs>423-424</ConnectedNoteIDs>
+    </Note>
+    <Note ID="430" FontSize="12.0" Position="18023.7,9312.2" Width="76.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>引出与概述</String>
+      <ConnectedNoteIDs>282, 431-432</ConnectedNoteIDs>
+    </Note>
+    <Note ID="431" FontSize="12.0" Position="18100.4,9532.9" Width="101.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>复制语义(Copy)</String>
+      <ConnectedNoteIDs>430, 437, 443</ConnectedNoteIDs>
+    </Note>
+    <Note ID="432" FontSize="12.0" Position="18240.1,9532.0" Width="103.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>移动语义(Move)</String>
+      <ConnectedNoteIDs>430, 437</ConnectedNoteIDs>
+    </Note>
+    <Note ID="437" FontSize="12.0" Position="18215.4,9639.9" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>所有权类型理论</String>
+      <ConnectedNoteIDs>431-432, 438-439</ConnectedNoteIDs>
+      <PointsToNoteIDs>431-432</PointsToNoteIDs>
+    </Note>
+    <Note ID="438" FontSize="12.0" Position="18166.4,9694.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>仿射类型</String>
+      <ConnectedNoteIDs>437</ConnectedNoteIDs>
+    </Note>
+    <Note ID="439" FontSize="12.0" Position="18302.4,9703.9" Width="100.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>三种所有者权限</String>
+      <ConnectedNoteIDs>437, 454-456</ConnectedNoteIDs>
+    </Note>
+    <Note ID="440" FontSize="12.0" Position="18431.3,8911.6" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>通用概念</String>
+      <ConnectedNoteIDs>282, 441-442</ConnectedNoteIDs>
+    </Note>
+    <Note ID="441" FontSize="12.0" Position="18389.3,8992.6" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>栈分配</String>
+      <ConnectedNoteIDs>440, 443-444</ConnectedNoteIDs>
+    </Note>
+    <Note ID="442" FontSize="12.0" Position="18660.7,8951.0" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>堆分配</String>
+      <ConnectedNoteIDs>440, 444</ConnectedNoteIDs>
+    </Note>
+    <Note ID="443" FontSize="12.0" Position="18383.0,9107.8" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>值类型&#13;
+	原生类型&#13;
+	结构体&#13;
+	枚举体&#13;
+	存在栈中</String>
+      <ConnectedNoteIDs>431, 441, 446</ConnectedNoteIDs>
+    </Note>
+    <Note ID="444" FontSize="12.0" Position="18616.6,9106.0" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>引用类型&#13;
+	栈存地址&#13;
+	堆存数据&#13;
+	对象就是引用类型</String>
+      <ConnectedNoteIDs>441-442, 450</ConnectedNoteIDs>
+    </Note>
+    <Note ID="446" FontSize="12.0" Position="18475.3,9295.6" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>值语义</String>
+      <ConnectedNoteIDs>443, 447-449</ConnectedNoteIDs>
+    </Note>
+    <Note ID="447" FontSize="12.0" Position="18360.1,9384.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>按位复制以后,与原始对象无关。</String>
+      <ConnectedNoteIDs>446</ConnectedNoteIDs>
+    </Note>
+    <Note ID="448" FontSize="12.0" Position="18580.4,9346.4" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>保证变量独立性</String>
+      <ConnectedNoteIDs>446</ConnectedNoteIDs>
+    </Note>
+    <Note ID="449" FontSize="12.0" Position="18625.1,9238.5" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>POD类型&#13;
+	赋值操作时进行按位复制&#13;
+		其实是实现了Copy trait</String>
+      <ConnectedNoteIDs>446</ConnectedNoteIDs>
+    </Note>
+    <Note ID="450" FontSize="12.0" Position="18921.3,9195.6" Width="144.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>引用语义(也叫指针语义)</String>
+      <ConnectedNoteIDs>444, 451-453</ConnectedNoteIDs>
+    </Note>
+    <Note ID="451" FontSize="12.0" Position="18865.3,9305.6" Width="147.9">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>禁止按位复制&#13;
+	可能导致悬垂指针</String>
+      <ConnectedNoteIDs>450</ConnectedNoteIDs>
+    </Note>
+    <Note ID="452" FontSize="12.0" Position="19041.3,9304.6" Width="125.9">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>可以实现Clone trait&#13;
+	也就是深复制</String>
+      <ConnectedNoteIDs>450</ConnectedNoteIDs>
+    </Note>
+    <Note ID="453" FontSize="12.0" Position="18940.5,9400.3" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Box&lt;T&gt;就不能实现Copy trait，无法按位复制</String>
+      <ConnectedNoteIDs>450</ConnectedNoteIDs>
+    </Note>
+    <Note ID="454" FontSize="12.0" Position="18468.2,9603.3" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>控制资源&#13;
+	(不仅仅是内存)的释放</String>
+      <ConnectedNoteIDs>439</ConnectedNoteIDs>
+    </Note>
+    <Note ID="455" FontSize="12.0" Position="18487.3,9704.2" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String> 出借所有权&#13;
+	包括不可变(共享)的和可变(独占)的</String>
+      <ConnectedNoteIDs>439</ConnectedNoteIDs>
+    </Note>
+    <Note ID="456" FontSize="12.0" Position="18482.0,9822.2" Width="86.1">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String> 转移所有权</String>
+      <ConnectedNoteIDs>439</ConnectedNoteIDs>
+    </Note>
+    <Note ID="457" FontSize="12.0" Position="18628.4,10888.9" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>绑定</String>
+      <ConnectedNoteIDs>282, 466</ConnectedNoteIDs>
+      <PointsToNoteIDs>466</PointsToNoteIDs>
+    </Note>
+    <Note ID="458" FontSize="12.0" Position="18784.3,11415.5" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>作用域</String>
+      <ConnectedNoteIDs>459, 468</ConnectedNoteIDs>
+      <PointsToNoteIDs>459</PointsToNoteIDs>
+    </Note>
+    <Note ID="459" FontSize="12.0" Position="18828.0,11566.4" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>生命周期</String>
+      <ConnectedNoteIDs>458, 461</ConnectedNoteIDs>
+      <PointsToNoteIDs>461</PointsToNoteIDs>
+    </Note>
+    <Note ID="460" FontSize="12.0" Position="18258.8,11724.3" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>借用</String>
+      <ConnectedNoteIDs>471, 481, 484</ConnectedNoteIDs>
+    </Note>
+    <Note ID="461" FontSize="12.0" Position="19014.0,12074.0" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>生命周期参数</String>
+      <ConnectedNoteIDs>459, 498-499</ConnectedNoteIDs>
+    </Note>
+    <Note ID="462" FontSize="12.0" Position="16073.5,12083.8" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>基础知识扩展</String>
+      <ConnectedNoteIDs>282, 463-464</ConnectedNoteIDs>
+    </Note>
+    <Note ID="463" FontSize="12.0" Position="15852.8,13751.0" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>智能指针</String>
+      <ConnectedNoteIDs>462, 502-505</ConnectedNoteIDs>
+    </Note>
+    <Note ID="464" FontSize="12.0" Position="16788.5,11936.7" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>并发安全</String>
+      <ConnectedNoteIDs>462, 506-507</ConnectedNoteIDs>
+    </Note>
+    <Note ID="466" FontSize="12.0" Position="18573.7,11029.0" Width="180.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>变量绑定具有“时空”双重属性。</String>
+      <ConnectedNoteIDs>457, 467-468</ConnectedNoteIDs>
+    </Note>
+    <Note ID="467" FontSize="12.0" Position="18451.2,11194.0" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>空间属性&#13;
+	标识符与内存空间绑定</String>
+      <ConnectedNoteIDs>466, 470</ConnectedNoteIDs>
+      <PointsToNoteIDs>470</PointsToNoteIDs>
+    </Note>
+    <Note ID="468" FontSize="12.0" Position="18731.2,11204.0" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>时间属性</String>
+      <ConnectedNoteIDs>458, 466, 472</ConnectedNoteIDs>
+      <PointsToNoteIDs>458</PointsToNoteIDs>
+    </Note>
+    <Note ID="470" FontSize="12.0" Position="18479.4,11307.8" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>指针</String>
+      <ConnectedNoteIDs>467, 471, 476</ConnectedNoteIDs>
+      <PointsToNoteIDs>471</PointsToNoteIDs>
+    </Note>
+    <Note ID="471" FontSize="12.0" Position="18420.0,11571.2" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>引用</String>
+      <ConnectedNoteIDs>460, 470, 473-474, 476</ConnectedNoteIDs>
+      <PointsToNoteIDs>460</PointsToNoteIDs>
+    </Note>
+    <Note ID="472" FontSize="12.0" Position="18914.2,11129.0" Width="116.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>let声明
+ 花括号
+ match匹配
+ 循环语句
+ if/while let
+ 函数
+ 闭包
+ 与词法作用域有关</String>
+      <ConnectedNoteIDs>468</ConnectedNoteIDs>
+    </Note>
+    <Note ID="473" FontSize="12.0" Position="18514.0,11535.2" Width="97.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>不可变引用：&amp;</String>
+      <ConnectedNoteIDs>471</ConnectedNoteIDs>
+    </Note>
+    <Note ID="474" FontSize="12.0" Position="18478.0,11636.2" Width="105.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>可变引用：&amp;mut</String>
+      <ConnectedNoteIDs>471</ConnectedNoteIDs>
+    </Note>
+    <Note ID="476" FontSize="12.0" Position="18305.4,11340.8" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>二者联系</String>
+      <ConnectedNoteIDs>470-471, 477-479</ConnectedNoteIDs>
+    </Note>
+    <Note ID="477" FontSize="12.0" Position="18016.0,11292.1" Width="124.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>引用是基于指针实现</String>
+      <ConnectedNoteIDs>476</ConnectedNoteIDs>
+    </Note>
+    <Note ID="478" FontSize="12.0" Position="17916.8,11330.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>指针保存指向的内存地址</String>
+      <ConnectedNoteIDs>476</ConnectedNoteIDs>
+    </Note>
+    <Note ID="479" FontSize="12.0" Position="17888.8,11390.0" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>引用在指针的基础上，可以看作是某块内存的别名</String>
+      <ConnectedNoteIDs>476</ConnectedNoteIDs>
+    </Note>
+    <Note ID="481" FontSize="12.0" Position="18138.4,11800.8" Width="80.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>出借方限制</String>
+      <ConnectedNoteIDs>460, 482-483, 485</ConnectedNoteIDs>
+    </Note>
+    <Note ID="482" FontSize="12.0" Position="17934.6,11715.9" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>出借期间，不可再借&#13;
+	不可变借用</String>
+      <ConnectedNoteIDs>481</ConnectedNoteIDs>
+    </Note>
+    <Note ID="483" FontSize="12.0" Position="17858.4,11841.2" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>可变出借，不仅不可再借，所有者也不可访问&#13;
+	可变借用要求更高</String>
+      <ConnectedNoteIDs>481</ConnectedNoteIDs>
+    </Note>
+    <Note ID="484" FontSize="12.0" Position="18312.4,11809.8" Width="71.5">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>归还时刻</String>
+      <ConnectedNoteIDs>460, 485</ConnectedNoteIDs>
+    </Note>
+    <Note ID="485" FontSize="12.0" Position="18245.4,11938.8" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>三条借用规则</String>
+      <ConnectedNoteIDs>481, 484, 486-489, 495</ConnectedNoteIDs>
+      <PointsToNoteIDs>481, 484</PointsToNoteIDs>
+    </Note>
+    <Note ID="486" FontSize="12.0" Position="18237.4,12223.8" Width="88.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>四条借用检查</String>
+      <ConnectedNoteIDs>485, 491-494, 509</ConnectedNoteIDs>
+      <PointsToNoteIDs>509</PointsToNoteIDs>
+    </Note>
+    <Note ID="487" FontSize="12.0" Position="18438.4,11905.8" Width="148.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>出借存活：防止出现悬垂</String>
+      <ConnectedNoteIDs>485</ConnectedNoteIDs>
+    </Note>
+    <Note ID="488" FontSize="12.0" Position="18467.5,11970.5" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>借用无别名( 不可变借用)：共享不可变(共享借用)&#13;
+</String>
+      <ConnectedNoteIDs>485, 490</ConnectedNoteIDs>
+    </Note>
+    <Note ID="489" FontSize="12.0" Position="18446.2,12063.4" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>独占借用&#13;
+	可变不共享&#13;
+	可变借用</String>
+      <ConnectedNoteIDs>485, 490</ConnectedNoteIDs>
+    </Note>
+    <Note ID="490" FontSize="12.0" Position="18812.4,12035.8" Width="112.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>相当于内存读写锁</String>
+      <ConnectedNoteIDs>488-489</ConnectedNoteIDs>
+      <PointsToNoteIDs>488-489</PointsToNoteIDs>
+    </Note>
+    <Note ID="491" FontSize="12.0" Position="18467.4,12136.4" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String> 不可变借用保证了没有任何指针可以修改值的内存,便于将值存储在寄存器中</String>
+      <ConnectedNoteIDs>486</ConnectedNoteIDs>
+    </Note>
+    <Note ID="492" FontSize="12.0" Position="18483.2,12245.9" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String> 可变借用保证了在写的时候没有任何指针可以读取值的内存,避免了脏读</String>
+      <ConnectedNoteIDs>486</ConnectedNoteIDs>
+    </Note>
+    <Note ID="493" FontSize="12.0" Position="18463.5,12361.5" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String> 不可变借用保证了内存不会在读取之后被写入新数据</String>
+      <ConnectedNoteIDs>486</ConnectedNoteIDs>
+    </Note>
+    <Note ID="494" FontSize="12.0" Position="18347.3,12438.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String> 保证了不可变借用和可变借用不相互依赖,从而可以对读写操作进行自由移动和重新排序。</String>
+      <ConnectedNoteIDs>486</ConnectedNoteIDs>
+    </Note>
+    <Note ID="495" FontSize="12.0" Position="18007.4,12191.8" Width="124.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>解引用会获得所有权</String>
+      <ConnectedNoteIDs>485</ConnectedNoteIDs>
+    </Note>
+    <Note ID="496" FontSize="12.0" Position="19364.3,11726.2" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>显式</String>
+      <ConnectedNoteIDs>498, 517-521</ConnectedNoteIDs>
+    </Note>
+    <Note ID="497" FontSize="12.0" Position="19361.4,12336.3" Width="72.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>隐式(省略)</String>
+      <ConnectedNoteIDs>498, 522-523</ConnectedNoteIDs>
+    </Note>
+    <Note ID="498" FontSize="12.0" Position="19156.7,12091.2" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>表现形式</String>
+      <ConnectedNoteIDs>461, 496-497</ConnectedNoteIDs>
+    </Note>
+    <Note ID="499" FontSize="12.0" Position="18957.0,12305.0" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>应用类型</String>
+      <ConnectedNoteIDs>461, 500-501</ConnectedNoteIDs>
+    </Note>
+    <Note ID="500" FontSize="12.0" Position="19137.0,12288.0" Width="56.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>generic</String>
+      <ConnectedNoteIDs>499, 527-528</ConnectedNoteIDs>
+    </Note>
+    <Note ID="501" FontSize="12.0" Position="18956.0,12489.0" Width="37.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>trait</String>
+      <ConnectedNoteIDs>499, 529</ConnectedNoteIDs>
+    </Note>
+    <Note ID="502" FontSize="12.0" Position="15953.0,13585.3" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>解引用</String>
+      <ConnectedNoteIDs>463, 530-531</ConnectedNoteIDs>
+    </Note>
+    <Note ID="503" FontSize="12.0" Position="15459.0,13312.2" Width="84.3">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>共享所有权</String>
+      <ConnectedNoteIDs>463, 538-540</ConnectedNoteIDs>
+    </Note>
+    <Note ID="504" FontSize="12.0" Position="15113.5,14377.0" Width="76.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>内部可变性</String>
+      <ConnectedNoteIDs>463, 546-547, 555</ConnectedNoteIDs>
+    </Note>
+    <Note ID="505" FontSize="12.0" Position="16329.7,14184.2" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>写时复制</String>
+      <ConnectedNoteIDs>463, 559-560</ConnectedNoteIDs>
+    </Note>
+    <Note ID="506" FontSize="12.0" Position="16572.9,12095.8" Width="75.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Send/Sync</String>
+      <ConnectedNoteIDs>464</ConnectedNoteIDs>
+    </Note>
+    <Note ID="507" FontSize="12.0" Position="16983.9,12126.1" Width="112.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>线程安全同步类型</String>
+      <ConnectedNoteIDs>464, 568-571</ConnectedNoteIDs>
+    </Note>
+    <Note ID="508" FontSize="12.0" Position="17925.2,12455.1" Width="167.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>非词法作用域生命周期(NLL)</String>
+      <ConnectedNoteIDs>509-511</ConnectedNoteIDs>
+      <PointsToNoteIDs>511</PointsToNoteIDs>
+    </Note>
+    <Note ID="509" FontSize="12.0" Position="18169.5,12307.2" Width="112.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>借用检查规则缺陷</String>
+      <ConnectedNoteIDs>486, 508</ConnectedNoteIDs>
+      <PointsToNoteIDs>508</PointsToNoteIDs>
+    </Note>
+    <Note ID="510" FontSize="12.0" Position="17808.5,12557.2" Width="122.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>基于MIR的借用检查</String>
+      <ConnectedNoteIDs>508</ConnectedNoteIDs>
+      <PointsToNoteIDs>508</PointsToNoteIDs>
+    </Note>
+    <Note ID="511" FontSize="12.0" Position="18014.5,12559.2" Width="149.7">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>NLL目前可以改善的问题</String>
+      <ConnectedNoteIDs>508</ConnectedNoteIDs>
+      <PointsToNoteIDs>508</PointsToNoteIDs>
+    </Note>
+    <Note ID="516" FontSize="12.0" Position="19708.5,11629.7" Width="108.2">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>限制条件&#13;
+	输入&gt;输出</String>
+      <ConnectedNoteIDs>518</ConnectedNoteIDs>
+    </Note>
+    <Note ID="517" FontSize="12.0" Position="19200.3,11619.4" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>生命周期函数如何显式声明&#13;
+	引用：&amp;i32;&#13;
+	标注+不可变引用：&amp;‘a i32;&#13;
+	标注+可变引用：&amp;‘a mut i32;</String>
+      <ConnectedNoteIDs>496</ConnectedNoteIDs>
+    </Note>
+    <Note ID="518" FontSize="12.0" Position="19481.4,11559.4" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>函数签名中的生命周期参数&#13;
+	限制条件&#13;
+		输入&gt;输出&#13;
+	使用场景&#13;
+		不需要&#13;
+		需要</String>
+      <ConnectedNoteIDs>496, 516</ConnectedNoteIDs>
+    </Note>
+    <Note ID="519" FontSize="12.0" Position="19677.1,11740.2" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>结构体/枚举体定义的生命周期&#13;
+	主要注意包含引用类型成员时</String>
+      <ConnectedNoteIDs>496</ConnectedNoteIDs>
+    </Note>
+    <Note ID="520" FontSize="12.0" Position="19707.5,11942.9" Width="226.5">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>方法定义中的生命周期&#13;
+	为结构体impl方法时就需要添加</String>
+      <ConnectedNoteIDs>496</ConnectedNoteIDs>
+    </Note>
+    <Note ID="521" FontSize="12.0" Position="19540.5,12110.9" Width="296.4">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>静态生命周期参数&#13;
+	字符串字面量是全局静态类型&#13;
+	const和static默认省略&#13;
+		这就是为何不需要专门声明生命周期参数</String>
+      <ConnectedNoteIDs>496</ConnectedNoteIDs>
+    </Note>
+    <Note ID="522" FontSize="12.0" Position="19571.0,12313.3" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>特定场景，自动补齐&#13;
+ 常见模式的生命周期被硬编码到Rust编译器中</String>
+      <ConnectedNoteIDs>497</ConnectedNoteIDs>
+    </Note>
+    <Note ID="523" FontSize="12.0" Position="19522.5,12463.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>省略规则</String>
+      <ConnectedNoteIDs>497, 524-526</ConnectedNoteIDs>
+    </Note>
+    <Note ID="524" FontSize="12.0" Position="19707.4,12428.2" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>每个输入位置上省略的生命周期都将成为一个不同的生命周期参数。</String>
+      <ConnectedNoteIDs>523</ConnectedNoteIDs>
+    </Note>
+    <Note ID="525" FontSize="12.0" Position="19692.9,12510.6" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>如果只有一个输入生命周期的位置(不管是否忽略),则该生命周期都将分配给输出生命周期。</String>
+      <ConnectedNoteIDs>523</ConnectedNoteIDs>
+    </Note>
+    <Note ID="526" FontSize="12.0" Position="19508.2,12626.1" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>如果存在多个输入生命周期的位置,但是其中包含着&amp;self或&amp;mut self,则self的生命周期都将分配给输出生命周期</String>
+      <ConnectedNoteIDs>523</ConnectedNoteIDs>
+    </Note>
+    <Note ID="527" FontSize="12.0" Position="19221.0,12264.2" Width="44.3">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>T: 'a</String>
+      <ConnectedNoteIDs>500</ConnectedNoteIDs>
+    </Note>
+    <Note ID="528" FontSize="12.0" Position="19207.7,12340.4" Width="75.9">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>T: Trait+'a</String>
+      <ConnectedNoteIDs>500</ConnectedNoteIDs>
+    </Note>
+    <Note ID="529" FontSize="12.0" Position="19047.4,12553.0" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>trait对象默认生命周期规则</String>
+      <ConnectedNoteIDs>501</ConnectedNoteIDs>
+    </Note>
+    <Note ID="530" FontSize="12.0" Position="15969.5,13475.4" Width="28.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>*a</String>
+      <ConnectedNoteIDs>502</ConnectedNoteIDs>
+    </Note>
+    <Note ID="531" FontSize="12.0" Position="16073.6,13532.0" Width="143.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>只有Box&lt;T&gt;可以解引用</String>
+      <ConnectedNoteIDs>502, 532-533</ConnectedNoteIDs>
+    </Note>
+    <Note ID="532" FontSize="12.0" Position="16078.5,13385.8" Width="130.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>因为实现了deref方法</String>
+      <ConnectedNoteIDs>531</ConnectedNoteIDs>
+    </Note>
+    <Note ID="533" FontSize="12.0" Position="16268.9,13427.2" Width="167.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Box&lt;T&gt;与其他智能指针相比</String>
+      <ConnectedNoteIDs>531, 534-535</ConnectedNoteIDs>
+    </Note>
+    <Note ID="534" FontSize="12.0" Position="16512.0,13179.0" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>相同之处</String>
+      <ConnectedNoteIDs>533, 536-537</ConnectedNoteIDs>
+    </Note>
+    <Note ID="535" FontSize="12.0" Position="16468.0,13330.0" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>不同之处:
+因为Box&lt;T&gt;与原生类型不同,并不具备类型名称(比如 bool 这种),但它代表所有权唯一的智能指针的特殊性,所以需要使用Lang Item来专门识别,而其他的智能指针则不是这样的。</String>
+      <ConnectedNoteIDs>533</ConnectedNoteIDs>
+    </Note>
+    <Note ID="536" FontSize="12.0" Position="16622.0,13134.0" Width="132.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>box关键字堆内存分配</String>
+      <ConnectedNoteIDs>534</ConnectedNoteIDs>
+    </Note>
+    <Note ID="537" FontSize="12.0" Position="16654.8,13223.5" Width="132.7">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>调用内部堆分配方法exchange_malloc</String>
+      <ConnectedNoteIDs>534</ConnectedNoteIDs>
+    </Note>
+    <Note ID="538" FontSize="12.0" Position="15334.7,13223.6" Width="94.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>GC与引用计数</String>
+      <ConnectedNoteIDs>503</ConnectedNoteIDs>
+    </Note>
+    <Note ID="539" FontSize="12.0" Position="15107.7,13230.6" Width="136.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Rc&lt;T&gt;: 使用clone方法</String>
+      <ConnectedNoteIDs>503, 542-544</ConnectedNoteIDs>
+    </Note>
+    <Note ID="540" FontSize="12.0" Position="15188.7,13418.6" Width="68.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Weak&lt;T&gt;</String>
+      <ConnectedNoteIDs>503, 541, 545</ConnectedNoteIDs>
+    </Note>
+    <Note ID="541" FontSize="12.0" Position="14922.2,13528.6" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>使用Weak&lt;T&gt;解决内存泄漏&#13;
+	对应第四章内存泄漏示例</String>
+      <ConnectedNoteIDs>540</ConnectedNoteIDs>
+    </Note>
+    <Note ID="542" FontSize="12.0" Position="14812.6,13124.4" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Rc&lt;T&gt;用于引用计数，但不同于GC</String>
+      <ConnectedNoteIDs>539</ConnectedNoteIDs>
+    </Note>
+    <Note ID="543" FontSize="12.0" Position="14852.7,13235.6" Width="113.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Rc&lt;T&gt;非线程安全</String>
+      <ConnectedNoteIDs>539</ConnectedNoteIDs>
+    </Note>
+    <Note ID="544" FontSize="12.0" Position="14872.7,13312.3" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>强引用，共享的指针有所有权，可以主动析构</String>
+      <ConnectedNoteIDs>539</ConnectedNoteIDs>
+    </Note>
+    <Note ID="545" FontSize="12.0" Position="14916.3,13390.8" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>弱化版Rc&lt;T&gt;，弱引用，共享的指针没有所有权</String>
+      <ConnectedNoteIDs>540</ConnectedNoteIDs>
+    </Note>
+    <Note ID="546" FontSize="12.0" Position="14575.8,14247.1" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>变与不变的针对性&#13;
+	针对一个变量绑定而言</String>
+      <ConnectedNoteIDs>504</ConnectedNoteIDs>
+    </Note>
+    <Note ID="547" FontSize="12.0" Position="14636.3,14421.1" Width="59.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Cell&lt;T&gt;</String>
+      <ConnectedNoteIDs>504, 548-550, 554</ConnectedNoteIDs>
+    </Note>
+    <Note ID="548" FontSize="12.0" Position="14417.1,14459.1" Width="112.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>内部可变性的意思</String>
+      <ConnectedNoteIDs>547</ConnectedNoteIDs>
+    </Note>
+    <Note ID="549" FontSize="12.0" Position="14507.1,14549.1" Width="101.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>提供set/get方法</String>
+      <ConnectedNoteIDs>547</ConnectedNoteIDs>
+    </Note>
+    <Note ID="550" FontSize="12.0" Position="14629.1,14672.1" Width="112.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>内部可变性的便利</String>
+      <ConnectedNoteIDs>547, 551-553</ConnectedNoteIDs>
+    </Note>
+    <Note ID="551" FontSize="12.0" Position="14430.3,14706.1" Width="81.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>setter/getter</String>
+      <ConnectedNoteIDs>550</ConnectedNoteIDs>
+    </Note>
+    <Note ID="552" FontSize="12.0" Position="14482.0,14846.1" Width="136.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>内部可变，本身不可变</String>
+      <ConnectedNoteIDs>550</ConnectedNoteIDs>
+    </Note>
+    <Note ID="553" FontSize="12.0" Position="14705.3,14842.1" Width="198.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>合法避开借用检查：
+并未违反Rust保证的内存安全原则</String>
+      <ConnectedNoteIDs>550</ConnectedNoteIDs>
+    </Note>
+    <Note ID="554" FontSize="12.0" Position="14782.3,14588.1" Width="107.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Cell&lt;T&gt;使用注意</String>
+      <ConnectedNoteIDs>547</ConnectedNoteIDs>
+    </Note>
+    <Note ID="555" FontSize="12.0" Position="14966.2,14711.4" Width="77.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>RefCell&lt;T&gt;</String>
+      <ConnectedNoteIDs>504, 556-558</ConnectedNoteIDs>
+    </Note>
+    <Note ID="556" FontSize="12.0" Position="15154.2,14653.4" Width="147.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String> 提供borrow/borrow_mut</String>
+      <ConnectedNoteIDs>555</ConnectedNoteIDs>
+    </Note>
+    <Note ID="557" FontSize="12.0" Position="15085.2,14802.4" Width="188.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String> 虽不分配空间，但有运行时开销</String>
+      <ConnectedNoteIDs>555</ConnectedNoteIDs>
+    </Note>
+    <Note ID="558" FontSize="12.0" Position="15068.6,14600.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String> 不需要实现Copy trait，需要移动语义</String>
+      <ConnectedNoteIDs>555</ConnectedNoteIDs>
+    </Note>
+    <Note ID="559" FontSize="12.0" Position="16032.4,14212.8" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>比如Linux中父进程创建子进程时,并不是立刻让子进程复制一份进程空间,而是先让子进程共享父进程的进程空间,只有等到子进程真正需要写入的时候才复制进程空间</String>
+      <ConnectedNoteIDs>505</ConnectedNoteIDs>
+    </Note>
+    <Note ID="560" FontSize="12.0" Position="16349.9,14344.5" Width="62.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Cow&lt;T&gt;</String>
+      <ConnectedNoteIDs>505, 561, 564, 567</ConnectedNoteIDs>
+    </Note>
+    <Note ID="561" FontSize="12.0" Position="16035.4,14393.6" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>组成：
+跟 Option&lt;T&gt;类型有点相似,Option&lt;T&gt;表示的是值的“有”和“无”,而 Cow&lt;T&gt;表示的是所有权的“借用”和“拥有</String>
+      <ConnectedNoteIDs>560, 562-563</ConnectedNoteIDs>
+    </Note>
+    <Note ID="562" FontSize="12.0" Position="15901.4,14411.6" Width="67.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>borrowed</String>
+      <ConnectedNoteIDs>561</ConnectedNoteIDs>
+    </Note>
+    <Note ID="563" FontSize="12.0" Position="15980.4,14492.6" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>owned</String>
+      <ConnectedNoteIDs>561</ConnectedNoteIDs>
+    </Note>
+    <Note ID="564" FontSize="12.0" Position="16350.9,14471.5" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>功能：
+Cow&lt;T&gt;提供的功能是,以不可变的方式访问借用内容,以及在需要可变借用或所有权的时候再克隆一份数据</String>
+      <ConnectedNoteIDs>560, 565-566</ConnectedNoteIDs>
+    </Note>
+    <Note ID="565" FontSize="12.0" Position="16143.9,14577.5" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>实现Deref：
+可以直接调用其包含数据的不可变方法</String>
+      <ConnectedNoteIDs>564</ConnectedNoteIDs>
+    </Note>
+    <Note ID="566" FontSize="12.0" Position="16730.0,14585.5" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>减少复制操作&#13;
+	用于读多写少的场景</String>
+      <ConnectedNoteIDs>564</ConnectedNoteIDs>
+    </Note>
+    <Note ID="567" FontSize="12.0" Position="16594.9,14353.5" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>使用要点</String>
+      <ConnectedNoteIDs>560</ConnectedNoteIDs>
+    </Note>
+    <Note ID="568" FontSize="12.0" Position="17312.6,11995.7" Width="116.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Arc&lt;T&gt;&#13;
+ 线程安全版Rc&lt;T&gt;</String>
+      <ConnectedNoteIDs>507</ConnectedNoteIDs>
+    </Note>
+    <Note ID="569" FontSize="12.0" Position="17344.2,12128.4" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Mutex&lt;T&gt;&#13;
+ 线程锁，同一时间仅允许一个线程进行操作</String>
+      <ConnectedNoteIDs>507</ConnectedNoteIDs>
+    </Note>
+    <Note ID="570" FontSize="12.0" Position="17243.6,12278.7" Width="141.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>RwLock&lt;T&gt;&#13;
+ 线程安全版RefCell&lt;T&gt;</String>
+      <ConnectedNoteIDs>507</ConnectedNoteIDs>
+    </Note>
+    <Note ID="571" FontSize="12.0" Position="17107.7,12412.8" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>Automic系列&#13;
+ AtomicBool&#13;
+ Atomiclsize&#13;
+ AtomicUsize&#13;
+ AutomicPtr&#13;
+  可以模拟其他想要的类型，线程安全版Cell&lt;T&gt;</String>
+      <ConnectedNoteIDs>507</ConnectedNoteIDs>
+    </Note>
+    <Note ID="572" FontSize="12.0" Position="15724.1,356.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>质量管理</String>
+      <ConnectedNoteIDs>32, 144, 573-574</ConnectedNoteIDs>
+    </Note>
+    <Note ID="573" FontSize="12.0" Position="15448.1,196.9" Width="64.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>异常管理</String>
+      <ConnectedNoteIDs>572</ConnectedNoteIDs>
+    </Note>
+    <Note ID="574" FontSize="12.0" Position="15408.1,311.9" Width="40.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+      </Appearance>
+      <String>日志</String>
+      <ConnectedNoteIDs>572</ConnectedNoteIDs>
+    </Note>
+    <Note ID="588" FontSize="82.0" Position="8473.4,2930.3" Width="218.3">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+        <Fill>0.0 0.427 0.933</Fill>
+      </Appearance>
+      <String>语言基础</String>
+      <ConnectedNoteIDs>51, 63, 96, 209, 605</ConnectedNoteIDs>
+    </Note>
+    <Note ID="589" FontSize="82.0" Position="12428.4,2403.3" Width="206.9">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+        <Fill>0.0 0.427 0.933</Fill>
+      </Appearance>
+      <String>类型系统</String>
+      <ConnectedNoteIDs>0, 103, 605</ConnectedNoteIDs>
+    </Note>
+    <Note ID="592" FontSize="82.0" Position="11545.4,8783.1" Width="202.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+        <Fill>0.0 0.427 0.933</Fill>
+      </Appearance>
+      <String>编程范式</String>
+      <ConnectedNoteIDs>606</ConnectedNoteIDs>
+    </Note>
+    <Note ID="593" FontSize="82.0" Position="11550.4,11948.1" Width="204.5">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+        <Fill>0.0 0.427 0.933</Fill>
+      </Appearance>
+      <String>设计模式</String>
+      <ConnectedNoteIDs>606</ConnectedNoteIDs>
+    </Note>
+    <Note ID="594" FontSize="82.0" Position="8180.7,11900.0" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+        <Fill>0.0 0.427 0.933</Fill>
+      </Appearance>
+      <String>模块编程</String>
+      <ConnectedNoteIDs>606</ConnectedNoteIDs>
+    </Note>
+    <Note ID="596" FontSize="82.0" Position="1070.4,9908.5" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+        <Fill>0.0 0.427 0.933</Fill>
+      </Appearance>
+      <String>并发编程</String>
+      <ConnectedNoteIDs>607</ConnectedNoteIDs>
+    </Note>
+    <Note ID="598" FontSize="82.0" Position="1271.0,9207.8" Width="279.8">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+        <Fill>0.0 0.427 0.933</Fill>
+      </Appearance>
+      <String>元编程</String>
+      <ConnectedNoteIDs>607</ConnectedNoteIDs>
+    </Note>
+    <Note ID="601" FontSize="82.0" Position="1553.7,6652.9" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+        <Fill>0.0 0.427 0.933</Fill>
+      </Appearance>
+      <String>跨多语言</String>
+      <ConnectedNoteIDs>608</ConnectedNoteIDs>
+    </Note>
+    <Note ID="603" FontSize="82.0" Position="2530.7,4928.7" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+        <Fill>0.0 0.427 0.933</Fill>
+      </Appearance>
+      <String>网络编程</String>
+      <ConnectedNoteIDs>608</ConnectedNoteIDs>
+    </Note>
+    <Note ID="604" FontSize="82.0" Position="5849.5,6940.9" Width="1014.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>1.0 1.0 1.0</TextColor>
+        <Fill>0.0 0.427 0.933</Fill>
+      </Appearance>
+      <String>编程抽象体系(just like lego)
+Level1: 底层抽象
+抽象0: 虚拟内存管理
+抽象1: 语言语法
+抽象2: 类型系统(数据类型)
+Level2: 设计抽象
+抽象3: 编程范式
+抽象4: 设计模式
+抽象5: 模块编程
+Level3: 任务抽象
+抽象6: 并发
+抽象7: 元编程
+Level4: 协议抽象
+抽象8: 跨语言
+抽象9: 计算机网络</String>
+      <ConnectedNoteIDs>605-608</ConnectedNoteIDs>
+      <PointsToNoteIDs>605-608</PointsToNoteIDs>
+    </Note>
+    <Note ID="605" FontSize="62.0" Position="9061.4,5667.3" Width="747.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+        <Fill>0.329 0.847 0.996</Fill>
+      </Appearance>
+      <String>Level1: 底层抽象
+抽象0: 虚拟内存管理
+抽象1: 语言语法
+抽象2: 类型系统(数据类型)</String>
+      <ConnectedNoteIDs>1, 588-589, 604</ConnectedNoteIDs>
+    </Note>
+    <Note ID="606" FontSize="62.0" Position="9267.2,9663.5" Width="482.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+        <Fill>0.329 0.847 0.996</Fill>
+      </Appearance>
+      <String>Level2: 设计抽象
+抽象3: 编程范式
+抽象4: 设计模式
+抽象5: 模块编程</String>
+      <ConnectedNoteIDs>592-594, 604</ConnectedNoteIDs>
+    </Note>
+    <Note ID="607" FontSize="62.0" Position="2509.8,9730.1" Width="482.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+        <Fill>0.329 0.847 0.996</Fill>
+      </Appearance>
+      <String>Level3: 任务抽象
+抽象6: 并发
+抽象7: 元编程</String>
+      <ConnectedNoteIDs>596, 598, 604</ConnectedNoteIDs>
+    </Note>
+    <Note ID="608" FontSize="62.0" Position="2640.8,5763.8" Width="519.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+        <Fill>0.329 0.847 0.996</Fill>
+      </Appearance>
+      <String>Level4: 协议抽象
+抽象8: 跨语言
+抽象9: 计算机网络
+抽象10: 区块链</String>
+      <ConnectedNoteIDs>601, 603-604</ConnectedNoteIDs>
+    </Note>
+  </Notes>
+  <BackgroundShapes>
+    <Shape ID="209" Position="11385.0,4731.9" Width="881.0" Sticky="yes" Height="538.0">
+      <Appearance>
+        <Border Weight="1"/>
+        <Fill>0.466457665 0.7304779887 0.2757255435</Fill>
+      </Appearance>
+      <ConnectedNoteIDs>588</ConnectedNoteIDs>
+    </Shape>
+    <Shape ID="268" Position="15858.4,1629.7" Width="1530.0" Sticky="yes" Height="816.0">
+      <Appearance>
+        <Border Weight="1"/>
+        <Fill>0.467 0.729 0.278</Fill>
+      </Appearance>
+    </Shape>
+    <Shape ID="348" Position="21883.2,6468.1" Width="373.0" Sticky="yes" Height="333.0">
+      <Appearance>
+        <Border Weight="1"/>
+        <Fill>0.592 0.894 1.0</Fill>
+      </Appearance>
+    </Shape>
+    <Shape ID="428" Position="21583.3,9036.0" Width="564.0" Sticky="yes" Height="431.0">
+      <Appearance>
+        <Border Weight="1"/>
+        <Fill>0.318 0.486 0.176</Fill>
+      </Appearance>
+    </Shape>
+    <Shape ID="427" Position="19000.6,6588.6" Width="1247.0" Sticky="yes" Height="688.0">
+      <Appearance>
+        <Border Weight="1"/>
+        <Fill>0.592 0.894 1.0</Fill>
+      </Appearance>
+    </Shape>
+  </BackgroundShapes>
+  <Labels>
+    <Label IDs="16,190">运行时零抽象(runtime zero cost)</Label>
+    <Label IDs="470,471">二者一体两面</Label>
+    <Label IDs="15,16">抽象区间</Label>
+    <Label IDs="460,471">可以引申为</Label>
+    <Label IDs="459,461">因为存在跨词法作用域借用，主要是跨函数</Label>
+    <Label IDs="508,509">针对缺陷做出改进</Label>
+    <Label IDs="1,282">Rust扩展了内存管理</Label>
+    <Label IDs="195,206">一体两面</Label>
+  </Labels>
+  <AutoFit>0, 15, 17, 28, 32, 34-43, 46-51, 57-60, 63-101, 104-106, 108, 110-138, 141-144, 148-151, 153, 157-158, 162-165, 167-173, 175-183, 185-188, 190-195, 206, 208, 214-218, 222, 228, 233-234, 241, 249-252, 257, 260, 264, 268-269, 271-272, 275-280, 283-306, 308-322, 325-332, 335-356, 358, 363-364, 366, 368-370, 372-375, 377-393, 404-410, 417-420, 424, 427-428, 430-431, 437-442, 446, 450, 457-464, 466, 468, 470-474, 476-477, 485-487, 490, 495-502, 504-510, 519, 523, 530-531, 533-534, 536, 538-540, 543, 547-552, 554-557, 560, 562-563, 567-568, 570, 572-574, 604-608</AutoFit>
+  <NoteStyles>
+    <Style Name="Bubble (Blue)" ID="7E97FB8E-5373-4AEC-97D9-74725CBFCA9B" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+      <BorderThickness>1</BorderThickness>
+      <BorderColor>0.668962 0.810287 0.895092</BorderColor>
+      <FillColor>0.743291 0.900319 0.994547</FillColor>
+    </Style>
+    <Style Name="Bubble (Green)" ID="988A7591-FE41-40AA-96E5-79F19B2C11F9" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+      <BorderThickness>1</BorderThickness>
+      <BorderColor>0.669404 0.885265 0.567007</BorderColor>
+      <FillColor>0.743783 0.983628 0.630008</FillColor>
+    </Style>
+    <Style Name="Bubble (Pink)" ID="CDFFBF43-41C1-4181-8052-0421802D84C3" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+      <BorderThickness>1</BorderThickness>
+      <BorderColor>0.894547 0.707772 0.715904</BorderColor>
+      <FillColor>0.989115 0.814114 0.999483</FillColor>
+    </Style>
+    <Style Name="Bubble (Red)" ID="999657C5-32B0-4AF0-AB97-130172EBA1B6" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+      <BorderThickness>1</BorderThickness>
+      <BorderColor>0.894547 0.707772 0.715904</BorderColor>
+      <FillColor>0.993942 0.786413 0.795449</FillColor>
+    </Style>
+    <Style Name="Bubble (Yellow)" ID="5B05F28E-9205-4E0F-B931-D24B5D68FD2A" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+      <BorderThickness>1</BorderThickness>
+      <BorderColor>0.877748 0.828289 0.562126</BorderColor>
+      <FillColor>0.975275 0.920321 0.624585</FillColor>
+    </Style>
+    <Style Name="Red Text" ID="34E12F4B-9D16-4EB8-8387-DC452FFF331E" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+      <TextColor>0.985954 0.0 0.02694</TextColor>
+    </Style>
+    <Style Name="Title Text" ID="F0946513-17EF-484B-BF3A-BD3FE50D8FED" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+      <FontSize>28.0</FontSize>
+      <IsBold>Yes</IsBold>
+    </Style>
+  </NoteStyles>
+  <UISettings>
+    <BackgroundColor>0.159543 0.22342 0.182892</BackgroundColor>
+    <DefaultFont>Helvetica</DefaultFont>
+    <NoteXPadding>8.0</NoteXPadding>
+  </UISettings>
+  <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"/>
+</ScappleDocument>
