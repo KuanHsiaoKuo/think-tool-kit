@@ -1,0 +1,111 @@
+@startuml
+|Main Thread|
+start
+:执行 main 函数;
+
+|Async Thread|
+fork
+:执行异步函数1;
+fork again
+:执行异步函数2;
+
+|Executor Thread|
+:将挂起点打包成 Generator 并存储在 Future 对象中;
+fork
+:轮询 Future 1，处理中断点的返回值;
+fork again
+:轮询 Future 2，处理中断点的返回值;
+end fork
+
+|Async Thread|
+:程序执行到等待语句，挂起并将控制权交给 Io 线程;
+
+|Io Thread|
+:将计算结果返回给 Executor 线程（Future 2 计算完成）;
+fork
+:继续执行 Future 1 的计算;
+fork again
+:继续执行 Future 2 的计算;
+end fork
+:下一轮切换到 Executor 线程;
+
+|Executor Thread|
+:轮询 Future，检查状态是否已转变;
+fork
+:轮询 Future 1，处理中断点的返回值;
+fork again
+:轮询 Future 2，处理中断点的返回值;
+end fork
+
+|Async Thread|
+:异步函数1完成计算并返回结果;
+:异步函数2完成计算并返回结果;
+
+|Executor Thread|
+:处理异步函数1的返回结果;
+fork
+:处理其他 Future 的计算结果;
+fork again
+:处理其他 Future 的计算结果;
+end fork
+
+|Main Thread|
+:程序结束;
+
+stop
+|Main Thread|
+start
+:执行 main 函数;
+
+|Async Thread|
+fork
+:执行异步函数1;
+fork again
+:执行异步函数2;
+
+|Reactor Thread|
+:注册异步事件1，将回调函数1加入异步队列;
+:注册异步事件2，将回调函数2加入异步队列;
+:开始事件循环;
+
+|Async Thread|
+:将控制权交给 Io 线程;
+
+|Io Thread|
+:事件1发生，将回调函数1放入事件循环队列;
+:事件2发生，将回调函数2放入事件循环队列;
+:调用下一个回调函数;
+
+|Reactor Thread|
+:执行回调函数1;
+fork
+:轮询 Future的状态;
+fork again
+:将结果返回给回调函数1并执行之后的操作;
+end fork
+
+|Async Thread|
+:异步函数1完成计算并返回结果;
+:异步函数2完成计算并返回结果;
+
+|Reactor Thread|
+:执行回调函数2;
+fork
+:轮询 Future的状态;
+fork again
+:将结果返回给回调函数2并执行之后的操作;
+end fork
+
+|Reactor Thread|
+:处理异步函数1的返回结果;
+fork
+:处理其他 Future 的计算结果;
+fork again
+:处理其他 Future 的计算结果;
+end fork
+
+|Main Thread|
+:程序结束;
+
+stop
+@enduml
