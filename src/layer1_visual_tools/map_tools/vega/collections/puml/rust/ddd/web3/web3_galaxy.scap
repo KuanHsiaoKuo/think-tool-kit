@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScappleDocument Version="1.2" ID="A4CBE163-3AD3-4768-90E8-2BC4D3BDB18B">
+  <Notes>
+    <Note ID="0" FontSize="92.0" Position="1068.0,529.0" Width="255.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Web3</String>
+    </Note>
+    <Note ID="1" FontSize="4.0" Position="20.0,288.1" Width="268.9">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>Solana: in Rust
+Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces.</String>
+      <ConnectedNoteIDs>90-92</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://github.com/solana-labs/solana">0,6</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="2" FontSize="4.0" Position="573.0,444.0" Width="34.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Substrate</String>
+      <Formatting>
+        <FormatRange Link="https://substrate.io/">0,9</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="3" FontSize="4.0" Position="520.0,620.0" Width="70.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>ZKP:  zero-knowledge proof/protocol</String>
+      <Formatting>
+        <FormatRange Link="https://zh.wikipedia.org/zh-hans/%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E">6,29</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="4" FontSize="4.0" Position="322.0,531.0" Width="66.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>DeFi:
+Decentralized finance(DeFi)</String>
+      <Formatting>
+        <FormatRange Link="https://ethereum.org/en/defi/#main-content">0,4</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="5" FontSize="4.0" Position="179.0,751.0" Width="89.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>DAOs:
+Decentralized autonomous organizations</String>
+      <Formatting>
+        <FormatRange Link="https://ethereum.org/en/dao/">0,4</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="6" FontSize="4.0" Position="553.0,832.0" Width="29.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Solidity</String>
+    </Note>
+    <Note ID="7" FontSize="4.0" Position="713.0,829.0" Width="25.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Vper</String>
+    </Note>
+    <Note ID="8" FontSize="4.0" Position="1014.0,820.0" Width="35.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>metamask</String>
+    </Note>
+    <Note ID="9" FontSize="4.0" Position="994.0,945.0" Width="41.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>walletconnect</String>
+    </Note>
+    <Note ID="10" FontSize="4.0" Position="1228.0,900.0" Width="25.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>EVM</String>
+    </Note>
+    <Note ID="11" FontSize="4.0" Position="733.0,950.0" Width="24.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>NFT</String>
+    </Note>
+    <Note ID="12" FontSize="4.0" Position="941.0,202.0" Width="34.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Ethereum</String>
+    </Note>
+    <Note ID="13" FontSize="4.0" Position="941.0,221.0" Width="25.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>EOS</String>
+    </Note>
+    <Note ID="14" FontSize="4.0" Position="941.0,240.0" Width="29.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Bitcoin</String>
+    </Note>
+    <Note ID="15" FontSize="4.0" Position="941.0,259.0" Width="32.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Polkadot</String>
+    </Note>
+    <Note ID="16" FontSize="4.0" Position="941.0,278.0" Width="31.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Cosmos</String>
+    </Note>
+    <Note ID="17" FontSize="4.0" Position="941.0,297.0" Width="66.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>Inter-Blockchain Technology</String>
+      <ConnectedNoteIDs>19</ConnectedNoteIDs>
+    </Note>
+    <Note ID="18" FontSize="4.0" Position="564.0,500.0" Width="32.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Cumulus</String>
+    </Note>
+    <Note ID="19" FontSize="4.0" Position="1221.3,320.1" Width="28.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>XCMP</String>
+      <ConnectedNoteIDs>17</ConnectedNoteIDs>
+    </Note>
+    <Note ID="20" FontSize="4.0" Position="738.0,463.0" Width="27.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Parity</String>
+    </Note>
+    <Note ID="21" FontSize="4.0" Position="953.0,423.0" Width="34.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>parachain</String>
+    </Note>
+    <Note ID="22" FontSize="4.0" Position="1116.0,458.0" Width="38.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Relay Chain</String>
+    </Note>
+    <Note ID="23" FontSize="4.0" Position="4092.3,1086.7" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>PoS: Proof-of-Stake</String>
+      <ConnectedNoteIDs>40</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://zh.m.wikipedia.org/zh-hans/%E6%8C%81%E6%9C%89%E9%87%8F%E8%AD%89%E6%98%8E">0,3</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="24" FontSize="4.0" Position="1500.0,563.0" Width="23.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Eos</String>
+    </Note>
+    <Note ID="25" FontSize="4.0" Position="1500.0,582.0" Width="31.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Cosmos</String>
+    </Note>
+    <Note ID="26" FontSize="4.0" Position="1500.0,601.0" Width="32.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>DFINITY</String>
+    </Note>
+    <Note ID="27" FontSize="4.0" Position="1342.0,715.0" Width="30.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>zkrollup</String>
+    </Note>
+    <Note ID="28" FontSize="4.0" Position="1342.0,734.0" Width="28.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Eth2.0</String>
+    </Note>
+    <Note ID="29" FontSize="4.0" Position="1342.0,753.0" Width="50.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Privacy Computing</String>
+    </Note>
+    <Note ID="30" FontSize="4.0" Position="614.6,97.7" Width="42.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>WebAssembly</String>
+    </Note>
+    <Note ID="31" FontSize="4.0" Position="2038.1,2786.2" Width="29.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Nervos</String>
+      <ConnectedNoteIDs>32-33</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://www.nervos.org/">0,6</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="32" FontSize="4.0" Position="2176.1,2741.2" Width="25.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>CKB</String>
+      <ConnectedNoteIDs>31, 88</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://github.com/nervosnetwork/ckb">0,3</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="33" FontSize="4.0" Position="2245.1,2848.2" Width="551.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>
+The Nervos Network is a layered blockchain network for tomorrow’s crypto economy. CKB is the layer 1 of Nervos Network, a public permissionless blockchain. CKB uses Proof of Work and improved Nakamoto consensus to achieve maximized performance on average hardware and internet condition, without sacrificing decentralization and security which are the core value of blockchain. CKB supports scripting in any programming language with its own CKB-VM, a virtual machine fully compatible with RISC-V ISA. CKB is a General Verification Network, its programming model focuses on state verification, leaves state generation to layer 2 applications/protocols.
+
+The Nervos CKB mainnet launched in 2019. It’s processing thousands of transactions and keeping assets worth hundreds of millions secure every day. We are working hard to make it better, focusing mainly on two directions.
+1. The first is to optimize the Rust implementation, make it more secure, running more faster and more friendly to use. 
+2. The second is to evolve the protocol to extend the system capabilities. 
+
+If you love solving challenging problems, system programming, Rust, enjoy learning, want to make the world better with your talents, and believe in blockchain, please join us to invent the new internet of trust and value.
+</String>
+      <ConnectedNoteIDs>31</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://github.com/nervosnetwork/ckb">83,3</FormatRange>
+        <FormatRange Link="https://en.wikipedia.org/wiki/Proof-of-work_system">166,13</FormatRange>
+        <FormatRange Link="https://medium.com/nervosnetwork/breaking-the-throughput-limit-of-nakamoto-consensus-ccdf65fe0832">202,9</FormatRange>
+        <FormatRange Link="https://github.com/nervosnetwork/ckb-vm/">443,6</FormatRange>
+        <FormatRange Link="https://medium.com/nervosnetwork/https-medium-com-nervosnetwork-cell-model-7323fca57571">512,28</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="34" FontSize="4.0" Position="990.4,1264.4" Width="29.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Layer2</String>
+      <ConnectedNoteIDs>89</ConnectedNoteIDs>
+    </Note>
+    <Note ID="36" FontSize="4.0" Position="4271.1,1267.1" Width="75.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>DPoS: Delegated-Proof-of-Stake</String>
+      <ConnectedNoteIDs>40, 94</ConnectedNoteIDs>
+    </Note>
+    <Note ID="37" FontSize="4.0" Position="4303.4,1333.4" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>PBFT: 实用拜占庭容错算法
+ Practical Byzantine Fault Tolerance and Proactive (积极主动) Recovery</String>
+      <ConnectedNoteIDs>40</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://zh.m.wikipedia.org/wiki/%E6%8B%9C%E5%8D%A0%E5%BA%AD%E5%B0%86%E5%86%9B%E9%97%AE%E9%A2%98">0,4</FormatRange>
+        <FormatRange Link="https://archive.org/details/sim_acm-transactions-on-computer-systems_2002-11_20_4/page/398">17,51</FormatRange>
+        <FormatRange Link="https://archive.org/details/sim_acm-transactions-on-computer-systems_2002-11_20_4/page/398">68,4</FormatRange>
+        <FormatRange Link="https://archive.org/details/sim_acm-transactions-on-computer-systems_2002-11_20_4/page/398">72,10</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="38" FontSize="4.0" Position="4292.6,1465.7" Width="28.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Paxos</String>
+      <ConnectedNoteIDs>40</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://zh.m.wikipedia.org/zh-hans/Paxos%E7%AE%97%E6%B3%95">0,5</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="39" FontSize="4.0" Position="4080.8,1564.9" Width="427.9">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>Raft:
+Raft 是一种用于替代Paxos的共识算法。相比于Paxos， Raft 的目标是提供更清晰的逻辑分工使得算法本身能被更好地理解，同时它安全性更高，并能提供一些额外的特性。[1][2]:1 Raft 能为在计算机集群之间部署有限状态机提供一种通用方法，并确保集群内的任意节点在某种状态转换上保持一致。 Raft 算法的开源实现众多，在Go、C++、Java以及 Scala中都有完整的代码实现。Raft这一名字来源于"Reliable, Replicated (复制) , Redundant (冗余) , And Fault-Tolerant"（“可靠、可复制、可冗余、可容错”）的首字母缩写</String>
+      <ConnectedNoteIDs>40</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://zh.m.wikipedia.org/zh-hans/Raft">0,4</FormatRange>
+        <FormatRange Bold="Yes">6,5</FormatRange>
+        <FormatRange Link="https://zh.m.wikipedia.org/wiki/Paxos">18,5</FormatRange>
+        <FormatRange Link="https://zh.m.wikipedia.org/wiki/%E5%85%B1%E8%AD%98%E6%A9%9F%E5%88%B6">24,2</FormatRange>
+        <FormatRange Link="https://zh.m.wikipedia.org/wiki/Paxos">32,5</FormatRange>
+        <FormatRange Link="https://zh.m.wikipedia.org/zh-hans/Raft#cite_note-raft-1">93,3</FormatRange>
+        <FormatRange Link="https://zh.m.wikipedia.org/zh-hans/Raft#cite_note-raft-paper-2">96,3</FormatRange>
+        <FormatRange Link="https://zh.m.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%9B%86%E7%BE%A4">110,5</FormatRange>
+        <FormatRange Link="https://zh.m.wikipedia.org/wiki/%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA">119,5</FormatRange>
+        <FormatRange Link="https://zh.m.wikipedia.org/wiki/Go">174,2</FormatRange>
+        <FormatRange Link="https://zh.m.wikipedia.org/wiki/C%2B%2B">177,3</FormatRange>
+        <FormatRange Link="https://zh.m.wikipedia.org/wiki/Java">181,4</FormatRange>
+        <FormatRange Link="https://zh.m.wikipedia.org/wiki/Scala">188,5</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="40" FontSize="4.0" Position="3889.9,1236.5" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>consensus:
+常见于区块链领域，即达成共识的机制。在分布式系统中，依据系统对故障组件的容错能力分为崩溃容错协议(crash fault tolerant,CFT)和拜占庭容错协议（Byzantine fault tolerant,BFT)</String>
+      <ConnectedNoteIDs>23, 36-39, 93, 96</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://zh.m.wikipedia.org/zh-hans/%E5%85%B1%E8%AD%98%E6%A9%9F%E5%88%B6">0,9</FormatRange>
+        <FormatRange Link="https://zh.m.wikipedia.org/wiki/%E5%8C%BA%E5%9D%97%E9%93%BE">14,3</FormatRange>
+        <FormatRange Link="https://zh.m.wikipedia.org/wiki/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F">30,5</FormatRange>
+        <FormatRange Link="https://zh.m.wikipedia.org/w/index.php?title=%E5%B4%A9%E6%BA%83%E5%AE%B9%E9%94%99%E5%8D%8F%E8%AE%AE&amp;action=edit&amp;redlink=1">53,6</FormatRange>
+        <FormatRange Link="https://zh.m.wikipedia.org/w/index.php?title=%E6%8B%9C%E5%8D%A0%E5%BA%AD%E5%AE%B9%E9%94%99%E5%8D%8F%E8%AE%AE&amp;action=edit&amp;redlink=1">86,7</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="41" FontSize="4.0" Position="581.0,389.0" Width="28.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Truffle</String>
+    </Note>
+    <Note ID="42" FontSize="4.0" Position="444.0,402.0" Width="39.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Opensepplin</String>
+    </Note>
+    <Note ID="43" FontSize="4.0" Position="833.0,735.0" Width="36.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Tendermint</String>
+    </Note>
+    <Note ID="44" FontSize="4.0" Position="1383.0,863.0" Width="33.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Sharding</String>
+    </Note>
+    <Note ID="45" FontSize="4.0" Position="1698.0,91.0" Width="71.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>AQB: adaptive quorum biasing</String>
+    </Note>
+    <Note ID="47" FontSize="4.0" Position="1698.0,110.0" Width="38.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>aggregation</String>
+    </Note>
+    <Note ID="48" FontSize="4.0" Position="1698.0,129.0" Width="44.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>approval voting</String>
+    </Note>
+    <Note ID="49" FontSize="4.0" Position="1698.0,148.0" Width="54.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Aura: authority round</String>
+    </Note>
+    <Note ID="50" FontSize="4.0" Position="1698.0,167.0" Width="200.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>BABE: blind assignment of blockchain extension</String>
+    </Note>
+    <Note ID="53" FontSize="4.0" Position="1698.0,186.0" Width="59.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>cryptographic primitives</String>
+    </Note>
+    <Note ID="54" FontSize="4.0" Position="1698.0,205.0" Width="29.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>council</String>
+    </Note>
+    <Note ID="55" FontSize="4.0" Position="1698.0,224.0" Width="27.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>digest</String>
+    </Note>
+    <Note ID="56" FontSize="4.0" Position="1698.0,243.0" Width="39.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>equivocating</String>
+    </Note>
+    <Note ID="57" FontSize="4.0" Position="1698.0,262.0" Width="29.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>ethash</String>
+    </Note>
+    <Note ID="58" FontSize="4.0" Position="1698.0,281.0" Width="31.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>extrinsic</String>
+    </Note>
+    <Note ID="59" FontSize="4.0" Position="1698.0,300.0" Width="48.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>existential deposit</String>
+    </Note>
+    <Note ID="60" FontSize="4.0" Position="1698.0,319.0" Width="29.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>fanality</String>
+    </Note>
+    <Note ID="61" FontSize="4.0" Position="1698.0,338.0" Width="34.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>flaming fir</String>
+    </Note>
+    <Note ID="62" FontSize="4.0" Position="1698.0,357.0" Width="32.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>full client</String>
+    </Note>
+    <Note ID="63" FontSize="4.0" Position="1698.0,376.0" Width="54.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>genesis configuration</String>
+    </Note>
+    <Note ID="64" FontSize="4.0" Position="1698.0,395.0" Width="48.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>hybrid consensus</String>
+    </Note>
+    <Note ID="65" FontSize="4.0" Position="1698.0,414.0" Width="31.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Kusama</String>
+    </Note>
+    <Note ID="66" FontSize="4.0" Position="1698.0,433.0" Width="27.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>libp2p</String>
+    </Note>
+    <Note ID="67" FontSize="4.0" Position="1698.0,452.0" Width="34.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>light client</String>
+    </Note>
+    <Note ID="68" FontSize="4.0" Position="1698.0,471.0" Width="32.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>full client</String>
+    </Note>
+    <Note ID="69" FontSize="4.0" Position="1698.0,490.0" Width="61.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>NPoS:
+nominated proof-of-stake</String>
+    </Note>
+    <Note ID="70" FontSize="4.0" Position="1698.0,514.0" Width="26.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>pallet</String>
+    </Note>
+    <Note ID="71" FontSize="4.0" Position="1698.0,533.0" Width="47.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Polkadot network</String>
+    </Note>
+    <Note ID="72" FontSize="4.0" Position="1698.0,552.0" Width="43.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>proof-of-finality</String>
+    </Note>
+    <Note ID="73" FontSize="4.0" Position="1698.0,571.0" Width="43.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>proof-of-finality</String>
+    </Note>
+    <Note ID="74" FontSize="4.0" Position="1698.0,590.0" Width="39.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>proof-ofwork</String>
+    </Note>
+    <Note ID="75" FontSize="4.0" Position="1698.0,609.0" Width="36.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>relay chain</String>
+    </Note>
+    <Note ID="76" FontSize="4.0" Position="1698.0,628.0" Width="41.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>rhododendron</String>
+    </Note>
+    <Note ID="77" FontSize="4.0" Position="1698.0,647.0" Width="29.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>rococo</String>
+    </Note>
+    <Note ID="78" FontSize="4.0" Position="1698.0,666.0" Width="23.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>slot</String>
+    </Note>
+    <Note ID="79" FontSize="4.0" Position="1698.0,685.0" Width="55.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>stake-weighted voting</String>
+    </Note>
+    <Note ID="80" FontSize="4.0" Position="1698.0,704.0" Width="25.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>state</String>
+    </Note>
+    <Note ID="81" FontSize="4.0" Position="1698.0,723.0" Width="69.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>STF: state transistion function</String>
+    </Note>
+    <Note ID="82" FontSize="4.0" Position="1698.0,742.0" Width="39.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>storage item</String>
+    </Note>
+    <Note ID="83" FontSize="4.0" Position="1698.0,761.0" Width="60.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>trie(Patricia Merkle Tree)</String>
+    </Note>
+    <Note ID="84" FontSize="4.0" Position="1698.0,780.0" Width="32.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>validator</String>
+    </Note>
+    <Note ID="85" FontSize="4.0" Position="1698.0,799.0" Width="34.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Westened</String>
+    </Note>
+    <Note ID="87" FontSize="4.0" Position="996.4,1040.0" Width="29.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Layer1</String>
+      <ConnectedNoteIDs>89</ConnectedNoteIDs>
+    </Note>
+    <Note ID="88" FontSize="4.0" Position="2330.8,2597.3" Width="282.6">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>CKV-VM:
+CKB VM is a pure software implementation of the RISC-V instruction set used as scripting VM in CKB. Right now it implements full IMC instructions for both 32-bit and 64-bit register size support. In the future we might also implement V extensions to enable better crypto implementations.</String>
+      <ConnectedNoteIDs>32</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://github.com/nervosnetwork/ckb-vm/">0,6</FormatRange>
+        <FormatRange Link="https://riscv.org/">56,6</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="89" FontSize="4.0" Position="1169.0,1155.0" Width="381.3">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>difference: Layer-1 is the term that’s used to describe the underlying main blockchain architecture. 
+Layer-2, on the other hand, is an overlaying network that lies on top of the underlying blockchain.
+
+Consider Bitcoin and Lightning Network: Bitcoin is the layer-1 network, while the lightning network is layer-2. </String>
+      <ConnectedNoteIDs>34, 87</ConnectedNoteIDs>
+      <PointsToNoteIDs>34, 87</PointsToNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://medium.com/the-capital/layer-1-vs-layer-2-what-you-need-to-know-about-different-blockchain-layer-solutions-69f91904ce40">0,10</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="90" FontSize="4.0" Position="404.0,243.0" Width="110.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>solana-labs/solana-program-library: in Rust
+A collection of Solana-maintained on-chain programs</String>
+      <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://github.com/solana-labs/solana-program-library">0,34</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="91" FontSize="4.0" Position="437.7,328.8" Width="83.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+        <TextColor>0.0 0.0 0.0</TextColor>
+      </Appearance>
+      <String>solana-labs/dapp-scaffold: 
+Scaffolding for a dapp built on Solana</String>
+      <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://github.com/solana-labs/dapp-scaffold">0,25</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="92" FontSize="4.0" Position="81.5,486.3" Width="43.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>solana website</String>
+      <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://solana.com/">0,14</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="93" FontSize="4.0" Position="4180.2,1132.0" Width="52.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>PoW: Proof-of-Work</String>
+      <ConnectedNoteIDs>40</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://zh.m.wikipedia.org/zh-hans/%E5%B7%A5%E4%BD%9C%E9%87%8F%E8%AD%89%E6%98%8E">0,3</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="94" FontSize="4.0" Position="4506.4,1330.4" Width="30.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>EOS.IO</String>
+      <ConnectedNoteIDs>36, 95</ConnectedNoteIDs>
+      <PointsToNoteIDs>95</PointsToNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://zh.m.wikipedia.org/zh-hans/EOS.IO">0,6</FormatRange>
+      </Formatting>
+    </Note>
+    <Note ID="95" FontSize="4.0" Position="4773.5,1445.0" Width="25.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>EOS</String>
+      <ConnectedNoteIDs>94</ConnectedNoteIDs>
+    </Note>
+    <Note ID="96" FontSize="4.0" Position="4268.4,1203.4" Width="61.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>PoSpace: Proof-of-space</String>
+      <ConnectedNoteIDs>40, 97</ConnectedNoteIDs>
+    </Note>
+    <Note ID="97" FontSize="4.0" Position="4529.4,1212.4" Width="30.0">
+      <Appearance>
+        <Alignment>Left</Alignment>
+      </Appearance>
+      <String>Filecoin</String>
+      <ConnectedNoteIDs>96</ConnectedNoteIDs>
+      <Formatting>
+        <FormatRange Link="https://zh.m.wikipedia.org/zh-hans/%E6%96%87%E4%BB%B6%E5%B8%81">0,8</FormatRange>
+      </Formatting>
+    </Note>
+  </Notes>
+  <BackgroundShapes/>
+  <Stacks>
+    <Stack>12-17</Stack>
+    <Stack>24-26</Stack>
+    <Stack>27-29</Stack>
+    <Stack>45, 47-50, 53-85</Stack>
+  </Stacks>
+  <Labels>
+    <Label IDs="94,95">发行的加密货币</Label>
+  </Labels>
+  <AutoFit>0, 2-32, 34, 36, 38, 41-45, 47-49, 53-85, 87, 90-97</AutoFit>
+  <NoteStyles>
+    <Style Name="Bubble (Blue)" ID="F9DA541D-A8D7-4834-9EFD-1288955DC550" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+      <BorderThickness>1</BorderThickness>
+      <BorderColor>0.668962 0.810287 0.895092</BorderColor>
+      <FillColor>0.743291 0.900319 0.994547</FillColor>
+    </Style>
+    <Style Name="Bubble (Green)" ID="430FD889-9BAA-4C3C-978D-46784B1813B1" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+      <BorderThickness>1</BorderThickness>
+      <BorderColor>0.669404 0.885265 0.567007</BorderColor>
+      <FillColor>0.743783 0.983628 0.630008</FillColor>
+    </Style>
+    <Style Name="Bubble (Pink)" ID="6518F6A7-A866-4562-B27D-01B2796E3510" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+      <BorderThickness>1</BorderThickness>
+      <BorderColor>0.894547 0.707772 0.715904</BorderColor>
+      <FillColor>0.989115 0.814114 0.999483</FillColor>
+    </Style>
+    <Style Name="Bubble (Red)" ID="A6E46B3D-6EC3-4267-BDA7-554B7F7EFC68" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+      <BorderThickness>1</BorderThickness>
+      <BorderColor>0.894547 0.707772 0.715904</BorderColor>
+      <FillColor>0.993942 0.786413 0.795449</FillColor>
+    </Style>
+    <Style Name="Bubble (Yellow)" ID="DCE55BB7-97BA-4408-845E-6A15C1035941" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+      <BorderThickness>1</BorderThickness>
+      <BorderColor>0.877748 0.828289 0.562126</BorderColor>
+      <FillColor>0.975275 0.920321 0.624585</FillColor>
+    </Style>
+    <Style Name="Red Text" ID="6096A5E0-A8E6-423A-AE5E-FCDF4C47F187" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+      <TextColor>0.985954 0.0 0.02694</TextColor>
+    </Style>
+    <Style Name="Title Text" ID="7183EA9B-CA53-43A8-AF2B-DBBA1CF00010" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+      <FontSize>28.0</FontSize>
+      <IsBold>Yes</IsBold>
+    </Style>
+  </NoteStyles>
+  <UISettings>
+    <BackgroundColor>0.999763 0.988395 0.949915</BackgroundColor>
+    <DefaultFont>Helvetica</DefaultFont>
+    <NoteXPadding>8.0</NoteXPadding>
+  </UISettings>
+  <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"/>
+</ScappleDocument>
