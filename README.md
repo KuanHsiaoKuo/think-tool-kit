@@ -30,3 +30,8 @@
 npm install -g http-server
 http-server -c-1
 ```
+
+## mdbook的定位是从src目录下开始的
+
+1. 相对路径：需要向上一直走到src目录，然后再一步步定位到文件
+2. 绝对路径：直接从src目录开始定位
