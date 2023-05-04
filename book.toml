@@ -54,3 +54,6 @@ title = "待完善: "
 [preprocessor.admonish]
 command = "mdbook-admonish"
 assets_version = "2.0.0" # do not edit: managed by `mdbook-admonish install`
+
+# Enables the `markdown table`
+[preprocessor.extended-markdown-table]
