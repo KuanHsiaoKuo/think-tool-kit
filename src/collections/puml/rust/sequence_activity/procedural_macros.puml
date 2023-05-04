@@ -1,0 +1,85 @@
+@startuml
+|解析代码|
+start
+if (遇到属性宏) then (yes)
+  :执行属性宏;
+  |准备解析宏参数|
+  split
+  :获取宏参数;
+  :解析宏参数;
+  split again
+  if (属性是单个值) then (yes)
+    :获取属性值;
+    :修改属性;
+  else (属性是多个值)
+    :获取属性值列表;
+    :修改属性;
+  endif
+  |返回属性|
+  split again
+  :返回属性;
+  endsplit
+else (未遇到属性宏)
+  :继续解析代码;
+endif
+|解析代码|
+end
+
+start
+if (遇到类型宏) then (yes)
+  :执行类型宏;
+  |准备解析宏参数|
+  split
+  :获取宏参数;
+  :解析宏参数;
+  split again
+  if (参数是单个类型) then (yes)
+    :获取类型参数;
+    :生成新类型;
+    :修改类型;
+  else (参数是多个类型)
+    :获取类型参数列表;
+    :生成新类型;
+    :修改类型;
+  endif
+  |返回类型|
+  split again
+  :返回类型;
+  endsplit
+else (未遇到类型宏)
+  :继续解析代码;
+  |解析代码|
+endif
+|解析代码|
+end
+
+|解析代码|
+start
+if (遇到函数宏) then (yes)
+  :执行函数宏;
+  |准备解析宏参数|
+  split
+  :获取宏参数;
+  :解析宏参数;
+  split again
+  :执行预处理逻辑;
+  :获取函数体;
+  :解析函数体;
+  split again
+  if (需要额外处理) then (yes)
+    :执行额外处理;
+    :生成新代码;
+  else (无需额外处理)
+    :生成新代码;
+  endif
+  |返回代码|
+  split again
+  :返回代码;
+  endsplit
+else (未遇到函数宏)
+  :继续解析代码;
+  |解析代码|
+endif
+|解析代码|
+end
+@enduml

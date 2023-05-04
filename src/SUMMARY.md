@@ -16,6 +16,7 @@
             - [rust错误处理](collections/pages/rust/topics/rust-error-handling.html)
         - [rust核心流程图](collections/sequence_activity/rust_sequence_activity.md)
             - [异步核心](collections/sequence_activity/async_cores.md)
+            - [编译过程与宏展开](collections/sequence_activity/rust_compile_sequence_macros.md)
         - [领域驱动](collections/pages/rust/ddd/ddd.md)
             - [量化交易](collections/pages/rust/ddd/rust-quantitative-trading.html)
             - [web3](collections/pages/rust/ddd/web3/web3.md)
