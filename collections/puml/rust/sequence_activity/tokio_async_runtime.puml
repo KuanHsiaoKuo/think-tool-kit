@@ -1,0 +1,61 @@
+@startuml
+
+|Main Thread|
+
+start
+:创建 Runtime 对象;
+
+fork
+|Runtime Thread|
+:创建线程池;
+:等待待执行任务队列中的任务;
+fork again
+|IO Thread|
+:等待文件IO事件;
+fork again
+|Async Thread|
+:等待运行时发送的异步事件;
+end fork
+
+|Main Thread|
+:获取 handle;
+
+fork
+|IO Thread|
+:执行 IO 事件处理器;
+end fork
+
+|Main Thread|
+:向待执行队列中提交任务;
+fork
+|Runtime Thread|
+:将任务加入待执行队列;
+end fork
+
+|Main Thread|
+:执行异步操作并处理任务结果;
+
+|Runtime Thread|
+:从待执行队列中取出任务;
+fork
+|Async Thread|
+:执行异步事件;
+end fork
+
+|Runtime Thread|
+:处理异步委托任务的返回结果;
+
+|Async Thread|
+:异步任务执行完成;
+
+|Runtime Thread|
+:检查待执行队列是否为空，并处理挂起事件;
+
+end
+|Main Thread|
+
+:关闭 Runtime 对象并释放资源;
+
+stop
+
+@enduml
