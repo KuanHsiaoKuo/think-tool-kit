@@ -1,0 +1,28 @@
+@startuml
+|预处理|
+start
+:将源代码传递给预处理器;
+:将 \$crate 转换成实际 crate 名称;
+:展开所有宏定义，包括通过 include 指令添加的文件;
+:将预处理过的代码发送给下一个步骤;
+|#AntiqueWhite|词法分析|
+:将预处理过的代码分解成 token 串;
+:将代码中的注释删除;
+|#AliceBlue|语法分析|
+:将 token 组装成 AST（抽象语法树）;
+:检查代码是否符合 Rust 的语法规范;
+|#Beige|语义分析|
+:检查 AST 是否符合 Rust 的语义规范;
+:进行 borrow checker 检查，确保没有内存安全问题;
+|#Cornsilk|代码优化和翻译|
+:将 AST 传递给代码优化器;
+:构建中间代码 IR（intermediate representation);
+:利用 LLVM 进行高效优化;
+|#Gainsboro|中间代码生成|
+:将 IR 翻译成汇编代码;
+:在宏展开中对于涉及项的类型推断;
+|#LightGray|目标代码生成|
+:将汇编代码转成具体的机器代码;
+:生成可执行二进制文件或动态链接库;
+stop
+@enduml
