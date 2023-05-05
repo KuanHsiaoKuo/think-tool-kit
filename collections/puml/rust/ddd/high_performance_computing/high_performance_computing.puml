@@ -1,3 +1,145 @@
 @startmindmap
-* 高性能编程
+* Rust高性能编程
+** Rust语言特性
+*** 性能优化
+**** 循环展开
+**** 代码内联
+**** 编译器优化
+*** 并发编程
+**** 线程安全变量
+**** 原子操作
+**** 线程池
+*** 内存安全
+**** 所有权
+**** 借用
+**** 生命周期
+** 高性能编程范式
+*** 异步编程
+**** Future
+**** async/await
+**** 并发运行时
+*** 函数式编程
+**** 函数式范式
+**** 不变性
+**** 高阶函数
+*** 数据并行
+**** SIMD指令
+**** Rayon
+**** 数据流
+** 并发编程
+*** 线程池
+**** ThreadPool
+**** Rayon
+*** 线程、锁、原子类型
+**** Mutex、RWLock
+**** OnceCell
+**** Atomic
+*** 异步框架
+**** Tokio
+**** Async-std
+*** 基于事件循环的编程
+**** Mio
+**** Smol
+**** Asynchronous runtime and task management
+** 快速网络编程
+*** 网络调度
+**** Event-driven
+**** Reactor pattern
+**** Polling
+*** IO并发模型
+**** epoll
+**** mpsc
+**** channel
+**** spawn_blocking
+*** 网络协议的解析与封装
+**** Serde
+**** Rustls
+**** reqwest
+**** hyper
+*** 代码可读性与性能调优
+**** Benchmark
+**** Logging
+**** Profiling
+** 分布式计算
+*** 集群部署
+**** K8s
+**** Docker
+**** Swarm
+**** Nomad
+*** 分布式数据同步
+**** ZooKeeper
+**** etcd
+**** Redis
+**** Consul
+*** 分布式锁、事务处理
+**** Distributed locks
+**** Distributed transactions
+***** sagas
+***** two-phase commit
+***** XA transaction
+**** 状态同步
+**** Raft
+***** Leader Election
+***** Log Replication
+***** Safety Property
+*** 一致性协议与容错机制
+**** Paxos
+**** ViewStamped Replication
+**** Raft
+**** ZAB
+**** Fast Paxos
+** 高性能计算
+*** 数值计算
+**** ndarray
+**** NumPy bindings
+**** RustFFT
+**** ArrayFire
+*** 图像视频处理
+**** image
+**** ffmpeg
+**** OpenCV
+**** GStreamer
+*** 机器学习
+**** rusty-machine
+**** TensorFlow bindings
+**** ndarray-nn
+**** Tensorbase
+*** 计算机视觉
+**** Vision based on AI
+**** OpenCV
+**** Object detection
+**** Image processing
+** 流计算
+*** 数据流的定义与处理
+**** DataFlux、strreams.rs
+**** async graph
+**** FRP
+**** STreaming
+*** 流式SQL
+**** Timely Dataflow
+**** SQL engine
+**** Materialized
+**** DataFusion
+*** CEP模型
+**** Esper
+**** Flink
+**** QuestDB
+**** Debezium
+*** 流计算平台
+**** Apache NiFi
+**** TIBCO StreamBase
+**** Apache StreamPipes
+**** IBM Streams
+** 网络协议
+*** gRPC
+**** Rust gRPC
+**** Tonic
+*** WebSocket
+**** tungstenite
+**** Rust-WebSocket
+***** WebSocket prototype
+*** TCP/UDP
+**** Tokio
+**** async-std
+**** Rust-Networking
 @endmindmap
