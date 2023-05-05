@@ -47,7 +47,7 @@
   "data": [
     {
       "name": "tree",
-      "url": "/collections/data_json/rust/ddd/quantitative_trading.json",
+      "url": "/collections/data_json/rust/ddd/high_performance_computing/quantitative_trading.json",
       "transform": [
         {
           "type": "stratify",
