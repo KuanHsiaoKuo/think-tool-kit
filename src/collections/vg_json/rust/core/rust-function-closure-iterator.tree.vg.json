@@ -47,7 +47,7 @@
   "data": [
     {
       "name": "tree",
-      "url": "/collections/data_json/rust/core/rust_function_closure_iterator.json",
+      "url": "/think-tool-kit/collections/data_json/rust/core/rust_function_closure_iterator.json",
       "transform": [
         {
           "type": "stratify",

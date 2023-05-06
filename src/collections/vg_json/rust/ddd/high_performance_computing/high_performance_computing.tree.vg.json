@@ -47,7 +47,7 @@
   "data": [
     {
       "name": "tree",
-      "url": "/collections/data_json/rust/ddd/high_performance_computing/high_performance_computing.json",
+      "url": "/think-tool-kit/collections/data_json/rust/ddd/high_performance_computing/high_performance_computing.json",
       "transform": [
         {
           "type": "stratify",
