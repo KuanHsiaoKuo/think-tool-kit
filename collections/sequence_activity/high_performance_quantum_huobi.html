@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html lang="cn" class="sidebar-visible no-js rust">
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>火币高性能计算 - Think Tool Kit 🧰</title>
+
+
+    <!-- Custom HTML head -->
+    
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="保持批判，有所取舍，方见真我">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff"/>
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+    <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" href="../../highlight.css">
+    <link rel="stylesheet" href="../../tomorrow-night.css">
+    <link rel="stylesheet" href="../../ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../assets/pagetoc/pagetoc_style.css">
+        <link rel="stylesheet" href="../../assets/css/mdbook-admonish.css">
+
+        <!-- MathJax -->
+        <script async type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<!-- Provide site root to javascript -->
+<script type="text/javascript">
+    var path_to_root = "../../";
+    var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+</script>
+<!--引入mermaid-->
+<!--<script type="text/javascript" src="../../mermaid.min.js">-->
+<!--</script>-->
+<!--<script type="text/javascript" src="../../mermaid-init.js">-->
+<!--</script>-->
+<!-- Work around some values being stored in localStorage wrapped in quotes -->
+<script type="text/javascript">
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+
+        if (theme.startsWith('"') && theme.endsWith('"')) {
+            localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+        }
+
+        if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+            localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+        }
+    } catch (e) {
+    }
+</script>
+
+<!-- Set the theme before any content is loaded, prevents flash -->
+<script type="text/javascript">
+    var theme;
+    try {
+        theme = localStorage.getItem('mdbook-theme');
+    } catch (e) {
+    }
+    if (theme === null || theme === undefined) {
+        theme = default_theme;
+    }
+    var html = document.querySelector('html');
+    html.classList.remove('no-js')
+    html.classList.remove('rust')
+    html.classList.add(theme);
+    html.classList.add('js');
+</script>
+
+<!-- Hide / unhide sidebar before it is displayed -->
+<script type="text/javascript">
+    var html = document.querySelector('html');
+    var sidebar = 'hidden';
+    if (document.body.clientWidth >= 1080) {
+        try {
+            sidebar = localStorage.getItem('mdbook-sidebar');
+        } catch (e) {
+        }
+        sidebar = sidebar || 'visible';
+    }
+    html.classList.remove('sidebar-visible');
+    html.classList.add("sidebar-" + sidebar);
+</script>
+
+<nav id="sidebar" class="sidebar" aria-label="Table of contents">
+    <div class="sidebar-scrollbox">
+        <ol class="chapter"><li class="chapter-item expanded "><a href="../../../index.html"><strong aria-hidden="true">1.</strong> 总览</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../collections/collections.html"><strong aria-hidden="true">1.1.</strong> 精选综合示例</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../collections/pages/rust-tree-embed-local.html"><strong aria-hidden="true">1.1.1.</strong> rust思维导图</a></li><li class="chapter-item "><a href="../../collections/pages/rust-radial-embed-local.html"><strong aria-hidden="true">1.1.2.</strong> rust雷达图</a></li><li class="chapter-item "><a href="../../collections/pages/rust-tree-embed-local.html"><strong aria-hidden="true">1.1.3.</strong> rust核心内容</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../collections/pages/rust/core/rust-memory-management.html"><strong aria-hidden="true">1.1.3.1.</strong> 内存管理</a></li><li class="chapter-item "><a href="../../collections/pages/rust/core/rust-type-system.html"><strong aria-hidden="true">1.1.3.2.</strong> 类型系统</a></li><li class="chapter-item "><a href="../../collections/pages/rust/core/rust-data-structures.html"><strong aria-hidden="true">1.1.3.3.</strong> 数据结构</a></li><li class="chapter-item "><a href="../../collections/pages/rust/core/rust-control-flow.html"><strong aria-hidden="true">1.1.3.4.</strong> 控制流</a></li><li class="chapter-item "><a href="../../collections/pages/rust/core/rust-function-closure-iterator.html"><strong aria-hidden="true">1.1.3.5.</strong> 函数、闭包和迭代器</a></li><li class="chapter-item "><a href="../../collections/pages/rust/core/rust-code-management.html"><strong aria-hidden="true">1.1.3.6.</strong> 模块化代码组织</a></li></ol></li><li class="chapter-item "><a href="../../collections/pages/rust-tree-embed-local.html"><strong aria-hidden="true">1.1.4.</strong> rust话题</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../collections/pages/rust/topics/rust-design-patterns.html"><strong aria-hidden="true">1.1.4.1.</strong> rust设计模式</a></li><li class="chapter-item "><a href="../../collections/pages/rust/topics/rust-concurrency-async.html"><strong aria-hidden="true">1.1.4.2.</strong> rust并发异步</a></li><li class="chapter-item "><a href="../../collections/pages/rust/topics/rust-networks.html"><strong aria-hidden="true">1.1.4.3.</strong> rust网络编程</a></li><li class="chapter-item "><a href="../../collections/pages/rust/topics/rust-error-handling.html"><strong aria-hidden="true">1.1.4.4.</strong> rust错误处理</a></li></ol></li><li class="chapter-item "><a href="../../collections/sequence_activity/rust_sequence_activity.html"><strong aria-hidden="true">1.1.5.</strong> rust核心流程图</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../collections/sequence_activity/async_cores.html"><strong aria-hidden="true">1.1.5.1.</strong> 异步核心</a></li><li class="chapter-item "><a href="../../collections/sequence_activity/rust_compile_sequence_macros.html"><strong aria-hidden="true">1.1.5.2.</strong> 编译过程与宏展开</a></li></ol></li><li class="chapter-item expanded "><a href="../../collections/pages/rust/ddd/ddd.html"><strong aria-hidden="true">1.1.6.</strong> 领域驱动</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../collections/pages/rust/ddd/high_performance_computing/high_performance_computing.html"><strong aria-hidden="true">1.1.6.1.</strong> 高性能计算</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../collections/pages/rust/ddd/high_performance_computing/rust-quantitative-trading.html"><strong aria-hidden="true">1.1.6.1.1.</strong> 量化交易</a></li><li class="chapter-item expanded "><a href="../../collections/sequence_activity/high_performance_quantum_huobi.html" class="active"><strong aria-hidden="true">1.1.6.1.2.</strong> 火币高性能计算</a></li></ol></li><li class="chapter-item "><a href="../../collections/pages/rust/ddd/web3/web3.html"><strong aria-hidden="true">1.1.6.2.</strong> web3</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../collections/pages/rust/ddd/web3/rust-web3-galaxy.html"><strong aria-hidden="true">1.1.6.2.1.</strong> 层次一览</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../layer1_visual_tools/visual_tools.html"><strong aria-hidden="true">1.2.</strong> Layer1: 可视化工具</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/map-tools.html"><strong aria-hidden="true">1.2.1.</strong> 1. 二维展开</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/kroki_collection.html"><strong aria-hidden="true">1.2.1.1.</strong> kroki合集</a></li><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/vega-deepin.html"><strong aria-hidden="true">1.2.1.2.</strong> vega: 大数据可视化工具</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/vega/vega-examples.html"><strong aria-hidden="true">1.2.1.2.1.</strong> 示例</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/vega-embed.html"><strong aria-hidden="true">1.2.1.2.1.1.</strong> radial tree online</a></li><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/vega-radial-tree-embed-local.html"><strong aria-hidden="true">1.2.1.2.1.2.</strong> radial tree local</a></li><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/vega-tree-embed-local.html"><strong aria-hidden="true">1.2.1.2.1.3.</strong> tree local</a></li><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/vega-tree-map-embed-local.html"><strong aria-hidden="true">1.2.1.2.1.4.</strong> tree map local</a></li><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/vega-circle-packing-embed-local.html"><strong aria-hidden="true">1.2.1.2.1.5.</strong> circle packing local</a></li><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/vega-packed-bubble-chart-embed-local.html"><strong aria-hidden="true">1.2.1.2.1.6.</strong> packed bubble chart local</a></li><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/vega-sun-burst-embed-local.html"><strong aria-hidden="true">1.2.1.2.1.7.</strong> sun burst local</a></li><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/vega-word-cloud-embed-local.html"><strong aria-hidden="true">1.2.1.2.1.8.</strong> word cloud local</a></li><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/vega-view.html"><strong aria-hidden="true">1.2.1.2.1.9.</strong> vega view组件使用</a></li><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/vega-puml-test.html"><strong aria-hidden="true">1.2.1.2.1.10.</strong> plantuml mindmap转化效果</a></li><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/vega-force-directed-embed-local.html"><strong aria-hidden="true">1.2.1.2.1.11.</strong> vega force directed layout</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/mermaid.html"><strong aria-hidden="true">1.2.1.3.</strong> mermaid</a></li><li class="chapter-item "><a href="../../layer1_visual_tools/map_tools/plantuml-deepin.html"><strong aria-hidden="true">1.2.1.4.</strong> plantuml</a></li></ol></li><li class="chapter-item "><a href="../../layer1_visual_tools/Drafts/drafts.html"><strong aria-hidden="true">1.2.2.</strong> 2. Drafts</a></li><li class="chapter-item "><a href="../../layer1_visual_tools/Notes/notes.html"><strong aria-hidden="true">1.2.3.</strong> 3. Notes</a></li></ol></li><li class="chapter-item expanded "><a href="../../layer2_thinking_concepts/thinking_concepts.html"><strong aria-hidden="true">1.3.</strong> Layer2: 思维理念</a></li><li class="chapter-item expanded "><a href="../../layer3_thinking_models/thinking_models.html"><strong aria-hidden="true">1.4.</strong> Layer3: 思维模型</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../layer3_thinking_models/wh_models/wh_models.html"><strong aria-hidden="true">1.4.1.</strong> 5W2H</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../layer3_thinking_models/wh_models/source_code_2w1h.html"><strong aria-hidden="true">1.4.1.1.</strong> 2W1H阅读源码模型</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../layer4_thinking_system/thinking_system.html"><strong aria-hidden="true">1.5.</strong> Layer4: 思维体系</a></li><li class="chapter-item expanded "><a href="../../layer5_peek_practice/peek_practice.html"><strong aria-hidden="true">1.6.</strong> Layer5: 巅峰练习</a></li><li class="chapter-item expanded "><a href="../../Resources/resources.html"><strong aria-hidden="true">1.7.</strong> 相关资源</a></li></ol></li><li class="chapter-item expanded "><a href="../../checklist.html">Checklist</a></li></ol>
+    </div>
+    <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+</nav>
+
+<div id="page-wrapper" class="page-wrapper">
+
+    <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+        <div id="menu-bar" class="menu-bar sticky bordered">
+            <div class="left-buttons">
+                <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents"
+                        aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <button id="theme-toggle" class="icon-button" type="button" title="Change theme"
+                        aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                    <i class="fa fa-paint-brush"></i>
+                </button>
+                <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                    <li role="none">
+                        <button role="menuitem" class="theme" id="light">Light</button>
+                    </li>
+                    <li role="none">
+                        <button role="menuitem" class="theme" id="rust">Rust (default)</button>
+                    </li>
+                    <li role="none">
+                        <button role="menuitem" class="theme" id="coal">Coal</button>
+                    </li>
+                    <li role="none">
+                        <button role="menuitem" class="theme" id="navy">Navy</button>
+                    </li>
+                    <li role="none">
+                        <button role="menuitem" class="theme" id="ayu">Ayu</button>
+                    </li>
+                </ul>
+                    <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)"
+                            aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S"
+                            aria-controls="searchbar">
+                        <i class="fa fa-search"></i>
+                    </button>
+            </div>
+
+            <h1 class="menu-title">Think Tool Kit 🧰</h1>
+            <h4 class="menu-bar"> 保持批判，有所取舍，知行合一, 方见真我 -- 练武不练功 到头一场空 -- 《赛博英雄传》 </h4>
+            <div class="right-buttons">
+                    <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                        <i id="print-button" class="fa fa-print"></i>
+                    </a>
+                    <a href="git@github.com:KuanHsiaoKuo/Python-Cooker.git" title="Git repository" aria-label="Git repository">
+                        <i id="git-repository-button" class="fa fa-rust"></i>
+                    </a>
+            </div>
+        </div>
+
+            <div id="search-wrapper" class="hidden">
+                <form id="searchbar-outer" class="searchbar-outer">
+                    <input type="search" name="search" id="searchbar" name="searchbar"
+                           placeholder="Search this book ..." aria-controls="searchresults-outer"
+                           aria-describedby="searchresults-header">
+                </form>
+                <div id="searchresults-outer" class="searchresults-outer hidden">
+                    <div id="searchresults-header" class="searchresults-header"></div>
+                    <ul id="searchresults">
+                    </ul>
+                </div>
+            </div>
+
+        <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+        <script type="text/javascript">
+            document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+            document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+            Array.from(document.querySelectorAll('#sidebar a')).forEach(function (link) {
+                link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+            });
+        </script>
+
+        <div id="content" class="content">
+            <main>
+
+                <!-- Page table of contents -->
+                <div class="sidetoc">
+                    <nav class="pagetoc"></nav>
+                </div>
+                <h1 id="基于火币接口构建高性能量化交易系统"><a class="header" href="#基于火币接口构建高性能量化交易系统">基于火币接口构建高性能量化交易系统</a></h1>
+<h2 id="总体泳道图"><a class="header" href="#总体泳道图">总体泳道图</a></h2>
+<details id="admonition-分层泳道图" class="admonition note">
+<summary class="admonition-title">
+<p>分层泳道图</p>
+<p><a class="admonition-anchor-link" href="#admonition-分层泳道图"></a></p>
+</summary>
+<div>
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="2329px" preserveAspectRatio="none" style="width:1676px;height:2329px;background:#FFFFFF;" version="1.1" viewBox="0 0 1676 2329" width="1676px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="20.9531" style="stroke:none;stroke-width:1.0;" width="1643" x="15" y="12.7451"/><ellipse cx="293" cy="48.6982" fill="#222222" rx="10" ry="10" style="stroke:#222222;stroke-width:1.0;"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="155" x="215.5" y="78.6982"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="135" x="225.5" y="99.8369">&#23553;&#35013;&#28779;&#24065;API&#20026;gRPC&#26381;&#21153;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="92" x="247" y="132.667"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="72" x="257" y="153.8057">&#23450;&#20041;RPC&#25509;&#21475;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="263" x="161.5" y="186.6357"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="243" x="171.5" y="207.7744">&#20351;&#29992;&#28779;&#24065;API&#24320;&#21457;RESTful&#21644;WebSocket&#25509;&#21475;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="170" x="208" y="240.6045"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="150" x="218" y="261.7432">&#32534;&#20889;gRPC&#26381;&#21153;&#30340;Proto&#25991;&#20214;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="108" x="239" y="294.5732"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="88" x="249" y="315.7119">&#29983;&#25104;Rust&#20195;&#30721;&#21253;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="196" x="195" y="348.542"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="176" x="205" y="369.6807">&#23454;&#29616;gRPC&#25509;&#21475;&#20013;&#23450;&#20041;&#30340;RPC&#26041;&#27861;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="287" x="149.5" y="402.5107"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="267" x="159.5" y="423.6494">&#20351;&#29992;&#28779;&#24065;API&#29983;&#25104;RESTful&#35831;&#27714;&#25110;WebSocket&#36830;&#25509;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="217" y="456.4795"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="132" x="227" y="477.6182">&#25171;&#21253;&#35831;&#27714;&#21040;&#30340;&#25968;&#25454;&#24182;&#36820;&#22238;</text><rect fill="#555555" height="6" rx="2.5" ry="2.5" style="stroke:#555555;stroke-width:1.0;" width="544" x="21" y="510.4482"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="112" x="92.5" y="536.4482"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="92" x="102.5" y="557.5869">&#32534;&#20889;gRPC&#23458;&#25143;&#31471;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="231" x="33" y="590.417"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="211" x="43" y="611.5557">&#36890;&#36807;RPC&#26041;&#27861;&#33719;&#21462;&#21040;&#28779;&#24065;API&#26381;&#21153;&#30340;&#25968;&#25454;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="201" x="48" y="644.3857"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="181" x="58" y="665.5244">&#23558;&#33719;&#21462;&#21040;&#30340;&#25968;&#25454;&#23384;&#20648;&#21040;InfluxDB&#20013;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="72.5" y="698.3545"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="132" x="82.5" y="719.4932">&#23558;&#25968;&#25454;&#25512;&#36865;&#32473;&#25351;&#26631;&#35745;&#31639;&#23618;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="261" x="292" y="590.417"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="241" x="302" y="611.5557">&#23454;&#29616;&#23558;&#33719;&#21462;&#21040;&#30340;&#25968;&#25454;&#23384;&#20648;&#21040;InfluxDB&#20013;&#30340;&#21151;&#33021;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="260" x="292.5" y="644.3857"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="240" x="302.5" y="665.5244">&#23454;&#29616;&#23558;&#33719;&#21462;&#21040;&#30340;&#25968;&#25454;&#25512;&#36865;&#32473;&#25351;&#26631;&#35745;&#31639;&#23618;&#30340;&#21151;&#33021;</text><rect fill="#555555" height="6" rx="2.5" ry="2.5" style="stroke:#555555;stroke-width:1.0;" width="544" x="21" y="752.3232"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="251" x="167.5" y="778.3232"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="231" x="177.5" y="799.4619">&#20351;&#29992;gRPC&#23458;&#25143;&#31471;&#20174;&#28779;&#24065;API&#26381;&#21153;&#20013;&#33719;&#21462;&#25968;&#25454;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="225" x="180.5" y="832.292"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="205" x="190.5" y="853.4307">&#23454;&#26102;&#23558;&#33719;&#21462;&#21040;&#30340;&#25968;&#25454;&#23384;&#20648;&#21040;InfluxDB&#20013;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="217" y="886.2607"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="132" x="227" y="907.3994">&#23558;&#25968;&#25454;&#25512;&#36865;&#32473;&#25351;&#26631;&#35745;&#31639;&#23618;</text><line style="stroke:#000000;stroke-width:1.5;" x1="15" x2="15" y1="12.7451" y2="2317.5107"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="186" x="635.5" y="940.2295"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="162" x="649.5" y="961.3682">&#20351;&#29992;Flink&#30340;DataStream API</text><rect fill="#555555" height="6" rx="2.5" ry="2.5" style="stroke:#555555;stroke-width:1.0;" width="216" x="620.5" y="994.1982"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="183" x="637" y="1020.1982"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="163" x="647" y="1041.3369">&#32534;&#20889;Flink&#30340;DataStream&#31639;&#23376;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="116" x="670.5" y="1074.167"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="96" x="680.5" y="1095.3057">&#23454;&#29616;&#25351;&#26631;&#35745;&#31639;&#31639;&#27861;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="176" x="640.5" y="1128.1357"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="156" x="650.5" y="1149.2744">&#23558;&#27599;&#20010;&#21697;&#31181;&#30340;&#25968;&#25454;&#27969;&#36827;&#34892;&#20998;&#21306;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="188" x="634.5" y="1182.1045"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="168" x="644.5" y="1203.2432">&#23558;&#25968;&#25454;&#27969;&#36890;&#36807;&#31639;&#23376;&#36827;&#34892;&#25351;&#26631;&#35745;&#31639;</text><rect fill="#555555" height="6" rx="2.5" ry="2.5" style="stroke:#555555;stroke-width:1.0;" width="216" x="620.5" y="1236.0732"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="180" x="638.5" y="1262.0732"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="156" x="652.5" y="1283.2119">&#26681;&#25454;&#25351;&#26631;&#35745;&#31639;&#32467;&#26524;&#21644;&#20132;&#26131;&#35268;&#21017;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="180" x="638.5" y="1316.042"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="160" x="648.5" y="1337.1807">&#29983;&#25104;&#27599;&#20010;&#21697;&#31181;&#30340;&#20080;&#20837;/&#21334;&#20986;&#20449;&#21495;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="128" x="664.5" y="1370.0107"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="108" x="674.5" y="1391.1494">&#23558;&#20449;&#21495;&#25512;&#36865;&#32473;&#25191;&#34892;&#23618;</text><rect fill="#555555" height="6" rx="2.5" ry="2.5" style="stroke:#555555;stroke-width:1.0;" width="276" x="590.5" y="1423.9795"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="160" x="648.5" y="1449.9795"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="132" x="666.5" y="1471.1182">&#23454;&#29616;&#27599;&#20010;&#21697;&#31181;&#30340;&#20132;&#26131;&#35268;&#21017;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="248" x="604.5" y="1503.9482"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="228" x="614.5" y="1525.0869">&#23558;&#25351;&#26631;&#35745;&#31639;&#32467;&#26524;&#21644;&#20132;&#26131;&#35268;&#21017;&#24212;&#29992;&#21040;&#25968;&#25454;&#27969;&#19978;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="204" x="626.5" y="1557.917"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="184" x="636.5" y="1579.0557">&#23454;&#29616;&#29983;&#25104;&#27599;&#20010;&#21697;&#31181;&#30340;&#20080;&#20837;/&#21334;&#20986;&#20449;&#21495;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="156" x="650.5" y="1611.8857"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="136" x="660.5" y="1633.0244">&#23558;&#20080;&#20837;/&#21334;&#20986;&#20449;&#21495;&#36827;&#34892;&#27719;&#24635;</text><rect fill="#555555" height="6" rx="2.5" ry="2.5" style="stroke:#555555;stroke-width:1.0;" width="276" x="590.5" y="1665.8545"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="307" x="575" y="1691.8545"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="287" x="585" y="1712.9932">&#20351;&#29992;RabbitMQ&#31561;&#28040;&#24687;&#38431;&#21015;/S&#21452;&#21521;&#27969;&#27169;&#24335;&#36827;&#34892;&#25968;&#25454;&#25512;&#36865;</text><line style="stroke:#000000;stroke-width:1.5;" x1="569" x2="569" y1="12.7451" y2="2317.5107"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="228" x="941.5" y="1745.8232"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="208" x="951.5" y="1766.9619">&#26681;&#25454;&#25910;&#21040;&#30340;&#20080;&#20837;/&#21334;&#20986;&#20449;&#21495;&#25191;&#34892;&#20132;&#26131;&#25805;&#20316;</text><rect fill="#555555" height="6" rx="2.5" ry="2.5" style="stroke:#555555;stroke-width:1.0;" width="327" x="892" y="1799.792"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="979.5" y="1825.792"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="132" x="989.5" y="1846.9307">&#23454;&#29616;&#25191;&#34892;&#20132;&#26131;&#25805;&#20316;&#30340;&#21151;&#33021;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="303" x="904" y="1879.7607"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="283" x="914" y="1900.8994">&#21521;&#28779;&#24065;API&#26381;&#21153;&#25552;&#20132;&#35746;&#21333;&#12289;&#25764;&#38144;&#35746;&#21333;&#12289;&#26597;&#35810;&#25104;&#20132;&#35746;&#21333;&#31561;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="188" x="961.5" y="1933.7295"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="168" x="971.5" y="1954.8682">&#23454;&#29616;&#20132;&#26131;&#25968;&#25454;&#30340;&#25345;&#20037;&#21270;&#23384;&#20648;&#21151;&#33021;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="246" x="932.5" y="1987.6982"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="226" x="942.5" y="2008.8369">&#23558;&#20132;&#26131;&#25805;&#20316;&#30340;&#32467;&#26524;&#23384;&#20648;&#21040;Redis&#25110;&#25968;&#25454;&#24211;&#20013;</text><rect fill="#555555" height="6" rx="2.5" ry="2.5" style="stroke:#555555;stroke-width:1.0;" width="327" x="892" y="2041.667"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="282" x="914.5" y="2067.667"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="262" x="924.5" y="2088.8057">&#22914;&#26524;&#38656;&#35201;&#23558;&#20132;&#26131;&#25968;&#25454;&#25345;&#20037;&#21270;&#23384;&#20648;&#65292;&#21487;&#20197;&#20351;&#29992;Redis</text><line style="stroke:#000000;stroke-width:1.5;" x1="886" x2="886" y1="12.7451" y2="2317.5107"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="155" x="1363" y="2121.6357"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="135" x="1373" y="2142.7744">&#23450;&#20041;&#22522;&#20110;gRPC&#30340;API&#25509;&#21475;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="423" x="1229" y="2175.6045"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="403" x="1239" y="2196.7432">&#20351;&#29992;Rust&#20013;&#25552;&#20379;&#30340;gRPC&#24211;&#65292;&#23450;&#20041;&#26597;&#35810;&#25351;&#26631;&#12289;&#33719;&#21462;&#20449;&#21495;&#12289;&#25191;&#34892;&#20132;&#26131;&#31561;API&#25509;&#21475;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="308" x="1286.5" y="2229.5732"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="288" x="1296.5" y="2250.7119">&#23454;&#29616;&#22788;&#29702;&#26597;&#35810;&#25351;&#26631;&#12289;&#33719;&#21462;&#20449;&#21495;&#12289;&#25191;&#34892;&#20132;&#26131;&#31561;&#35831;&#27714;&#30340;&#21151;&#33021;</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="400" x="1240.5" y="2283.542"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="380" x="1250.5" y="2304.6807">&#23558;gRPC&#26041;&#27861;&#30340;&#35831;&#27714;&#21644;&#21709;&#24212;&#21629;&#20196;&#19982;&#20854;&#20182;&#21508;&#23618;&#20043;&#38388;&#30340;&#25968;&#25454;&#20256;&#36882;&#21327;&#35758;&#36827;&#34892;&#36716;&#21270;</text><line style="stroke:#000000;stroke-width:1.5;" x1="1223" x2="1223" y1="12.7451" y2="2317.5107"/><line style="stroke:#000000;stroke-width:1.5;" x1="1656" x2="1656" y1="12.7451" y2="2317.5107"/><line style="stroke:#181818;stroke-width:1.0;" x1="293" x2="293" y1="58.6982" y2="78.6982"/><polygon fill="#181818" points="289,68.6982,293,78.6982,297,68.6982,293,72.6982" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="293" x2="293" y1="112.667" y2="132.667"/><polygon fill="#181818" points="289,122.667,293,132.667,297,122.667,293,126.667" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="293" x2="293" y1="166.6357" y2="186.6357"/><polygon fill="#181818" points="289,176.6357,293,186.6357,297,176.6357,293,180.6357" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="293" x2="293" y1="220.6045" y2="240.6045"/><polygon fill="#181818" points="289,230.6045,293,240.6045,297,230.6045,293,234.6045" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="293" x2="293" y1="274.5732" y2="294.5732"/><polygon fill="#181818" points="289,284.5732,293,294.5732,297,284.5732,293,288.5732" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="293" x2="293" y1="328.542" y2="348.542"/><polygon fill="#181818" points="289,338.542,293,348.542,297,338.542,293,342.542" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="293" x2="293" y1="382.5107" y2="402.5107"/><polygon fill="#181818" points="289,392.5107,293,402.5107,297,392.5107,293,396.5107" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="293" x2="293" y1="436.4795" y2="456.4795"/><polygon fill="#181818" points="289,446.4795,293,456.4795,297,446.4795,293,450.4795" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="148.5" x2="148.5" y1="570.417" y2="590.417"/><polygon fill="#181818" points="144.5,580.417,148.5,590.417,152.5,580.417,148.5,584.417" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="148.5" x2="148.5" y1="624.3857" y2="644.3857"/><polygon fill="#181818" points="144.5,634.3857,148.5,644.3857,152.5,634.3857,148.5,638.3857" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="148.5" x2="148.5" y1="678.3545" y2="698.3545"/><polygon fill="#181818" points="144.5,688.3545,148.5,698.3545,152.5,688.3545,148.5,692.3545" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="422.5" x2="422.5" y1="624.3857" y2="644.3857"/><polygon fill="#181818" points="418.5,634.3857,422.5,644.3857,426.5,634.3857,422.5,638.3857" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="148.5" x2="148.5" y1="516.4482" y2="536.4482"/><polygon fill="#181818" points="144.5,526.4482,148.5,536.4482,152.5,526.4482,148.5,530.4482" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="422.5" x2="422.5" y1="516.4482" y2="590.417"/><polygon fill="#181818" points="418.5,580.417,422.5,590.417,426.5,580.417,422.5,584.417" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="148.5" x2="148.5" y1="732.3232" y2="752.3232"/><polygon fill="#181818" points="144.5,742.3232,148.5,752.3232,152.5,742.3232,148.5,746.3232" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="422.5" x2="422.5" y1="678.3545" y2="752.3232"/><polygon fill="#181818" points="418.5,742.3232,422.5,752.3232,426.5,742.3232,422.5,746.3232" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="293" x2="293" y1="490.4482" y2="510.4482"/><polygon fill="#181818" points="289,500.4482,293,510.4482,297,500.4482,293,504.4482" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="293" x2="293" y1="758.3232" y2="778.3232"/><polygon fill="#181818" points="289,768.3232,293,778.3232,297,768.3232,293,772.3232" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="293" x2="293" y1="812.292" y2="832.292"/><polygon fill="#181818" points="289,822.292,293,832.292,297,822.292,293,826.292" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="293" x2="293" y1="866.2607" y2="886.2607"/><polygon fill="#181818" points="289,876.2607,293,886.2607,297,876.2607,293,880.2607" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1054.167" y2="1074.167"/><polygon fill="#181818" points="724.5,1064.167,728.5,1074.167,732.5,1064.167,728.5,1068.167" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1108.1357" y2="1128.1357"/><polygon fill="#181818" points="724.5,1118.1357,728.5,1128.1357,732.5,1118.1357,728.5,1122.1357" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1162.1045" y2="1182.1045"/><polygon fill="#181818" points="724.5,1172.1045,728.5,1182.1045,732.5,1172.1045,728.5,1176.1045" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1000.1982" y2="1020.1982"/><polygon fill="#181818" points="724.5,1010.1982,728.5,1020.1982,732.5,1010.1982,728.5,1014.1982" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1216.0732" y2="1236.0732"/><polygon fill="#181818" points="724.5,1226.0732,728.5,1236.0732,732.5,1226.0732,728.5,1230.0732" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="974.1982" y2="994.1982"/><polygon fill="#181818" points="724.5,984.1982,728.5,994.1982,732.5,984.1982,728.5,988.1982" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1242.0732" y2="1262.0732"/><polygon fill="#181818" points="724.5,1252.0732,728.5,1262.0732,732.5,1252.0732,728.5,1256.0732" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1296.042" y2="1316.042"/><polygon fill="#181818" points="724.5,1306.042,728.5,1316.042,732.5,1306.042,728.5,1310.042" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1350.0107" y2="1370.0107"/><polygon fill="#181818" points="724.5,1360.0107,728.5,1370.0107,732.5,1360.0107,728.5,1364.0107" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1483.9482" y2="1503.9482"/><polygon fill="#181818" points="724.5,1493.9482,728.5,1503.9482,732.5,1493.9482,728.5,1497.9482" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1537.917" y2="1557.917"/><polygon fill="#181818" points="724.5,1547.917,728.5,1557.917,732.5,1547.917,728.5,1551.917" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1591.8857" y2="1611.8857"/><polygon fill="#181818" points="724.5,1601.8857,728.5,1611.8857,732.5,1601.8857,728.5,1605.8857" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1429.9795" y2="1449.9795"/><polygon fill="#181818" points="724.5,1439.9795,728.5,1449.9795,732.5,1439.9795,728.5,1443.9795" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1645.8545" y2="1665.8545"/><polygon fill="#181818" points="724.5,1655.8545,728.5,1665.8545,732.5,1655.8545,728.5,1659.8545" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1403.9795" y2="1423.9795"/><polygon fill="#181818" points="724.5,1413.9795,728.5,1423.9795,732.5,1413.9795,728.5,1417.9795" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1671.8545" y2="1691.8545"/><polygon fill="#181818" points="724.5,1681.8545,728.5,1691.8545,732.5,1681.8545,728.5,1685.8545" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="1055.5" x2="1055.5" y1="1859.7607" y2="1879.7607"/><polygon fill="#181818" points="1051.5,1869.7607,1055.5,1879.7607,1059.5,1869.7607,1055.5,1873.7607" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="1055.5" x2="1055.5" y1="1913.7295" y2="1933.7295"/><polygon fill="#181818" points="1051.5,1923.7295,1055.5,1933.7295,1059.5,1923.7295,1055.5,1927.7295" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="1055.5" x2="1055.5" y1="1967.6982" y2="1987.6982"/><polygon fill="#181818" points="1051.5,1977.6982,1055.5,1987.6982,1059.5,1977.6982,1055.5,1981.6982" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="1055.5" x2="1055.5" y1="1805.792" y2="1825.792"/><polygon fill="#181818" points="1051.5,1815.792,1055.5,1825.792,1059.5,1815.792,1055.5,1819.792" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="1055.5" x2="1055.5" y1="2021.667" y2="2041.667"/><polygon fill="#181818" points="1051.5,2031.667,1055.5,2041.667,1059.5,2031.667,1055.5,2035.667" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="1055.5" x2="1055.5" y1="1779.792" y2="1799.792"/><polygon fill="#181818" points="1051.5,1789.792,1055.5,1799.792,1059.5,1789.792,1055.5,1793.792" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="1055.5" x2="1055.5" y1="2047.667" y2="2067.667"/><polygon fill="#181818" points="1051.5,2057.667,1055.5,2067.667,1059.5,2057.667,1055.5,2061.667" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="1440.5" x2="1440.5" y1="2155.6045" y2="2175.6045"/><polygon fill="#181818" points="1436.5,2165.6045,1440.5,2175.6045,1444.5,2165.6045,1440.5,2169.6045" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="1440.5" x2="1440.5" y1="2209.5732" y2="2229.5732"/><polygon fill="#181818" points="1436.5,2219.5732,1440.5,2229.5732,1444.5,2219.5732,1440.5,2223.5732" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="1440.5" x2="1440.5" y1="2263.542" y2="2283.542"/><polygon fill="#181818" points="1436.5,2273.542,1440.5,2283.542,1444.5,2273.542,1440.5,2277.542" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="293" x2="293" y1="920.2295" y2="925.2295"/><line style="stroke:#181818;stroke-width:1.0;" x1="293" x2="728.5" y1="925.2295" y2="925.2295"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="925.2295" y2="940.2295"/><polygon fill="#181818" points="724.5,930.2295,728.5,940.2295,732.5,930.2295,728.5,934.2295" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="728.5" y1="1725.8232" y2="1730.8232"/><line style="stroke:#181818;stroke-width:1.0;" x1="728.5" x2="1055.5" y1="1730.8232" y2="1730.8232"/><line style="stroke:#181818;stroke-width:1.0;" x1="1055.5" x2="1055.5" y1="1730.8232" y2="1745.8232"/><polygon fill="#181818" points="1051.5,1735.8232,1055.5,1745.8232,1059.5,1735.8232,1055.5,1739.8232" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="1055.5" x2="1055.5" y1="2101.6357" y2="2106.6357"/><line style="stroke:#181818;stroke-width:1.0;" x1="1055.5" x2="1440.5" y1="2106.6357" y2="2106.6357"/><line style="stroke:#181818;stroke-width:1.0;" x1="1440.5" x2="1440.5" y1="2106.6357" y2="2121.6357"/><polygon fill="#181818" points="1436.5,2111.6357,1440.5,2121.6357,1444.5,2111.6357,1440.5,2115.6357" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="90" x="247" y="29.4531">&#25968;&#25454;&#33719;&#21462;&#23618;</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="72" x="691.5" y="29.4531">&#27969;&#35745;&#31639;&#23618;</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="54" x="1027.5" y="29.4531">&#25191;&#34892;&#23618;</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="47" x="1416" y="29.4531">API&#23618;</text></g></svg></figure>
+</div>
+</details>
+            </main>
+
+            <!--            <script src="https://utteranc.es/client.js"-->
+            <!--                    repo="RustMagazine/rust_magazine_2022"-->
+            <!--                    issue-term="title"-->
+            <!--                    theme="github-light"-->
+            <!--                    crossorigin="anonymous"-->
+            <!--                    async></script>-->
+
+            <nav class="nav-wrapper" aria-label="Page navigation">
+                <!-- Mobile navigation buttons -->
+                    <a rel="prev" href="../../collections/pages/rust/ddd/high_performance_computing/rust-quantitative-trading.html" class="mobile-nav-chapters previous"
+                       title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../collections/pages/rust/ddd/web3/web3.html" class="mobile-nav-chapters next"
+                       title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
+                <div style="clear: both"></div>
+            </nav>
+        </div>
+    </div>
+
+    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            <a rel="prev" href="../../collections/pages/rust/ddd/high_performance_computing/rust-quantitative-trading.html" class="nav-chapters previous" title="Previous chapter"
+               aria-label="Previous chapter" aria-keyshortcuts="Left">
+                <i class="fa fa-angle-left"></i>
+            </a>
+
+            <a rel="next" href="../../collections/pages/rust/ddd/web3/web3.html" class="nav-chapters next" title="Next chapter"
+               aria-label="Next chapter" aria-keyshortcuts="Right">
+                <i class="fa fa-angle-right"></i>
+            </a>
+    </nav>
+
+</div>
+
+
+
+
+    <script type="text/javascript">
+        window.playground_copyable = true;
+    </script>
+
+    <script src="../../ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../editor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JS scripts -->
+    <script type="text/javascript" src="../../assets/mermaid/mermaid-913.min.js"></script>
+    <script type="text/javascript" src="../../assets/mermaid/mermaid-init.js"></script>
+    <script type="text/javascript" src="../../assets/smart-anchor.js"></script>
+    <script type="text/javascript" src="../../assets/pagetoc/sidebar.js"></script>
+    <script type="text/javascript" src="../../assets/vega/vega-embed@6.20.8"></script>
+    <script type="text/javascript" src="../../assets/vega/vega-lite@5.2.0"></script>
+    <script type="text/javascript" src="../../assets/vega/vega@5.22.1"></script>
+    <script type="text/javascript" src="../../materials/vega/radial-tree.js"></script>
+
+</body>
+</html>
