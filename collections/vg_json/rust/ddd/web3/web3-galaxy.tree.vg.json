@@ -47,7 +47,7 @@
   "data": [
     {
       "name": "tree",
-      "url": "/collections/data_json/rust/ddd/web3/web3_galaxy.json",
+      "url": "/think-tool-kit/collections/data_json/rust/ddd/web3/web3_galaxy.json",
       "transform": [
         {
           "type": "stratify",

@@ -78,7 +78,7 @@
   "data": [
     {
       "name": "tree",
-      "url": "/collections/data_json/rust.json",
+      "url": "/think-tool-kit/collections/data_json/rust.json",
       "transform": [
         {
           "type": "stratify",
