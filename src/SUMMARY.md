@@ -20,6 +20,7 @@
         - [领域驱动](collections/pages/rust/ddd/ddd.md)
             - [高性能计算](collections/pages/rust/ddd/high_performance_computing/high_performance_computing.html)
                 - [量化交易](collections/pages/rust/ddd/high_performance_computing/rust-quantitative-trading.html)
+                - [火币高性能计算](collections/sequence_activity/high_performance_quantum_huobi.md)
             - [web3](collections/pages/rust/ddd/web3/web3.md)
                 - [层次一览](collections/pages/rust/ddd/web3/rust-web3-galaxy.html)
     - [Layer1: 可视化工具](layer1_visual_tools/visual_tools.md)
