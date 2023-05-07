@@ -215,6 +215,49 @@ http-server -c-1
 <li>相对路径：需要向上一直走到src目录，然后再一步步定位到文件</li>
 <li>绝对路径：直接从src目录开始定位</li>
 </ol>
+<h2 id="关于修改路径后兼容http-server本地和mdbook在线链接的流程图"><a class="header" href="#关于修改路径后兼容http-server本地和mdbook在线链接的流程图">关于修改路径后兼容http-server本地和mdbook在线链接的流程图。</a></h2>
+<blockquote>
+<p>目前已知mdbook在github page发布后使用静态资源需要从src目录开始定位，而且要加上项目名称。也就是</p>
+</blockquote>
+<pre><code class="language-shell">/&lt;项目名称&gt;/&lt;从src开始的定位&gt;
+</code></pre>
+<p>为了本地的http-server可以兼容这个路径（因为http-server在本地的src根目录运行，静态资源不带&lt;项目名&gt;）</p>
+<blockquote>
+<p>这里使用http-proxy写了一个代理：</p>
+</blockquote>
+<pre><code class="language-text">┌─────────────┐                  ┌─────────────┐
+│             │   Proxy Request  │             │
+│  Client     ├─────────────────►│  Proxy      │
+│             │                  │             │
+└───────┬─────┘                  └───────┬─────┘
+        │                                │
+        │                                │
+        ▼                                ▼
+┌─────────────┐                  ┌─────────────┐
+│             │Proxy Request with│             │
+│  Proxy      │ modified req.url │  Server     │
+│             ├─────────────────►│             │
+└───────┬─────┘                  └───────┬─────┘
+        │                                │
+        │                                │
+        ▼                                ▼
+┌─────────────┐                  ┌─────────────┐
+│             │ Server Response  │             │
+│  Proxy      │◄─────────────────┤  Server     │
+│             │                  │             │
+└─────────────┘                  └─────────────┘
+        │                                │
+        │                                │
+        ▼                                ▼
+┌─────────────┐                  ┌─────────────┐
+│             │ Proxy Response   │             │
+│  Client     │◄─────────────────┤  Proxy      │
+│             │                  │             │
+└─────────────┘                  └─────────────┘
+</code></pre>
+<ul>
+<li>/scripts/local_proxy_server.js</li>
+</ul>
 
             </main>
 
