@@ -203,6 +203,33 @@
 <li>向上走到src那个目录</li>
 <li>然后一步步定位到文件</li>
 </ul>
+<h2 id="puml与vega语法映射"><a class="header" href="#puml与vega语法映射">puml与vega语法映射</a></h2>
+<ol>
+<li><code>*</code> -&gt; <code>#</code>: name</li>
+<li>链接: link</li>
+<li>悬浮弹窗注释: note, 格式为<code>&lt;code&gt;note content&lt;/code&gt;</code></li>
+</ol>
+<ul>
+<li>要有<code>:</code></li>
+<li>要以<code>;</code>结尾</li>
+</ul>
+<pre><code class="language-puml">**:node name
+&lt;code&gt;
+note content
+&lt;/code&gt;;
+</code></pre>
+<ol start="4">
+<li>节点颜色</li>
+</ol>
+<pre><code class="language-json">  {
+  &quot;id&quot;: 3,
+  &quot;color&quot;: &quot;&quot;,
+  &quot;name&quot;: &quot;&quot;,
+  &quot;link&quot;: &quot;&quot;,
+  &quot;parent&quot;: 1,
+  &quot;note&quot;: &quot;&quot;
+}
+</code></pre>
 <h2 id="关于快速本地实时查看vega网页"><a class="header" href="#关于快速本地实时查看vega网页">关于快速本地实时查看vega网页</a></h2>
 <blockquote>
 <p>为了和mdbook的路径一致，在src目录下执行</p>
