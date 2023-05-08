@@ -22,6 +22,35 @@
 - 向上走到src那个目录
 - 然后一步步定位到文件
 
+## puml与vega语法映射
+
+1. `*` -> `#`: name
+2. 链接: link
+3. 悬浮弹窗注释: note, 格式为`<code>note content</code>`
+
+- 要有`:`
+- 要以`;`结尾
+
+```puml
+**:node name
+<code>
+note content
+</code>;
+```
+
+4. 节点颜色
+
+```json
+  {
+  "id": 3,
+  "color": "",
+  "name": "",
+  "link": "",
+  "parent": 1,
+  "note": ""
+}
+```
+
 ## 关于快速本地实时查看vega网页
 
 > 为了和mdbook的路径一致，在src目录下执行
