@@ -2,28 +2,99 @@
 * 区块链与web3
 
 ** 基础层（Layer1）
-*** 区块链协议
-**** 比特币
-**** 以太坊
-**** EOS
-**** 等
-*** 共识算法
-**** 工作量证明
-**** 权益证明
-**** Delegated Proof of Stake
-**** 等
-*** 加密算法
-**** 哈希算法
-**** 非对称加密算法
-**** 对称加密算法
-**** 等
-*** 区块链基础知识
-**** 区块
-**** 交易
-**** 节点
-**** 挖矿
-**** 智能合约
-**** 等
+*** 区块链协议(Blockchain Protocol)
+****:比特币(Bitcoin, BTC)
+<code>
+第一个区块链系统，具有去中心化和匿名性，采用PoW共识算法，无法在区块链上运行智能合约。
+</code>;
+****:以太坊(Ethereum, ETH)
+<code>
+具有可编程高级语言Solidity，支持智能合约和DApp应用的区块链系统，采用PoW或PoS共识算法。
+</code>;
+****:EOS(EOS)
+<code>
+基于DPoS共识算法的平台级区块链系统，支持高性能的交易处理和可扩展性。
+</code>;
+****:Ripple(XRP)
+<code>
+企业级网络，通过XRP代币实现全球汇款和资产交易，采用特定节点集合控制的共识算法。
+</code>;
+*** 共识算法(Consensus algorithm)
+****:工作量证明(Proof of Work, PoW)
+<code>
+简单易懂的共识算法，但消耗大量电力和资源，不适用于大型网络。
+</code>;
+****:权益证明(Proof of Stake, PoS)
+<code>
+通过抵押代币来参与共识，避免能源浪费，但可能会导致富者越富的现象。
+</code>;
+****:委托权益证明(Delegated Proof of Stake, DPoS)
+<code>
+通过委托验证节点来实现共识，避免中心化问题，支持高吞吐量和低延迟。
+</code>;
+****:共识机制(Mechanism Design)
+<code>
+设计游戏理论、激励机制等来促进节点合作的策略机制。
+</code>;
+*** 加密算法(Cryptography)
+****:哈希算法(Hash Function)
+<code>
+常见的哈希函数包括SHA-256、MD5等，用于对交易和区块进行加密。
+</code>;
+****:非对称加密算法(Asymmetric Cryptography)
+<code>
+包括RSA、ECDSA等，用于数字签名和公私钥加密。
+</code>;
+****:对称加密算法(Symmetric Cryptography)
+<code>
+包括AES、DES等，用于对数据进行加密和解密。
+</code>;
+****:数字签名(Digital Signature)
+<code>
+通过私钥签名验证来确保交易的真实性和完整性。
+</code>;
+*** 区块链基础知识(Blockchain Fundamentals)
+****:区块(Block)
+<code>
+记录一组交易和一些元数据的数据块，形成区块链的基本单位。
+</code>;
+****:交易(Transaction)
+<code>
+记录数据传输、状态变化等信息的操作，是区块链的基本元素。
+</code>;
+****:节点(Node)
+<code>
+运行区块链协议的设备，用于存储和传输数据，包括全节点、轻节点、智能合约节点等。
+</code>;
+****:挖矿(Mining)
+<code>
+通过计算难题来创建新区块，获得代币作为激励的过程。
+</code>;
+****:智能合约(Smart Contract)
+<code>
+能够解释执行的计算机程序，用于实现自动化的交易和合约。
+</code>;
+*** 区块链应用场景(Blockchain Application)
+****:区块链在金融领域的应用(Application in finance)
+<code>
+银行间汇款、数字货币、股票等金融应用场景。
+</code>;
+****:区块链在供应链管理的应用(Application in Supply Chain Management)
+<code>
+产品溯源、物流管理、供应链金融等应用。
+</code>;
+****:区块链在数字版权管理的应用(Application in Digital Copyright Management)
+<code>
+鉴定、版权登记、溯源等应用。
+</code>;
+****:区块链在医药领域的应用(Application in Pharmaceutical Industry)
+<code>
+药品追溯、医疗记录管理、医疗物流等应用。
+</code>;
+****:区块链在公共服务领域的应用(Application in Public Services)
+<code>
+不动产登记、政务公开、选举投票等应用。
+</code>;
 
 ** 扩展层（Layer2）
 *** 侧链
