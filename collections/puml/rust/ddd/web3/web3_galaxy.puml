@@ -32,6 +32,25 @@
 <code>
 通过委托验证节点来实现共识，避免中心化问题，支持高吞吐量和低延迟。
 </code>;
+****:拜占庭容错(Byzantine Fault Tolerance, PBFT)
+<code>
+适用于高性能企业区块链，但需要解决节点验证和授权等问题。
+</code>;
+
+****:权益证明(Proof of Stake, PoS)
+<code>
+通过固定代币数量占据网络的区块生成权来达成共识，节约了能源和计算资源，但可能造成贫富分化问题。
+</code>;
+
+****:股份授权证明(Delegated Proof of Stake, DPos)
+<code>
+权益证明的改进版，代币所有者可以代表其他人投票，选举区块生产节点，速度快，效率高，但需要选举过程的公正性。
+</code>;
+
+****:Raft
+<code>
+一种快速而容错的分布式共识算法，主要用于分布式系统中数据一致性的实现。
+</code>;
 ****:共识机制(Mechanism Design)
 <code>
 设计游戏理论、激励机制等来促进节点合作的策略机制。
@@ -96,6 +115,20 @@
 不动产登记、政务公开、选举投票等应用。
 </code>;
 
+**:中间件层(layer1.5)
+<code>
+由于“layer1.5”只是一种临时命名方式，因此并没有一个固定的名称。
+不过，有些人将这种介于层1和层2之间的技术称为“中间件层”（Middleware Layer），
+或者将其视为“协议栈层”（Protocol Stack Layer）中的一部分。
+还有人将其视为“公链基础设施扩展层”（Public Chain Infrastructure Extension Layer）
+或者“公链基础层增强版”（Enhanced Version of Layer1）等等。
+
+总之，这种命名命名方式并不是固定的，有多种可能性。
+</code>;
+***:零知识证明(Zero Knowledge Proof, ZKP)
+<code>
+一种能够证明某个事实的方法，但不会泄露任何有关该事实的信息。
+</code>;
 ** 扩展层（Layer2）
 *** 侧链
 **** IOST
