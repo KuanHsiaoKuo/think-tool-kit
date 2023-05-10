@@ -170,6 +170,9 @@
           },
           "baseline": {
             "value": "middle"
+          },
+          "tooltip": {
+            "signal": "{'相关笔记': datum.note}"
           }
         },
         "update": {
