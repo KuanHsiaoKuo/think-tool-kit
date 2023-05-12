@@ -2,14 +2,47 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css">
+    <style>
+        #vg-tooltip-element tr:nth-child(1) td:first-child {
+            color: #96abc7
+        }
+
+        .vg-tooltip-max-width {
+            max-width: 400px;
+        }
+
+        .vg-tooltip-max-height {
+            max-height: 300px;
+        }
+
+    </style>
 </head>
 <body>
 <div id="vis"/>
 </code>
 <script>
+
+    var tooltipOptions = {
+        // theme: 'custom',
+        theme: 'light',
+        formatTooltip: (value, sanitize) => marked(value['相关笔记']),
+        // formatTooltip: (value, sanitize) => marked('# 标记在浏览器中\n\n 呈现 **marked**.'),
+        style: {
+            'max-width': 400,
+            'max-height': 300
+        }
+
+    };
     vegaEmbed(
         '#vis',
-        '/think-tool-kit/collections/vg_json/rust/ddd/high_performance_computing/high_performance_computing.tree.vg.json'
+        '/think-tool-kit/collections/vg_json/rust/ddd/high_performance_computing/high_performance_computing.tree.vg.json',
+        {
+            actions: false,
+            tooltip: tooltipOptions
+        }
     );
 </script>
 </body>
