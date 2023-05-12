@@ -4,6 +4,9 @@
 
 <img src="https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/see_mountain.jpeg" alt="see_mountain"  />
 
+<!--ts-->
+<!--te-->
+
 ## 用意
 
 在多方面整理自己掌握的内容时，一再感受到思维工具的重要性，而这才是核心本质所在，因而起了这本书。
@@ -110,3 +113,16 @@ http-server -c-1
 ```
 
 - /scripts/local_proxy_server.js
+
+## vega强化
+
+### 悬浮弹窗
+
+```json
+          "tooltip": {
+            "signal": "{'相关笔记': datum.note}"
+          }
+```
+
+### markdown渲染
+

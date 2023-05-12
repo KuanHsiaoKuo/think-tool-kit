@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Marked in the browser</title>
+</head>
+<body>
+<div id="content"></div>
+<script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+<script>
+    document.getElementById('content').innerHTML =marked('# 标记在浏览器中\n\n 呈现 **marked**.');
+</script>
+</body>
+</html>

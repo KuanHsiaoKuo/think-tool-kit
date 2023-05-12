@@ -1,0 +1,303 @@
+[
+  {
+    "id": 2,
+    "name": "\u94fe\u63a51: Add trusted\nnodes",
+    "link": "https://docs.substrate.io/tutorials/get-started/trusted-network/",
+    "parent": 1,
+    "note": "\u6765\u81ea(\u91cd\u70b9\u5185\u5bb9) Add trusted\nnodes \u8fd4\u56de\n\u7684\u94fe\u63a5"
+  },
+  {
+    "id": 3,
+    "name": "\u94fe\u63a52: \u8fd4\u56de",
+    "link": "#\u603b\u89c8",
+    "parent": 1,
+    "note": "\u6765\u81ea(\u91cd\u70b9\u5185\u5bb9) Add trusted\nnodes \u8fd4\u56de\n\u7684\u94fe\u63a5"
+  },
+  {
+    "id": 1,
+    "name": "(\u91cd\u70b9\u5185\u5bb9) Add trusted\nnodes \u8fd4\u56de\n",
+    "color": "#cornflowerblue",
+    "note": "\n\n1. Sr25519: \u7528\u4e8e\u4f7f\u7528 aura \u4e3a\u4e00\u4e2a\u8282\u70b9\u751f\u6210\u5757\u3002\n2. Ed25519: \u7528\u4e8e\u4f7f\u7528 grapdpa \u4e3a\u4e00\u4e2a\u8282\u70b9\u751f\u6210\u5757\u3002\n2. SS58: \u5bf9\u5e94\u516c\u94a5\n\n\u6b65\u9aa4\uff1a\n1. \u4f7f\u7528Sr25519 -> \u4e00\u4e2a\u52a9\u8bb0\u8bcd\u548c\u5bf9\u5e94SS58\u516c\u94a5 -> aura\n2. \u4f7f\u7528Ed25519+\u524d\u9762\u7684\u52a9\u8bb0\u8bcd -> Ed25519 \u516c\u94a5 -> grandpa\n\n"
+  },
+  {
+    "id": 4,
+    "name": "About Substrate Consensus:\n",
+    "parent": 1,
+    "color": "#aqua",
+    "note": "\n\nThe Substrate node template uses a proof of authority consensus model\nalso referred to as authority round or Aura consensus .\nThe Aura consensus protocol limits block production to\na rotating list of authorized accounts.\n\nThe authorized accounts\u2014authorities\u2014create blocks in\na round robin fashion and are generally considered to be\ntrusted participants in the network.\n\nThis consensus model provides a simple approach to\nstarting a solo blockchain for a limited number of participants.\n\nIn this tutorial, you'll see how to generate the keys\nrequired to authorize a node to participate in the network,\nhow to configure and share information about the network\nwith other authorized accounts, and how to launch the network\nwith an approved set of validators.\n"
+  },
+  {
+    "id": 5,
+    "name": " Generate your\naccount and keys\n",
+    "parent": 1
+  },
+  {
+    "id": 6,
+    "name": "Key generation options:\n",
+    "parent": 5,
+    "note": "\n\n1. a node-template subcommand\n2. the standalone subkey command-line program\n3. the Polkadot-JS application\n4. third-party key generation utilities.\n"
+  },
+  {
+    "id": 7,
+    "name": " Generate local\nkeys using the\nnode template:\n",
+    "parent": 5
+  },
+  {
+    "id": 8,
+    "name": "\u4f7f\u7528Sr25519 -> \u4e00\u4e2a\u52a9\u8bb0\u8bcd\u548c\u5bf9\u5e94SS58\u516c\u94a5\n-> aura\n",
+    "parent": 7,
+    "note": "\n\n# Generate a random secret phrase and keys\n./target/release/node-template key\ngenerate\n--scheme Sr25519\n--password-interactive\nKey password: <123456>\n\nSecret phrase:       answer cotton spike caution blouse only radio artefact middle guilt bleak original\n  Network ID:        substrate\n  Secret seed:       0xfcd01919178fa73e7223bdeea134b1ef809b75d3fabd672a52dcc69b964813b6\n  Public key (hex):  0x5413998d3c189f62288daaf2bd2ca3da5e78b00be9172a36ae063aae4cc7f607\n  Account ID:        0x5413998d3c189f62288daaf2bd2ca3da5e78b00be9172a36ae063aae4cc7f607\n  Public key (SS58): 5DxwhfEDto6kGkHz1SZQWE1hDGM8E2LFQNujQdJ3vHNWrnc3\n  SS58 Address:      5DxwhfEDto6kGkHz1SZQWE1hDGM8E2LFQNujQdJ3vHNWrnc3\n\n\u60a8\u73b0\u5728\u62e5\u6709 Sr25519 \u5bc6\u94a5\uff0c\u7528\u4e8e\u4f7f\u7528 aura \u4e3a\u4e00\u4e2a\u8282\u70b9\u751f\u6210\u5757\u3002\n\u5728\u6b64\u793a\u4f8b\u4e2d\uff0c\u5e10\u6237\u7684 Sr25519 \u516c\u94a5\u662f 5DxwhfEDto6kGkHz1SZQWE1hDGM8E2LFQNujQdJ3vHNWrnc3\n"
+  },
+  {
+    "id": 9,
+    "name": " \u4f7f\u7528Ed25519+\u524d\u9762\u7684\u52a9\u8bb0\u8bcd ->\nEd25519 \u516c\u94a5 ->\ngrandpa\n",
+    "parent": 7,
+    "note": "\n\n./target/release/node-template key\ninspect\n--scheme Ed25519\n--password-interactive\n\"answer cotton spike caution blouse only radio artefact middle guilt bleak original\"\n\nKey password: 123456\nSecret phrase:       answer cotton spike caution blouse only radio artefact middle guilt bleak original\n  Network ID:        substrate\n  Secret seed:       0xfcd01919178fa73e7223bdeea134b1ef809b75d3fabd672a52dcc69b964813b6\n  Public key (hex):  0xb293f948a04a5bac3b8321f99bb4c9532f6ffe2b8ff40926b23c68c9726ca40a\n  Account ID:        0xb293f948a04a5bac3b8321f99bb4c9532f6ffe2b8ff40926b23c68c9726ca40a\n  Public key (SS58): 5G6rLZNtZPyMrYTo2YXL9nzaatJ837hmKPnsgYqDURgAWBgX\n  SS58 Address:      5G6rLZNtZPyMrYTo2YXL9nzaatJ837hmKPnsgYqDURgAWBgX\n"
+  },
+  {
+    "id": 11,
+    "name": "\u94fe\u63a51: Generate a\nsecond set of\nkeys",
+    "link": "https://docs.substrate.io/tutorials/get-started/trusted-network/#generate-a-second-set-of-keys",
+    "parent": 10,
+    "note": "\u6765\u81ea Generate a\nsecond set of\nkeys\n\u7684\u94fe\u63a5"
+  },
+  {
+    "id": 10,
+    "name": " Generate a\nsecond set of\nkeys\n",
+    "parent": 5,
+    "note": "\n\n\u6b64\u6559\u7a0b\u7684\u4e13\u7528\u7f51\u7edc\u4ec5\u5305\u542b\u4e24\u4e2a\u8282\u70b9\uff0c\u56e0\u6b64\u9700\u8981\u4e24\u7ec4\u5bc6\u94a5\u3002\n\n\u6709\u51e0\u4e2a\u9009\u9879\u53ef\u4ee5\u7ee7\u7eed\u672c\u6559\u7a0b\uff1a\n1. \u53ef\u4ee5\u5c06\u5bc6\u94a5\u7528\u4e8e\u9884\u5b9a\u4e49\u5e10\u6237\u4e4b\u4e00\u3002\n2. \u53ef\u4ee5\u4f7f\u7528\u672c\u5730\u8ba1\u7b97\u673a\u4e0a\u7684\u4e0d\u540c\u8eab\u4efd\u91cd\u590d\u4e0a\u4e00\u8282\u4e2d\u7684\u6b65\u9aa4\uff0c\u4ee5\u751f\u6210\u7b2c\u4e8c\u4e2a\u5bc6\u94a5\u5bf9\u3002\n3. \u60a8\u53ef\u4ee5\u6d3e\u751f\u4e00\u4e2a\u5b50\u5bc6\u94a5\u5bf9\u6765\u6a21\u62df\u672c\u5730\u8ba1\u7b97\u673a\u4e0a\u7684\u7b2c\u4e8c\u4e2a\u8eab\u4efd\u3002\n4. \u60a8\u53ef\u4ee5\u62db\u52df\u5176\u4ed6\u53c2\u4e0e\u8005\u6765\u751f\u6210\u52a0\u5165\u60a8\u7684\u79c1\u6709\u7f51\u7edc\u6240\u9700\u7684\u5bc6\u94a5\u3002\n\n\u51fa\u4e8e\u5f3a\u5316\u76ee\u7684\uff0c\u8fd9\u91cc\u518d\u6b21\u91cd\u590d\u524d\u9762\u7684\u64cd\u4f5c\uff0c\n\n./target/release/node-template key generate --scheme Sr25519 --password-interactive\nKey password: 234567\nSecret phrase:       twelve genuine tree month sport thought more almost frown question suit life\n  Network ID:        substrate\n  Secret seed:       0x627c5e2ac10a94cc0150efb2e2d38e0de2477e6a53892ade5f8b3cd9862e541e\n  Public key (hex):  0x0069217a6b3a9a4d3fa248a69fb39cef88c27301b5a63aeff52ba59c6781173d\n  Account ID:        0x0069217a6b3a9a4d3fa248a69fb39cef88c27301b5a63aeff52ba59c6781173d\n  Public key (SS58): 5C5F62ga8UtigQK1YRTcuVk1sexcmuLHtVSBnJk5xQQ9P6ud\n  SS58 Address:      5C5F62ga8UtigQK1YRTcuVk1sexcmuLHtVSBnJk5xQQ9P6ud\n\n\n./target/release/node-template key inspect --password-interactive --scheme Ed25519 \"<\u524d\u9762\u7684\u52a9\u8bb0\u8bcd>\"\nKey password: 234567\nSecret phrase:       twelve genuine tree month sport thought more almost frown question suit life\n  Network ID:        substrate\n  Secret seed:       0x627c5e2ac10a94cc0150efb2e2d38e0de2477e6a53892ade5f8b3cd9862e541e\n  Public key (hex):  0xcde9a701b5965bb5327f900c83c2f9753d1d124fa21228851d6e26659d8dff5f\n  Account ID:        0xcde9a701b5965bb5327f900c83c2f9753d1d124fa21228851d6e26659d8dff5f\n  Public key (SS58): 5Gih5kiPMdKBrz4HTuKWQrTedqr8TLYWLb2WW67VzUyRzgF1\n  SS58 Address:      5Gih5kiPMdKBrz4HTuKWQrTedqr8TLYWLb2WW67VzUyRzgF1\n\n\u4f7f\u7528\u7684\u7b2c\u4e8c\u7ec4\u952e\u662f\uff1a\n\nSr25519 \u5bf9\u5e94 SS58\uff1a5C5F62ga8UtigQK1YRTcuVk1sexcmuLHtVSBnJk5xQQ9P6ud \u7528\u4e8eaura\u3002\nEd25519 \u5bf9\u5e94 SS58\uff1a5Gih5kiPMdKBrz4HTuKWQrTedqr8TLYWLb2WW67VzUyRzgF1 \u7528\u4e8egrapdpa\n\n"
+  },
+  {
+    "id": 12,
+    "name": "Create a custom\nchain specification\n",
+    "parent": 1,
+    "note": "\n\n\u751f\u6210\u7528\u4e8e\u533a\u5757\u94fe\u7684\u5bc6\u94a5\u540e\uff0c\u60a8\u5c31\u53ef\u4ee5\u4f7f\u7528\u8fd9\u4e9b\u5bc6\u94a5\u5bf9\u521b\u5efa\u81ea\u5b9a\u4e49\u94fe\u89c4\u8303\uff0c\n\u7136\u540e\u4e0e\u4f5c\u4e3a\u9a8c\u8bc1\u5668(validators)\u7684\u53d7\u4fe1\u4efb\u7f51\u7edc\u53c2\u4e0e\u8005\u5171\u4eab\u60a8\u7684\u81ea\u5b9a\u4e49\u94fe\u89c4\u8303\u3002\n\n\u4e3a\u4e86\u4f7f\u5176\u4ed6\u4eba\u80fd\u591f\u53c2\u4e0e\u60a8\u7684\u533a\u5757\u94fe\u7f51\u7edc\uff0c\u8bf7\u786e\u4fdd\u4ed6\u4eec\u751f\u6210\u81ea\u5df1\u7684\u5bc6\u94a5\u3002\n\n\u6536\u96c6\u5b8c\u7f51\u7edc\u53c2\u4e0e\u8005\u7684\u5bc6\u94a5\u540e\uff0c\u53ef\u4ee5\u521b\u5efa\u81ea\u5b9a\u4e49\u94fe\u89c4\u8303\u4ee5\u66ff\u6362\u672c\u5730\u94fe\u89c4\u8303\u3002\n\n\u4e3a\u7b80\u5355\u8d77\u89c1\uff0c\u672c\u6559\u7a0b\u4e2d\u521b\u5efa\u7684\u81ea\u5b9a\u4e49\u94fe\u89c4\u8303\u662f\u672c\u5730\u94fe\u89c4\u8303\u7684\u4fee\u6539\u7248\u672c\uff0c\n\u7528\u4e8e\u8bf4\u660e\u5982\u4f55\u521b\u5efa\u53cc\u8282\u70b9\u7f51\u7edc\u3002\n\n\u5982\u679c\u60a8\u62e5\u6709\u6240\u9700\u7684\u5bc6\u94a5\uff0c\u60a8\u53ef\u4ee5\u6309\u7167\u76f8\u540c\u7684\u6b65\u9aa4\u5c06\u66f4\u591a\u8282\u70b9\u6dfb\u52a0\u5230\u7f51\u7edc\u4e2d\u3002\n\n--------> Modify the local chain specification\n\n\u8fd9\u4e2a\u64cd\u4f5c\u5f88\u91cd\u8981\uff0c\u540e\u7eed\u8bfe\u7a0b\u8fd8\u4f1a\u7528\u5230\u3002(Connect to Rococo testnet)\n"
+  },
+  {
+    "id": 13,
+    "name": "Export the local\nchain specification to\na file\n",
+    "parent": 12,
+    "note": "\n\n./target/release/node-template build-spec\n--disable-default-bootnode\n--chain local > customSpec.json\n"
+  },
+  {
+    "id": 14,
+    "name": "head customSpec.json\n",
+    "parent": 13,
+    "color": "#lightcoral",
+    "note": "\n\n# customSpec.json\n{\n \"name\": \"Local Testnet\",\n \"id\": \"local_testnet\",\n \"chainType\": \"Local\",\n \"bootNodes\": [],\n \"telemetryEndpoints\": null,\n \"protocolId\": null,\n \"properties\": null,\n \"consensusEngine\": null,\n \"codeSubstitutes\": {},\n}\n"
+  },
+  {
+    "id": 15,
+    "name": "tail -n 80\ncustomSpec.json\n",
+    "parent": 13,
+    "note": "\n\n\u6b64\u547d\u4ee4\u663e\u793a Wasm \u4e8c\u8fdb\u5236\u5b57\u6bb5\u540e\u9762\u7684\u6700\u540e\u90e8\u5206\uff0c\n\u5305\u62ec\u8fd0\u884c\u65f6\u4f7f\u7528\u7684\u51e0\u4e2a\u6258\u76d8\u7684\u8be6\u7ec6\u4fe1\u606f\uff0c\n\u4f8b\u5982 sudo \u548c balances \u6258\u76d8\u3002\n"
+  },
+  {
+    "id": 16,
+    "name": "Modify the name\nfield to identify\nthis chain specification\nas a custom\nchain specification.\n",
+    "parent": 13,
+    "note": "\n\n\"name\": \"My Custom Testnet\",\n"
+  },
+  {
+    "id": 17,
+    "name": "Modify aura field\nto specify the\nnodes\n",
+    "parent": 13,
+    "note": "\n\n\"aura\": { \"authorities\": [\n \"<aura\u7684Sr25519\u5bc6\u94a5>\", \"<aura\u7684Sr25519\u516c\u94a5\u5bf9\u5e94\u5730\u5740(SS58)>\"\n ]\n},\n"
+  },
+  {
+    "id": 18,
+    "name": "Modify the grandpa\nfield to specify\nthe nodes\n",
+    "parent": 13,
+    "note": "\n\n\"grandpa\": {\n   \"authorities\": [\n     [\n       \"\u8282\u70b9 1 \u7684grandpa Ed25519 \u5bf9\u5e94 SS58\u516c\u94a5(\u5730\u5740)\",\n       1\n     ],\n     [\n       \"\u8282\u70b9 2 \u7684grandpa Ed25519 \u5bf9\u5e94 SS58\u516c\u94a5(\u5730\u5740)\",\n       1\n     ]\n   ]\n },\n\n\u8bf7\u6ce8\u610f\uff0cgrandpa \u90e8\u5206\u4e2d\u7684 authority \u5b57\u6bb5\u6709\u4e24\u4e2a\u6570\u636e\u503c\u3002\n\n1. \u7b2c\u4e00\u4e2a\u503c\u662f\u5730\u5740\u952e\u3002\n2. \u7b2c\u4e8c\u4e2a\u503c\u7528\u4e8e\u652f\u6301\u52a0\u6743\u6295\u7968\u3002\n\n\u5728\u6b64\u793a\u4f8b\u4e2d\uff0c\u6bcf\u4e2a\u9a8c\u8bc1\u8005\u7684\u6743\u91cd\u4e3a 1 \u7968\u3002\n"
+  },
+  {
+    "id": 19,
+    "name": "Add validators\n",
+    "parent": 12,
+    "note": "\n\n\u5982\u4f60\u6240\u89c1\uff1a\n\n\u53ef\u4ee5\u901a\u8fc7\u4fee\u6539 aura \u548c grandpa \u90e8\u5206\u6765\u6dfb\u52a0\u548c\u66f4\u6539\u94fe\u89c4\u8303\u4e2d\u7684\u6743\u9650\u5730\u5740\u3002\n\u53ef\u4ee5\u4f7f\u7528\u6b64\u6280\u672f\u6dfb\u52a0\u4efb\u610f\u6570\u91cf\u7684\u9a8c\u8bc1\u5668\u3002\n\n\u6dfb\u52a0\u9a8c\u8bc1\u5668\uff1a\n1. \u4fee\u6539 aura \u90e8\u5206\u4ee5\u5305\u542b Sr25519 \u5730\u5740\u3002\n2. \u4fee\u6539 grapdpa \u90e8\u5206\u4ee5\u5305\u62ec Ed25519 \u5730\u5740\u548c\u6295\u7968\u6743\u91cd\u3002\n\n\u786e\u4fdd\u4e3a\u6bcf\u4e2a\u9a8c\u8bc1\u5668\u4f7f\u7528\u552f\u4e00\u7684\u5bc6\u94a5\u3002\n\u5982\u679c\u4e24\u4e2a\u9a8c\u8bc1\u5668\u5177\u6709\u76f8\u540c\u7684\u5bc6\u94a5\uff0c\u5b83\u4eec\u4f1a\u4ea7\u751f\u51b2\u7a81\u7684\u5757\u3002\n"
+  },
+  {
+    "id": 21,
+    "name": "\u94fe\u63a51: Convert the\nchain specification to\nraw format",
+    "link": "https://docs.substrate.io/tutorials/get-started/trusted-network/#convert-the-chain-specification-to-raw-format",
+    "parent": 20,
+    "note": "\u6765\u81ea Convert the\nchain specification to\nraw format\n\u7684\u94fe\u63a5"
+  },
+  {
+    "id": 20,
+    "name": " Convert the\nchain specification to\nraw format\n",
+    "parent": 1,
+    "note": "\n\n./target/release/node-template\nbuild-spec\n--chain=customSpec.json\n--raw\n--disable-default-bootnode\n> customSpecRaw.json\n"
+  },
+  {
+    "id": 22,
+    "name": "Share the chain\nspecification with others\n",
+    "parent": 1,
+    "note": "\n\n\u5982\u679c\u4f60\u6b63\u5728\u521b\u5efa\u79c1\u6709\u533a\u5757\u94fe\u7f51\u7edc\u4ee5\u4e0e\u5176\u4ed6\u53c2\u4e0e\u8005\u5171\u4eab\uff0c\n\u8bf7\u786e\u4fdd\u53ea\u6709\u4e00\u4e2a\u4eba\u521b\u5efa\u94fe\u89c4\u8303\u5e76\u4e0e\u8be5\u89c4\u8303\u4e2d\u7684\u6240\u6709\u5176\n\u4ed6\u9a8c\u8bc1\u5668\u5171\u4eab\u751f\u6210\u7684\u8be5\u89c4\u8303\u7684\u539f\u59cb\u7248\u672c\n\uff08\u4f8b\u5982 customSpecRaw.json \u6587\u4ef6\uff09\u7f51\u7edc\u3002\n\n\u56e0\u4e3a Rust \u7f16\u8bd1\u5668\u751f\u6210\u7684\u4f18\u5316\u7684 WebAssembly \u4e8c\u8fdb\n\u5236\u6587\u4ef6\u5728\u786e\u5b9a\u6027\u4e0a\u65e0\u6cd5\u91cd\u73b0\uff0c\u6240\u4ee5\u6bcf\u4e2a\u751f\u6210 Wasm \u8fd0\u884c\n\u65f6\u7684\u4eba\u90fd\u4f1a\u751f\u6210\u7a0d\u5fae\u4e0d\u540c\u7684 Wasm blob\u3002\n\n\u4e3a\u4e86\u786e\u4fdd\u786e\u5b9a\u6027\uff0c\u533a\u5757\u94fe\u7f51\u7edc\u4e2d\u7684\u6240\u6709\u53c2\u4e0e\u8005\u5fc5\u987b\u4f7f\u7528\n\u5b8c\u5168\u76f8\u540c\u7684\u539f\u59cb\u94fe\u89c4\u8303\u6587\u4ef6\u3002\n\n\u6709\u5173\u6b64\u95ee\u9898\u7684\u66f4\u591a\u4fe1\u606f\uff0c\u8bf7\u53c2\u9605<Hunting down a non-determinism-bug in our Rust Wasm build>\u3002\n"
+  },
+  {
+    "id": 24,
+    "name": "\u94fe\u63a51: Hunting down\na non-determinism-bug in\nour Rust Wasm\nbuild",
+    "link": "https://dev.to/gnunicorn/hunting-down-a-non-determinism-bug-in-our-rust-wasm-build-4fk1",
+    "parent": 23,
+    "note": "\u6765\u81ea  Hunting\ndown a non-determinism-bug\nin our Rust\nWasm build\n\u7684\u94fe\u63a5"
+  },
+  {
+    "id": 23,
+    "name": "  Hunting\ndown a non-determinism-bug\nin our Rust\nWasm build\n",
+    "parent": 22
+  },
+  {
+    "id": 25,
+    "name": "Prepare to launch\nthe private network\n",
+    "parent": 1,
+    "note": "\n\n\u5c06\u81ea\u5b9a\u4e49\u94fe\u89c4\u8303\u5206\u53d1\u7ed9\u6240\u6709\u7f51\u7edc\u53c2\u4e0e\u8005\u540e\uff0c\u5c31\u53ef\u4ee5\u542f\u52a8\u81ea\u5df1\u7684\u79c1\u6709\u533a\u5757\u94fe\u4e86\u3002\n\n\u8fd9\u4e9b\u6b65\u9aa4\u7c7b\u4f3c\u4e8e\u5728\u542f\u52a8\u7b2c\u4e00\u4e2a\u533a\u5757\u94fe\u8282\u70b9\u4e2d\u6267\u884c\u7684\u6b65\u9aa4\u3002\n\n\u4f46\u662f\uff0c\u5982\u679c\u6309\u7167\u672c\u6559\u7a0b\u4e2d\u7684\u6b65\u9aa4\u64cd\u4f5c\uff0c\u5219\u53ef\u4ee5\u5c06\u591a\u53f0\u8ba1\u7b97\u673a\u6dfb\u52a0\u5230\u60a8\u7684\u7f51\u7edc\u4e2d\u3002\n\n\u8981\u7ee7\u7eed\uff0c\u8bf7\u9a8c\u8bc1\u4ee5\u4e0b\u5185\u5bb9\uff1a\n1. \u5df2\u7ecf\u4e3a\u81f3\u5c11\u4e24\u4e2a\u6743\u9650\u5e10\u6237\u751f\u6210\u6216\u6536\u96c6\u4e86\u5e10\u6237\u5bc6\u94a5\u3002\n2. \u5df2\u7ecf\u66f4\u65b0\u81ea\u5b9a\u4e49\u94fe\u89c4\u8303\uff0c\u4ee5\u5305\u542b\u7528\u4e8e\u5757\u751f\u4ea7\uff08aura\uff09\u548c\u5757\u5b8c\u6210\uff08grandpa\uff09\u7684\u5bc6\u94a5\u3002\n3. \u5df2\u5c06\u81ea\u5b9a\u4e49\u94fe\u89c4\u8303\u8f6c\u6362\u4e3a\u539f\u59cb\u683c\u5f0f\uff0c\u5e76\u5c06\u539f\u59cb\u94fe\u89c4\u8303\u5206\u53d1\u7ed9\u53c2\u4e0e\u79c1\u6709\u7f51\u7edc\u7684\u8282\u70b9\u3002\n\n\u5982\u679c\u5df2\u5b8c\u6210\u8fd9\u4e9b\u6b65\u9aa4\uff0c\u60a8\u5c31\u53ef\u4ee5\u542f\u52a8\u79c1\u6709\u533a\u5757\u94fe\u4e2d\u7684\u7b2c\u4e00\u4e2a\u8282\u70b9\u4e86\u3002\n"
+  },
+  {
+    "id": 27,
+    "name": "\u94fe\u63a51: Start the\nfirst node",
+    "link": "https://docs.substrate.io/tutorials/get-started/trusted-network/#start-the-first-node",
+    "parent": 26,
+    "note": "\u6765\u81ea Start the\nfirst node\n\u7684\u94fe\u63a5"
+  },
+  {
+    "id": 26,
+    "name": " Start the\nfirst node\n",
+    "parent": 1,
+    "note": "\n\n\u6b64\u547d\u4ee4\u8fd8\u4f7f\u7528\u60a8\u81ea\u5df1\u7684\u5bc6\u94a5\u800c\u4e0d\u662f\u9884\u5b9a\u4e49\u7684\u5e10\u6237\u6765\u542f\u52a8\u8282\u70b9\u3002\n\u7531\u4e8e\u6ca1\u6709\u4f7f\u7528\u5177\u6709\u5df2\u77e5\u5bc6\u94a5\u7684\u9884\u5b9a\u4e49\u5e10\u6237\uff0c\u56e0\u6b64\u9700\u8981\u5728\u5355\u72ec\n\u7684\u6b65\u9aa4\u4e2d\u5c06\u5bc6\u94a5\u6dfb\u52a0\u5230\u5bc6\u94a5\u5e93\u3002\n\n ./target/release/node-template\n  --base-path /tmp/node01\n  --chain ./customSpecRaw.json\n  --port 30333\n  --ws-port 9945\n  --rpc-port 9933\n  --telemetry-url \"wss://telemetry.polkadot.io/submit/ 0\"\n  --validator\n  --rpc-methods Unsafe\n  --name MyNode01\n  --password-interactive\nKeystore password: 234567\n2022-07-21 21:10:58 Substrate Node\n2022-07-21 21:10:58 \u270c\ufe0f  version 4.0.0-dev-9c89be106cb\n2022-07-21 21:10:58 \u2764\ufe0f  by Substrate DevHub <https://github.com/substrate-developer-hub>, 2017-2022\n2022-07-21 21:10:58 \ud83d\udccb Chain specification: My Custom Testnet\n2022-07-21 21:10:58 \ud83c\udff7  Node name: MyNode01\n2022-07-21 21:10:58 \ud83d\udc64 Role: AUTHORITY\n2022-07-21 21:10:58 \ud83d\udcbe Database: RocksDb at /tmp/node01/chains/local_testnet/db/full\n2022-07-21 21:10:58 \u26d3  Native runtime: node-template-100 (node-template-1.tx1.au1)\n2022-07-21 21:10:59 \ud83d\udd28 Initializing Genesis block/state (state: 0xe114\u2026e9a6, header-hash: 0xbe24\u202667a2)\n2022-07-21 21:10:59 \ud83d\udc74 Loading GRANDPA authority set from genesis on what appears to be first startup.\n2022-07-21 21:10:59 Using default protocol ID \"sup\" because none is configured in the chain specs\n2022-07-21 21:10:59 \ud83c\udff7  Local node identity is: 12D3KooWA6tqKTpAQVV8uanr7X3sRaEuTAaeHw3V5RVEupMoaCDA\n2022-07-21 21:10:59 \ud83d\udcbb Operating system: macos\n2022-07-21 21:10:59 \ud83d\udcbb CPU architecture: x86_64\n2022-07-21 21:10:59 \ud83d\udce6 Highest known block at #0\n2022-07-21 21:10:59 \u303d\ufe0f Prometheus exporter started at 127.0.0.1:9615\n"
+  },
+  {
+    "id": 28,
+    "name": "--base-path /tmp/node01\n",
+    "parent": 26,
+    "note": "\n\nThe --base-path command-line option specifies a\ncustom location for the chain associated with\nthis first node.\n"
+  },
+  {
+    "id": 29,
+    "name": "--chain ./customSpecRaw.json\n",
+    "parent": 26,
+    "note": "\n\nThe --chain command-line option specifies the\ncustom chain specification.\n\n"
+  },
+  {
+    "id": 30,
+    "name": " --port 30333\n",
+    "parent": 26
+  },
+  {
+    "id": 31,
+    "name": " --ws-port 9945\n",
+    "parent": 26
+  },
+  {
+    "id": 32,
+    "name": " --rpc-port 9933\n",
+    "parent": 26
+  },
+  {
+    "id": 33,
+    "name": " --telemetry-url \"wss://telemetry.polkadot.io/submit/\n0\"\n",
+    "parent": 26
+  },
+  {
+    "id": 34,
+    "name": "--validator\n",
+    "parent": 26,
+    "note": "\n\nThe --validator command-line option indicates that\nthis node is an authority for the chain.\n"
+  },
+  {
+    "id": 35,
+    "name": "--rpc-methods Unsafe\n",
+    "parent": 26,
+    "note": "\n\nThe --rpc-methods Unsafe command-line option allows\nyou to continue the tutorial using an unsafe communication\nmode because your blockchain is not being used in a\nproduction setting.\n"
+  },
+  {
+    "id": 36,
+    "name": "--name MyNode01\n",
+    "parent": 26,
+    "note": "\n\nThe --name command-line option enables you to give\nyour node a human-readable name in the telemetry UI.\n"
+  },
+  {
+    "id": 37,
+    "name": " --password-interactive\n",
+    "parent": 26
+  },
+  {
+    "id": 38,
+    "name": "View information about\nnode operations\n",
+    "parent": 1,
+    "note": "\n\n\u6ce8\u610f\u5176\u4e2d\u7684\u8fd9\u4e9b\u4fe1\u606f\n"
+  },
+  {
+    "id": 39,
+    "name": "--chain\n",
+    "parent": 38,
+    "note": "\n\n\u8f93\u51fa\u8868\u660e\u6b63\u5728\u4f7f\u7528\u7684\u94fe\u89c4\u8303\u662f\u60a8\u4f7f\u7528 --chain \u547d\u4ee4\u884c\u9009\u9879\u521b\u5efa\u548c\u6307\u5b9a\u7684\u81ea\u5b9a\u4e49\u94fe\u89c4\u8303\u3002\n"
+  },
+  {
+    "id": 40,
+    "name": "--validator\n",
+    "parent": 38,
+    "note": "\n\n\u8f93\u51fa\u8868\u660e\u8be5\u8282\u70b9\u662f\u4e00\u4e2a\u6388\u6743\uff0c\u56e0\u4e3a\u60a8\u4f7f\u7528 --validator \u547d\u4ee4\u884c\u9009\u9879\u542f\u52a8\u4e86\u8be5\u8282\u70b9\u3002\n"
+  },
+  {
+    "id": 41,
+    "name": "state\n",
+    "parent": 38,
+    "note": "\n\n\u8f93\u51fa\u663e\u793a\u4f7f\u7528\u5757\u54c8\u5e0c\uff08\u72b6\u6001\uff1a0x2bde\u20268f66\uff0c\u6807\u5934\u54c8\u5e0c\uff1a0x6c78\u202637de\uff09\u521d\u59cb\u5316\u521b\u4e16\u5757\u3002\n"
+  },
+  {
+    "id": 42,
+    "name": "node identify\n",
+    "parent": 38,
+    "note": "\n\n\u8f93\u51fa\u6307\u5b9a\u60a8\u7684\u8282\u70b9\u7684\u672c\u5730\u8282\u70b9\u8eab\u4efd\u3002\u5728\u6b64\u793a\u4f8b\u4e2d\uff0c\u8282\u70b9\u8eab\u4efd\u4e3a\n12d3koowlmrydlontytytytdyzlwde1paxzxtw5rgjmhlfzw96sx\u3002\n"
+  },
+  {
+    "id": 43,
+    "name": "IP address\n",
+    "parent": 38,
+    "note": "\n\n\u8f93\u51fa\u6307\u5b9a\u7528\u4e8e\u8282\u70b9\u7684 IP \u5730\u5740\u662f\u672c\u5730\u4e3b\u673a 127.0.0.1\u3002\n"
+  },
+  {
+    "id": 45,
+    "name": "\u94fe\u63a51: Add keys\nto the keystore",
+    "link": "https://docs.substrate.io/tutorials/get-started/trusted-network/#add-keys-to-the-keystore",
+    "parent": 44,
+    "note": "\u6765\u81ea Add keys\nto the keystore\n\u7684\u94fe\u63a5"
+  },
+  {
+    "id": 44,
+    "name": " Add keys\nto the keystore\n",
+    "parent": 1,
+    "note": "\n\n\u542f\u52a8\u7b2c\u4e00\u4e2a\u8282\u70b9\u540e\uff0c\u5c1a\u672a\u751f\u6210\u4efb\u4f55\u5757\u3002\n\n\u4e0b\u4e00\u6b65\u662f\u5c06\u4e24\u79cd\u7c7b\u578b\u7684\u5bc6\u94a5\u6dfb\u52a0\u5230\u7f51\u7edc\u4e2d\u6bcf\u4e2a\u8282\u70b9\u7684\u5bc6\u94a5\u5e93\u4e2d\u3002\n\n\u5bf9\u4e8e\u6bcf\u4e2a\u8282\u70b9\uff1a\n1. \u6dfb\u52a0 aura \u6743\u9650\u5bc6\u94a5\u4ee5\u542f\u7528\u5757\u751f\u4ea7\u3002\n2. \u6dfb\u52a0g randpa \u6743\u9650\u5bc6\u94a5\u4ee5\u542f\u7528\u5757\u5b8c\u6210\u3002\n\n\u6709\u51e0\u79cd\u65b9\u6cd5\u53ef\u4ee5\u5c06\u5bc6\u94a5\u63d2\u5165\u5bc6\u94a5\u5e93\u3002\n\n\u5bf9\u4e8e\u672c\u6559\u7a0b\uff0c\u60a8\u53ef\u4ee5\u4f7f\u7528 key \u5b50\u547d\u4ee4\u63d2\u5165\u672c\u5730\u751f\u6210\u7684\u5bc6\u94a5\u3002\n"
+  },
+  {
+    "id": 46,
+    "name": " Insert the\naura secret key:\n",
+    "parent": 44,
+    "note": "\n\n./target/release/node-template\nkey insert --base-path /tmp/node01\n  --chain customSpecRaw.json\n  --scheme Sr25519\n  --suri <your-secret-seed>\n  --password-interactive\n  --key-type aura\n\nReplace <your-secret-seed> with the secret phrase or\nsecret seed for the first key pair that you generated\nin Generate local keys using node template.\n\nYou can also insert a key from a specified file location.\n\n./target/release/node-template key insert --help\n"
+  },
+  {
+    "id": 47,
+    "name": "Insert the grandpa\nsecret key\n",
+    "parent": 44,
+    "note": "\n\n./target/release/node-template key insert\n  --base-path /tmp/node01\n  --chain customSpecRaw.json\n  --scheme Ed25519\n  --suri <your-secret-key>\n  --password-interactive\n  --key-type gran\n"
+  },
+  {
+    "id": 48,
+    "name": "Verify that your\nkeys are in\nthe keystore for\nnode01\n",
+    "parent": 44,
+    "note": "\n\nls /tmp/node01/chains/local_testnet/keystore\n"
+  },
+  {
+    "id": 49,
+    "name": "Restart the node\n",
+    "parent": 44,
+    "note": "\n\nAfter you have added your keys to the keystore for\nthe first node under /tmp/node01, you can restart\nthe node using the command you used previously in\n<Start the first node>.\n"
+  },
+  {
+    "id": 50,
+    "name": "Enable other participants\nto join\n",
+    "parent": 1,
+    "note": "\n\ntip: You can now allow other validators to join\nthe network using the --bootnodes and --validator\ncommand-line options.\n\nTo add a second validator to the private network,\njust start a second blockchain node\n\n./target/release/node-template\n  --base-path /tmp/node02\n  --chain ./customSpecRaw.json\n  --port 30334\n  --ws-port 9946\n  --rpc-port 9934\n  --telemetry-url \"wss://telemetry.polkadot.io/submit/ 0\"\n  --validator\n  --rpc-methods Unsafe\n  --name MyNode02\n  --bootnodes\n  /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWLmrYDLoNTyTYtRdDyZLWDe1paxzxTw5RgjmHLfzW96SX\n  --password-interactive\n"
+  }
+]

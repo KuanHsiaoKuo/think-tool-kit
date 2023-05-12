@@ -47,7 +47,7 @@
   "data": [
     {
       "name": "tree",
-      "url": "/think-tool-kit/collections/data_json/rust/ddd/high_performance_computing/high_performance_computing.json",
+      "url": "/think-tool-kit/collections/data_json/test.json",
       "transform": [
         {
           "type": "stratify",
@@ -166,13 +166,16 @@
             "field": "name"
           },
           "fontSize": {
-            "value": 15
+            "value": 9
           },
           "baseline": {
             "value": "middle"
           },
           "tooltip": {
-            "signal": "{'相关笔记': datum.id + '.' + datum.note}"
+            "signal": "{'基本信息': datum.note + ' ' + datum.name + (datum.link ? ' 🔗 ' : '') + '包含 ' + (datum.node_count ? ', ' + datum.node_count + ' 个节点' : '')}"
+          },
+          "href": {
+            "signal": "datum.link"
           }
         },
         "update": {
@@ -341,22 +344,6 @@
     "symbol": {
       "fill": "#1696d2",
       "size": 30
-    },
-    "tooltip": {
-        "background": "white",
-        "color": "black",
-        "fontSize": 26,
-        "font": "Lato",
-        "fontWeight": "normal",
-        "text": "",
-        "fontSizeLabel": 12,
-        "fontLabel": "Lato",
-        "padding": 15,
-        "cornerRadius": 5,
-        "offset": 10,
-        "disable": false,
-        "opacity": 0.9,
-        "max-width": "100px"
     }
   }
 }
