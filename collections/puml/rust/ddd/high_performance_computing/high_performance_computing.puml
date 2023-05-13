@@ -148,8 +148,8 @@ Rust标准库中提供了Future的实现，同时也有许多第三方库可以�
 <code>
 ```rust
 pub trait Future {
-    type Output;
-    fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output>;
+    type Output";"
+    fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output>";"
 }
 ```
 </code>;

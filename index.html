@@ -190,7 +190,7 @@
 <img src="https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/see_mountain.jpeg" alt="see_mountain"  />
 <!--ts-->
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Sat May 13 01:45:25 UTC 2023 -->
+<!-- Added by: runner, at: Sat May 13 07:30:53 UTC 2023 -->
 <!--te-->
 <h2 id="用意"><a class="header" href="#用意">用意</a></h2>
 <p>在多方面整理自己掌握的内容时，一再感受到思维工具的重要性，而这才是核心本质所在，因而起了这本书。</p>
@@ -233,6 +233,11 @@ note content
   &quot;parent&quot;: 1,
   &quot;note&quot;: &quot;&quot;
 }
+</code></pre>
+<ol start="5">
+<li>考虑到plantuml的’;‘是元素结束符，所以这里将’“;”‘换成’;’</li>
+</ol>
+<pre><code class="language-python">   notes = [note.replace('&quot;;&quot;', ';') for note in notes]
 </code></pre>
 <h2 id="关于快速本地实时查看vega网页"><a class="header" href="#关于快速本地实时查看vega网页">关于快速本地实时查看vega网页</a></h2>
 <blockquote>
