@@ -42,6 +42,14 @@
       "bind": {
         "input": "checkbox"
       }
+    },
+    {
+      "name": "tooltipWidth",
+      "value": 200
+    },
+    {
+      "name": "tooltipHeight",
+      "value": 100
     }
   ],
   "data": [
@@ -170,9 +178,6 @@
           },
           "baseline": {
             "value": "middle"
-          },
-          "tooltip": {
-            "signal": "{'相关笔记': datum.id + '.' + datum.note}"
           }
         },
         "update": {
@@ -190,6 +195,9 @@
           },
           "opacity": {
             "signal": "labels ? 1 : 0"
+          },
+          "tooltip": {
+            "signal": "{'相关笔记': datum.id + '.' + datum.name + '<br>' + datum.note}"
           }
         }
       }
@@ -341,22 +349,6 @@
     "symbol": {
       "fill": "#1696d2",
       "size": 30
-    },
-    "tooltip": {
-        "background": "white",
-        "color": "black",
-        "fontSize": 26,
-        "font": "Lato",
-        "fontWeight": "normal",
-        "text": "",
-        "fontSizeLabel": 12,
-        "fontLabel": "Lato",
-        "padding": 15,
-        "cornerRadius": 5,
-        "offset": 10,
-        "disable": false,
-        "opacity": 0.9,
-        "max-width": "100px"
     }
   }
 }
