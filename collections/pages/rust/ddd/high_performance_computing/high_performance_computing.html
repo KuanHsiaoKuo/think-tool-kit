@@ -3,6 +3,9 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css">
     <style>
@@ -11,7 +14,7 @@
         }
 
         .vg-tooltip-max-width {
-            max-width: 400px;
+            max-width: 200px;
         }
 
         .vg-tooltip-max-height {
@@ -24,14 +27,26 @@
 <div id="vis"/>
 </code>
 <script>
-
+    let options = {
+        gfm: true,
+        breaks: true,
+        smartLists: true,
+        highlight: function(code) {
+            return hljs.highlightAuto(code).value;
+        }
+    };
     var tooltipOptions = {
         // theme: 'custom',
         theme: 'light',
-        formatTooltip: (value, sanitize) => marked(value['相关笔记']),
+        formatTooltip: (value, sanitize) => {
+            // console.log(value['相关笔记'].replace('\n', "<br>"))
+            marked_content = marked(value['相关笔记'], options)
+            console.log(marked_content)
+            return marked_content
+        },
         // formatTooltip: (value, sanitize) => marked('# 标记在浏览器中\n\n 呈现 **marked**.'),
         style: {
-            'max-width': 400,
+            'max-width': 200,
             'max-height': 300
         }
 
