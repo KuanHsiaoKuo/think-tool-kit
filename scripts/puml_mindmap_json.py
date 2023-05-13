@@ -124,6 +124,8 @@ def extract_notes(text=''):
     # (?:pattern) 来解决方括号不适用的场景
     # [正则匹配所有字符（包括换行）_尐东东的博客-CSDN博客_正则匹配所有字符](https://blog.csdn.net/u011158908/article/details/105666329)
     notes = re.findall('\<code\>((?:.|\n)*?)\</code\>', text)
+    # 考虑到html默认只支持br换行，所以这里统一替换成br
+    # notes = [note.replace('\n', '<br>') for note in notes]
     return notes
 
 
