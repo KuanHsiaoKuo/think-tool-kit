@@ -126,6 +126,8 @@ def extract_notes(text=''):
     notes = re.findall('\<code\>((?:.|\n)*?)\</code\>', text)
     # 考虑到html默认只支持br换行，所以这里统一替换成br
     # notes = [note.replace('\n', '<br>') for note in notes]
+    # 考虑到plantuml的';'是元素结束符，所以这里将'";"'换成';'
+    notes = [note.replace('";"', ';') for note in notes]
     return notes
 
 

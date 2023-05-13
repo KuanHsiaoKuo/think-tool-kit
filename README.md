@@ -59,6 +59,11 @@ note content
 }
 ```
 
+5. 考虑到plantuml的';'是元素结束符，所以这里将'";"'换成';'
+```python
+   notes = [note.replace('";"', ';') for note in notes]
+```
+
 ## 关于快速本地实时查看vega网页
 
 > 为了和mdbook的路径一致，在src目录下执行
