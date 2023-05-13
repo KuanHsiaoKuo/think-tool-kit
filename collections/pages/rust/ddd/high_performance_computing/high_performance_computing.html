@@ -21,6 +21,15 @@
             max-height: 300px;
         }
 
+        /*修改提示窗口一直显示*/
+        /*#vg-tooltip-element {*/
+        /*    visibility: visible;*/
+        /*}*/
+        #vg-tooltip-element{
+            max-height: 400px;
+            overflow-y: scroll;
+        }
+
     </style>
 </head>
 <body>
@@ -31,17 +40,17 @@
         gfm: true,
         breaks: true,
         smartLists: true,
-        highlight: function(code) {
+        highlight: function (code) {
             return hljs.highlightAuto(code).value;
         }
     };
-    var tooltipOptions = {
+    let tooltipOptions = {
         // theme: 'custom',
         theme: 'light',
         formatTooltip: (value, sanitize) => {
             // console.log(value['相关笔记'].replace('\n', "<br>"))
             marked_content = marked(value['相关笔记'], options)
-            console.log(marked_content)
+            // console.log(marked_content)
             return marked_content
         },
         style: {
@@ -58,5 +67,23 @@
             tooltip: tooltipOptions
         }
     );
+    setInterval(function () {
+        let tooltip = document.getElementById('vg-tooltip-element')
+        if (tooltip) {
+            console.log(tooltip.style.top.charAt(0))
+            if (tooltip.style.top.charAt(0) === '-') {
+                tooltip.style.top = '0px'
+            }
+            document.addEventListener('keydown', (event) => {
+                if (event.shiftKey) {
+                    tooltip.style.visibility = 'visible';
+                }
+            });
+
+            document.addEventListener('keyup', () => {
+                tooltip.style.visibility = 'hidden';
+            });
+        }
+    }, 100);
 </script>
 </body>
