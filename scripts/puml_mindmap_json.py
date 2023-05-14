@@ -5,6 +5,8 @@ import sys
 import re
 import json
 import os
+import base64
+import zlib
 
 
 def converter(puml_path: str):
@@ -103,6 +105,26 @@ def get_wrap_name(name):
     return ''.join(wrap_name)
 
 
+# [Kroki!](https://kroki.io/)
+def get_kroki_preprocessors():
+    preprocessors = {
+        "puml": "plantuml",
+        "seqdiag": "sequediag",
+        "svgbob": "svgbob",
+        "ditaa": "ditaa",
+
+    }
+    return preprocessors
+
+
+# 将puml/mermaid等内容提交给kroki获取在线图片链接
+def get_kroki_link(file_path, preprocessor):
+    with open(file_path, 'r') as f:
+        content = f.read()
+        encoded_cotnent = base64.urlsafe_b64encode(zlib.compress(content.encode('utf8'))).decode('utf8')
+        return f"https://kroki.io/{preprocessor}/svg/{encoded_cotnent}"
+
+
 def extract_notes(text=''):
     #     text = '''
     #         ****:tail -n 80 customSpec.json
@@ -126,8 +148,26 @@ def extract_notes(text=''):
     notes = re.findall('\<code\>((?:.|\n)*?)\</code\>', text)
     # 考虑到html默认只支持br换行，所以这里统一替换成br
     # notes = [note.replace('\n', '<br>') for note in notes]
-    # 考虑到plantuml的';'是元素结束符，所以这里将'";"'换成';'
-    notes = [note.replace('";"', ';') for note in notes]
+    kroki_suffixs = ['.puml', '.mermaid', '.nomnoml']
+    preprocessors = get_kroki_preprocessors()
+
+    def inner_note_replace(note):
+        # 考虑到plantuml的';'是元素结束符，所以这里将'";"'换成';'
+        note = note.replace('";"', ';')
+        # 提取其中的markdown图片链接，如果是puml后缀，就单独处理
+        # ![](xxx.puml) -> ![xxx.puml](new_path)
+        img_links = re.findall('!\[(.*?)\]\((.*?)\)', note)
+        for img_link in img_links:
+            img_name, img_path = img_link
+            suffix = img_path.split('.')[-1]
+            if suffix in preprocessors.keys():
+                kroki_link = get_kroki_link(img_path, preprocessors[suffix])
+                file_name = img_path.split('/')[-1]
+                note = note.replace(f"![]({img_path})",
+                                    f"- [{file_name}点开大图]({kroki_link})\n![{file_name}]({kroki_link})")
+        return note
+
+    notes = [inner_note_replace(note) for note in notes]
     return notes
 
 

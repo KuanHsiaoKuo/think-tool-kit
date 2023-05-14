@@ -60,6 +60,7 @@ note content
 ```
 
 5. 考虑到plantuml的';'是元素结束符，所以这里将'";"'换成';'
+
 ```python
    notes = [note.replace('";"', ';') for note in notes]
 ```
@@ -130,9 +131,36 @@ http-server -c-1
 
 ```json
           "tooltip": {
-            "signal": "{'相关笔记': datum.note}"
-          }
+"signal": "{'相关笔记': datum.note}"
+}
 ```
 
 ### markdown渲染
 
+1. 按住shift可以一直保持弹窗
+2. 支持kroki系列图表渲染
+
+- [KuanHsiaoKuo/kroki: Creates diagrams from textual descriptions!](https://github.com/KuanHsiaoKuo/kroki)
+- [代码绘图服务Kroki - 知乎](https://zhuanlan.zhihu.com/p/512028758)
+
+```python
+def get_kroki_preprocessors():
+    preprocessors = {
+        "puml": "plantuml",
+        "seqdiag": "sequediag",
+        "svgbob": "svgbob",
+        "ditaa": "ditaa",
+
+    }
+    return preprocessors
+
+
+# 将puml/mermaid等内容提交给kroki获取在线图片链接
+def get_kroki_link(file_path, preprocessor):
+    with open(file_path, 'r') as f:
+        content = f.read()
+        encoded_cotnent = base64.urlsafe_b64encode(zlib.compress(content.encode('utf8'))).decode('utf8')
+        return f"https://kroki.io/{preprocessor}/svg/{encoded_cotnent}"
+```
+
+> 可以去kroki在线编辑网站测试好后保存文本在本地：[Kroki!](https://kroki.io/)
