@@ -190,7 +190,7 @@
 <img src="https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/see_mountain.jpeg" alt="see_mountain"  />
 <!--ts-->
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Sat May 13 08:50:12 UTC 2023 -->
+<!-- Added by: runner, at: Sun May 14 05:52:51 UTC 2023 -->
 <!--te-->
 <h2 id="用意"><a class="header" href="#用意">用意</a></h2>
 <p>在多方面整理自己掌握的内容时，一再感受到思维工具的重要性，而这才是核心本质所在，因而起了这本书。</p>
@@ -297,10 +297,39 @@ http-server -c-1
 <h2 id="vega强化"><a class="header" href="#vega强化">vega强化</a></h2>
 <h3 id="悬浮弹窗"><a class="header" href="#悬浮弹窗">悬浮弹窗</a></h3>
 <pre><code class="language-json">          &quot;tooltip&quot;: {
-            &quot;signal&quot;: &quot;{'相关笔记': datum.note}&quot;
-          }
+&quot;signal&quot;: &quot;{'相关笔记': datum.note}&quot;
+}
 </code></pre>
 <h3 id="markdown渲染"><a class="header" href="#markdown渲染">markdown渲染</a></h3>
+<ol>
+<li>按住shift可以一直保持弹窗</li>
+<li>支持kroki系列图表渲染</li>
+</ol>
+<ul>
+<li><a href="https://github.com/KuanHsiaoKuo/kroki">KuanHsiaoKuo/kroki: Creates diagrams from textual descriptions!</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/512028758">代码绘图服务Kroki - 知乎</a></li>
+</ul>
+<pre><code class="language-python">def get_kroki_preprocessors():
+    preprocessors = {
+        &quot;puml&quot;: &quot;plantuml&quot;,
+        &quot;seqdiag&quot;: &quot;sequediag&quot;,
+        &quot;svgbob&quot;: &quot;svgbob&quot;,
+        &quot;ditaa&quot;: &quot;ditaa&quot;,
+
+    }
+    return preprocessors
+
+
+# 将puml/mermaid等内容提交给kroki获取在线图片链接
+def get_kroki_link(file_path, preprocessor):
+    with open(file_path, 'r') as f:
+        content = f.read()
+        encoded_cotnent = base64.urlsafe_b64encode(zlib.compress(content.encode('utf8'))).decode('utf8')
+        return f&quot;https://kroki.io/{preprocessor}/svg/{encoded_cotnent}&quot;
+</code></pre>
+<blockquote>
+<p>可以去kroki在线编辑网站测试好后保存文本在本地：<a href="https://kroki.io/">Kroki!</a></p>
+</blockquote>
 
             </main>
 

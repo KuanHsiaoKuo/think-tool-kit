@@ -186,7 +186,7 @@
                 <h1 id="vega深度使用"><a class="header" href="#vega深度使用">VEGA深度使用</a></h1>
 <!--ts-->
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Sat May 13 08:50:14 UTC 2023 -->
+<!-- Added by: runner, at: Sun May 14 05:52:54 UTC 2023 -->
 <!--te-->
 <h2 id="缘起"><a class="header" href="#缘起">缘起</a></h2>
 <p>一直以来，mindmap、UML（plantuml）、excalidraw这些工具只能表达少量概念之间的联系，缺少可以看到更加全面知识点联系的工具。</p>
@@ -226,6 +226,8 @@ import sys
 import re
 import json
 import os
+import base64
+import zlib
 
 
 def converter(puml_path: str):
@@ -324,6 +326,26 @@ def get_wrap_name(name):
     return ''.join(wrap_name)
 
 
+# [Kroki!](https://kroki.io/)
+def get_kroki_preprocessors():
+    preprocessors = {
+        &quot;puml&quot;: &quot;plantuml&quot;,
+        &quot;seqdiag&quot;: &quot;sequediag&quot;,
+        &quot;svgbob&quot;: &quot;svgbob&quot;,
+        &quot;ditaa&quot;: &quot;ditaa&quot;,
+
+    }
+    return preprocessors
+
+
+# 将puml/mermaid等内容提交给kroki获取在线图片链接
+def get_kroki_link(file_path, preprocessor):
+    with open(file_path, 'r') as f:
+        content = f.read()
+        encoded_cotnent = base64.urlsafe_b64encode(zlib.compress(content.encode('utf8'))).decode('utf8')
+        return f&quot;https://kroki.io/{preprocessor}/svg/{encoded_cotnent}&quot;
+
+
 def extract_notes(text=''):
     #     text = '''
     #         ****:tail -n 80 customSpec.json
@@ -347,8 +369,26 @@ def extract_notes(text=''):
     notes = re.findall('\&lt;code\&gt;((?:.|\n)*?)\&lt;/code\&gt;', text)
     # 考虑到html默认只支持br换行，所以这里统一替换成br
     # notes = [note.replace('\n', '&lt;br&gt;') for note in notes]
-    # 考虑到plantuml的';'是元素结束符，所以这里将'&quot;;&quot;'换成';'
-    notes = [note.replace('&quot;;&quot;', ';') for note in notes]
+    kroki_suffixs = ['.puml', '.mermaid', '.nomnoml']
+    preprocessors = get_kroki_preprocessors()
+
+    def inner_note_replace(note):
+        # 考虑到plantuml的';'是元素结束符，所以这里将'&quot;;&quot;'换成';'
+        note = note.replace('&quot;;&quot;', ';')
+        # 提取其中的markdown图片链接，如果是puml后缀，就单独处理
+        # ![](xxx.puml) -&gt; ![xxx.puml](new_path)
+        img_links = re.findall('!\[(.*?)\]\((.*?)\)', note)
+        for img_link in img_links:
+            img_name, img_path = img_link
+            suffix = img_path.split('.')[-1]
+            if suffix in preprocessors.keys():
+                kroki_link = get_kroki_link(img_path, preprocessors[suffix])
+                file_name = img_path.split('/')[-1]
+                note = note.replace(f&quot;![]({img_path})&quot;,
+                                    f&quot;- [{file_name}点开大图]({kroki_link})\n![{file_name}]({kroki_link})&quot;)
+        return note
+
+    notes = [inner_note_replace(note) for note in notes]
     return notes
 
 
