@@ -67,6 +67,9 @@ note content
 
 ## 关于快速本地实时查看vega网页
 
+1. 执行`./scripts/local_proxy_server.js`
+2. 命令行启动静态服务
+
 > 为了和mdbook的路径一致，在src目录下执行
 
 ```shell
@@ -74,12 +77,12 @@ npm install -g http-server
 http-server -c-1
 ```
 
-## mdbook的定位是从src目录下开始的
+### mdbook的定位是从src目录下开始的
 
 1. 相对路径：需要向上一直走到src目录，然后再一步步定位到文件
 2. 绝对路径：直接从src目录开始定位
 
-## 关于修改路径后兼容http-server本地和mdbook在线链接的流程图。
+### 关于修改路径后兼容http-server本地和mdbook在线链接的流程图。
 
 > 目前已知mdbook在github page发布后使用静态资源需要从src目录开始定位，而且要加上项目名称。也就是
 
@@ -164,3 +167,6 @@ def get_kroki_link(file_path, preprocessor):
 ```
 
 > 可以去kroki在线编辑网站测试好后保存文本在本地：[Kroki!](https://kroki.io/)
+
+### 网页JS优化
+
