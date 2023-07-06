@@ -186,7 +186,7 @@
                 <h1 id="vega深度使用"><a class="header" href="#vega深度使用">VEGA深度使用</a></h1>
 <!--ts-->
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Sun May 14 05:52:54 UTC 2023 -->
+<!-- Added by: runner, at: Thu Jul  6 04:15:10 UTC 2023 -->
 <!--te-->
 <h2 id="缘起"><a class="header" href="#缘起">缘起</a></h2>
 <p>一直以来，mindmap、UML（plantuml）、excalidraw这些工具只能表达少量概念之间的联系，缺少可以看到更加全面知识点联系的工具。</p>
@@ -242,8 +242,11 @@ def converter(puml_path: str):
     print(f&quot;开始处理{puml_path}...&quot;)
     levels = {}
     json_results = []
+    # 找到同级的md文档目录
+    md_dir_path = f&quot;{puml_path.replace(puml_path.split('/')[-1], '')}md&quot;
+    data_json_path = f&quot;{puml_path.replace(puml_path.split('/')[-1], '')}data.json&quot;
     with open(puml_path, 'r') as f:
-        notes = extract_notes(f.read())
+        notes = extract_notes(md_dir_path, f.read())
 
     with open(puml_path, 'r') as f:
         lines = [line for line in f.readlines()]
@@ -273,7 +276,7 @@ def converter(puml_path: str):
                             &quot;name&quot;: wrap_link_name,
                             &quot;link&quot;: link,
                             &quot;parent&quot;: node['id'],
-                            &quot;note&quot;: f'来自{node[&quot;name&quot;]}的链接'
+                            &quot;note&quot;: f'[来自{node[&quot;name&quot;]}的链接]({link})'
                         }
                         json_results.append(child_node)
                         link_count += 1
@@ -286,7 +289,7 @@ def converter(puml_path: str):
                 json_results.append(node)
                 title_index += 1
     result_path = puml_path.replace('.puml', '.json')
-    with open(result_path, 'w') as f:
+    with open(data_json_path, 'w') as f:
         f.write(json.dumps(json_results))
 
 
@@ -346,7 +349,10 @@ def get_kroki_link(file_path, preprocessor):
         return f&quot;https://kroki.io/{preprocessor}/svg/{encoded_cotnent}&quot;
 
 
-def extract_notes(text=''):
+# 1. 提取内容
+# 2. 如果是md文档地址，就取文档地址内容为note
+# 3. 对note的内容进行处理
+def extract_notes(md_dir_path, text=''):
     #     text = '''
     #         ****:tail -n 80 customSpec.json
     # &lt;code&gt;
@@ -369,10 +375,14 @@ def extract_notes(text=''):
     notes = re.findall('\&lt;code\&gt;((?:.|\n)*?)\&lt;/code\&gt;', text)
     # 考虑到html默认只支持br换行，所以这里统一替换成br
     # notes = [note.replace('\n', '&lt;br&gt;') for note in notes]
-    kroki_suffixs = ['.puml', '.mermaid', '.nomnoml']
     preprocessors = get_kroki_preprocessors()
 
     def inner_note_replace(note):
+        # 如果是md文件地址，就替换
+        if note.startswith(&quot;md_file:&quot;):
+            md_file = note.replace(&quot;md_file:&quot;, &quot;&quot;)
+            with open(f&quot;{md_dir_path}/{md_file}&quot;, 'r') as f:
+                note = f.read()
         # 考虑到plantuml的';'是元素结束符，所以这里将'&quot;;&quot;'换成';'
         note = note.replace('&quot;;&quot;', ';')
         # 提取其中的markdown图片链接，如果是puml后缀，就单独处理
@@ -388,7 +398,7 @@ def extract_notes(text=''):
                                     f&quot;- [{file_name}点开大图]({kroki_link})\n![{file_name}]({kroki_link})&quot;)
         return note
 
-    notes = [inner_note_replace(note) for note in notes]
+    notes = [inner_note_replace(note.strip()) for note in notes]
     return notes
 
 

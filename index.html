@@ -190,7 +190,7 @@
 <img src="https://raw.githubusercontent.com/KuanHsiaoKuo/writing_materials/main/imgs/see_mountain.jpeg" alt="see_mountain"  />
 <!--ts-->
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Sun May 14 05:52:51 UTC 2023 -->
+<!-- Added by: runner, at: Thu Jul  6 04:14:57 UTC 2023 -->
 <!--te-->
 <h2 id="用意"><a class="header" href="#用意">用意</a></h2>
 <p>在多方面整理自己掌握的内容时，一再感受到思维工具的重要性，而这才是核心本质所在，因而起了这本书。</p>
@@ -240,18 +240,22 @@ note content
 <pre><code class="language-python">   notes = [note.replace('&quot;;&quot;', ';') for note in notes]
 </code></pre>
 <h2 id="关于快速本地实时查看vega网页"><a class="header" href="#关于快速本地实时查看vega网页">关于快速本地实时查看vega网页</a></h2>
+<ol>
+<li>执行<code>./scripts/local_proxy_server.js</code></li>
+<li>命令行启动静态服务</li>
+</ol>
 <blockquote>
 <p>为了和mdbook的路径一致，在src目录下执行</p>
 </blockquote>
 <pre><code class="language-shell">npm install -g http-server
 http-server -c-1
 </code></pre>
-<h2 id="mdbook的定位是从src目录下开始的"><a class="header" href="#mdbook的定位是从src目录下开始的">mdbook的定位是从src目录下开始的</a></h2>
+<h3 id="mdbook的定位是从src目录下开始的"><a class="header" href="#mdbook的定位是从src目录下开始的">mdbook的定位是从src目录下开始的</a></h3>
 <ol>
 <li>相对路径：需要向上一直走到src目录，然后再一步步定位到文件</li>
 <li>绝对路径：直接从src目录开始定位</li>
 </ol>
-<h2 id="关于修改路径后兼容http-server本地和mdbook在线链接的流程图"><a class="header" href="#关于修改路径后兼容http-server本地和mdbook在线链接的流程图">关于修改路径后兼容http-server本地和mdbook在线链接的流程图。</a></h2>
+<h3 id="关于修改路径后兼容http-server本地和mdbook在线链接的流程图"><a class="header" href="#关于修改路径后兼容http-server本地和mdbook在线链接的流程图">关于修改路径后兼容http-server本地和mdbook在线链接的流程图。</a></h3>
 <blockquote>
 <p>目前已知mdbook在github page发布后使用静态资源需要从src目录开始定位，而且要加上项目名称。也就是</p>
 </blockquote>
@@ -330,6 +334,7 @@ def get_kroki_link(file_path, preprocessor):
 <blockquote>
 <p>可以去kroki在线编辑网站测试好后保存文本在本地：<a href="https://kroki.io/">Kroki!</a></p>
 </blockquote>
+<h3 id="网页js优化"><a class="header" href="#网页js优化">网页JS优化</a></h3>
 
             </main>
 
