@@ -1,0 +1,1 @@
+![](../pic/embedding_vector_knowledge_seq.png)

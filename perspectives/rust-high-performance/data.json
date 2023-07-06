@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": " rust\u9ad8\u6027\u80fd\u5206\u5e03\u5f0f\u76f8\u5173\u5b66\u4e60\n"
+  },
+  {
+    "id": 2,
+    "name": " \u9009\u5b9a\u4e3b\u9898\n",
+    "parent": 1
+  },
+  {
+    "id": 3,
+    "name": "\u786e\u5b9a\u4e3b\u9898\u4e66\u7c4d\u5e76\u4e0a\u4f20\n",
+    "parent": 1,
+    "note": "> [Ask Your PDF - Interactive PDF Conversations powered by ChatGPT](https://askyourpdf.com/): \u6587\u4ef6\u4e0d\u80fd\u8d85\u8fc7\u4e09\u767e\u9875\n\u683c\u5f0f\uff1ahttps://askyourpdf.com/chat/3fd8cffb-2a9e-4102-a20d-9697a140b829\n\n1. rust_high_performance_1.pdf: 3fd8cffb-2a9e-4102-a20d-9697a140b829\n2. rust_high_performance_2.pdf: 7108389f-e8b1-44cf-a742-e4f76bd3c8bf\n3. Hands-On-Concurrency-with-Rust-Confidently-build-memory-safe-parallel-and-efficient-software-in-Rust_1: d8dc5ab9-b975-45df-bda9-44bc0c5acb5f\n4. Hands-On-Concurrency-with-Rust-Confidently-build-memory-safe-parallel-and-efficient-software-in-Rust_2: 22f387d6-9610-46c9-a77e-09f2dcd78ae2\n5. Hands-On-Concurrency-with-Rust-Confidently-build-memory-safe-parallel-and-efficient-software-in-Rust_3: 17a03699-23ce-4733-9f31-05a5ddcf09b0\n\n```text\n3fd8cffb-2a9e-4102-a20d-9697a140b829\n7108389f-e8b1-44cf-a742-e4f76bd3c8bf\nd8dc5ab9-b975-45df-bda9-44bc0c5acb5f\n22f387d6-9610-46c9-a77e-09f2dcd78ae2\n17a03699-23ce-4733-9f31-05a5ddcf09b0\n```"
+  },
+  {
+    "id": 4,
+    "name": " \u591a\u89d2\u5ea6\u63d0\u95ee\n",
+    "parent": 1
+  },
+  {
+    "id": 5,
+    "name": " \u603b\u4f53\u4fef\u89c6\n",
+    "parent": 4
+  },
+  {
+    "id": 6,
+    "name": " \u4e3b\u9898\u4e32\u8054\n",
+    "parent": 4
+  },
+  {
+    "id": 7,
+    "name": " \u5206\u5c42\u5207\u5272\n",
+    "parent": 4
+  },
+  {
+    "id": 8,
+    "name": " \u6d41\u7a0b\u8d2f\u901a\n",
+    "parent": 4
+  },
+  {
+    "id": 9,
+    "name": " \u903b\u8f91\u63a8\u7406\n",
+    "parent": 4
+  },
+  {
+    "id": 10,
+    "name": " \u5228\u6839\u95ee\u5e95\n",
+    "parent": 4
+  }
+]

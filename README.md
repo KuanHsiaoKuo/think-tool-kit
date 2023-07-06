@@ -6,10 +6,6 @@
 
 <!--ts-->
 
-
-<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Sun May 14 05:52:51 UTC 2023 -->
-
 <!--te-->
 
 ## 用意

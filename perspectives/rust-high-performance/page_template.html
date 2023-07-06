@@ -1,0 +1,148 @@
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+        #vg-tooltip-element tr:nth-child(1) td:first-child {
+            color: #96abc7
+        }
+
+        .vg-tooltip-max-width {
+            max-width: 200px;
+        }
+
+        .vg-tooltip-max-height {
+            max-height: 300px;
+        }
+
+        /*修改提示窗口一直显示*/
+        /*#vg-tooltip-element {*/
+        /*    visibility: visible;*/
+        /*}*/
+        #vg-tooltip-element {
+            max-width: 800px;
+            max-height: 400px;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+<div id="vis"/>
+<script>
+
+    let options = {
+        gfm: true,
+        breaks: true,
+        smartLists: true,
+        highlight: function (code) {
+            return hljs.highlightAuto(code).value;
+        }
+    };
+    let tooltipOptions = {
+        // theme: 'custom',
+        theme: 'light',
+        formatTooltip: (value, sanitize) => {
+            // console.log(value['相关笔记'].replace('\n', "<br>"))
+            marked_content = marked(value['相关笔记'], options)
+            // console.log(marked_content)
+            return marked_content
+        },
+        style: {
+            'max-width': 200,
+            'max-height': 300
+        }
+    };
+    let imgScale = 1; // 图片缩放比例
+    const MINIMUM_SCALE = 0.2; // 最小缩放
+    const MAX_SCALE = 2; // 最大缩放
+
+    // vegaEmbed(
+    //     '#vis',
+    //     '/think-tool-kit/collections/vg_json/rust/ddd/high_performance_computing/high_performance_computing.tree.vg.json',
+    //     {
+    //         actions: false,
+    //         tooltip: tooltipOptions
+    //     }
+    // );
+
+    setTimeout(() => {
+        vegaEmbed(
+            '#vis',
+            '/think-tool-kit/collections/vg_json/rust/ddd/high_performance_computing/high_performance_computing.tree.vg.json',
+            {
+                actions: false,
+                renderer: 'svg',
+                tooltip: tooltipOptions,
+                width: window.innerWidth - 250,
+            }
+        );
+
+    }, 1000);
+
+    function mouseWheel(e) {
+        console.log('e', e)
+        const {clientX, clientY, wheelDelta} = e;
+        const hisScale = imgScale;
+        if (wheelDelta > 0) { // 放大
+            imgScale += 0.1;
+            if (imgScale >= MAX_SCALE) {
+                imgScale = MAX_SCALE
+            }
+        } else { // 缩小
+            imgScale -= 0.1;
+            if (imgScale <= MINIMUM_SCALE) {
+                imgScale = MINIMUM_SCALE
+            }
+        }
+        // 获取div元素
+        var divElement = document.getElementById('vis');
+        // 获取svg元素
+        var svgElement = divElement.querySelector('svg');
+        var toolElement = divElement.querySelector('form');
+        // divElement.setAttribute("transform", `translate(0,0) scale(${imgScale})`);
+        svgElement.setAttribute("transform", `translate(0,0) scale(${imgScale})`);
+        svgElement.setAttribute("transform-origin", `center top`);
+    }
+
+    setTimeout(() => {
+        // 获取div元素
+        var divElement = document.getElementById('vis');
+        // 获取svg元素
+        var svgElement = divElement.querySelector('svg');
+        var toolElement = divElement.querySelector('form');
+        svgElement.addEventListener('mousewheel', mouseWheel);
+        svgElement.addEventListener('wheel', mouseWheel);
+        divElement.style.margin = '24px';
+        divElement.style.overflow = 'hidden';
+
+        toolElement.style.position = 'absolute';
+        toolElement.style.left = '0';
+        toolElement.style.top = '0';
+        toolElement.style.background = '#fff';
+        // svgElement.setAttribute("transform", "translate(0,0) scale(2)");
+    }, 2000)
+
+
+    setInterval(function () {
+        let tooltip = document.getElementById('vg-tooltip-element')
+        if (tooltip) {
+            console.log(tooltip.style.top.charAt(0))
+            if (tooltip.style.top.charAt(0) === '-') {
+                tooltip.style.top = '0px'
+            }
+            document.addEventListener('keydown', (event) => {
+                if (event.shiftKey) {
+                    tooltip.style.visibility = 'visible';
+                }
+            });
+
+            document.addEventListener('keyup', () => {
+                tooltip.style.visibility = 'hidden';
+            });
+        }
+    }, 100);
+</script>
+</body>

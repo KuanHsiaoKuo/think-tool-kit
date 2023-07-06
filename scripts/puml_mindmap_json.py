@@ -21,8 +21,11 @@ def converter(puml_path: str):
     print(f"开始处理{puml_path}...")
     levels = {}
     json_results = []
+    # 找到同级的md文档目录
+    md_dir_path = f"{puml_path.replace(puml_path.split('/')[-1], '')}md"
+    data_json_path = f"{puml_path.replace(puml_path.split('/')[-1], '')}data.json"
     with open(puml_path, 'r') as f:
-        notes = extract_notes(f.read())
+        notes = extract_notes(md_dir_path, f.read())
 
     with open(puml_path, 'r') as f:
         lines = [line for line in f.readlines()]
@@ -52,7 +55,7 @@ def converter(puml_path: str):
                             "name": wrap_link_name,
                             "link": link,
                             "parent": node['id'],
-                            "note": f'来自{node["name"]}的链接'
+                            "note": f'[来自{node["name"]}的链接]({link})'
                         }
                         json_results.append(child_node)
                         link_count += 1
@@ -65,7 +68,7 @@ def converter(puml_path: str):
                 json_results.append(node)
                 title_index += 1
     result_path = puml_path.replace('.puml', '.json')
-    with open(result_path, 'w') as f:
+    with open(data_json_path, 'w') as f:
         f.write(json.dumps(json_results))
 
 
@@ -125,7 +128,10 @@ def get_kroki_link(file_path, preprocessor):
         return f"https://kroki.io/{preprocessor}/svg/{encoded_cotnent}"
 
 
-def extract_notes(text=''):
+# 1. 提取内容
+# 2. 如果是md文档地址，就取文档地址内容为note
+# 3. 对note的内容进行处理
+def extract_notes(md_dir_path, text=''):
     #     text = '''
     #         ****:tail -n 80 customSpec.json
     # <code>
@@ -148,10 +154,14 @@ def extract_notes(text=''):
     notes = re.findall('\<code\>((?:.|\n)*?)\</code\>', text)
     # 考虑到html默认只支持br换行，所以这里统一替换成br
     # notes = [note.replace('\n', '<br>') for note in notes]
-    kroki_suffixs = ['.puml', '.mermaid', '.nomnoml']
     preprocessors = get_kroki_preprocessors()
 
     def inner_note_replace(note):
+        # 如果是md文件地址，就替换
+        if note.startswith("md_file:"):
+            md_file = note.replace("md_file:", "")
+            with open(f"{md_dir_path}/{md_file}", 'r') as f:
+                note = f.read()
         # 考虑到plantuml的';'是元素结束符，所以这里将'";"'换成';'
         note = note.replace('";"', ';')
         # 提取其中的markdown图片链接，如果是puml后缀，就单独处理
@@ -167,7 +177,7 @@ def extract_notes(text=''):
                                     f"- [{file_name}点开大图]({kroki_link})\n![{file_name}]({kroki_link})")
         return note
 
-    notes = [inner_note_replace(note) for note in notes]
+    notes = [inner_note_replace(note.strip()) for note in notes]
     return notes
 
 
